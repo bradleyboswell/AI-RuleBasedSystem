@@ -1,1 +1,0 @@
-# AI - Rule Based System
