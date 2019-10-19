@@ -33,6 +33,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="NRules, Version=0.9.0.0, Culture=neutral, PublicKeyToken=8ad544355a4a2176, processorArchitecture=MSIL">
+      <HintPath>..\packages\NRules.Runtime.0.9.0\lib\net45\NRules.dll</HintPath>
+    </Reference>
+    <Reference Include="NRules.Fluent, Version=0.9.0.0, Culture=neutral, PublicKeyToken=8ad544355a4a2176, processorArchitecture=MSIL">
+      <HintPath>..\packages\NRules.Fluent.0.9.0\lib\net45\NRules.Fluent.dll</HintPath>
+    </Reference>
+    <Reference Include="NRules.RuleModel, Version=0.9.0.0, Culture=neutral, PublicKeyToken=8ad544355a4a2176, processorArchitecture=MSIL">
+      <HintPath>..\packages\NRules.RuleModel.0.9.0\lib\net45\NRules.RuleModel.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -63,6 +72,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
