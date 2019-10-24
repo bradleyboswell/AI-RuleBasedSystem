@@ -19,8 +19,8 @@ namespace RuleBasedSystem
             List<Course> CoReqs = new List<Course>();
             List<Course> PreReqs = new List<Course>();
             List<Course> PostReqs = new List<Course>();
+
             Course comp1 = new Course("ENGL 1101 Composition I", true, true, true, true, true,CoReqs,PreReqs,PostReqs);
-            PrintDialog(comp1.name);
 
         }
 
