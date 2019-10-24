@@ -10,10 +10,10 @@ namespace RuleBasedSystem
     {
         string name;
         bool isTaken, fall, spring, summer, onDemand;
-        List<Course> CoReqs, PreReqs, PostReqs;
+        List<Course> CoReqs, OrPreReqs, PreReqs;
 
 
-        public Course(string name, bool isTaken, bool fall, bool spring, bool summer, bool onDemand, List<Course> CoReqs, List<Course> PreReqs, List<Course> PostReqs)
+        public Course(string name, bool isTaken, bool fall, bool spring, bool summer, bool onDemand, List<Course> CoReqs, List<Course> OrPreReqs, List<Course> PreReqs)
         {
             this.name = name;
             this.isTaken = isTaken;
@@ -22,8 +22,8 @@ namespace RuleBasedSystem
             this.summer = summer;
             this.onDemand = onDemand;
             this.CoReqs = CoReqs;
-            this.PreReqs = PreReqs;
-            this.PostReqs = PostReqs;
+            this.OrPreReqs = OrPreReqs;
+            this.PreReqs = PreReqs;          
         }
     }
 }
