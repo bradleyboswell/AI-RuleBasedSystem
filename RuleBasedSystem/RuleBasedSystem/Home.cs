@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 namespace RuleBasedSystem
 {
+
     public partial class Home : Form
     {
         public Home()
