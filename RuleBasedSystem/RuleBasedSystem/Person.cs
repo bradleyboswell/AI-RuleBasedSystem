@@ -17,7 +17,6 @@ namespace RuleBasedSystem
             this.isSpring = isSpring;
             this.isSummer = isSummer;
             coursesTaken = new List<Course>();
-
         }
     }
 }

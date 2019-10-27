@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,18 +10,14 @@ namespace RuleBasedSystem
     class Course
     {
         string name;
-        bool isTaken, fall, spring, summer, onDemand;
-        List<Course> CoReqs, PreReqs, PostReqs;
+        bool isTaken, spring, summer, fall, onDemand;
+        ArrayList CoReqs, PreReqs, PostReqs;
 
 
-        public Course(string name, bool isTaken, bool fall, bool spring, bool summer, bool onDemand, List<Course> CoReqs, List<Course> PreReqs, List<Course> PostReqs)
+        public Course(string name, bool isTaken, bool spring, bool summer, bool fall, bool onDemand, ArrayList CoReqs, ArrayList PreReqs, ArrayList PostReqs)
         {
             this.name = name;
             this.isTaken = isTaken;
-            this.fall = fall;
-            this.spring = spring;
-            this.summer = summer;
-            this.onDemand = onDemand;
             this.CoReqs = CoReqs;
             this.PreReqs = PreReqs;
             this.PostReqs = PostReqs;
