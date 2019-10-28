@@ -7,20 +7,28 @@ using System.Threading.Tasks;
 
 namespace RuleBasedSystem
 {
-    class Course
+    public class Course
     {
-        string name;
-        bool isTaken, spring, summer, fall, onDemand;
-        ArrayList CoReqs, PreReqs, PostReqs;
+        public string name;
+        public bool isTaken, spring, summer, fall, onDemand;
+        public ArrayList CoReqs, PreReqs;
 
 
-        public Course(string name, bool isTaken, bool spring, bool summer, bool fall, bool onDemand, ArrayList CoReqs, ArrayList PreReqs, ArrayList PostReqs)
+        public Course(string name, bool isTaken, bool spring, bool summer, bool fall, bool onDemand, ArrayList CoReqs, ArrayList PreReqs)
         {
             this.name = name;
             this.isTaken = isTaken;
+            this.spring = spring;
+            this.summer = summer;
+            this.fall = fall;
+            this.onDemand = onDemand;
             this.CoReqs = CoReqs;
             this.PreReqs = PreReqs;
-            this.PostReqs = PostReqs;
+        }
+
+        public void printlol()
+        {
+            Console.WriteLine("abc");
         }
     }
 }

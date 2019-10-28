@@ -17,3 +17,22 @@ C:\Users\bbosw\Desktop\Rule Based AI\AI-RuleBasedSystem\RuleBasedSystem\RuleBase
 C:\Users\bbosw\Desktop\Rule Based AI\AI-RuleBasedSystem\RuleBasedSystem\RuleBasedSystem\obj\Debug\RuleBasedSystem.csproj.CopyComplete
 C:\Users\bbosw\Desktop\Rule Based AI\AI-RuleBasedSystem\RuleBasedSystem\RuleBasedSystem\obj\Debug\RuleBasedSystem.exe
 C:\Users\bbosw\Desktop\Rule Based AI\AI-RuleBasedSystem\RuleBasedSystem\RuleBasedSystem\obj\Debug\RuleBasedSystem.pdb
+C:\Users\Andrew\source\repos\bradleyboswell\AI-RuleBasedSystem\RuleBasedSystem\RuleBasedSystem\bin\Debug\RuleBasedSystem.exe.config
+C:\Users\Andrew\source\repos\bradleyboswell\AI-RuleBasedSystem\RuleBasedSystem\RuleBasedSystem\bin\Debug\RuleBasedSystem.exe
+C:\Users\Andrew\source\repos\bradleyboswell\AI-RuleBasedSystem\RuleBasedSystem\RuleBasedSystem\bin\Debug\RuleBasedSystem.pdb
+C:\Users\Andrew\source\repos\bradleyboswell\AI-RuleBasedSystem\RuleBasedSystem\RuleBasedSystem\bin\Debug\NRules.dll
+C:\Users\Andrew\source\repos\bradleyboswell\AI-RuleBasedSystem\RuleBasedSystem\RuleBasedSystem\bin\Debug\NRules.Fluent.dll
+C:\Users\Andrew\source\repos\bradleyboswell\AI-RuleBasedSystem\RuleBasedSystem\RuleBasedSystem\bin\Debug\NRules.RuleModel.dll
+C:\Users\Andrew\source\repos\bradleyboswell\AI-RuleBasedSystem\RuleBasedSystem\RuleBasedSystem\bin\Debug\NRules.pdb
+C:\Users\Andrew\source\repos\bradleyboswell\AI-RuleBasedSystem\RuleBasedSystem\RuleBasedSystem\bin\Debug\NRules.xml
+C:\Users\Andrew\source\repos\bradleyboswell\AI-RuleBasedSystem\RuleBasedSystem\RuleBasedSystem\bin\Debug\NRules.Fluent.pdb
+C:\Users\Andrew\source\repos\bradleyboswell\AI-RuleBasedSystem\RuleBasedSystem\RuleBasedSystem\bin\Debug\NRules.Fluent.xml
+C:\Users\Andrew\source\repos\bradleyboswell\AI-RuleBasedSystem\RuleBasedSystem\RuleBasedSystem\bin\Debug\NRules.RuleModel.pdb
+C:\Users\Andrew\source\repos\bradleyboswell\AI-RuleBasedSystem\RuleBasedSystem\RuleBasedSystem\bin\Debug\NRules.RuleModel.xml
+C:\Users\Andrew\source\repos\bradleyboswell\AI-RuleBasedSystem\RuleBasedSystem\RuleBasedSystem\obj\Debug\RuleBasedSystem.csprojAssemblyReference.cache
+C:\Users\Andrew\source\repos\bradleyboswell\AI-RuleBasedSystem\RuleBasedSystem\RuleBasedSystem\obj\Debug\RuleBasedSystem.Home.resources
+C:\Users\Andrew\source\repos\bradleyboswell\AI-RuleBasedSystem\RuleBasedSystem\RuleBasedSystem\obj\Debug\RuleBasedSystem.Properties.Resources.resources
+C:\Users\Andrew\source\repos\bradleyboswell\AI-RuleBasedSystem\RuleBasedSystem\RuleBasedSystem\obj\Debug\RuleBasedSystem.csproj.GenerateResource.cache
+C:\Users\Andrew\source\repos\bradleyboswell\AI-RuleBasedSystem\RuleBasedSystem\RuleBasedSystem\obj\Debug\RuleBasedSystem.csproj.CopyComplete
+C:\Users\Andrew\source\repos\bradleyboswell\AI-RuleBasedSystem\RuleBasedSystem\RuleBasedSystem\obj\Debug\RuleBasedSystem.exe
+C:\Users\Andrew\source\repos\bradleyboswell\AI-RuleBasedSystem\RuleBasedSystem\RuleBasedSystem\obj\Debug\RuleBasedSystem.pdb
