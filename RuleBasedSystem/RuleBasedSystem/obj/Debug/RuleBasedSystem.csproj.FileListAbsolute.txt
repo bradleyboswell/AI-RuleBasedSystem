@@ -1,0 +1,9 @@
+C:\Users\bbosw\Desktop\Aritificial Intelligence\RuleBasedSystem\RuleBasedSystem\RuleBasedSystem\bin\Debug\RuleBasedSystem.exe.config
+C:\Users\bbosw\Desktop\Aritificial Intelligence\RuleBasedSystem\RuleBasedSystem\RuleBasedSystem\bin\Debug\RuleBasedSystem.exe
+C:\Users\bbosw\Desktop\Aritificial Intelligence\RuleBasedSystem\RuleBasedSystem\RuleBasedSystem\bin\Debug\RuleBasedSystem.pdb
+C:\Users\bbosw\Desktop\Aritificial Intelligence\RuleBasedSystem\RuleBasedSystem\RuleBasedSystem\obj\Debug\RuleBasedSystem.csprojAssemblyReference.cache
+C:\Users\bbosw\Desktop\Aritificial Intelligence\RuleBasedSystem\RuleBasedSystem\RuleBasedSystem\obj\Debug\RuleBasedSystem.Properties.Resources.resources
+C:\Users\bbosw\Desktop\Aritificial Intelligence\RuleBasedSystem\RuleBasedSystem\RuleBasedSystem\obj\Debug\RuleBasedSystem.csproj.GenerateResource.cache
+C:\Users\bbosw\Desktop\Aritificial Intelligence\RuleBasedSystem\RuleBasedSystem\RuleBasedSystem\obj\Debug\RuleBasedSystem.csproj.CoreCompileInputs.cache
+C:\Users\bbosw\Desktop\Aritificial Intelligence\RuleBasedSystem\RuleBasedSystem\RuleBasedSystem\obj\Debug\RuleBasedSystem.exe
+C:\Users\bbosw\Desktop\Aritificial Intelligence\RuleBasedSystem\RuleBasedSystem\RuleBasedSystem\obj\Debug\RuleBasedSystem.pdb
