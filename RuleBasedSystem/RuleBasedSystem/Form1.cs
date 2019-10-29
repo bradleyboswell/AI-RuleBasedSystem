@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -13,48 +14,12 @@ namespace RuleBasedSystem
 {
     public partial class Form1 : Form
     {
-        public class User
-        {
-            public int Age
-            {
-                get;
-                set;
-            }
-
-            public string Name
-            {
-                get;
-                set;
-            }
-        }
-
-        static Expression BuildExpr<T>(Rule r, ParameterExpression param)
-        {
-            var left = MemberExpression.Property(param, r.MemberName);
-            var tProp = typeof(T).GetProperty(r.MemberName).PropertyType;
-            ExpressionType tBinary;
-            // is the operator a known .NET operator?
-            if (ExpressionType.TryParse(r.Operator, out tBinary))
-            {
-                var right = Expression.Constant(Convert.ChangeType(r.TargetValue, tProp));
-                // use a binary operation, e.g. 'Equal' -> 'u.Age == 15'
-                return Expression.MakeBinary(tBinary, left, right);
-            }
-            else
-            {
-                var method = tProp.GetMethod(r.Operator);
-                var tParam = method.GetParameters()[0].ParameterType;
-                var right = Expression.Constant(Convert.ChangeType(r.TargetValue, tParam));
-                // use a method call, e.g. 'Contains' -> 'u.Tags.Contains(some_tag)'
-                return Expression.Call(left, method, right);
-            }
-        }
 
         public Form1()
         {
             InitializeComponent();
             List<Rule> rules = new List<Rule>
-                { new Rule("Age", "GreaterThan", "20"), new Rule("Name", "Equal", "John")};
+                { new Rule("Age", ExpressionType.GreaterThan, "20"), new Rule("Name", ExpressionType.Equal, "John")};
 
             var user1 = new User{
                 Age = 13,
@@ -71,46 +36,102 @@ namespace RuleBasedSystem
                 Name = "paul"
             };
 
+            List<User> users = new List<User>();
+            users.Add(user1);
+            users.Add(user2);
+            users.Add(user3);
 
-            var compiledRules = rules.Select(r => CompileRule<User>(r)).ToList();
-            //Func<User, bool> compiledRule = CompileRule<User>(rule);
-            bool t = compiledRules.All(r => r(user2));
-            Console.WriteLine(t);
+            var compiledRules = PreCompileRuleSet(new List<User>(), rules);
+            
+            
+            users.ForEach(user => 
+            {
+                if (compiledRules.TakeWhile(r => r(user)).Count() > 0)             //this is set to 1 because there are two rules that must be satisfied (how do we figure out which rule was satisfied from this?)
+                {                   
+                    Console.WriteLine("User: "+user.Name+" Satisfied all rules in the list!");
+                }
+                else
+                {
+                    Console.WriteLine("User: "+user.Name+" Did not satisfy all rules in the list!");
+                }
+            });
         }
 
-        public static Func<T, bool> CompileRule<T>(Rule r)
+        public static List<Func<T, bool>> PreCompileRuleSet<T>(List<T> targetSet, List<Rule> ruleSet)
         {
-            var paramUser = Expression.Parameter(typeof(User));
-            Expression expr = BuildExpr<T>(r, paramUser);
-            // build a lambda function User->bool and compile it
-            return Expression.Lambda<Func<T, bool>>(expr, paramUser).Compile();
+            ParameterExpression paramType = Expression.Parameter(typeof(T));                //gets the type that is passed into param_0 
+            //Console.WriteLine("ParameterExpression paramType = " + paramType.Type);
+
+            List<Func<T,bool>> compiledOut = new List<Func<T, bool>>();                 //store compiled rules to return
+
+            ruleSet.ForEach(r =>
+            {              
+                MemberExpression srcIdent = Expression.Property(paramType, r.Source);       //identity of src arg in this specific rule 
+                //Console.WriteLine("r.Source = " + r.Source);
+                //Console.WriteLine("MemberExpression srcIdent = " + srcIdent);
+
+                PropertyInfo srcPropInfo = typeof(T).GetProperty(r.Source);              //Get the property info object about the source arg for this rul
+                Type propType = srcPropInfo.PropertyType;                                   //gets property type associated with source arg for this rule
+               //Console.WriteLine("Type propType = " + propType.Name);
+
+                ConstantExpression trgIdent = Expression.Constant(Convert.ChangeType(r.Target, propType));      //Get the constant for the target argument in rule
+               //Console.WriteLine("ConstantExpression trgIdent = " + trgIdent);
+
+                BinaryExpression exp = Expression.MakeBinary(r.Operator, srcIdent, trgIdent);        //build the binary expression from left/operator/right defined in this Rule 
+                //Console.WriteLine("r.Operator = " + r.Operator);
+                //Console.WriteLine("BinaryExpression exp = " + exp);
+
+                Func<T, bool> lambda = Expression.Lambda<Func<T, bool>>(exp, paramType).Compile();      //Compile the lambda expression
+
+                compiledOut.Add(lambda);        //add the expression to the list or rules
+
+            });
+
+            return compiledOut;         //return set of compiled rules
+
         }
+
+        public class User
+        {
+            public int Age
+            {
+                get;
+                set;
+            }
+
+            public string Name
+            {
+                get;
+                set;
+            }
+        }
+
 
         public class Rule
         {
-            public string MemberName
+            public string Source
             {
                 get;
                 set;
             }
 
-            public string Operator
+            public ExpressionType Operator
             {
                 get;
                 set;
             }
 
-            public string TargetValue
+            public string Target
             {
                 get;
                 set;
             }
 
-            public Rule(string MemberName, string Operator, string TargetValue)
+            public Rule(string Source, ExpressionType Operator, string Target)
             {
-                this.MemberName = MemberName;
+                this.Source = Source;
                 this.Operator = Operator;
-                this.TargetValue = TargetValue;
+                this.Target = Target;
             }
         }
     }
