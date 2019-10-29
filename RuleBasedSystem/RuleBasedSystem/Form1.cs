@@ -78,10 +78,6 @@ namespace RuleBasedSystem
             Console.WriteLine(t);
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
         public static Func<T, bool> CompileRule<T>(Rule r)
         {
             var paramUser = Expression.Parameter(typeof(User));
