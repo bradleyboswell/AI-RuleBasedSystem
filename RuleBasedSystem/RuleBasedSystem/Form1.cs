@@ -18,6 +18,9 @@ namespace RuleBasedSystem
         public Form1()
         {
             InitializeComponent();
+            /*
+            //TEST EXAMPLE TEST EXAMPLE TEST EXAMPLE TEST EXAMPLE TEST EXAMPLE TEST EXAMPLE TEST EXAMPLE TEST EXAMPLE TEST EXAMPLE TEST EXAMPLE TEST EXAMPLE TEST EXAMPLE 
+            //
             List<Rule> rules = new List<Rule>
                 { new Rule("Age", ExpressionType.GreaterThan, "20"), new Rule("Name", ExpressionType.Equal, "John")};
 
@@ -46,6 +49,7 @@ namespace RuleBasedSystem
             
             users.ForEach(user => 
             {
+
                 if (compiledRules.TakeWhile(r => r(user)).Count() > 0)             //this is set to 1 because there are two rules that must be satisfied (how do we figure out which rule was satisfied from this?)
                 {                   
                     Console.WriteLine("User: "+user.Name+" Satisfied all rules in the list!");
@@ -54,7 +58,41 @@ namespace RuleBasedSystem
                 {
                     Console.WriteLine("User: "+user.Name+" Did not satisfy all rules in the list!");
                 }
+
             });
+            
+            //END TEST EXAMPLE END TEST EXAMPLE END TEST EXAMPLE END TEST EXAMPLE END TEST EXAMPLE END TEST EXAMPLE END TEST EXAMPLE END TEST EXAMPLE END TEST EXAMPLE END TEST EXAMPLE END TEST EXAMPLE 
+            */
+
+            //Test case engl_1101 == completed so engl 1102 should be displayed as available
+            Course engl_1101 = new Course
+            {
+                Prefix = "ENGL 1101",
+                IsCompleted = true,
+                IsAvailable = true,
+                Fall = true,
+                Summer = true,
+                Spring = true,
+                OnDemand = true
+            };
+            Course engl_1102 = new Course
+            {
+                Prefix = "ENGL 1102",
+                IsCompleted = false,
+                IsAvailable = true,
+                Fall = true,
+                Summer = true,
+                Spring = true,
+                OnDemand = true
+            };
+
+
+            List<Rule> rules = new List<Rule>
+                { new Rule("IsCompleted", ExpressionType.Equal, "true")};
+
+
+            var compiledRules = PreCompileRuleSet(new List<Course>(), rules);
+
         }
 
         public static List<Func<T, bool>> PreCompileRuleSet<T>(List<T> targetSet, List<Rule> ruleSet)
@@ -104,6 +142,69 @@ namespace RuleBasedSystem
                 get;
                 set;
             }
+        }
+
+        public class Course
+        {
+            //ex: ENGL 1101
+            public string Prefix
+            {
+                get;
+                set;
+            }
+
+            //True = Student passed with C or better ---- False = Student did not take or did not pass the course
+            public bool IsCompleted
+            {
+                get;
+                set;
+            }
+
+            //We might need this for output query of available classes to be taken for that term after rules are triggered and we change this value accordingly in the loops
+            public bool IsAvailable
+            {
+                get;
+                set;
+            }
+
+            //booleans for terms the course is offered (all seperate in order to account for classes being offered during multiple terms)
+            public bool Fall
+            {
+                get;
+                set;
+            }
+
+            public bool Summer
+            {
+                get;
+                set;
+            }
+
+            public bool Spring
+            {
+                get;
+                set;
+            }
+
+            public bool OnDemand
+            {
+                get;
+                set;
+            }
+
+            //To string method for returning info to the user about the status of this course
+            public new string ToString()
+            {
+                if (this.IsCompleted)
+                {
+                    return Prefix + " has been passed with a C or better";
+                }
+                else
+                {
+                    return Prefix + " has either not been taken, or not been passed with a C or better";
+                }
+            }
+
         }
 
 
