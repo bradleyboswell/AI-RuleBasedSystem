@@ -64,11 +64,59 @@ namespace RuleBasedSystem
             //END TEST EXAMPLE END TEST EXAMPLE END TEST EXAMPLE END TEST EXAMPLE END TEST EXAMPLE END TEST EXAMPLE END TEST EXAMPLE END TEST EXAMPLE END TEST EXAMPLE END TEST EXAMPLE END TEST EXAMPLE 
             */
 
-            //Test case engl_1101 == completed so engl 1102 should be displayed as available
+            //Maybe have radio button for which term the student is looking to take classes for
+            //For now we will look for Spring
+            bool NextFall = false;
+            bool NextSpring = true;
+            bool NextSummer = false;
+
+
+            //Course List set to IsCompleted = false by default
+            Course healthful_living = new Course
+            {
+                Prefix = "HLTH 1520",
+                IsCompleted = false,
+                IsAvailable = true,
+                Fall = true,
+                Summer = true,
+                Spring = true,
+                OnDemand = true
+            };
+            Course physical_activity_1 = new Course
+            {
+                Prefix = "KINS 1XXX",
+                IsCompleted = false,
+                IsAvailable = true,
+                Fall = true,
+                Summer = true,
+                Spring = true,
+                OnDemand = true
+            };
+            Course physical_activity_2 = new Course
+            {
+                Prefix = "KINS 1XXX",
+                IsCompleted = false,
+                IsAvailable = true,
+                Fall = true,
+                Summer = true,
+                Spring = true,
+                OnDemand = true
+            };
+            Course first_year_experience = new Course
+            {
+                Prefix = "FYE 1220",
+                IsCompleted = false,
+                IsAvailable = true,
+                Fall = true,
+                Summer = true,
+                Spring = true,
+                OnDemand = true
+            };
+
             Course engl_1101 = new Course
             {
                 Prefix = "ENGL 1101",
-                IsCompleted = true,
+                IsCompleted = false,
                 IsAvailable = true,
                 Fall = true,
                 Summer = true,
@@ -85,17 +133,94 @@ namespace RuleBasedSystem
                 Spring = true,
                 OnDemand = true
             };
+            Course college_algebra = new Course
+            {
+                Prefix = "MATH 1111",
+                IsCompleted = false,
+                IsAvailable = true,
+                Fall = true,
+                Summer = true,
+                Spring = true,
+                OnDemand = true
+            };
+            Course trigonometry = new Course
+            {
+                Prefix = "MATH 1112",
+                IsCompleted = false,
+                IsAvailable = true,
+                Fall = true,
+                Summer = true,
+                Spring = true,
+                OnDemand = true
+            };
+            Course pre_calculus = new Course
+            {
+                Prefix = "MATH 1113",
+                IsCompleted = false,
+                IsAvailable = true,
+                Fall = true,
+                Summer = true,
+                Spring = true,
+                OnDemand = true
+            };
+            Course calculus = new Course
+            {
+                Prefix = "MATH 1441",
+                IsCompleted = false,
+                IsAvailable = true,
+                Fall = true,
+                Summer = true,
+                Spring = true,
+                OnDemand = true
+            };
+            Course world_history_2 = new Course
+            {
+                Prefix = "HIST 1112",
+                IsCompleted = false,
+                IsAvailable = true,
+                Fall = true,
+                Summer = true,
+                Spring = true,
+                OnDemand = true
+            };
+            
 
 
-            List<Rule> rules = new List<Rule>
-                { new Rule("IsCompleted", ExpressionType.Equal, "true")};
+            List<Course> courses = new List<Course>
+            {
+                engl_1101,
+                engl_1102,
+                college_algebra,
+                trigonometry,
+                pre_calculus,
+                calculus
+            };
 
+            if (NextSpring)
+            {
+                List<Rule> springRules = new List<Rule>
+                { new Rule("Spring", ExpressionType.Equal, "true")};
 
-            var compiledRules = PreCompileRuleSet(new List<Course>(), rules);
+                var compiledRules = CompileRuleSet(new List<Course>(), springRules);
+
+                courses.ForEach(course =>
+                {
+
+                    if (compiledRules.TakeWhile(r => r(course)).Any())
+                    {
+                        Console.WriteLine("Course: " + course.Prefix + " is available in the spring!");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Course: " + course.Prefix + " is not available in the spring!");
+                    }
+
+                });
+            }
 
         }
 
-        public static List<Func<T, bool>> PreCompileRuleSet<T>(List<T> targetSet, List<Rule> ruleSet)
+        public static List<Func<T, bool>> CompileRuleSet<T>(List<T> targetSet, List<Rule> ruleSet)
         {
             ParameterExpression paramType = Expression.Parameter(typeof(T));                //gets the type that is passed into param_0 
             //Console.WriteLine("ParameterExpression paramType = " + paramType.Type);
@@ -126,23 +251,9 @@ namespace RuleBasedSystem
             });
 
             return compiledOut;         //return set of compiled rules
-
         }
 
-        public class User
-        {
-            public int Age
-            {
-                get;
-                set;
-            }
-
-            public string Name
-            {
-                get;
-                set;
-            }
-        }
+      
 
         public class Course
         {
@@ -233,6 +344,21 @@ namespace RuleBasedSystem
                 this.Source = Source;
                 this.Operator = Operator;
                 this.Target = Target;
+            }
+        }
+
+        public class User
+        {
+            public int Age
+            {
+                get;
+                set;
+            }
+
+            public string Name
+            {
+                get;
+                set;
             }
         }
     }
