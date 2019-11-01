@@ -570,14 +570,23 @@ namespace RuleBasedSystem
 
                                     if (course.Prereqs[i].Length > 1)
                                     {
-                                        Console.WriteLine("Must take one of these: ");
+                                        bool taken = false;
+                                        Console.WriteLine("Course requires one of these to be taken: ");
                                         for (int j = 0; j < course.Prereqs[i].Length; j++)
                                         {
 
                                             Console.WriteLine("Option: " + course.Prereqs[i][j].Prefix);
+                                            if (course.Prereqs[i][j].IsCompleted) taken = true;
                                         }
+                                        if (taken) Console.WriteLine("Condition satisfied! (One of those courses is taken!)");
+                                        else Console.WriteLine("Oh no! (That course is not taken)");
                                     }
-                                    else Console.WriteLine("Must take: " + course.Prereqs[i][0].Prefix);
+                                    else
+                                    {
+                                        Console.WriteLine("Must take: " + course.Prereqs[i][0].Prefix);
+                                        if (course.Prereqs[i][0].IsCompleted) Console.WriteLine("Condition satisfied! (That course is taken)");
+                                        else Console.WriteLine("Oh no! (That course is not taken)");
+                                    }
                                 }
                             }
                             else
