@@ -415,6 +415,68 @@ namespace RuleBasedSystem
                 Prereqs = new Course[,] { { } }
             };
 
+            Course Statistics_1 = new Course
+            {
+                Prefix = "STAT 2231",
+                IsCompleted = false,
+                IsAvailable = true,
+                Fall = true,
+                Summer = true,
+                Spring = true,
+                OnDemand = true,
+                Prereqs = new Course[,] { { College_Algebra, Trigonometry, Pre_Calculus, Calculus_1 } }
+            };
+
+            Course Programming_Principles_1 = new Course
+            {
+                Prefix = "CSCI 1301",
+                IsCompleted = false,
+                IsAvailable = true,
+                Fall = true,
+                Summer = true,
+                Spring = true,
+                OnDemand = true,
+                Prereqs = new Course[,] { { Calculus_1 } }
+            };
+
+            Course Computers_Ethics_and_Society = new Course
+            {
+                Prefix = "CSCI 2120",
+                IsCompleted = false,
+                IsAvailable = true,
+                Fall = true,
+                Summer = true,
+                Spring = true,
+                OnDemand = true,
+                Prereqs = new Course[,] { { Programming_Principles_1 } }
+            };
+
+            Course Programming_Principles_2 = new Course
+            {
+                Prefix = "CSCI 1302",
+                IsCompleted = false,
+                IsAvailable = true,
+                Fall = true,
+                Summer = true,
+                Spring = true,
+                OnDemand = true,
+                Prereqs = new Course[,] { { Calculus_1 }, { Programming_Principles_1 }, { } }
+            };
+
+            Course Discrete_Math = new Course
+            {
+                Prefix = "MATH 2130",
+                IsCompleted = false,
+                IsAvailable = true,
+                Fall = true,
+                Summer = true,
+                Spring = true,
+                OnDemand = true,
+                Prereqs = new Course[,] { { College_Algebra, Trigonometry, Pre_Calculus, Calculus_1, calc} }
+            };
+
+
+
             List<Course> courses = new List<Course>
             {
                 Composition_1,
