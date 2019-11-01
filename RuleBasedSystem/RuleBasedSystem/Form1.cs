@@ -19,52 +19,7 @@ namespace RuleBasedSystem
         public Form1()
         {
             InitializeComponent();
-            /*
-            //TEST EXAMPLE TEST EXAMPLE TEST EXAMPLE TEST EXAMPLE TEST EXAMPLE TEST EXAMPLE TEST EXAMPLE TEST EXAMPLE TEST EXAMPLE TEST EXAMPLE TEST EXAMPLE TEST EXAMPLE 
-            //
-            List<Rule> rules = new List<Rule>
-                { new Rule("Age", ExpressionType.GreaterThan, "20"), new Rule("Name", ExpressionType.Equal, "John")};
-
-            var user1 = new User{
-                Age = 13,
-                Name = "royi"
-            };
-
-            var user2 = new User{
-                Age = 21,
-                Name = "John"
-            };
-
-            var user3 = new User{
-                Age = 53,
-                Name = "paul"
-            };
-
-            List<User> users = new List<User>();
-            users.Add(user1);
-            users.Add(user2);
-            users.Add(user3);
-
-            var compiledRules = PreCompileRuleSet(new List<User>(), rules);
-            
-            
-            users.ForEach(user => 
-            {
-
-                if (compiledRules.TakeWhile(r => r(user)).Count() > 0)             //this is set to 1 because there are two rules that must be satisfied (how do we figure out which rule was satisfied from this?)
-                {                   
-                    Console.WriteLine("User: "+user.Name+" Satisfied all rules in the list!");
-                }
-                else
-                {
-                    Console.WriteLine("User: "+user.Name+" Did not satisfy all rules in the list!");
-                }
-
-            });
-            
-            //END TEST EXAMPLE END TEST EXAMPLE END TEST EXAMPLE END TEST EXAMPLE END TEST EXAMPLE END TEST EXAMPLE END TEST EXAMPLE END TEST EXAMPLE END TEST EXAMPLE END TEST EXAMPLE END TEST EXAMPLE 
-            */
-
+           
             //Maybe have radio button for which term the student is looking to take classes for
             //For now we will look for Spring
             bool NextFall = false;
@@ -76,7 +31,7 @@ namespace RuleBasedSystem
             Course Composition_1 = new Course
             {
                 Prefix = "ENGL 1101",
-                IsCompleted = false,
+                IsCompleted = true,
                 IsAvailable = true,
                 Fall = true,
                 Summer = true,
@@ -604,6 +559,33 @@ namespace RuleBasedSystem
                     if (compiledRules.TakeWhile(r => r(course)).Any())
                     {
                         Console.WriteLine("Course: " + course.Prefix + " is available in the spring!");
+                        if (!course.IsCompleted)
+                        {
+                            Console.WriteLine("Course: " + course.Prefix + " is not taken yet!");
+                            if(course.Prereqs.Length != 0)
+                            {
+                                for (int i = 0; i < course.Prereqs.GetLength(0); i++)
+                                {
+                                    for (int j = 0; j < course.Prereqs.GetLength(1); j++)
+                                    {
+                                        Console.WriteLine("Length of i in array is: " + course.Prereqs.GetLength(i));
+                                        Console.WriteLine("Length of j in array is: " + course.Prereqs.GetLength(j));
+                                        Console.WriteLine("Array contents are: " + course.Prereqs[i,j].Prefix);
+                                    }
+                             /*       if (course.Prereqs[i].Length)
+                                    {
+
+                                    }
+                                    */
+                                }
+                                Console.WriteLine("You must satisfy these requirements " + course.Prereqs + "!");
+                            }
+                            else
+                            {
+                                Console.WriteLine("You are eligible to take: " + course.Prefix + "!");
+                            }                            
+                      
+                        }
                     }
                     else
                     {
@@ -758,6 +740,11 @@ namespace RuleBasedSystem
                 get;
                 set;
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
