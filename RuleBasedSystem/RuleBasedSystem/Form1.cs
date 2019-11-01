@@ -44,6 +44,7 @@ namespace RuleBasedSystem
                 Prefix = "ENGL 1102",
                 IsCompleted = false,
                 IsAvailable = true,
+                hasPreReqs = true,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -53,7 +54,7 @@ namespace RuleBasedSystem
             Course College_Algebra = new Course
             {
                 Prefix = "MATH 1111",
-                IsCompleted = false,
+                IsCompleted = true,
                 IsAvailable = true,
                 Fall = true,
                 Summer = true,
@@ -81,7 +82,7 @@ namespace RuleBasedSystem
                 Summer = true,
                 Spring = true,
                 OnDemand = true,
-                Prereqs = new Course[][] { new Course[] { Trigonometry } }
+                Prereqs = new Course[][] { new Course[] { College_Algebra } }
             };
             Course Calculus_1 = new Course
             {
@@ -93,29 +94,6 @@ namespace RuleBasedSystem
                 Spring = true,
                 OnDemand = true,
                 Prereqs = new Course[][] { new Course[] { Pre_Calculus, Trigonometry } }
-            };
-            Course World_History_2 = new Course
-            {
-                Prefix = "HIST 1112",
-                IsCompleted = false,
-                IsAvailable = true,
-                Fall = true,
-                Summer = true,
-                Spring = true,
-                OnDemand = true,
-                Prereqs = new Course[][] { }
-            };
-
-            Course Gloabl_Citizens = new Course
-            {
-                Prefix = "FYE 1410",
-                IsCompleted = false,
-                IsAvailable = true,
-                Fall = true,
-                Summer = true,
-                Spring = true,
-                OnDemand = true,
-                Prereqs = new Course[][] { }
             };
 
             Course World_Literature_1_or_2 = new Course
@@ -415,7 +393,31 @@ namespace RuleBasedSystem
                 Summer = true,
                 Spring = true,
                 OnDemand = true,
-                Prereqs = new Course[][] { new Course[] { Programming_Principles_1 }, new Course[] { Statistics_1 }, new Course[] { Calculus_1 } }
+                Prereqs = new Course[][] { new Course[] { Programming_Principles_1, Composition_2 }, new Course[] { Statistics_1 }, new Course[] { Calculus_1 } }
+            };
+
+            Course World_History_2 = new Course
+            {
+                Prefix = "HIST 1112",
+                IsCompleted = false,
+                IsAvailable = true,
+                Fall = true,
+                Summer = true,
+                Spring = true,
+                OnDemand = true,
+                Prereqs = new Course[][] { }
+            };
+
+            Course Global_Citizens = new Course
+            {
+                Prefix = "FYE 1410",
+                IsCompleted = false,
+                IsAvailable = true,
+                Fall = true,
+                Summer = true,
+                Spring = true,
+                OnDemand = true,
+                Prereqs = new Course[][] { new Course[] { First_Year_Experience } }
             };
 
             //Course Discrete_Math = new Course
@@ -443,7 +445,7 @@ namespace RuleBasedSystem
                 Calculus_1,
 
                 World_History_2,
-                Gloabl_Citizens,
+                Global_Citizens,
 
                 World_Literature_1_or_2,
                 Public_Speaking,
@@ -544,7 +546,7 @@ namespace RuleBasedSystem
                 
 
             };
-
+            List<Course> eligible_to_take = new List<Course>();
 
             if (NextSpring)
             {
@@ -558,50 +560,76 @@ namespace RuleBasedSystem
 
                     if (compiledRules.TakeWhile(r => r(course)).Any())
                     {
-                        Console.WriteLine("Course: " + course.Prefix + " is available in the spring!");
+                        //Console.WriteLine("Course: " + course.Prefix + " is available in the spring!");
                         if (!course.IsCompleted)
                         {
-                            Console.WriteLine("Course: " + course.Prefix + " is not taken yet!");
+                            //Console.WriteLine("Course: " + course.Prefix + " is not taken yet!");
+                            //bool FINALELIGIBLE = false;
                             if (course.Prereqs.Length != 0)
                             {
-                                Console.WriteLine("Course: " + course.Prefix + " has the follow prereqs: ");
-                                for(int i = 0; i < course.Prereqs.Length; i++)
-                                {
+                                //Console.WriteLine("Course: " + course.Prefix + " has the follow prereqs: ");
 
+                                //CHECK ALL PREREQS
+                                bool ANDeligible = true;
+                                for (int i = 0; i < course.Prereqs.Length; i++)
+                                {
+                                    //bool OReligible = true;
+                                    // OR OR OR OR OR OR OR 
                                     if (course.Prereqs[i].Length > 1)
                                     {
-                                        bool taken = false;
-                                        Console.WriteLine("Course requires one of these to be taken: ");
+                                        bool OReligible = false;
+                                        //Console.WriteLine("Course requires one of these to be taken: ");
+                                        //CHECK THE ORS
                                         for (int j = 0; j < course.Prereqs[i].Length; j++)
                                         {
-
-                                            Console.WriteLine("Option: " + course.Prereqs[i][j].Prefix);
-                                            if (course.Prereqs[i][j].IsCompleted) taken = true;
+                                            //Console.WriteLine("Option: " + course.Prereqs[i][j].Prefix);
+                                            if (course.Prereqs[i][j].IsCompleted) OReligible = true;
                                         }
-                                        if (taken) Console.WriteLine("Condition satisfied! (One of those courses is taken!)");
-                                        else Console.WriteLine("Oh no! (That course is not taken)");
+                                        if (OReligible)
+                                        {
+                                            // Console.WriteLine("Condition satisfied! (One of those courses is taken!)");
+                                        }
+                                        else
+                                        {
+                                            ANDeligible = false;
+                                            // Console.WriteLine("Oh no! (One of those courses is not taken)");
+                                        }
                                     }
+                                    //AND AND AND AND
                                     else
                                     {
-                                        Console.WriteLine("Must take: " + course.Prereqs[i][0].Prefix);
-                                        if (course.Prereqs[i][0].IsCompleted) Console.WriteLine("Condition satisfied! (That course is taken)");
-                                        else Console.WriteLine("Oh no! (That course is not taken)");
+                                       // Console.WriteLine("Must take: " + course.Prereqs[i][0].Prefix);
+                                        if (course.Prereqs[i][0].IsCompleted)
+                                        {
+                                            //Console.WriteLine("Condition satisfied! (That course is taken)");
+                                        }
+                                        else
+                                        {
+                                            ANDeligible = false;
+                                            //Console.WriteLine("Oh no! (That course is not taken)");
+                                        }
                                     }
                                 }
+                                if (ANDeligible) eligible_to_take.Add(course);
                             }
                             else
                             {
-                                Console.WriteLine("You are eligible to take: " + course.Prefix + "!");
+                                //Console.WriteLine("You are eligible to take: " + course.Prefix + "!");
+                                eligible_to_take.Add(course);
                             }                            
                       
                         }
                     }
                     else
                     {
-                        Console.WriteLine("Course: " + course.Prefix + " is not available in the spring!");
+                        //Console.WriteLine("Course: " + course.Prefix + " is not available in the spring!");
                     }
 
                 });
+            }
+            foreach(Course c in eligible_to_take)
+            {
+                Console.WriteLine("You are eligible to take: " + c.Prefix + " next semester.");
             }
         }
 
@@ -642,6 +670,11 @@ namespace RuleBasedSystem
         {
             //ex: ENGL 1101
             public string Prefix
+            {
+                get;
+                set;
+            }
+            public bool hasPreReqs
             {
                 get;
                 set;
