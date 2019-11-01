@@ -451,29 +451,29 @@ namespace RuleBasedSystem
                 Prereqs = new Course[,] { { Programming_Principles_1 } }
             };
 
-            Course Programming_Principles_2 = new Course
-            {
-                Prefix = "CSCI 1302",
-                IsCompleted = false,
-                IsAvailable = true,
-                Fall = true,
-                Summer = true,
-                Spring = true,
-                OnDemand = true,
-                Prereqs = new Course[,] { { Calculus_1 }, { Programming_Principles_1 }, { } }
-            };
+            //Course Programming_Principles_2 = new Course
+            //{
+            //    Prefix = "CSCI 1302",
+            //    IsCompleted = false,
+            //    IsAvailable = true,
+            //    Fall = true,
+            //    Summer = true,
+            //    Spring = true,
+            //    OnDemand = true,
+            //    Prereqs = new Course[,] { { Calculus_1 }, { Programming_Principles_1 }, { } }
+            //};
 
-            Course Discrete_Math = new Course
-            {
-                Prefix = "MATH 2130",
-                IsCompleted = false,
-                IsAvailable = true,
-                Fall = true,
-                Summer = true,
-                Spring = true,
-                OnDemand = true,
-                Prereqs = new Course[,] { { College_Algebra, Trigonometry, Pre_Calculus, Calculus_1, calc} }
-            };
+            //Course Discrete_Math = new Course
+            //{
+            //    Prefix = "MATH 2130",
+            //    IsCompleted = false,
+            //    IsAvailable = true,
+            //    Fall = true,
+            //    Summer = true,
+            //    Spring = true,
+            //    OnDemand = true,
+            //    Prereqs = new Course[,] { { College_Algebra, Trigonometry, Pre_Calculus, Calculus_1, calc} }
+            //};
 
 
 
@@ -518,73 +518,73 @@ namespace RuleBasedSystem
                 First_Year_Experience,
 
                 Programming_Principles_1,
-                Programming_Principles_2,
+                //Programming_Principles_2,
                 Computers_Ethics_and_Society,
-                Discrete_Math,
-                Calculus_2,
-                Statistics_1,
+                //Discrete_Math,
+                //Calculus_2,
+                //Statistics_1,
 
-                Introduction_to_International_Studies,
+                //Introduction_to_International_Studies,
 
-                Principles_of_Biology_2_with_lab,
-                Principles_of_Chemistry_2_with_lab,
-                General_Historal_Geology_with_lab,
-                Introduction_to_Physics_2_with_lab,
-                Principles_of_Physics_2,
+                //Principles_of_Biology_2_with_lab,
+                //Principles_of_Chemistry_2_with_lab,
+                //General_Historal_Geology_with_lab,
+                //Introduction_to_Physics_2_with_lab,
+                //Principles_of_Physics_2,
 
-                Data_Structures,
-                Systems_Software,
-                Theoretical_Foundations,
-                Database_Systems,
-                Algorithm_Design_and_Analysis,
-                Computer_Architecture,
-                Data_Comm_and_Networking,
-                Object_Oriented_Design,
-                Computer_Security,
-                Distributed_Web_Systems_Design,
-                Software_Engineering,
+                //Data_Structures,
+                //Systems_Software,
+                //Theoretical_Foundations,
+                //Database_Systems,
+                //Algorithm_Design_and_Analysis,
+                //Computer_Architecture,
+                //Data_Comm_and_Networking,
+                //Object_Oriented_Design,
+                //Computer_Security,
+                //Distributed_Web_Systems_Design,
+                //Software_Engineering,
 
-                Introduction_to_Computer_Engineering,
-                Logic_Circuits_and_Microprocessors,
-                Data_Warehouse_Design,
-                Human_Computer_Interaction,
-                Game_Programming,
-                Software_Testing_and_Quality_Assurance,
-                Broadband_Networks,
-                Optical_Networks,
-                Selected_Topics,
-                Discrete_Simulation,
-                Artificial_Inteliigence,
-                Computer_Graphics,
-                Animation,
-                Systems_and_Software_Assurance,
-                Network_Management_Systems,
-                Wireless_and_Mobile_Systems,
+                //Introduction_to_Computer_Engineering,
+                //Logic_Circuits_and_Microprocessors,
+                //Data_Warehouse_Design,
+                //Human_Computer_Interaction,
+                //Game_Programming,
+                //Software_Testing_and_Quality_Assurance,
+                //Broadband_Networks,
+                //Optical_Networks,
+                //Selected_Topics,
+                //Discrete_Simulation,
+                //Artificial_Inteliigence,
+                //Computer_Graphics,
+                //Animation,
+                //Systems_and_Software_Assurance,
+                //Network_Management_Systems,
+                //Wireless_and_Mobile_Systems,
 
-                Introduction_to_Operating_System,
-                Comparative_Languages,
-                Machine_Learning,
+                //Introduction_to_Operating_System,
+                //Comparative_Languages,
+                //Machine_Learning,
 
-                //https://catalog.georgiasouthern.edu/academics/course-descriptions/csci/
-                Comp_App_For_Bus_Majors,
-                Introduction_to_BASIC_Programming,
-                Introduction_to_Java_Programming,
-                Cpp_Programming,
-                High_Performance_Computing,
-                Networks,
-                Advanced_Database_Systems,
-                Advanced_Operating_Systems,
-                System_Prog_Under_Unix,
-                Compiler_Theory,
-                Embedded_Systems_Programming,
-                Handheld_Ubiquitous_Computing,
-                Numerical_Analysis,
-                Data_Mining,
-                Special_Problems_CO-OP,
-                Directed_Study_in_Computer_Science,
-                Data_Management_for_Math_and_the_Sciences,
-                Discrete_Simulation,
-                Software_Security_and_Secure_Coding
+                ////https://catalog.georgiasouthern.edu/academics/course-descriptions/csci/
+                //Comp_App_For_Bus_Majors,
+                //Introduction_to_BASIC_Programming,
+                //Introduction_to_Java_Programming,
+                //Cpp_Programming,
+                //High_Performance_Computing,
+                //Networks,
+                //Advanced_Database_Systems,
+                //Advanced_Operating_Systems,
+                //System_Prog_Under_Unix,
+                //Compiler_Theory,
+                //Embedded_Systems_Programming,
+                //Handheld_Ubiquitous_Computing,
+                //Numerical_Analysis,
+                //Data_Mining,
+                //Special_Problems_CO-OP,
+                //Directed_Study_in_Computer_Science,
+                //Data_Management_for_Math_and_the_Sciences,
+                //Discrete_Simulation,
+                //Software_Security_and_Secure_Coding
 
                 
 
