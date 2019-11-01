@@ -562,23 +562,23 @@ namespace RuleBasedSystem
                         if (!course.IsCompleted)
                         {
                             Console.WriteLine("Course: " + course.Prefix + " is not taken yet!");
-                            if(course.Prereqs.Length != 0)
+                            if (course.Prereqs.Length != 0)
                             {
-                                for (int i = 0; i < course.Prereqs.GetLength(0); i++)
+                                Console.WriteLine("Course: " + course.Prefix + " has the follow prereqs: ");
+                                for(int i = 0; i < course.Prereqs.Length; i++)
                                 {
-                                    for (int j = 0; j < course.Prereqs.GetLength(1); j++)
-                                    {
-                                        Console.WriteLine("Length of i in array is: " + course.Prereqs.GetLength(i));
-                                        Console.WriteLine("Length of j in array is: " + course.Prereqs.GetLength(j));
-                                        Console.WriteLine("Array contents are: " + course.Prereqs[i,j].Prefix);
-                                    }
-                             /*       if (course.Prereqs[i].Length)
-                                    {
 
+                                    if (course.Prereqs[i].Length > 1)
+                                    {
+                                        Console.WriteLine("Must take one of these: ");
+                                        for (int j = 0; j < course.Prereqs[i].Length; j++)
+                                        {
+
+                                            Console.WriteLine("Option: " + course.Prereqs[i][j].Prefix);
+                                        }
                                     }
-                                    */
+                                    else Console.WriteLine("Must take: " + course.Prereqs[i][0].Prefix);
                                 }
-                                Console.WriteLine("You must satisfy these requirements " + course.Prereqs + "!");
                             }
                             else
                             {

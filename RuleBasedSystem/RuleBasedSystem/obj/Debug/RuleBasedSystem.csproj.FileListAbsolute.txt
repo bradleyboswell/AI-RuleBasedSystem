@@ -26,3 +26,12 @@ C:\Users\bbosw\Desktop\Rule Based AI\AI-RuleBasedSystem\RuleBasedSystem\RuleBase
 C:\Users\bbosw\Desktop\Rule Based AI\AI-RuleBasedSystem\RuleBasedSystem\RuleBasedSystem\bin\Debug\RuleBasedSystem.exe.config
 C:\Users\bbosw\Desktop\Rule Based AI\AI-RuleBasedSystem\RuleBasedSystem\RuleBasedSystem\bin\Debug\RuleBasedSystem.exe
 C:\Users\bbosw\Desktop\Rule Based AI\AI-RuleBasedSystem\RuleBasedSystem\RuleBasedSystem\bin\Debug\RuleBasedSystem.pdb
+C:\Users\Andrew\Documents\General Project Repositories\bradleyboswell\AI-RuleBasedSystem\RuleBasedSystem\RuleBasedSystem\bin\Debug\RuleBasedSystem.exe.config
+C:\Users\Andrew\Documents\General Project Repositories\bradleyboswell\AI-RuleBasedSystem\RuleBasedSystem\RuleBasedSystem\bin\Debug\RuleBasedSystem.exe
+C:\Users\Andrew\Documents\General Project Repositories\bradleyboswell\AI-RuleBasedSystem\RuleBasedSystem\RuleBasedSystem\bin\Debug\RuleBasedSystem.pdb
+C:\Users\Andrew\Documents\General Project Repositories\bradleyboswell\AI-RuleBasedSystem\RuleBasedSystem\RuleBasedSystem\obj\Debug\RuleBasedSystem.csprojAssemblyReference.cache
+C:\Users\Andrew\Documents\General Project Repositories\bradleyboswell\AI-RuleBasedSystem\RuleBasedSystem\RuleBasedSystem\obj\Debug\RuleBasedSystem.Form1.resources
+C:\Users\Andrew\Documents\General Project Repositories\bradleyboswell\AI-RuleBasedSystem\RuleBasedSystem\RuleBasedSystem\obj\Debug\RuleBasedSystem.Properties.Resources.resources
+C:\Users\Andrew\Documents\General Project Repositories\bradleyboswell\AI-RuleBasedSystem\RuleBasedSystem\RuleBasedSystem\obj\Debug\RuleBasedSystem.csproj.GenerateResource.cache
+C:\Users\Andrew\Documents\General Project Repositories\bradleyboswell\AI-RuleBasedSystem\RuleBasedSystem\RuleBasedSystem\obj\Debug\RuleBasedSystem.exe
+C:\Users\Andrew\Documents\General Project Repositories\bradleyboswell\AI-RuleBasedSystem\RuleBasedSystem\RuleBasedSystem\obj\Debug\RuleBasedSystem.pdb
