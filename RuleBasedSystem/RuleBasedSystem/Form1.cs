@@ -19,7 +19,7 @@ namespace RuleBasedSystem
         public Form1()
         {
             InitializeComponent();
-           
+
             //Maybe have radio button for which term the student is looking to take classes for
             //For now we will look for Spring
             bool NextFall = false;
@@ -33,7 +33,6 @@ namespace RuleBasedSystem
             {
                 Prefix = "HLTH 1520",
                 IsCompleted = false,
-                IsAvailable = true,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -44,7 +43,6 @@ namespace RuleBasedSystem
             {
                 Prefix = "KINS 1XXX",
                 IsCompleted = false,
-                IsAvailable = true,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -55,7 +53,6 @@ namespace RuleBasedSystem
             {
                 Prefix = "KINS 1XXX",
                 IsCompleted = false,
-                IsAvailable = true,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -66,7 +63,6 @@ namespace RuleBasedSystem
             {
                 Prefix = "FYE 1220",
                 IsCompleted = false,
-                IsAvailable = true,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -78,18 +74,16 @@ namespace RuleBasedSystem
             {
                 Prefix = "ENGL 1101",
                 IsCompleted = true,
-                IsAvailable = true,
                 Fall = true,
                 Summer = true,
                 Spring = true,
                 OnDemand = false,
-                Prereqs = new Course[][]{ }
+                Prereqs = new Course[][] { }
             };
             Course Composition_2 = new Course
             {
                 Prefix = "ENGL 1102",
                 IsCompleted = false,
-                IsAvailable = true,
                 hasPreReqs = true,
                 Fall = true,
                 Summer = true,
@@ -101,7 +95,6 @@ namespace RuleBasedSystem
             {
                 Prefix = "MATH 1111",
                 IsCompleted = true,
-                IsAvailable = true,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -112,7 +105,6 @@ namespace RuleBasedSystem
             {
                 Prefix = "MATH 1112",
                 IsCompleted = false,
-                IsAvailable = true,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -123,7 +115,6 @@ namespace RuleBasedSystem
             {
                 Prefix = "MATH 1113",
                 IsCompleted = false,
-                IsAvailable = true,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -134,7 +125,6 @@ namespace RuleBasedSystem
             {
                 Prefix = "MATH 1441",
                 IsCompleted = false,
-                IsAvailable = true,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -147,7 +137,6 @@ namespace RuleBasedSystem
             {
                 Prefix = "MATH 1001",
                 IsCompleted = false,
-                IsAvailable = true,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -158,7 +147,6 @@ namespace RuleBasedSystem
             {
                 Prefix = "MATH 1101",
                 IsCompleted = false,
-                IsAvailable = true,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -169,7 +157,6 @@ namespace RuleBasedSystem
             {
                 Prefix = "MATH 1232",
                 IsCompleted = false,
-                IsAvailable = true,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -180,7 +167,6 @@ namespace RuleBasedSystem
             {
                 Prefix = "STAT 1401",
                 IsCompleted = false,
-                IsAvailable = true,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -193,7 +179,6 @@ namespace RuleBasedSystem
             {
                 Prefix = "HIST 1112",
                 IsCompleted = false,
-                IsAvailable = true,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -204,7 +189,6 @@ namespace RuleBasedSystem
             {
                 Prefix = "FYE 1410",
                 IsCompleted = false,
-                IsAvailable = true,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -216,7 +200,6 @@ namespace RuleBasedSystem
             {
                 Prefix = "ENGL 2111/2112",
                 IsCompleted = false,
-                IsAvailable = true,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -227,7 +210,6 @@ namespace RuleBasedSystem
             {
                 Prefix = "COMM 1110",
                 IsCompleted = false,
-                IsAvailable = true,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -239,7 +221,6 @@ namespace RuleBasedSystem
             {
                 Prefix = "CHEM 1211K",
                 IsCompleted = false,
-                IsAvailable = true,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -250,7 +231,6 @@ namespace RuleBasedSystem
             {
                 Prefix = "GEOL 1121",
                 IsCompleted = false,
-                IsAvailable = true,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -259,9 +239,8 @@ namespace RuleBasedSystem
             };
             Course Introduction_to_Physics_1 = new Course
             {
-                Prefix = "PHYS 1111 K",
+                Prefix = "PHYS 1111K",
                 IsCompleted = false,
-                IsAvailable = true,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -272,7 +251,6 @@ namespace RuleBasedSystem
             {
                 Prefix = "PHYS 2211K",
                 IsCompleted = false,
-                IsAvailable = true,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -284,7 +262,6 @@ namespace RuleBasedSystem
             {
                 Prefix = "BIOL 1230 & 1210",
                 IsCompleted = false,
-                IsAvailable = true,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -295,7 +272,6 @@ namespace RuleBasedSystem
             {
                 Prefix = "CHEM 1040",
                 IsCompleted = false,
-                IsAvailable = true,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -306,7 +282,6 @@ namespace RuleBasedSystem
             {
                 Prefix = "GEOL 1340",
                 IsCompleted = false,
-                IsAvailable = true,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -317,7 +292,6 @@ namespace RuleBasedSystem
             {
                 Prefix = "PHYS 1149",
                 IsCompleted = false,
-                IsAvailable = true,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -329,7 +303,6 @@ namespace RuleBasedSystem
             {
                 Prefix = "ECON 2105",
                 IsCompleted = false,
-                IsAvailable = true,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -340,7 +313,6 @@ namespace RuleBasedSystem
             {
                 Prefix = "HIST 2110",
                 IsCompleted = false,
-                IsAvailable = true,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -351,19 +323,16 @@ namespace RuleBasedSystem
             {
                 Prefix = "POLS 1101",
                 IsCompleted = false,
-                IsAvailable = true,
                 Fall = true,
                 Summer = true,
                 Spring = true,
                 OnDemand = false,
                 Prereqs = new Course[][] { }
             };
-
             Course Introduction_to_Anthropology = new Course
             {
                 Prefix = "ANTH 1102",
                 IsCompleted = false,
-                IsAvailable = true,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -374,7 +343,6 @@ namespace RuleBasedSystem
             {
                 Prefix = "GEOG 1130",
                 IsCompleted = false,
-                IsAvailable = true,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -385,7 +353,6 @@ namespace RuleBasedSystem
             {
                 Prefix = "PSYC 1101",
                 IsCompleted = false,
-                IsAvailable = true,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -396,7 +363,6 @@ namespace RuleBasedSystem
             {
                 Prefix = "SOCI 1101",
                 IsCompleted = false,
-                IsAvailable = true,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -408,7 +374,6 @@ namespace RuleBasedSystem
             {
                 Prefix = "CSCI 1301",
                 IsCompleted = false,
-                IsAvailable = true,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -419,40 +384,36 @@ namespace RuleBasedSystem
             {
                 Prefix = "MATH 2242",
                 IsCompleted = false,
-                IsAvailable = true,
                 Fall = true,
                 Summer = true,
                 Spring = true,
                 OnDemand = false,
-                Prereqs = new Course[][] { new Course[] { Calculus_1} }
+                Prereqs = new Course[][] { new Course[] { Calculus_1 } }
             };
             Course Discrete_Math = new Course
             {
                 Prefix = "MATH 2130",
                 IsCompleted = false,
-                IsAvailable = true,
                 Fall = true,
                 Summer = true,
                 Spring = true,
                 OnDemand = false,
-                Prereqs = new Course[][] { new Course[] { Introduction_To_Mathematical_Modeling , College_Algebra, Trigonometry, Pre_Calculus, Calculus_1, Calculus_2}}
+                Prereqs = new Course[][] { new Course[] { Introduction_To_Mathematical_Modeling, College_Algebra, Trigonometry, Pre_Calculus, Calculus_1, Calculus_2 } }
             };
             Course Programming_Principles_2 = new Course
             {
                 Prefix = "CSCI 1302",
                 IsCompleted = false,
-                IsAvailable = true,
                 Fall = true,
                 Summer = true,
                 Spring = true,
                 OnDemand = false,
-                Prereqs = new Course[][] { new Course[] { Programming_Principles_1}, new Course[] { Discrete_Math}, new Course[] { Calculus_1 } }
+                Prereqs = new Course[][] { new Course[] { Programming_Principles_1 }, new Course[] { Discrete_Math }, new Course[] { Calculus_1 } }
             };
             Course Statistics_1 = new Course
             {
                 Prefix = "STAT 2231",
                 IsCompleted = false,
-                IsAvailable = true,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -463,18 +424,16 @@ namespace RuleBasedSystem
             {
                 Prefix = "MATH 2160",
                 IsCompleted = false,
-                IsAvailable = true,
                 Fall = true,
                 Summer = true,
                 Spring = true,
                 OnDemand = false,
-                Prereqs = new Course[][] { new Course[] {Calculus_2 } }
+                Prereqs = new Course[][] { new Course[] { Calculus_2 } }
             };
             Course Computers_Ethics_and_Society = new Course
             {
                 Prefix = "CSCI 2120",
                 IsCompleted = false,
-                IsAvailable = true,
                 Fall = true,
                 Summer = false,
                 Spring = true,
@@ -486,12 +445,11 @@ namespace RuleBasedSystem
             {
                 Prefix = "INTS 2130",
                 IsCompleted = false,
-                IsAvailable = true,
                 Fall = true,
                 Summer = true,
                 Spring = true,
                 OnDemand = false,
-                Prereqs = new Course[][] {}
+                Prereqs = new Course[][] { }
             };
 
             //EXTRA
@@ -499,7 +457,7 @@ namespace RuleBasedSystem
             {
                 Prefix = "BIOL 1107 & 1107L",
                 IsCompleted = false,
-                IsAvailable = true,
+
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -511,7 +469,7 @@ namespace RuleBasedSystem
             {
                 Prefix = "BIOL 1108 & 1108L",
                 IsCompleted = false,
-                IsAvailable = true,
+
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -522,18 +480,16 @@ namespace RuleBasedSystem
             {
                 Prefix = "CHEM 1212K",
                 IsCompleted = false,
-                IsAvailable = true,
                 Fall = true,
                 Summer = true,
                 Spring = true,
                 OnDemand = false,
-                Prereqs = new Course[][] { new Course[] { Principles_of_Chemistry_1_with_lab} }
+                Prereqs = new Course[][] { new Course[] { Principles_of_Chemistry_1_with_lab } }
             };
             Course General_Historical_Geology_With_Lab = new Course
             {
                 Prefix = "GEOL 1122",
                 IsCompleted = false,
-                IsAvailable = true,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -544,7 +500,6 @@ namespace RuleBasedSystem
             {
                 Prefix = "PHYS 1112K",
                 IsCompleted = false,
-                IsAvailable = true,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -555,7 +510,6 @@ namespace RuleBasedSystem
             {
                 Prefix = "PHYS 2212K",
                 IsCompleted = false,
-                IsAvailable = true,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -568,7 +522,6 @@ namespace RuleBasedSystem
             {
                 Prefix = "CSCI 3230",
                 IsCompleted = false,
-                IsAvailable = true,
                 Fall = true,
                 Summer = false,
                 Spring = true,
@@ -579,29 +532,36 @@ namespace RuleBasedSystem
             {
                 Prefix = "CSCI 3232",
                 IsCompleted = false,
-                IsAvailable = true,
                 Fall = false,
                 Summer = false,
                 Spring = true,
                 OnDemand = false,
-                Prereqs = new Course[][] { new Course[] { Programming_Principles_2} } //concurrent or prior DS
+                Prereqs = new Course[][] { new Course[] { Programming_Principles_2 } } //concurrent or prior DS
             };
             Course Introduction_To_Operating_Systems = new Course
             {
                 Prefix = "CSCI 3341",
                 IsCompleted = false,
-                IsAvailable = true,
                 Fall = true,
                 Summer = false,
                 Spring = false,
                 OnDemand = false,
                 Prereqs = new Course[][] { new Course[] { Programming_Principles_2 } }
             };
+            Course Cpp_Programming = new Course
+            {
+                Prefix = "CSCI 2490",
+                IsCompleted = false,
+                Fall = false,
+                Summer = false,
+                Spring = false,
+                OnDemand = true,
+                Prereqs = new Course[][] { new Course[] { Programming_Principles_2 } }
+            };
             Course Theoretical_Foundations = new Course
             {
                 Prefix = "CSCI 3236",
                 IsCompleted = false,
-                IsAvailable = true,
                 Fall = true,
                 Summer = false,
                 Spring = true,
@@ -612,7 +572,6 @@ namespace RuleBasedSystem
             {
                 Prefix = "CSCI 3432",
                 IsCompleted = false,
-                IsAvailable = true,
                 Fall = false,
                 Summer = false,
                 Spring = true,
@@ -623,7 +582,6 @@ namespace RuleBasedSystem
             {
                 Prefix = "CSCI 5330",
                 IsCompleted = false,
-                IsAvailable = true,
                 Fall = true,
                 Summer = false,
                 Spring = true,
@@ -634,7 +592,6 @@ namespace RuleBasedSystem
             {
                 Prefix = "CSCI 5331",
                 IsCompleted = false,
-                IsAvailable = true,
                 Fall = true,
                 Summer = false,
                 Spring = true,
@@ -645,35 +602,277 @@ namespace RuleBasedSystem
             {
                 Prefix = "CSCI 5332",
                 IsCompleted = false,
-                IsAvailable = true,
                 Fall = true,
                 Summer = true,
                 Spring = true,
                 OnDemand = false,
-                Prereqs = new Course[][] { new Course[] { Systems_Software, Introduction_To_Operating_Systems}, new Course[] { Elementary_Statistics } }
+                Prereqs = new Course[][] { new Course[] { Systems_Software, Introduction_To_Operating_Systems }, new Course[] { Elementary_Statistics } }
             };
             Course Object_Oriented_Design = new Course
             {
                 Prefix = "CSCI 5335",
                 IsCompleted = false,
-                IsAvailable = true,
                 Fall = true,
                 Summer = false,
                 Spring = true,
                 OnDemand = false,
                 Prereqs = new Course[][] { new Course[] { Data_Structures } }
             };
-            Course Introduction_To_International_Studies = new Course
+            Course Computer_Security = new Course
             {
-                Prefix = "INTS 2130",
+                Prefix = "CSCI 5431",
                 IsCompleted = false,
-                IsAvailable = true,
+                Fall = true,
+                Summer = false,
+                Spring = true,
+                OnDemand = false,
+                Prereqs = new Course[][] { new Course[] { Computers_Ethics_and_Society } }
+            };
+            Course Distributed_Web_Systems_Design = new Course
+            {
+                Prefix = "CSCI 5436",
+                IsCompleted = false,
+                Fall = true,
+                Summer = false,
+                Spring = true,
+                OnDemand = false,
+                Prereqs = new Course[][] { new Course[] { Database_Systems } }
+            };
+            Course Software_Engineering = new Course
+            {
+                Prefix = "CSCI 5530",
+                IsCompleted = false,
+                Fall = true,
+                Summer = false,
+                Spring = true,
+                OnDemand = false,
+                Prereqs = new Course[][] { new Course[] { Algorithm_Design_and_Analysis }, new Course[] { Object_Oriented_Design }, new Course[] { Database_Systems } }
+            };
+            Course Computing_for_Engineers = new Course
+            {
+                Prefix = "ENGR 1731",
+                IsCompleted = false,
+                Fall = false,
+                Summer = false,
+                Spring = false,
+                OnDemand = true,
+                Prereqs = new Course[][] { new Course[] { Calculus_1 } }
+            };
+            Course Logic_Circuit_Design = new Course
+            {
+                Prefix = "ENGR 2332",
+                IsCompleted = false,
                 Fall = true,
                 Summer = true,
                 Spring = true,
                 OnDemand = false,
+                Prereqs = new Course[][] { new Course[] { Computing_for_Engineers } }
+            };
+            Course Logic_Circuits_and_Microprocessors = new Course
+            {
+                Prefix = "CSCI 3231",
+                IsCompleted = false,
+                Fall = false,
+                Summer = false,
+                Spring = false,
+                OnDemand = true,
+                Prereqs = new Course[][] { new Course[] { Programming_Principles_2 } }
+            };
+            Course Comparative_Languages = new Course
+            {
+                Prefix = "CSCI 3330",
+                IsCompleted = false,
+                Fall = false,
+                Summer = false,
+                Spring = true,
+                OnDemand = false,
+                Prereqs = new Course[][] { new Course[] { Cpp_Programming } }
+            };
+            Course Data_Warehouse_Design = new Course
+            {
+                Prefix = "CSCI 4132",
+                IsCompleted = false,
+                Fall = false,
+                Summer = false,
+                Spring = true,
+                OnDemand = false,
+                Prereqs = new Course[][] { new Course[] { Database_Systems } }
+            };
+            Course High_Performance_Computing = new Course
+            {
+                Prefix = "CSCI 4210",
+                IsCompleted = false,
+                Fall = false,
+                Summer = false,
+                Spring = false,
+                OnDemand = true,
+                Prereqs = new Course[][] { new Course[] { Introduction_To_Operating_Systems } }
+            };
+            Course Human_Computer_Interaction = new Course
+            {
+                Prefix = "CSCI 4235",
+                IsCompleted = false,
+                Fall = true,
+                Summer = false,
+                Spring = false,
+                OnDemand = false,
+                Prereqs = new Course[][] { new Course[] { Data_Structures } }
+            };
+            Course Game_Programming = new Course
+            {
+                Prefix = "CSCI 4439",
+                IsCompleted = false,
+                Fall = true,
+                Summer = false,
+                Spring = false,
+                OnDemand = false,
+                Prereqs = new Course[][] { new Course[] { Programming_Principles_2 } }
+            };
+            Course Machine_Learning = new Course
+            {
+                Prefix = "CSCI 4520",
+                IsCompleted = false,
+                Fall = false,
+                Summer = false,
+                Spring = true,
+                OnDemand = false,
+                Prereqs = new Course[][] { new Course[] { Cpp_Programming }, new Course[] { Discrete_Math } }
+            };
+            Course Numerical_Analysis = new Course
+            {
+                Prefix = "CSCI 4610",
+                IsCompleted = false,
+                Fall = false,
+                Summer = false,
+                Spring = false,
+                OnDemand = true,
+                Prereqs = new Course[][] { new Course[] { Programming_Principles_1 } }
+            };
+            Course Software_Testing_and_Quality_Assurance = new Course
+            {
+                Prefix = "CSCI 4534",
+                IsCompleted = false,
+                Fall = false,
+                Summer = false,
+                Spring = true,
+                OnDemand = false,
+                Prereqs = new Course[][] { new Course[] { Theoretical_Foundations } }
+            };
+            Course Broadband_Networks = new Course
+            {
+                Prefix = "CSCI 4537",
+                IsCompleted = false,
+                Fall = false,
+                Summer = false,
+                Spring = false,
+                OnDemand = true,
+                Prereqs = new Course[][] { new Course[] { Data_Communications_And_Networking } }
+            };
+            Course Optical_Networks = new Course
+            {
+                Prefix = "CSCI 4539",
+                IsCompleted = false,
+                Fall = false,
+                Summer = false,
+                Spring = false,
+                OnDemand = true,
+                Prereqs = new Course[][] { new Course[] { Data_Communications_And_Networking } }
+            };
+            Course Selected_Topics = new Course
+            {
+                Prefix = "CSCI 5090",
+                IsCompleted = false,
+                Fall = false,
+                Summer = false,
+                Spring = false,
+                OnDemand = true,
                 Prereqs = new Course[][] { }
             };
+            Course Discrete_Simulation = new Course
+            {
+                Prefix = "CSCI 5230",
+                IsCompleted = false,
+                Fall = false,
+                Summer = false,
+                Spring = false,
+                OnDemand = true,
+                Prereqs = new Course[][] { new Course[] { Elementary_Statistics }, new Course[] { Data_Structures } }
+            };
+            Course Artificial_Intelligence = new Course
+            {
+                Prefix = "CSCI 5430",
+                IsCompleted = false,
+                Fall = true,
+                Summer = false,
+                Spring = false,
+                OnDemand = false,
+                Prereqs = new Course[][] { new Course[] { Data_Structures }, new Course[] { Algorithm_Design_and_Analysis } }
+            };
+            Course Computer_Graphics = new Course
+            {
+                Prefix = "CSCI 5437",
+                IsCompleted = false,
+                Fall = true,
+                Summer = false,
+                Spring = false,
+                OnDemand = false,
+                Prereqs = new Course[][] { new Course[] { Data_Structures }, new Course[] { Theoretical_Foundations } }
+            };
+            Course Animation = new Course
+            {
+                Prefix = "CSCI 5438",
+                IsCompleted = false,
+                Fall = false,
+                Summer = false,
+                Spring = false,
+                OnDemand = true,
+                Prereqs = new Course[][] { new Course[] { Computer_Graphics } }
+            };
+            Course Systems_and_Software_Assurance = new Course
+            {
+                Prefix = "CSCI 5531",
+                IsCompleted = false,
+                Fall = false,
+                Summer = false,
+                Spring = false,
+                OnDemand = true,
+                Prereqs = new Course[][] { new Course[] { Programming_Principles_2 }, new Course[] { Database_Systems } }
+            };
+            Course Network_Management_Systems = new Course
+            {
+                Prefix = "CSCI 5532",
+                IsCompleted = false,
+                Fall = false,
+                Summer = false,
+                Spring = false,
+                OnDemand = true,
+                Prereqs = new Course[][] { new Course[] { Data_Communications_And_Networking } }
+            };
+            Course Wireless_and_Mobile_Systems = new Course
+            {
+                Prefix = "CSCI 5538",
+                IsCompleted = false,
+                Fall = false,
+                Summer = false,
+                Spring = false,
+                OnDemand = true,
+                Prereqs = new Course[][] { new Course[] { Data_Communications_And_Networking }, new Course[] { Calculus_1 } }
+            };
+
+
+            //MORE EXTRAS FROM THE WEBLINK 
+            Course Comp_App_For_Bus_Majors = new Course
+            {
+                Prefix = "CSCI 1130M",
+                IsCompleted = false,
+                Fall = false,
+                Summer = false,
+                Spring = false,
+                OnDemand = true,
+                Prereqs = new Course[][] { new Course[] { Data_Communications_And_Networking } }
+            };
+
+
 
             List<Course> courses = new List<Course>
             {
@@ -718,56 +917,55 @@ namespace RuleBasedSystem
                 Programming_Principles_1,
                 Programming_Principles_2,
                 Computers_Ethics_and_Society,
-                //Discrete_Math,
-                //Calculus_2,
-                //Statistics_1,
+                Discrete_Math,
+                Calculus_2,
 
-                //Introduction_to_International_Studies,
+                Introduction_To_International_Studies,
 
-                //Principles_of_Biology_2_with_lab,
-                //Principles_of_Chemistry_2_with_lab,
-                //General_Historal_Geology_with_lab,
-                //Introduction_to_Physics_2_with_lab,
-                //Principles_of_Physics_2,
+                Principles_Of_Biology_2_With_Lab,
+                Principles_Of_Chemistry_2_With_Lab,
+                General_Historical_Geology_With_Lab,
+                Introduction_to_Physics_2_with_Lab,
+                Principles_of_Physics_2,
 
-                //Data_Structures,
-                //Systems_Software,
-                //Theoretical_Foundations,
-                //Database_Systems,
-                //Algorithm_Design_and_Analysis,
-                //Computer_Architecture,
-                //Data_Comm_and_Networking,
-                //Object_Oriented_Design,
-                //Computer_Security,
-                //Distributed_Web_Systems_Design,
-                //Software_Engineering,
+                Data_Structures,
+                Systems_Software,
+                Theoretical_Foundations,
+                Database_Systems,
+                Algorithm_Design_and_Analysis,
+                Computer_Architecture,
+                Data_Communications_And_Networking,
+                Object_Oriented_Design,
+                Computer_Security,
+                Distributed_Web_Systems_Design,
+                Software_Engineering,
 
-                //Introduction_to_Computer_Engineering,
-                //Logic_Circuits_and_Microprocessors,
-                //Data_Warehouse_Design,
-                //Human_Computer_Interaction,
-                //Game_Programming,
-                //Software_Testing_and_Quality_Assurance,
-                //Broadband_Networks,
-                //Optical_Networks,
-                //Selected_Topics,
-                //Discrete_Simulation,
-                //Artificial_Inteliigence,
-                //Computer_Graphics,
-                //Animation,
-                //Systems_and_Software_Assurance,
-                //Network_Management_Systems,
-                //Wireless_and_Mobile_Systems,
+                Logic_Circuit_Design,
+                Logic_Circuits_and_Microprocessors,
+                Data_Warehouse_Design,
+                Human_Computer_Interaction,
+                Game_Programming,
+                Software_Testing_and_Quality_Assurance,
+                Broadband_Networks,
+                Optical_Networks,
+                Selected_Topics,
+                Discrete_Simulation,
+                Artificial_Intelligence,
+                Computer_Graphics,
+                Animation,
+                Systems_and_Software_Assurance,
+                Network_Management_Systems,
+                Wireless_and_Mobile_Systems,
 
-                //Introduction_to_Operating_System,
-                //Comparative_Languages,
-                //Machine_Learning,
+                Introduction_To_Operating_Systems,
+                Comparative_Languages,
+                Machine_Learning,
 
                 ////https://catalog.georgiasouthern.edu/academics/course-descriptions/csci/
                 //Comp_App_For_Bus_Majors,
                 //Introduction_to_BASIC_Programming,
                 //Introduction_to_Java_Programming,
-                //Cpp_Programming,
+                Cpp_Programming,
                 //High_Performance_Computing,
                 //Networks,
                 //Advanced_Database_Systems,
@@ -787,6 +985,7 @@ namespace RuleBasedSystem
                 
 
             };
+
             public void startSim()
             {
 
@@ -840,7 +1039,7 @@ namespace RuleBasedSystem
                                     //AND AND AND AND
                                     else
                                     {
-                                       // Console.WriteLine("Must take: " + course.Prereqs[i][0].Prefix);
+                                        // Console.WriteLine("Must take: " + course.Prereqs[i][0].Prefix);
                                         if (course.Prereqs[i][0].IsCompleted)
                                         {
                                             //Console.WriteLine("Condition satisfied! (That course is taken)");
@@ -858,8 +1057,8 @@ namespace RuleBasedSystem
                             {
                                 //Console.WriteLine("You are eligible to take: " + course.Prefix + "!");
                                 eligible_to_take.Add(course);
-                            }                            
-                      
+                            }
+
                         }
                     }
                     else
@@ -869,7 +1068,7 @@ namespace RuleBasedSystem
 
                 });
             }
-            foreach(Course c in eligible_to_take)
+            foreach (Course c in eligible_to_take)
             {
                 Console.WriteLine("You are eligible to take: " + c.Prefix + " next semester.");
             }
@@ -880,20 +1079,20 @@ namespace RuleBasedSystem
             ParameterExpression paramType = Expression.Parameter(typeof(T));                //gets the type that is passed into param_0 
             //Console.WriteLine("ParameterExpression paramType = " + paramType.Type);
 
-            List<Func<T,bool>> compiledOut = new List<Func<T, bool>>();                 //store compiled rules to return
+            List<Func<T, bool>> compiledOut = new List<Func<T, bool>>();                 //store compiled rules to return
 
             ruleSet.ForEach(r =>
-            {              
+            {
                 MemberExpression srcIdent = Expression.Property(paramType, r.Source);       //identity of src arg in this specific rule 
                 //Console.WriteLine("r.Source = " + r.Source);
                 //Console.WriteLine("MemberExpression srcIdent = " + srcIdent);
 
                 PropertyInfo srcPropInfo = typeof(T).GetProperty(r.Source);              //Get the property info object about the source arg for this rule
                 Type propType = srcPropInfo.PropertyType;                                   //gets property type associated with source arg for this rule
-               //Console.WriteLine("Type propType = " + propType.Name);
+                                                                                            //Console.WriteLine("Type propType = " + propType.Name);
 
                 ConstantExpression trgIdent = Expression.Constant(Convert.ChangeType(r.Target, propType));      //Get the constant for the target argument in rule
-               //Console.WriteLine("ConstantExpression trgIdent = " + trgIdent);
+                                                                                                                //Console.WriteLine("ConstantExpression trgIdent = " + trgIdent);
 
                 BinaryExpression exp = Expression.MakeBinary(r.Operator, srcIdent, trgIdent);        //build the binary expression from left/operator/right defined in this Rule 
                 //Console.WriteLine("r.Operator = " + r.Operator);
