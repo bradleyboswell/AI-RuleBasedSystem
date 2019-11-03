@@ -652,16 +652,16 @@ namespace RuleBasedSystem
                 OnDemand = true,
                 Prereqs = new Course[][] { new Course[] { Systems_Software, Introduction_To_Operating_Systems}, new Course[] { Elementary_Statistics } }
             };
-            Course Introduction_To_International_Studies = new Course
+            Course Object_Oriented_Design = new Course
             {
-                Prefix = "INTS 2130",
+                Prefix = "CSCI 5335",
                 IsCompleted = false,
                 IsAvailable = true,
                 Fall = true,
-                Summer = true,
+                Summer = false,
                 Spring = true,
-                OnDemand = true,
-                Prereqs = new Course[][] { }
+                OnDemand = false,
+                Prereqs = new Course[][] { new Course[] { Data_Structures } }
             };
             Course Introduction_To_International_Studies = new Course
             {
