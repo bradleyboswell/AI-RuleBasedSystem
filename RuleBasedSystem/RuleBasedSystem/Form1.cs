@@ -537,16 +537,6 @@ namespace RuleBasedSystem
                 OnDemand = false,
                 Prereqs = new Course[][] { new Course[] { Programming_Principles_2 } } //concurrent or prior DS
             };
-            Course Introduction_To_Operating_Systems = new Course
-            {
-                Prefix = "CSCI 3341",
-                IsCompleted = false,
-                Fall = true,
-                Summer = false,
-                Spring = false,
-                OnDemand = false,
-                Prereqs = new Course[][] { new Course[] { Programming_Principles_2 } }
-            };
             Course Cpp_Programming = new Course
             {
                 Prefix = "CSCI 2490",
@@ -556,6 +546,16 @@ namespace RuleBasedSystem
                 Spring = false,
                 OnDemand = true,
                 Prereqs = new Course[][] { new Course[] { Programming_Principles_2 } }
+            };
+            Course Introduction_To_Operating_Systems = new Course
+            {
+                Prefix = "CSCI 3341",
+                IsCompleted = false,
+                Fall = true,
+                Summer = false,
+                Spring = false,
+                OnDemand = false,
+                Prereqs = new Course[][] { new Course[] { Data_Structures }, new Course[] { Cpp_Programming } }
             };
             Course Theoretical_Foundations = new Course
             {
@@ -745,7 +745,7 @@ namespace RuleBasedSystem
                 Summer = false,
                 Spring = false,
                 OnDemand = true,
-                Prereqs = new Course[][] { new Course[] { Programming_Principles_1 } }
+                Prereqs = new Course[][] { new Course[] { Programming_Principles_1 }, new Course[] { Calculus_2 } }
             };
             Course Software_Testing_and_Quality_Assurance = new Course
             {
@@ -870,6 +870,161 @@ namespace RuleBasedSystem
                 OnDemand = true,
                 Prereqs = new Course[][] { new Course[] { Data_Communications_And_Networking } }
             };
+            Course Introduction_To_BASIC_Programming = new Course
+            {
+                Prefix = "CSCI 1230",
+                IsCompleted = false,
+                Fall = false,
+                Summer = false,
+                Spring = false,
+                OnDemand = true,
+                Prereqs = new Course[][] { }
+            };
+            Course Introduction_To_Java_Programming = new Course
+            {
+                Prefix = "CSCI 1236",
+                IsCompleted = false,
+                Fall = false,
+                Summer = false,
+                Spring = false,
+                OnDemand = true,
+                Prereqs = new Course[][] { new Course[] { College_Algebra, Pre_Calculus, Survey_of_Calculus, Calculus_1} }
+            };
+            Course Networks = new Course
+            {
+                Prefix = "CSCI 4220",
+                IsCompleted = false,
+                Fall = false,
+                Summer = false,
+                Spring = false,
+                OnDemand = true,
+                Prereqs = new Course[][] { }
+            };
+            Course Advanced_Database_Systems = new Course
+            {
+                Prefix = "CSCI 4320",
+                IsCompleted = false,
+                Fall = false,
+                Summer = false,
+                Spring = false,
+                OnDemand = true,
+                Prereqs = new Course[][] { new Course[] { Database_Systems } }
+            };
+            Course Advanced_Software_Engineering = new Course
+            {
+                Prefix = "CSCI 4322",
+                IsCompleted = false,
+                Fall = false,
+                Summer = false,
+                Spring = false,
+                OnDemand = true,
+                Prereqs = new Course[][] { }
+            };
+            Course Advanced_Operating_Systems = new Course
+            {
+                Prefix = "CSCI 4342",
+                IsCompleted = false,
+                Fall = false,
+                Summer = false,
+                Spring = false,
+                OnDemand = true,
+                Prereqs = new Course[][] { new Course[] { Introduction_To_Operating_Systems } }
+            };
+            Course System_Prog_Under_Unix = new Course
+            {
+                Prefix = "CSCI 4343",
+                IsCompleted = false,
+                Fall = false,
+                Summer = false,
+                Spring = false,
+                OnDemand = true,
+                Prereqs = new Course[][] { new Course[] { Introduction_To_Operating_Systems } }
+            };
+            Course Compiler_Theory = new Course
+            {
+                Prefix = "CSCI 4342",
+                IsCompleted = false,
+                Fall = false,
+                Summer = false,
+                Spring = false,
+                OnDemand = true,
+                Prereqs = new Course[][] { new Course[] { Comparative_Languages } }
+            };
+            Course Embedded_Systems_Programming = new Course
+            {
+                Prefix = "CSCI 4360",
+                IsCompleted = false,
+                Fall = false,
+                Summer = false,
+                Spring = false,
+                OnDemand = true,
+                Prereqs = new Course[][] { }
+            };
+            Course Handheld_Ubiquitous_Computing = new Course
+            {
+                Prefix = "CSCI 4370",
+                IsCompleted = false,
+                Fall = false,
+                Summer = false,
+                Spring = false,
+                OnDemand = true,
+                Prereqs = new Course[][] { }
+            };
+            Course Data_Mining = new Course
+            {
+                Prefix = "CSCI 4535",
+                IsCompleted = false,
+                Fall = false,
+                Summer = false,
+                Spring = false,
+                OnDemand = true,
+                Prereqs = new Course[][] { new Course[] { Database_Systems } }
+            };
+            Course Special_Problems_CO_OP = new Course
+            {
+                Prefix = "CSCI 4790",
+                IsCompleted = false,
+                Fall = false,
+                Summer = false,
+                Spring = false,
+                OnDemand = true,
+                Prereqs = new Course[][] {}
+            };
+            Course Directed_Study_In_Computer_Science = new Course
+            {
+                Prefix = "CSCI 4890",
+                IsCompleted = false,
+                Fall = false,
+                Summer = false,
+                Spring = false,
+                OnDemand = true,
+                Prereqs = new Course[][] { }
+            };
+            Course Data_Management_For_Math_And_The_Sciences = new Course
+            {
+                Prefix = "CSCI 5130",
+                IsCompleted = false,
+                Fall = false,
+                Summer = false,
+                Spring = false,
+                OnDemand = true,
+                Prereqs = new Course[][] { new Course[] { Introduction_To_BASIC_Programming } }
+            };
+            Course Software_Security_And_Secure_Coding = new Course
+            {
+                Prefix = "CSCI 5380",
+                IsCompleted = false,
+                Fall = false,
+                Summer = false,
+                Spring = false,
+                OnDemand = true,
+                Prereqs = new Course[][] { new Course[] { Programming_Principles_2 } }
+            };
+
+
+
+
+
 
 
 
@@ -961,25 +1116,26 @@ namespace RuleBasedSystem
                 Machine_Learning,
 
                 ////https://catalog.georgiasouthern.edu/academics/course-descriptions/csci/
-                //Comp_App_For_Bus_Majors,
-                //Introduction_to_BASIC_Programming,
-                //Introduction_to_Java_Programming,
+                Comp_App_For_Bus_Majors,
+                Introduction_To_BASIC_Programming,
+                Introduction_To_Java_Programming,
                 Cpp_Programming,
-                //High_Performance_Computing,
-                //Networks,
-                //Advanced_Database_Systems,
-                //Advanced_Operating_Systems,
-                //System_Prog_Under_Unix,
-                //Compiler_Theory,
-                //Embedded_Systems_Programming,
-                //Handheld_Ubiquitous_Computing,
-                //Numerical_Analysis,
-                //Data_Mining,
-                //Special_Problems_CO-OP,
-                //Directed_Study_in_Computer_Science,
-                //Data_Management_for_Math_and_the_Sciences,
-                //Discrete_Simulation,
-                //Software_Security_and_Secure_Coding
+                High_Performance_Computing,
+                Networks,
+                Advanced_Database_Systems,
+                Advanced_Software_Engineering,
+                Advanced_Operating_Systems,
+                System_Prog_Under_Unix,
+                Compiler_Theory,
+                Embedded_Systems_Programming,
+                Handheld_Ubiquitous_Computing,
+                Numerical_Analysis,
+                Data_Mining,
+                Special_Problems_CO_OP,
+                Directed_Study_In_Computer_Science,
+                Data_Management_For_Math_And_The_Sciences,
+                Discrete_Simulation,
+                Software_Security_And_Secure_Coding
             };
 
             List<Course> eligible_courses = startForwardChaining(nextSemester, courses);

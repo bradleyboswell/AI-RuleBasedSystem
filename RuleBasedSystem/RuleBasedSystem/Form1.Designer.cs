@@ -29,30 +29,36 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.welcomeText = new System.Windows.Forms.Label();
-            this.startBtn = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.Composition_1cb = new System.Windows.Forms.CheckBox();
-            this.Composition_2cb = new System.Windows.Forms.CheckBox();
-            this.College_Algebracb = new System.Windows.Forms.CheckBox();
-            this.Trigonometrycb = new System.Windows.Forms.CheckBox();
-            this.Pre_Calculuscb = new System.Windows.Forms.CheckBox();
-            this.Calculus_1cb = new System.Windows.Forms.CheckBox();
+            this.startBtn = new System.Windows.Forms.Button();
+            this.welcomeText = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.button8 = new System.Windows.Forms.Button();
             this.nextBtn = new System.Windows.Forms.Button();
+            this.Calculus_1cb = new System.Windows.Forms.CheckBox();
+            this.Pre_Calculuscb = new System.Windows.Forms.CheckBox();
+            this.Trigonometrycb = new System.Windows.Forms.CheckBox();
+            this.College_Algebracb = new System.Windows.Forms.CheckBox();
+            this.Composition_2cb = new System.Windows.Forms.CheckBox();
+            this.Composition_1cb = new System.Windows.Forms.CheckBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.button7 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.Global_Citizenscb = new System.Windows.Forms.CheckBox();
             this.World_History_2cb = new System.Windows.Forms.CheckBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.button6 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.Public_Speakingcb = new System.Windows.Forms.CheckBox();
             this.World_Literature_1_or_2cb = new System.Windows.Forms.CheckBox();
             this.label4 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.button9 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.Environment_Physics_with_labcb = new System.Windows.Forms.CheckBox();
+            this.Chemistry_and_the_Environment_with_labcb = new System.Windows.Forms.CheckBox();
             this.Environment_Geology_with_labcb = new System.Windows.Forms.CheckBox();
             this.Environmental_Biology_with_labcb = new System.Windows.Forms.CheckBox();
             this.Principles_of_Physics_1cb = new System.Windows.Forms.CheckBox();
@@ -61,6 +67,7 @@
             this.Principles_of_Chemistry_1_with_labcb = new System.Windows.Forms.CheckBox();
             this.label5 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.button10 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.checkBox19 = new System.Windows.Forms.CheckBox();
             this.checkBox20 = new System.Windows.Forms.CheckBox();
@@ -78,13 +85,6 @@
             this.checkBox29 = new System.Windows.Forms.CheckBox();
             this.checkBox30 = new System.Windows.Forms.CheckBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.Chemistry_and_the_Environment_with_labcb = new System.Windows.Forms.CheckBox();
-            this.Environment_Physics_with_labcb = new System.Windows.Forms.CheckBox();
-            this.button10 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -104,16 +104,16 @@
             this.panel1.Size = new System.Drawing.Size(760, 437);
             this.panel1.TabIndex = 0;
             // 
-            // welcomeText
+            // label1
             // 
-            this.welcomeText.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.welcomeText.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.welcomeText.Location = new System.Drawing.Point(3, 0);
-            this.welcomeText.Name = "welcomeText";
-            this.welcomeText.Size = new System.Drawing.Size(754, 71);
-            this.welcomeText.TabIndex = 0;
-            this.welcomeText.Text = "Welcome!";
-            this.welcomeText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(0, 62);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(760, 71);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Please enter your courses";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // startBtn
             // 
@@ -124,6 +124,17 @@
             this.startBtn.TabIndex = 1;
             this.startBtn.Text = "Start";
             this.startBtn.UseVisualStyleBackColor = true;
+            // 
+            // welcomeText
+            // 
+            this.welcomeText.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.welcomeText.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.welcomeText.Location = new System.Drawing.Point(3, 0);
+            this.welcomeText.Name = "welcomeText";
+            this.welcomeText.Size = new System.Drawing.Size(754, 71);
+            this.welcomeText.TabIndex = 0;
+            this.welcomeText.Text = "Welcome!";
+            this.welcomeText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel2
             // 
@@ -141,16 +152,89 @@
             this.panel2.Size = new System.Drawing.Size(760, 437);
             this.panel2.TabIndex = 1;
             // 
-            // label1
+            // button8
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(0, 62);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(760, 71);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Please enter your courses";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.button8.Location = new System.Drawing.Point(60, 380);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(75, 23);
+            this.button8.TabIndex = 9;
+            this.button8.Text = "Back";
+            this.button8.UseVisualStyleBackColor = true;
+            // 
+            // nextBtn
+            // 
+            this.nextBtn.Location = new System.Drawing.Point(610, 380);
+            this.nextBtn.Name = "nextBtn";
+            this.nextBtn.Size = new System.Drawing.Size(75, 23);
+            this.nextBtn.TabIndex = 7;
+            this.nextBtn.Text = "Next";
+            this.nextBtn.UseVisualStyleBackColor = true;
+            // 
+            // Calculus_1cb
+            // 
+            this.Calculus_1cb.AutoSize = true;
+            this.Calculus_1cb.Location = new System.Drawing.Point(270, 323);
+            this.Calculus_1cb.Name = "Calculus_1cb";
+            this.Calculus_1cb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Calculus_1cb.Size = new System.Drawing.Size(133, 17);
+            this.Calculus_1cb.TabIndex = 6;
+            this.Calculus_1cb.Text = "MATH 1441 - Calculus";
+            this.Calculus_1cb.UseVisualStyleBackColor = true;
+            // 
+            // Pre_Calculuscb
+            // 
+            this.Pre_Calculuscb.AutoSize = true;
+            this.Pre_Calculuscb.Location = new System.Drawing.Point(270, 285);
+            this.Pre_Calculuscb.Name = "Pre_Calculuscb";
+            this.Pre_Calculuscb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Pre_Calculuscb.Size = new System.Drawing.Size(152, 17);
+            this.Pre_Calculuscb.TabIndex = 5;
+            this.Pre_Calculuscb.Text = "MATH 1113 - Pre-Calculus";
+            this.Pre_Calculuscb.UseVisualStyleBackColor = true;
+            // 
+            // Trigonometrycb
+            // 
+            this.Trigonometrycb.AutoSize = true;
+            this.Trigonometrycb.Location = new System.Drawing.Point(270, 243);
+            this.Trigonometrycb.Name = "Trigonometrycb";
+            this.Trigonometrycb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Trigonometrycb.Size = new System.Drawing.Size(154, 17);
+            this.Trigonometrycb.TabIndex = 4;
+            this.Trigonometrycb.Text = "MATH 1112 - Trigonometry";
+            this.Trigonometrycb.UseVisualStyleBackColor = true;
+            // 
+            // College_Algebracb
+            // 
+            this.College_Algebracb.AutoSize = true;
+            this.College_Algebracb.Location = new System.Drawing.Point(270, 201);
+            this.College_Algebracb.Name = "College_Algebracb";
+            this.College_Algebracb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.College_Algebracb.Size = new System.Drawing.Size(167, 17);
+            this.College_Algebracb.TabIndex = 3;
+            this.College_Algebracb.Text = "MATH 1111 - College Algebra";
+            this.College_Algebracb.UseVisualStyleBackColor = true;
+            // 
+            // Composition_2cb
+            // 
+            this.Composition_2cb.AutoSize = true;
+            this.Composition_2cb.Location = new System.Drawing.Point(270, 142);
+            this.Composition_2cb.Name = "Composition_2cb";
+            this.Composition_2cb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Composition_2cb.Size = new System.Drawing.Size(157, 17);
+            this.Composition_2cb.TabIndex = 2;
+            this.Composition_2cb.Text = "ENGL 1102 - Composition II";
+            this.Composition_2cb.UseVisualStyleBackColor = true;
+            // 
+            // Composition_1cb
+            // 
+            this.Composition_1cb.AutoSize = true;
+            this.Composition_1cb.Location = new System.Drawing.Point(270, 96);
+            this.Composition_1cb.Name = "Composition_1cb";
+            this.Composition_1cb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Composition_1cb.Size = new System.Drawing.Size(154, 17);
+            this.Composition_1cb.TabIndex = 1;
+            this.Composition_1cb.Text = "ENGL 1101 - Composition I";
+            this.Composition_1cb.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
@@ -165,81 +249,6 @@
             this.label2.Text = "Area A";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Composition_1cb
-            // 
-            this.Composition_1cb.AutoSize = true;
-            this.Composition_1cb.Location = new System.Drawing.Point(270, 96);
-            this.Composition_1cb.Name = "Composition_1cb";
-            this.Composition_1cb.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Composition_1cb.Size = new System.Drawing.Size(154, 17);
-            this.Composition_1cb.TabIndex = 1;
-            this.Composition_1cb.Text = "ENGL 1101 - Composition I";
-            this.Composition_1cb.UseVisualStyleBackColor = true;
-            // 
-            // Composition_2cb
-            // 
-            this.Composition_2cb.AutoSize = true;
-            this.Composition_2cb.Location = new System.Drawing.Point(270, 142);
-            this.Composition_2cb.Name = "Composition_2cb";
-            this.Composition_2cb.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Composition_2cb.Size = new System.Drawing.Size(157, 17);
-            this.Composition_2cb.TabIndex = 2;
-            this.Composition_2cb.Text = "ENGL 1102 - Composition II";
-            this.Composition_2cb.UseVisualStyleBackColor = true;
-            // 
-            // College_Algebracb
-            // 
-            this.College_Algebracb.AutoSize = true;
-            this.College_Algebracb.Location = new System.Drawing.Point(270, 201);
-            this.College_Algebracb.Name = "College_Algebracb";
-            this.College_Algebracb.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.College_Algebracb.Size = new System.Drawing.Size(167, 17);
-            this.College_Algebracb.TabIndex = 3;
-            this.College_Algebracb.Text = "MATH 1111 - College Algebra";
-            this.College_Algebracb.UseVisualStyleBackColor = true;
-            // 
-            // Trigonometrycb
-            // 
-            this.Trigonometrycb.AutoSize = true;
-            this.Trigonometrycb.Location = new System.Drawing.Point(270, 243);
-            this.Trigonometrycb.Name = "Trigonometrycb";
-            this.Trigonometrycb.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Trigonometrycb.Size = new System.Drawing.Size(154, 17);
-            this.Trigonometrycb.TabIndex = 4;
-            this.Trigonometrycb.Text = "MATH 1112 - Trigonometry";
-            this.Trigonometrycb.UseVisualStyleBackColor = true;
-            // 
-            // Pre_Calculuscb
-            // 
-            this.Pre_Calculuscb.AutoSize = true;
-            this.Pre_Calculuscb.Location = new System.Drawing.Point(270, 285);
-            this.Pre_Calculuscb.Name = "Pre_Calculuscb";
-            this.Pre_Calculuscb.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Pre_Calculuscb.Size = new System.Drawing.Size(152, 17);
-            this.Pre_Calculuscb.TabIndex = 5;
-            this.Pre_Calculuscb.Text = "MATH 1113 - Pre-Calculus";
-            this.Pre_Calculuscb.UseVisualStyleBackColor = true;
-            // 
-            // Calculus_1cb
-            // 
-            this.Calculus_1cb.AutoSize = true;
-            this.Calculus_1cb.Location = new System.Drawing.Point(270, 323);
-            this.Calculus_1cb.Name = "Calculus_1cb";
-            this.Calculus_1cb.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Calculus_1cb.Size = new System.Drawing.Size(133, 17);
-            this.Calculus_1cb.TabIndex = 6;
-            this.Calculus_1cb.Text = "MATH 1441 - Calculus";
-            this.Calculus_1cb.UseVisualStyleBackColor = true;
-            // 
-            // nextBtn
-            // 
-            this.nextBtn.Location = new System.Drawing.Point(610, 380);
-            this.nextBtn.Name = "nextBtn";
-            this.nextBtn.Size = new System.Drawing.Size(75, 23);
-            this.nextBtn.TabIndex = 7;
-            this.nextBtn.Text = "Next";
-            this.nextBtn.UseVisualStyleBackColor = true;
-            // 
             // panel3
             // 
             this.panel3.Controls.Add(this.button7);
@@ -251,6 +260,15 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(760, 437);
             this.panel3.TabIndex = 2;
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(60, 380);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(75, 23);
+            this.button7.TabIndex = 9;
+            this.button7.Text = "Back";
+            this.button7.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
@@ -309,6 +327,15 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(760, 437);
             this.panel4.TabIndex = 8;
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(60, 380);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(75, 23);
+            this.button6.TabIndex = 8;
+            this.button6.Text = "Back";
+            this.button6.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
@@ -374,6 +401,15 @@
             this.panel5.Size = new System.Drawing.Size(760, 437);
             this.panel5.TabIndex = 9;
             // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(60, 380);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(75, 23);
+            this.button9.TabIndex = 9;
+            this.button9.Text = "Back";
+            this.button9.UseVisualStyleBackColor = true;
+            // 
             // button3
             // 
             this.button3.Location = new System.Drawing.Point(610, 380);
@@ -382,6 +418,30 @@
             this.button3.TabIndex = 7;
             this.button3.Text = "Next";
             this.button3.UseVisualStyleBackColor = true;
+            // 
+            // Environment_Physics_with_labcb
+            // 
+            this.Environment_Physics_with_labcb.AutoSize = true;
+            this.Environment_Physics_with_labcb.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Environment_Physics_with_labcb.Location = new System.Drawing.Point(175, 308);
+            this.Environment_Physics_with_labcb.Name = "Environment_Physics_with_labcb";
+            this.Environment_Physics_with_labcb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Environment_Physics_with_labcb.Size = new System.Drawing.Size(398, 28);
+            this.Environment_Physics_with_labcb.TabIndex = 13;
+            this.Environment_Physics_with_labcb.Text = "PHYS 1149 - Environmental Physics with lab";
+            this.Environment_Physics_with_labcb.UseVisualStyleBackColor = true;
+            // 
+            // Chemistry_and_the_Environment_with_labcb
+            // 
+            this.Chemistry_and_the_Environment_with_labcb.AutoSize = true;
+            this.Chemistry_and_the_Environment_with_labcb.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Chemistry_and_the_Environment_with_labcb.Location = new System.Drawing.Point(175, 243);
+            this.Chemistry_and_the_Environment_with_labcb.Name = "Chemistry_and_the_Environment_with_labcb";
+            this.Chemistry_and_the_Environment_with_labcb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Chemistry_and_the_Environment_with_labcb.Size = new System.Drawing.Size(477, 28);
+            this.Chemistry_and_the_Environment_with_labcb.TabIndex = 12;
+            this.Chemistry_and_the_Environment_with_labcb.Text = "CHEM 1040 - Chemistry and the Environment with lab";
+            this.Chemistry_and_the_Environment_with_labcb.UseVisualStyleBackColor = true;
             // 
             // Environment_Geology_with_labcb
             // 
@@ -483,6 +543,15 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(760, 437);
             this.panel6.TabIndex = 8;
+            // 
+            // button10
+            // 
+            this.button10.Location = new System.Drawing.Point(60, 380);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(75, 23);
+            this.button10.TabIndex = 10;
+            this.button10.Text = "Back";
+            this.button10.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
@@ -680,75 +749,6 @@
             this.label7.TabIndex = 0;
             this.label7.Text = "Area A";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(60, 380);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
-            this.button6.TabIndex = 8;
-            this.button6.Text = "Back";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // button7
-            // 
-            this.button7.Location = new System.Drawing.Point(60, 380);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 23);
-            this.button7.TabIndex = 9;
-            this.button7.Text = "Back";
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // button8
-            // 
-            this.button8.Location = new System.Drawing.Point(60, 380);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 23);
-            this.button8.TabIndex = 9;
-            this.button8.Text = "Back";
-            this.button8.UseVisualStyleBackColor = true;
-            // 
-            // button9
-            // 
-            this.button9.Location = new System.Drawing.Point(60, 380);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(75, 23);
-            this.button9.TabIndex = 9;
-            this.button9.Text = "Back";
-            this.button9.UseVisualStyleBackColor = true;
-            // 
-            // Chemistry_and_the_Environment_with_labcb
-            // 
-            this.Chemistry_and_the_Environment_with_labcb.AutoSize = true;
-            this.Chemistry_and_the_Environment_with_labcb.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Chemistry_and_the_Environment_with_labcb.Location = new System.Drawing.Point(175, 243);
-            this.Chemistry_and_the_Environment_with_labcb.Name = "Chemistry_and_the_Environment_with_labcb";
-            this.Chemistry_and_the_Environment_with_labcb.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Chemistry_and_the_Environment_with_labcb.Size = new System.Drawing.Size(477, 28);
-            this.Chemistry_and_the_Environment_with_labcb.TabIndex = 12;
-            this.Chemistry_and_the_Environment_with_labcb.Text = "CHEM 1040 - Chemistry and the Environment with lab";
-            this.Chemistry_and_the_Environment_with_labcb.UseVisualStyleBackColor = true;
-            // 
-            // Environment_Physics_with_labcb
-            // 
-            this.Environment_Physics_with_labcb.AutoSize = true;
-            this.Environment_Physics_with_labcb.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Environment_Physics_with_labcb.Location = new System.Drawing.Point(175, 308);
-            this.Environment_Physics_with_labcb.Name = "Environment_Physics_with_labcb";
-            this.Environment_Physics_with_labcb.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Environment_Physics_with_labcb.Size = new System.Drawing.Size(398, 28);
-            this.Environment_Physics_with_labcb.TabIndex = 13;
-            this.Environment_Physics_with_labcb.Text = "PHYS 1149 - Environmental Physics with lab";
-            this.Environment_Physics_with_labcb.UseVisualStyleBackColor = true;
-            // 
-            // button10
-            // 
-            this.button10.Location = new System.Drawing.Point(60, 380);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(75, 23);
-            this.button10.TabIndex = 10;
-            this.button10.Text = "Back";
-            this.button10.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
