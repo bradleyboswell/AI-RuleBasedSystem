@@ -28,6 +28,50 @@ namespace RuleBasedSystem
 
 
             //Course List set to IsCompleted = false by default
+            Course Healthful_Living = new Course
+            {
+                Prefix = "HLTH 1520",
+                IsCompleted = false,
+                IsAvailable = true,
+                Fall = true,
+                Summer = true,
+                Spring = true,
+                OnDemand = true,
+                Prereqs = new Course[][] { }
+            };
+            Course Physical_Activity_1 = new Course
+            {
+                Prefix = "KINS 1XXX",
+                IsCompleted = false,
+                IsAvailable = true,
+                Fall = true,
+                Summer = true,
+                Spring = true,
+                OnDemand = true,
+                Prereqs = new Course[][] { }
+            };
+            Course Physical_Activity_2 = new Course
+            {
+                Prefix = "KINS 1XXX",
+                IsCompleted = false,
+                IsAvailable = true,
+                Fall = true,
+                Summer = true,
+                Spring = true,
+                OnDemand = true,
+                Prereqs = new Course[][] { }
+            };
+            Course First_Year_Experience = new Course
+            {
+                Prefix = "FYE 1220",
+                IsCompleted = false,
+                IsAvailable = true,
+                Fall = true,
+                Summer = true,
+                Spring = true,
+                OnDemand = true,
+                Prereqs = new Course[][] { }
+            };
             Course Composition_1 = new Course
             {
                 Prefix = "ENGL 1101",
@@ -95,7 +139,28 @@ namespace RuleBasedSystem
                 OnDemand = true,
                 Prereqs = new Course[][] { new Course[] { Pre_Calculus, Trigonometry } }
             };
-
+            Course World_History_2 = new Course
+            {
+                Prefix = "HIST 1112",
+                IsCompleted = false,
+                IsAvailable = true,
+                Fall = true,
+                Summer = true,
+                Spring = true,
+                OnDemand = true,
+                Prereqs = new Course[][] { }
+            };
+            Course Global_Citizens = new Course
+            {
+                Prefix = "FYE 1410",
+                IsCompleted = false,
+                IsAvailable = true,
+                Fall = true,
+                Summer = true,
+                Spring = true,
+                OnDemand = true,
+                Prereqs = new Course[][] { new Course[] { First_Year_Experience } }
+            };
             Course World_Literature_1_or_2 = new Course
             {
                 Prefix = "ENGL 2111/2112",
@@ -107,7 +172,6 @@ namespace RuleBasedSystem
                 OnDemand = true,
                 Prereqs = new Course[][] { new Course[] { Composition_2 } }
             };
-
             Course Public_Speaking = new Course
             {
                 Prefix = "COMM 1110",
@@ -119,7 +183,6 @@ namespace RuleBasedSystem
                 OnDemand = true,
                 Prereqs = new Course[][] { new Course[] { Composition_1 } }
             };
-
             Course Principles_of_Chemistry_1_with_lab = new Course
             {
                 Prefix = "CHEM 1211K",
@@ -131,7 +194,6 @@ namespace RuleBasedSystem
                 OnDemand = true,
                 Prereqs = new Course[][] { }
             };
-
             Course Introduction_to_the_Earth = new Course
             {
                 Prefix = "GEOL 1121",
@@ -143,7 +205,6 @@ namespace RuleBasedSystem
                 OnDemand = true,
                 Prereqs = new Course[][] { }
             };
-
             Course Introduction_to_Physics_1 = new Course
             {
                 Prefix = "PHYS 1111 K",
@@ -155,7 +216,6 @@ namespace RuleBasedSystem
                 OnDemand = true,
                 Prereqs = new Course[][] { new Course[] { Pre_Calculus, Trigonometry } }
             };
-
             Course Principles_of_Physics_1 = new Course
             {
                 Prefix = "PHYS 2211K",
@@ -167,7 +227,6 @@ namespace RuleBasedSystem
                 OnDemand = true,
                 Prereqs = new Course[][] { new Course[] { Calculus_1 } }
             };
-
             Course Environmental_Biology_with_lab = new Course
             {
                 Prefix = "BIOL 1230 & 1210",
@@ -179,7 +238,6 @@ namespace RuleBasedSystem
                 OnDemand = true,
                 Prereqs = new Course[][] { }
             };
-
             Course Chemistry_and_the_Environment_with_lab = new Course
             {
                 Prefix = "CHEM 1040",
@@ -191,7 +249,6 @@ namespace RuleBasedSystem
                 OnDemand = true,
                 Prereqs = new Course[][] { }
             };
-
             Course Environment_Geology_with_lab = new Course
             {
                 Prefix = "GEOL 1340",
@@ -203,7 +260,6 @@ namespace RuleBasedSystem
                 OnDemand = true,
                 Prereqs = new Course[][] { }
             };
-
             Course Environment_Physics_with_lab = new Course
             {
                 Prefix = "PHYS 1149",
@@ -215,7 +271,6 @@ namespace RuleBasedSystem
                 OnDemand = true,
                 Prereqs = new Course[][] { }
             };
-
             Course Economics_in_a_Global_Society = new Course
             {
                 Prefix = "ECON 2105",
@@ -227,7 +282,6 @@ namespace RuleBasedSystem
                 OnDemand = true,
                 Prereqs = new Course[][] { }
             };
-
             Course US_A_Comprehensive_Survey = new Course
             {
                 Prefix = "HIST 2110",
@@ -239,7 +293,6 @@ namespace RuleBasedSystem
                 OnDemand = true,
                 Prereqs = new Course[][] { }
             };
-
             Course American_Government = new Course
             {
                 Prefix = "POLS 1101",
@@ -251,7 +304,6 @@ namespace RuleBasedSystem
                 OnDemand = true,
                 Prereqs = new Course[][] { }
             };
-
             Course Introduction_to_Anthropology = new Course
             {
                 Prefix = "ANTH 1102",
@@ -263,7 +315,6 @@ namespace RuleBasedSystem
                 OnDemand = true,
                 Prereqs = new Course[][] { }
             };
-
             Course World_Regional_Geography = new Course
             {
                 Prefix = "GEOG 1130",
@@ -275,7 +326,6 @@ namespace RuleBasedSystem
                 OnDemand = true,
                 Prereqs = new Course[][] { }
             };
-
             Course Introduction_to_Phychology = new Course
             {
                 Prefix = "PSYC 1101",
@@ -287,7 +337,6 @@ namespace RuleBasedSystem
                 OnDemand = true,
                 Prereqs = new Course[][] { }
             };
-
             Course Introduction_to_Sociology = new Course
             {
                 Prefix = "SOCI 1101",
@@ -299,55 +348,7 @@ namespace RuleBasedSystem
                 OnDemand = true,
                 Prereqs = new Course[][] { }
             };
-
-            Course Healthful_Living = new Course
-            {
-                Prefix = "HLTH 1520",
-                IsCompleted = false,
-                IsAvailable = true,
-                Fall = true,
-                Summer = true,
-                Spring = true,
-                OnDemand = true,
-                Prereqs = new Course[][] { }
-            };
-
-            Course Physical_Activity_1 = new Course
-            {
-                Prefix = "KINS 1XXX",
-                IsCompleted = false,
-                IsAvailable = true,
-                Fall = true,
-                Summer = true,
-                Spring = true,
-                OnDemand = true,
-                Prereqs = new Course[][] { }
-            };
-
-            Course Physical_Activity_2 = new Course
-            {
-                Prefix = "KINS 1XXX",
-                IsCompleted = false,
-                IsAvailable = true,
-                Fall = true,
-                Summer = true,
-                Spring = true,
-                OnDemand = true,
-                Prereqs = new Course[][] { }
-            };
-
-            Course First_Year_Experience = new Course
-            {
-                Prefix = "FYE 1220",
-                IsCompleted = false,
-                IsAvailable = true,
-                Fall = true,
-                Summer = true,
-                Spring = true,
-                OnDemand = true,
-                Prereqs = new Course[][] { }
-            };
-
+           
             Course Statistics_1 = new Course
             {
                 Prefix = "STAT 2231",
@@ -359,8 +360,7 @@ namespace RuleBasedSystem
                 OnDemand = true,
                 Prereqs = new Course[][] { new Course[] { College_Algebra, Trigonometry, Pre_Calculus, Calculus_1 } }
             }; 
-
-             Course Programming_Principles_1 = new Course
+            Course Programming_Principles_1 = new Course
             {
                 Prefix = "CSCI 1301",
                 IsCompleted = false,
@@ -371,7 +371,6 @@ namespace RuleBasedSystem
                 OnDemand = true,
                 Prereqs = new Course[][] { new Course[] { Calculus_1 } }
             };
-
             Course Computers_Ethics_and_Society = new Course
             {
                 Prefix = "CSCI 2120",
@@ -383,7 +382,6 @@ namespace RuleBasedSystem
                 OnDemand = true,
                 Prereqs = new Course[][] { new Course[] { Programming_Principles_1 } }
             };
-
             Course Programming_Principles_2 = new Course
             {
                 Prefix = "CSCI 1302",
@@ -396,29 +394,7 @@ namespace RuleBasedSystem
                 Prereqs = new Course[][] { new Course[] { Programming_Principles_1, Composition_2 }, new Course[] { Statistics_1 }, new Course[] { Calculus_1 } }
             };
 
-            Course World_History_2 = new Course
-            {
-                Prefix = "HIST 1112",
-                IsCompleted = false,
-                IsAvailable = true,
-                Fall = true,
-                Summer = true,
-                Spring = true,
-                OnDemand = true,
-                Prereqs = new Course[][] { }
-            };
-
-            Course Global_Citizens = new Course
-            {
-                Prefix = "FYE 1410",
-                IsCompleted = false,
-                IsAvailable = true,
-                Fall = true,
-                Summer = true,
-                Spring = true,
-                OnDemand = true,
-                Prereqs = new Course[][] { new Course[] { First_Year_Experience } }
-            };
+            
 
             //Course Discrete_Math = new Course
             //{
