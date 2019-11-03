@@ -37,7 +37,7 @@ namespace RuleBasedSystem
                 Fall = true,
                 Summer = true,
                 Spring = true,
-                OnDemand = true,
+                OnDemand = false,
                 Prereqs = new Course[][] { }
             };
             Course Physical_Activity_1 = new Course
@@ -48,7 +48,7 @@ namespace RuleBasedSystem
                 Fall = true,
                 Summer = true,
                 Spring = true,
-                OnDemand = true,
+                OnDemand = false,
                 Prereqs = new Course[][] { }
             };
             Course Physical_Activity_2 = new Course
@@ -59,7 +59,7 @@ namespace RuleBasedSystem
                 Fall = true,
                 Summer = true,
                 Spring = true,
-                OnDemand = true,
+                OnDemand = false,
                 Prereqs = new Course[][] { }
             };
             Course First_Year_Experience = new Course
@@ -70,7 +70,7 @@ namespace RuleBasedSystem
                 Fall = true,
                 Summer = true,
                 Spring = true,
-                OnDemand = true,
+                OnDemand = false,
                 Prereqs = new Course[][] { }
             };
 
@@ -82,7 +82,7 @@ namespace RuleBasedSystem
                 Fall = true,
                 Summer = true,
                 Spring = true,
-                OnDemand = true,
+                OnDemand = false,
                 Prereqs = new Course[][]{ }
             };
             Course Composition_2 = new Course
@@ -94,7 +94,7 @@ namespace RuleBasedSystem
                 Fall = true,
                 Summer = true,
                 Spring = true,
-                OnDemand = true,
+                OnDemand = false,
                 Prereqs = new Course[][] { new Course[] { Composition_1 } }
             };
             Course College_Algebra = new Course
@@ -105,7 +105,7 @@ namespace RuleBasedSystem
                 Fall = true,
                 Summer = true,
                 Spring = true,
-                OnDemand = true,
+                OnDemand = false,
                 Prereqs = new Course[][] { }
             };
             Course Trigonometry = new Course
@@ -116,7 +116,7 @@ namespace RuleBasedSystem
                 Fall = true,
                 Summer = true,
                 Spring = true,
-                OnDemand = true,
+                OnDemand = false,
                 Prereqs = new Course[][] { new Course[] { College_Algebra } }
             };
             Course Pre_Calculus = new Course
@@ -127,7 +127,7 @@ namespace RuleBasedSystem
                 Fall = true,
                 Summer = true,
                 Spring = true,
-                OnDemand = true,
+                OnDemand = false,
                 Prereqs = new Course[][] { new Course[] { College_Algebra } }
             };
             Course Calculus_1 = new Course
@@ -138,7 +138,7 @@ namespace RuleBasedSystem
                 Fall = true,
                 Summer = true,
                 Spring = true,
-                OnDemand = true,
+                OnDemand = false,
                 Prereqs = new Course[][] { new Course[] { Pre_Calculus, Trigonometry } }
             };
 
@@ -151,7 +151,7 @@ namespace RuleBasedSystem
                 Fall = true,
                 Summer = true,
                 Spring = true,
-                OnDemand = true,
+                OnDemand = false,
                 Prereqs = new Course[][] { }
             };
             Course Introduction_To_Mathematical_Modeling = new Course
@@ -162,7 +162,7 @@ namespace RuleBasedSystem
                 Fall = true,
                 Summer = true,
                 Spring = true,
-                OnDemand = true,
+                OnDemand = false,
                 Prereqs = new Course[][] { }
             };
             Course Survey_of_Calculus = new Course
@@ -173,7 +173,7 @@ namespace RuleBasedSystem
                 Fall = true,
                 Summer = true,
                 Spring = true,
-                OnDemand = true,
+                OnDemand = false,
                 Prereqs = new Course[][] { new Course[] { Introduction_To_Mathematical_Modeling, College_Algebra, Trigonometry, Pre_Calculus } }
             };
             Course Elementary_Statistics = new Course
@@ -184,7 +184,7 @@ namespace RuleBasedSystem
                 Fall = true,
                 Summer = true,
                 Spring = true,
-                OnDemand = true,
+                OnDemand = false,
                 Prereqs = new Course[][] { new Course[] { Quantitative_Reasoning } }
             };
             //EXTRA POSSIBLE COURSES
@@ -197,7 +197,7 @@ namespace RuleBasedSystem
                 Fall = true,
                 Summer = true,
                 Spring = true,
-                OnDemand = true,
+                OnDemand = false,
                 Prereqs = new Course[][] { }
             };
             Course Global_Citizens = new Course
@@ -208,7 +208,7 @@ namespace RuleBasedSystem
                 Fall = true,
                 Summer = true,
                 Spring = true,
-                OnDemand = true,
+                OnDemand = false,
                 Prereqs = new Course[][] { new Course[] { First_Year_Experience } }
             };
 
@@ -220,7 +220,7 @@ namespace RuleBasedSystem
                 Fall = true,
                 Summer = true,
                 Spring = true,
-                OnDemand = true,
+                OnDemand = false,
                 Prereqs = new Course[][] { new Course[] { Composition_2 } }
             };
             Course Public_Speaking = new Course
@@ -231,7 +231,7 @@ namespace RuleBasedSystem
                 Fall = true,
                 Summer = true,
                 Spring = true,
-                OnDemand = true,
+                OnDemand = false,
                 Prereqs = new Course[][] { new Course[] { Composition_1 } }
             };
 
@@ -243,7 +243,7 @@ namespace RuleBasedSystem
                 Fall = true,
                 Summer = true,
                 Spring = true,
-                OnDemand = true,
+                OnDemand = false,
                 Prereqs = new Course[][] { }
             };
             Course Introduction_to_the_Earth = new Course
@@ -254,7 +254,7 @@ namespace RuleBasedSystem
                 Fall = true,
                 Summer = true,
                 Spring = true,
-                OnDemand = true,
+                OnDemand = false,
                 Prereqs = new Course[][] { }
             };
             Course Introduction_to_Physics_1 = new Course
@@ -265,7 +265,7 @@ namespace RuleBasedSystem
                 Fall = true,
                 Summer = true,
                 Spring = true,
-                OnDemand = true,
+                OnDemand = false,
                 Prereqs = new Course[][] { new Course[] { Pre_Calculus, Trigonometry } }
             };
             Course Principles_of_Physics_1 = new Course
@@ -276,7 +276,7 @@ namespace RuleBasedSystem
                 Fall = true,
                 Summer = true,
                 Spring = true,
-                OnDemand = true,
+                OnDemand = false,
                 Prereqs = new Course[][] { new Course[] { Calculus_1 } }
             };
 
@@ -288,7 +288,7 @@ namespace RuleBasedSystem
                 Fall = true,
                 Summer = true,
                 Spring = true,
-                OnDemand = true,
+                OnDemand = false,
                 Prereqs = new Course[][] { }
             };
             Course Chemistry_and_the_Environment_with_lab = new Course
@@ -299,7 +299,7 @@ namespace RuleBasedSystem
                 Fall = true,
                 Summer = true,
                 Spring = true,
-                OnDemand = true,
+                OnDemand = false,
                 Prereqs = new Course[][] { }
             };
             Course Environment_Geology_with_lab = new Course
@@ -310,7 +310,7 @@ namespace RuleBasedSystem
                 Fall = true,
                 Summer = true,
                 Spring = true,
-                OnDemand = true,
+                OnDemand = false,
                 Prereqs = new Course[][] { }
             };
             Course Environment_Physics_with_lab = new Course
@@ -321,7 +321,7 @@ namespace RuleBasedSystem
                 Fall = true,
                 Summer = true,
                 Spring = true,
-                OnDemand = true,
+                OnDemand = false,
                 Prereqs = new Course[][] { }
             };
 
@@ -333,7 +333,7 @@ namespace RuleBasedSystem
                 Fall = true,
                 Summer = true,
                 Spring = true,
-                OnDemand = true,
+                OnDemand = false,
                 Prereqs = new Course[][] { }
             };
             Course US_A_Comprehensive_Survey = new Course
@@ -344,7 +344,7 @@ namespace RuleBasedSystem
                 Fall = true,
                 Summer = true,
                 Spring = true,
-                OnDemand = true,
+                OnDemand = false,
                 Prereqs = new Course[][] { }
             };
             Course American_Government = new Course
@@ -355,7 +355,7 @@ namespace RuleBasedSystem
                 Fall = true,
                 Summer = true,
                 Spring = true,
-                OnDemand = true,
+                OnDemand = false,
                 Prereqs = new Course[][] { }
             };
 
@@ -367,7 +367,7 @@ namespace RuleBasedSystem
                 Fall = true,
                 Summer = true,
                 Spring = true,
-                OnDemand = true,
+                OnDemand = false,
                 Prereqs = new Course[][] { }
             };
             Course World_Regional_Geography = new Course
@@ -378,7 +378,7 @@ namespace RuleBasedSystem
                 Fall = true,
                 Summer = true,
                 Spring = true,
-                OnDemand = true,
+                OnDemand = false,
                 Prereqs = new Course[][] { }
             };
             Course Introduction_to_Phychology = new Course
@@ -389,7 +389,7 @@ namespace RuleBasedSystem
                 Fall = true,
                 Summer = true,
                 Spring = true,
-                OnDemand = true,
+                OnDemand = false,
                 Prereqs = new Course[][] { }
             };
             Course Introduction_to_Sociology = new Course
@@ -400,7 +400,7 @@ namespace RuleBasedSystem
                 Fall = true,
                 Summer = true,
                 Spring = true,
-                OnDemand = true,
+                OnDemand = false,
                 Prereqs = new Course[][] { }
             };
 
@@ -412,7 +412,7 @@ namespace RuleBasedSystem
                 Fall = true,
                 Summer = true,
                 Spring = true,
-                OnDemand = true,
+                OnDemand = false,
                 Prereqs = new Course[][] { new Course[] { Calculus_1 } }
             };
             Course Calculus_2 = new Course
@@ -423,7 +423,7 @@ namespace RuleBasedSystem
                 Fall = true,
                 Summer = true,
                 Spring = true,
-                OnDemand = true,
+                OnDemand = false,
                 Prereqs = new Course[][] { new Course[] { Calculus_1} }
             };
             Course Discrete_Math = new Course
@@ -434,7 +434,7 @@ namespace RuleBasedSystem
                 Fall = true,
                 Summer = true,
                 Spring = true,
-                OnDemand = true,
+                OnDemand = false,
                 Prereqs = new Course[][] { new Course[] { Introduction_To_Mathematical_Modeling , College_Algebra, Trigonometry, Pre_Calculus, Calculus_1, Calculus_2}}
             };
             Course Programming_Principles_2 = new Course
@@ -445,7 +445,7 @@ namespace RuleBasedSystem
                 Fall = true,
                 Summer = true,
                 Spring = true,
-                OnDemand = true,
+                OnDemand = false,
                 Prereqs = new Course[][] { new Course[] { Programming_Principles_1}, new Course[] { Discrete_Math}, new Course[] { Calculus_1 } }
             };
             Course Statistics_1 = new Course
@@ -456,7 +456,7 @@ namespace RuleBasedSystem
                 Fall = true,
                 Summer = true,
                 Spring = true,
-                OnDemand = true,
+                OnDemand = false,
                 Prereqs = new Course[][] { new Course[] { College_Algebra, Trigonometry, Pre_Calculus, Calculus_1 } }
             };
             Course Linear_Algebra = new Course
@@ -467,7 +467,7 @@ namespace RuleBasedSystem
                 Fall = true,
                 Summer = true,
                 Spring = true,
-                OnDemand = true,
+                OnDemand = false,
                 Prereqs = new Course[][] { new Course[] {Calculus_2 } }
             };
             Course Computers_Ethics_and_Society = new Course
@@ -478,7 +478,7 @@ namespace RuleBasedSystem
                 Fall = true,
                 Summer = false,
                 Spring = true,
-                OnDemand = true,
+                OnDemand = false,
                 Prereqs = new Course[][] { new Course[] { Programming_Principles_1 }, new Course[] { Public_Speaking } }
             };
 
@@ -490,7 +490,7 @@ namespace RuleBasedSystem
                 Fall = true,
                 Summer = true,
                 Spring = true,
-                OnDemand = true,
+                OnDemand = false,
                 Prereqs = new Course[][] {}
             };
 
@@ -503,7 +503,7 @@ namespace RuleBasedSystem
                 Fall = true,
                 Summer = true,
                 Spring = true,
-                OnDemand = true,
+                OnDemand = false,
                 Prereqs = new Course[][] { new Course[] { College_Algebra, Pre_Calculus }, new Course[] { Composition_1 } }
             };
             //End EXTRA
@@ -515,7 +515,7 @@ namespace RuleBasedSystem
                 Fall = true,
                 Summer = true,
                 Spring = true,
-                OnDemand = true,
+                OnDemand = false,
                 Prereqs = new Course[][] { new Course[] { Principles_Of_Biology_1_With_Lab } }
             };
             Course Principles_Of_Chemistry_2_With_Lab = new Course
@@ -526,7 +526,7 @@ namespace RuleBasedSystem
                 Fall = true,
                 Summer = true,
                 Spring = true,
-                OnDemand = true,
+                OnDemand = false,
                 Prereqs = new Course[][] { new Course[] { Principles_of_Chemistry_1_with_lab} }
             };
             Course General_Historical_Geology_With_Lab = new Course
@@ -537,7 +537,7 @@ namespace RuleBasedSystem
                 Fall = true,
                 Summer = true,
                 Spring = true,
-                OnDemand = true,
+                OnDemand = false,
                 Prereqs = new Course[][] { new Course[] { Introduction_to_the_Earth } }
             };
             Course Introduction_to_Physics_2_with_Lab = new Course
@@ -548,7 +548,7 @@ namespace RuleBasedSystem
                 Fall = true,
                 Summer = true,
                 Spring = true,
-                OnDemand = true,
+                OnDemand = false,
                 Prereqs = new Course[][] { new Course[] { Introduction_to_Physics_1 } }
             };
             Course Principles_of_Physics_2 = new Course
@@ -559,7 +559,7 @@ namespace RuleBasedSystem
                 Fall = true,
                 Summer = true,
                 Spring = true,
-                OnDemand = true,
+                OnDemand = false,
                 Prereqs = new Course[][] { new Course[] { Principles_of_Physics_1 } }
             };
 
@@ -572,7 +572,7 @@ namespace RuleBasedSystem
                 Fall = true,
                 Summer = false,
                 Spring = true,
-                OnDemand = true,
+                OnDemand = false,
                 Prereqs = new Course[][] { new Course[] { Programming_Principles_2 }, new Course[] { Discrete_Math } }
             };
             Course Systems_Software = new Course
@@ -583,7 +583,7 @@ namespace RuleBasedSystem
                 Fall = false,
                 Summer = false,
                 Spring = true,
-                OnDemand = true,
+                OnDemand = false,
                 Prereqs = new Course[][] { new Course[] { Programming_Principles_2} } //concurrent or prior DS
             };
             Course Introduction_To_Operating_Systems = new Course
@@ -594,7 +594,7 @@ namespace RuleBasedSystem
                 Fall = true,
                 Summer = false,
                 Spring = false,
-                OnDemand = true,
+                OnDemand = false,
                 Prereqs = new Course[][] { new Course[] { Programming_Principles_2 } }
             };
             Course Theoretical_Foundations = new Course
@@ -605,7 +605,7 @@ namespace RuleBasedSystem
                 Fall = true,
                 Summer = false,
                 Spring = true,
-                OnDemand = true,
+                OnDemand = false,
                 Prereqs = new Course[][] { new Course[] { Programming_Principles_2 }, new Course[] { Discrete_Math } }
             };
             Course Database_Systems = new Course
@@ -616,7 +616,7 @@ namespace RuleBasedSystem
                 Fall = false,
                 Summer = false,
                 Spring = true,
-                OnDemand = true,
+                OnDemand = false,
                 Prereqs = new Course[][] { new Course[] { Programming_Principles_1 }, new Course[] { Discrete_Math } }
             };
             Course Algorithm_Design_and_Analysis = new Course
@@ -627,7 +627,7 @@ namespace RuleBasedSystem
                 Fall = true,
                 Summer = false,
                 Spring = true,
-                OnDemand = true,
+                OnDemand = false,
                 Prereqs = new Course[][] { new Course[] { Theoretical_Foundations }, new Course[] { Calculus_2 } }
             };
             Course Computer_Architecture = new Course
@@ -638,7 +638,7 @@ namespace RuleBasedSystem
                 Fall = true,
                 Summer = false,
                 Spring = true,
-                OnDemand = true,
+                OnDemand = false,
                 Prereqs = new Course[][] { new Course[] { Systems_Software, Introduction_To_Operating_Systems } }
             };
             Course Data_Communications_And_Networking = new Course
@@ -649,7 +649,7 @@ namespace RuleBasedSystem
                 Fall = true,
                 Summer = true,
                 Spring = true,
-                OnDemand = true,
+                OnDemand = false,
                 Prereqs = new Course[][] { new Course[] { Systems_Software, Introduction_To_Operating_Systems}, new Course[] { Elementary_Statistics } }
             };
             Course Introduction_To_International_Studies = new Course
@@ -660,7 +660,7 @@ namespace RuleBasedSystem
                 Fall = true,
                 Summer = true,
                 Spring = true,
-                OnDemand = true,
+                OnDemand = false,
                 Prereqs = new Course[][] { }
             };
             Course Introduction_To_International_Studies = new Course
@@ -671,7 +671,7 @@ namespace RuleBasedSystem
                 Fall = true,
                 Summer = true,
                 Spring = true,
-                OnDemand = true,
+                OnDemand = false,
                 Prereqs = new Course[][] { }
             };
 
@@ -787,19 +787,20 @@ namespace RuleBasedSystem
                 
 
             };
+            public void startSim()
+            {
+
+            }
+
+
             List<Course> eligible_to_take = new List<Course>();
 
             if (NextSpring)
             {
-                List<Rule> springRules = new List<Rule>
-                { new Rule("Spring", ExpressionType.Equal, "true")};
-
-                var compiledRules = CompileRuleSet(new List<Course>(), springRules);
-
                 courses.ForEach(course =>
                 {
 
-                    if (compiledRules.TakeWhile(r => r(course)).Any())
+                    if (course.Spring == true)
                     {
                         //Console.WriteLine("Course: " + course.Prefix + " is available in the spring!");
                         if (!course.IsCompleted)
