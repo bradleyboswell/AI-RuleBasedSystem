@@ -22,9 +22,9 @@ namespace RuleBasedSystem
 
             //Maybe have radio button for which term the student is looking to take classes for
             //For now we will look for Spring
-            bool NextFall = false;
-            bool NextSpring = true;
-            bool NextSummer = false;
+
+            //1 = Spring, 2 = Summer, 3 = Fall
+            int nextSemester = 1;
 
 
 
@@ -981,24 +981,20 @@ namespace RuleBasedSystem
                 //Data_Management_for_Math_and_the_Sciences,
                 //Discrete_Simulation,
                 //Software_Security_and_Secure_Coding
-
-                
-
             };
 
-            public void startSim()
-            {
+            List<Course> eligible_courses = startForwardChaining(nextSemester, courses);
+            foreach (Course c in eligible_courses) Console.WriteLine("Eligible to take next semester: " + c.Prefix);
+        }
 
-            }
-
-
+        public List<Course> startForwardChaining(int nextSemester, List<Course> courses)
+        {
             List<Course> eligible_to_take = new List<Course>();
 
-            if (NextSpring)
+            if (nextSemester == 1)
             {
                 courses.ForEach(course =>
                 {
-
                     if (course.Spring == true)
                     {
                         //Console.WriteLine("Course: " + course.Prefix + " is available in the spring!");
@@ -1068,43 +1064,155 @@ namespace RuleBasedSystem
 
                 });
             }
-            foreach (Course c in eligible_to_take)
+            else if (nextSemester == 2)
             {
-                Console.WriteLine("You are eligible to take: " + c.Prefix + " next semester.");
+                courses.ForEach(course =>
+                {
+                    if (course.Summer == true)
+                    {
+                        //Console.WriteLine("Course: " + course.Prefix + " is available in the spring!");
+                        if (!course.IsCompleted)
+                        {
+                            //Console.WriteLine("Course: " + course.Prefix + " is not taken yet!");
+                            //bool FINALELIGIBLE = false;
+                            if (course.Prereqs.Length != 0)
+                            {
+                                //Console.WriteLine("Course: " + course.Prefix + " has the follow prereqs: ");
+
+                                //CHECK ALL PREREQS
+                                bool ANDeligible = true;
+                                for (int i = 0; i < course.Prereqs.Length; i++)
+                                {
+                                    //bool OReligible = true;
+                                    // OR OR OR OR OR OR OR 
+                                    if (course.Prereqs[i].Length > 1)
+                                    {
+                                        bool OReligible = false;
+                                        //Console.WriteLine("Course requires one of these to be taken: ");
+                                        //CHECK THE ORS
+                                        for (int j = 0; j < course.Prereqs[i].Length; j++)
+                                        {
+                                            //Console.WriteLine("Option: " + course.Prereqs[i][j].Prefix);
+                                            if (course.Prereqs[i][j].IsCompleted) OReligible = true;
+                                        }
+                                        if (OReligible)
+                                        {
+                                            // Console.WriteLine("Condition satisfied! (One of those courses is taken!)");
+                                        }
+                                        else
+                                        {
+                                            ANDeligible = false;
+                                            // Console.WriteLine("Oh no! (One of those courses is not taken)");
+                                        }
+                                    }
+                                    //AND AND AND AND
+                                    else
+                                    {
+                                        // Console.WriteLine("Must take: " + course.Prereqs[i][0].Prefix);
+                                        if (course.Prereqs[i][0].IsCompleted)
+                                        {
+                                            //Console.WriteLine("Condition satisfied! (That course is taken)");
+                                        }
+                                        else
+                                        {
+                                            ANDeligible = false;
+                                            //Console.WriteLine("Oh no! (That course is not taken)");
+                                        }
+                                    }
+                                }
+                                if (ANDeligible) eligible_to_take.Add(course);
+                            }
+                            else
+                            {
+                                //Console.WriteLine("You are eligible to take: " + course.Prefix + "!");
+                                eligible_to_take.Add(course);
+                            }
+
+                        }
+                    }
+                    else
+                    {
+                        //Console.WriteLine("Course: " + course.Prefix + " is not available in the spring!");
+                    }
+
+                });
             }
-        }
 
-        public static List<Func<T, bool>> CompileRuleSet<T>(List<T> targetSet, List<Rule> ruleSet)
-        {
-            ParameterExpression paramType = Expression.Parameter(typeof(T));                //gets the type that is passed into param_0 
-            //Console.WriteLine("ParameterExpression paramType = " + paramType.Type);
-
-            List<Func<T, bool>> compiledOut = new List<Func<T, bool>>();                 //store compiled rules to return
-
-            ruleSet.ForEach(r =>
+            //Normally would just be "else" instead of "else if" but we need to make sure the condition doesn't equal 0
+            else if (nextSemester == 3)
             {
-                MemberExpression srcIdent = Expression.Property(paramType, r.Source);       //identity of src arg in this specific rule 
-                //Console.WriteLine("r.Source = " + r.Source);
-                //Console.WriteLine("MemberExpression srcIdent = " + srcIdent);
+                courses.ForEach(course =>
+                {
+                    if (course.Fall == true)
+                    {
+                        //Console.WriteLine("Course: " + course.Prefix + " is available in the spring!");
+                        if (!course.IsCompleted)
+                        {
+                            //Console.WriteLine("Course: " + course.Prefix + " is not taken yet!");
+                            //bool FINALELIGIBLE = false;
+                            if (course.Prereqs.Length != 0)
+                            {
+                                //Console.WriteLine("Course: " + course.Prefix + " has the follow prereqs: ");
 
-                PropertyInfo srcPropInfo = typeof(T).GetProperty(r.Source);              //Get the property info object about the source arg for this rule
-                Type propType = srcPropInfo.PropertyType;                                   //gets property type associated with source arg for this rule
-                                                                                            //Console.WriteLine("Type propType = " + propType.Name);
+                                //CHECK ALL PREREQS
+                                bool ANDeligible = true;
+                                for (int i = 0; i < course.Prereqs.Length; i++)
+                                {
+                                    //bool OReligible = true;
+                                    // OR OR OR OR OR OR OR 
+                                    if (course.Prereqs[i].Length > 1)
+                                    {
+                                        bool OReligible = false;
+                                        //Console.WriteLine("Course requires one of these to be taken: ");
+                                        //CHECK THE ORS
+                                        for (int j = 0; j < course.Prereqs[i].Length; j++)
+                                        {
+                                            //Console.WriteLine("Option: " + course.Prereqs[i][j].Prefix);
+                                            if (course.Prereqs[i][j].IsCompleted) OReligible = true;
+                                        }
+                                        if (OReligible)
+                                        {
+                                            // Console.WriteLine("Condition satisfied! (One of those courses is taken!)");
+                                        }
+                                        else
+                                        {
+                                            ANDeligible = false;
+                                            // Console.WriteLine("Oh no! (One of those courses is not taken)");
+                                        }
+                                    }
+                                    //AND AND AND AND
+                                    else
+                                    {
+                                        // Console.WriteLine("Must take: " + course.Prereqs[i][0].Prefix);
+                                        if (course.Prereqs[i][0].IsCompleted)
+                                        {
+                                            //Console.WriteLine("Condition satisfied! (That course is taken)");
+                                        }
+                                        else
+                                        {
+                                            ANDeligible = false;
+                                            //Console.WriteLine("Oh no! (That course is not taken)");
+                                        }
+                                    }
+                                }
+                                if (ANDeligible) eligible_to_take.Add(course);
+                            }
+                            else
+                            {
+                                //Console.WriteLine("You are eligible to take: " + course.Prefix + "!");
+                                eligible_to_take.Add(course);
+                            }
 
-                ConstantExpression trgIdent = Expression.Constant(Convert.ChangeType(r.Target, propType));      //Get the constant for the target argument in rule
-                                                                                                                //Console.WriteLine("ConstantExpression trgIdent = " + trgIdent);
+                        }
+                    }
+                    else
+                    {
+                        //Console.WriteLine("Course: " + course.Prefix + " is not available in the spring!");
+                    }
 
-                BinaryExpression exp = Expression.MakeBinary(r.Operator, srcIdent, trgIdent);        //build the binary expression from left/operator/right defined in this Rule 
-                //Console.WriteLine("r.Operator = " + r.Operator);
-                //Console.WriteLine("BinaryExpression exp = " + exp);
-
-                Func<T, bool> lambda = Expression.Lambda<Func<T, bool>>(exp, paramType).Compile();      //Compile the lambda expression
-
-                compiledOut.Add(lambda);        //add the expression to the list or rules
-
-            });
-
-            return compiledOut;         //return set of compiled rules
+                });
+            }
+            return eligible_to_take;
         }
 
         public class Course
@@ -1182,6 +1290,7 @@ namespace RuleBasedSystem
             }
         }
 
+
         public class Rule
         {
             public string Source
@@ -1229,5 +1338,6 @@ namespace RuleBasedSystem
         {
 
         }
+
     }
 }
