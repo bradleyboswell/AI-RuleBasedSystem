@@ -27,6 +27,7 @@ namespace RuleBasedSystem
             bool NextSummer = false;
 
 
+
             //Course List set to IsCompleted = false by default
             Course Healthful_Living = new Course
             {
@@ -72,6 +73,7 @@ namespace RuleBasedSystem
                 OnDemand = true,
                 Prereqs = new Course[][] { }
             };
+
             Course Composition_1 = new Course
             {
                 Prefix = "ENGL 1101",
@@ -139,6 +141,54 @@ namespace RuleBasedSystem
                 OnDemand = true,
                 Prereqs = new Course[][] { new Course[] { Pre_Calculus, Trigonometry } }
             };
+
+            //EXTRA POSSIBLE COURSES
+            Course Quantitative_Reasoning = new Course
+            {
+                Prefix = "MATH 1001",
+                IsCompleted = false,
+                IsAvailable = true,
+                Fall = true,
+                Summer = true,
+                Spring = true,
+                OnDemand = true,
+                Prereqs = new Course[][] { }
+            };
+            Course Introduction_To_Mathematical_Modeling = new Course
+            {
+                Prefix = "MATH 1101",
+                IsCompleted = false,
+                IsAvailable = true,
+                Fall = true,
+                Summer = true,
+                Spring = true,
+                OnDemand = true,
+                Prereqs = new Course[][] { }
+            };
+            Course Survey_of_Calculus = new Course
+            {
+                Prefix = "MATH 1232",
+                IsCompleted = false,
+                IsAvailable = true,
+                Fall = true,
+                Summer = true,
+                Spring = true,
+                OnDemand = true,
+                Prereqs = new Course[][] { new Course[] { Introduction_To_Mathematical_Modeling, College_Algebra, Trigonometry, Pre_Calculus } }
+            };
+            Course Elementary_Statistics = new Course
+            {
+                Prefix = "STAT 1401",
+                IsCompleted = false,
+                IsAvailable = true,
+                Fall = true,
+                Summer = true,
+                Spring = true,
+                OnDemand = true,
+                Prereqs = new Course[][] { new Course[] { Quantitative_Reasoning } }
+            };
+            //EXTRA POSSIBLE COURSES
+
             Course World_History_2 = new Course
             {
                 Prefix = "HIST 1112",
@@ -161,6 +211,7 @@ namespace RuleBasedSystem
                 OnDemand = true,
                 Prereqs = new Course[][] { new Course[] { First_Year_Experience } }
             };
+
             Course World_Literature_1_or_2 = new Course
             {
                 Prefix = "ENGL 2111/2112",
@@ -183,6 +234,7 @@ namespace RuleBasedSystem
                 OnDemand = true,
                 Prereqs = new Course[][] { new Course[] { Composition_1 } }
             };
+
             Course Principles_of_Chemistry_1_with_lab = new Course
             {
                 Prefix = "CHEM 1211K",
@@ -227,6 +279,7 @@ namespace RuleBasedSystem
                 OnDemand = true,
                 Prereqs = new Course[][] { new Course[] { Calculus_1 } }
             };
+
             Course Environmental_Biology_with_lab = new Course
             {
                 Prefix = "BIOL 1230 & 1210",
@@ -271,6 +324,7 @@ namespace RuleBasedSystem
                 OnDemand = true,
                 Prereqs = new Course[][] { }
             };
+
             Course Economics_in_a_Global_Society = new Course
             {
                 Prefix = "ECON 2105",
@@ -304,6 +358,7 @@ namespace RuleBasedSystem
                 OnDemand = true,
                 Prereqs = new Course[][] { }
             };
+
             Course Introduction_to_Anthropology = new Course
             {
                 Prefix = "ANTH 1102",
@@ -348,18 +403,7 @@ namespace RuleBasedSystem
                 OnDemand = true,
                 Prereqs = new Course[][] { }
             };
-           
-            Course Statistics_1 = new Course
-            {
-                Prefix = "STAT 2231",
-                IsCompleted = false,
-                IsAvailable = true,
-                Fall = true,
-                Summer = true,
-                Spring = true,
-                OnDemand = true,
-                Prereqs = new Course[][] { new Course[] { College_Algebra, Trigonometry, Pre_Calculus, Calculus_1 } }
-            }; 
+
             Course Programming_Principles_1 = new Course
             {
                 Prefix = "CSCI 1301",
@@ -371,16 +415,27 @@ namespace RuleBasedSystem
                 OnDemand = true,
                 Prereqs = new Course[][] { new Course[] { Calculus_1 } }
             };
-            Course Computers_Ethics_and_Society = new Course
+            Course Calculus_2 = new Course
             {
-                Prefix = "CSCI 2120",
+                Prefix = "MATH 2242",
                 IsCompleted = false,
                 IsAvailable = true,
                 Fall = true,
                 Summer = true,
                 Spring = true,
                 OnDemand = true,
-                Prereqs = new Course[][] { new Course[] { Programming_Principles_1 } }
+                Prereqs = new Course[][] { new Course[] { Calculus_1} }
+            };
+            Course Discrete_Math = new Course
+            {
+                Prefix = "MATH 2130",
+                IsCompleted = false,
+                IsAvailable = true,
+                Fall = true,
+                Summer = true,
+                Spring = true,
+                OnDemand = true,
+                Prereqs = new Course[][] { new Course[] { Introduction_To_Mathematical_Modeling , College_Algebra, Trigonometry, Pre_Calculus, Calculus_1, Calculus_2}}
             };
             Course Programming_Principles_2 = new Course
             {
@@ -391,24 +446,234 @@ namespace RuleBasedSystem
                 Summer = true,
                 Spring = true,
                 OnDemand = true,
-                Prereqs = new Course[][] { new Course[] { Programming_Principles_1, Composition_2 }, new Course[] { Statistics_1 }, new Course[] { Calculus_1 } }
+                Prereqs = new Course[][] { new Course[] { Programming_Principles_1}, new Course[] { Discrete_Math}, new Course[] { Calculus_1 } }
+            };
+            Course Statistics_1 = new Course
+            {
+                Prefix = "STAT 2231",
+                IsCompleted = false,
+                IsAvailable = true,
+                Fall = true,
+                Summer = true,
+                Spring = true,
+                OnDemand = true,
+                Prereqs = new Course[][] { new Course[] { College_Algebra, Trigonometry, Pre_Calculus, Calculus_1 } }
+            };
+            Course Linear_Algebra = new Course
+            {
+                Prefix = "MATH 2160",
+                IsCompleted = false,
+                IsAvailable = true,
+                Fall = true,
+                Summer = true,
+                Spring = true,
+                OnDemand = true,
+                Prereqs = new Course[][] { new Course[] {Calculus_2 } }
+            };
+            Course Computers_Ethics_and_Society = new Course
+            {
+                Prefix = "CSCI 2120",
+                IsCompleted = false,
+                IsAvailable = true,
+                Fall = true,
+                Summer = false,
+                Spring = true,
+                OnDemand = true,
+                Prereqs = new Course[][] { new Course[] { Programming_Principles_1 }, new Course[] { Public_Speaking } }
             };
 
-            
+            Course Introduction_To_International_Studies = new Course
+            {
+                Prefix = "INTS 2130",
+                IsCompleted = false,
+                IsAvailable = true,
+                Fall = true,
+                Summer = true,
+                Spring = true,
+                OnDemand = true,
+                Prereqs = new Course[][] {}
+            };
 
-            //Course Discrete_Math = new Course
-            //{
-            //    Prefix = "MATH 2130",
-            //    IsCompleted = false,
-            //    IsAvailable = true,
-            //    Fall = true,
-            //    Summer = true,
-            //    Spring = true,
-            //    OnDemand = true,
-            //    Prereqs = new Course[,] { { College_Algebra, Trigonometry, Pre_Calculus, Calculus_1, calc} }
-            //};
+            //EXTRA
+            Course Principles_Of_Biology_1_With_Lab = new Course
+            {
+                Prefix = "BIOL 1107 & 1107L",
+                IsCompleted = false,
+                IsAvailable = true,
+                Fall = true,
+                Summer = true,
+                Spring = true,
+                OnDemand = true,
+                Prereqs = new Course[][] { new Course[] { College_Algebra, Pre_Calculus }, new Course[] { Composition_1 } }
+            };
+            //End EXTRA
+            Course Principles_Of_Biology_2_With_Lab = new Course
+            {
+                Prefix = "BIOL 1108 & 1108L",
+                IsCompleted = false,
+                IsAvailable = true,
+                Fall = true,
+                Summer = true,
+                Spring = true,
+                OnDemand = true,
+                Prereqs = new Course[][] { new Course[] { Principles_Of_Biology_1_With_Lab } }
+            };
+            Course Principles_Of_Chemistry_2_With_Lab = new Course
+            {
+                Prefix = "CHEM 1212K",
+                IsCompleted = false,
+                IsAvailable = true,
+                Fall = true,
+                Summer = true,
+                Spring = true,
+                OnDemand = true,
+                Prereqs = new Course[][] { new Course[] { Principles_of_Chemistry_1_with_lab} }
+            };
+            Course General_Historical_Geology_With_Lab = new Course
+            {
+                Prefix = "GEOL 1122",
+                IsCompleted = false,
+                IsAvailable = true,
+                Fall = true,
+                Summer = true,
+                Spring = true,
+                OnDemand = true,
+                Prereqs = new Course[][] { new Course[] { Introduction_to_the_Earth } }
+            };
+            Course Introduction_to_Physics_2_with_Lab = new Course
+            {
+                Prefix = "PHYS 1112K",
+                IsCompleted = false,
+                IsAvailable = true,
+                Fall = true,
+                Summer = true,
+                Spring = true,
+                OnDemand = true,
+                Prereqs = new Course[][] { new Course[] { Introduction_to_Physics_1 } }
+            };
+            Course Principles_of_Physics_2 = new Course
+            {
+                Prefix = "PHYS 2212K",
+                IsCompleted = false,
+                IsAvailable = true,
+                Fall = true,
+                Summer = true,
+                Spring = true,
+                OnDemand = true,
+                Prereqs = new Course[][] { new Course[] { Principles_of_Physics_1 } }
+            };
 
-
+            //MAJOR REQUIRED COURSES
+            Course Data_Structures = new Course
+            {
+                Prefix = "CSCI 3230",
+                IsCompleted = false,
+                IsAvailable = true,
+                Fall = true,
+                Summer = false,
+                Spring = true,
+                OnDemand = true,
+                Prereqs = new Course[][] { new Course[] { Programming_Principles_2 }, new Course[] { Discrete_Math } }
+            };
+            Course Systems_Software = new Course
+            {
+                Prefix = "CSCI 3232",
+                IsCompleted = false,
+                IsAvailable = true,
+                Fall = false,
+                Summer = false,
+                Spring = true,
+                OnDemand = true,
+                Prereqs = new Course[][] { new Course[] { Programming_Principles_2} } //concurrent or prior DS
+            };
+            Course Introduction_To_Operating_Systems = new Course
+            {
+                Prefix = "CSCI 3341",
+                IsCompleted = false,
+                IsAvailable = true,
+                Fall = true,
+                Summer = false,
+                Spring = false,
+                OnDemand = true,
+                Prereqs = new Course[][] { new Course[] { Programming_Principles_2 } }
+            };
+            Course Theoretical_Foundations = new Course
+            {
+                Prefix = "CSCI 3236",
+                IsCompleted = false,
+                IsAvailable = true,
+                Fall = true,
+                Summer = false,
+                Spring = true,
+                OnDemand = true,
+                Prereqs = new Course[][] { new Course[] { Programming_Principles_2 }, new Course[] { Discrete_Math } }
+            };
+            Course Database_Systems = new Course
+            {
+                Prefix = "CSCI 3432",
+                IsCompleted = false,
+                IsAvailable = true,
+                Fall = false,
+                Summer = false,
+                Spring = true,
+                OnDemand = true,
+                Prereqs = new Course[][] { new Course[] { Programming_Principles_1 }, new Course[] { Discrete_Math } }
+            };
+            Course Algorithm_Design_and_Analysis = new Course
+            {
+                Prefix = "CSCI 5330",
+                IsCompleted = false,
+                IsAvailable = true,
+                Fall = true,
+                Summer = false,
+                Spring = true,
+                OnDemand = true,
+                Prereqs = new Course[][] { new Course[] { Theoretical_Foundations }, new Course[] { Calculus_2 } }
+            };
+            Course Computer_Architecture = new Course
+            {
+                Prefix = "CSCI 5331",
+                IsCompleted = false,
+                IsAvailable = true,
+                Fall = true,
+                Summer = false,
+                Spring = true,
+                OnDemand = true,
+                Prereqs = new Course[][] { new Course[] { Systems_Software, Introduction_To_Operating_Systems } }
+            };
+            Course Data_Communications_And_Networking = new Course
+            {
+                Prefix = "CSCI 5332",
+                IsCompleted = false,
+                IsAvailable = true,
+                Fall = true,
+                Summer = true,
+                Spring = true,
+                OnDemand = true,
+                Prereqs = new Course[][] { new Course[] { Systems_Software, Introduction_To_Operating_Systems}, new Course[] { Elementary_Statistics } }
+            };
+            Course Introduction_To_International_Studies = new Course
+            {
+                Prefix = "INTS 2130",
+                IsCompleted = false,
+                IsAvailable = true,
+                Fall = true,
+                Summer = true,
+                Spring = true,
+                OnDemand = true,
+                Prereqs = new Course[][] { }
+            };
+            Course Introduction_To_International_Studies = new Course
+            {
+                Prefix = "INTS 2130",
+                IsCompleted = false,
+                IsAvailable = true,
+                Fall = true,
+                Summer = true,
+                Spring = true,
+                OnDemand = true,
+                Prereqs = new Course[][] { }
+            };
 
             List<Course> courses = new List<Course>
             {
