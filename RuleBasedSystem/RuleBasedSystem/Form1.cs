@@ -19,13 +19,12 @@ namespace RuleBasedSystem
         public Form1()
         {
             InitializeComponent();
-
+           
             //Maybe have radio button for which term the student is looking to take classes for
             //For now we will look for Spring
 
             //1 = Spring, 2 = Summer, 3 = Fall
             int nextSemester = 1;
-
 
 
             //Course List set to IsCompleted = false by default
