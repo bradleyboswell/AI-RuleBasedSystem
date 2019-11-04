@@ -1480,7 +1480,7 @@ namespace RuleBasedSystem
             bool isEligible = true;
             for (int i = 0; i < reasoningList.Count; i++)
             {
-                // OR OR OR OR OR OR OR 
+                //Check OR Conditions
                 if (reasoningList[i].Count > 1)
                 {
                     bool OReligible = false;
@@ -1495,7 +1495,7 @@ namespace RuleBasedSystem
                         isEligible = false;
                     }
                 }
-                //AND AND AND AND
+                //Check And conditions
                 else
                 {
                     if (reasoningList[i][0].IsCompleted)
