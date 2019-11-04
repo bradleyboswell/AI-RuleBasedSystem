@@ -1775,7 +1775,7 @@ namespace RuleBasedSystem
                             //CHECK THE ORS
                             for (int j = 0; j < reasoningList[i].Count; j++)
                             {
-                                //Console.WriteLine("Option: " + course.Prereqs[i][j].Prefix);
+                                    
                                 if (reasoningList[i][j].IsCompleted) OReligible = true;
                             }
                             if (!OReligible)
@@ -1793,10 +1793,40 @@ namespace RuleBasedSystem
                         }
                     }
                 }
-                
+
+                string s = "";
                 if (isEligible)
+                {
                     resulttxt.Text = "You are eligible to take: " + course_to_check.Prefix;
-                else resulttxt.Text = "You are NOT eligible to take: " + course_to_check.Prefix;
+                    s += "You satisfy the pre-requisite requirements for: ";
+                }
+                else
+                {
+                    resulttxt.Text = "You are NOT eligible to take: " + course_to_check.Prefix;
+                    s += "To be eligible for this course you must satisfy these pre-requisite requirements: ";
+                }
+
+                s += Environment.NewLine;
+                for(int i =0; i < reasoningList.Count; i++)
+                {
+                    if (reasoningList[i].Count > 1)
+                    {
+                        s += "[";                     
+                        for (int j = 0; j < reasoningList[i].Count; j++)
+                        {
+                            s+= reasoningList[i][j].Prefix;
+                            if (j != (reasoningList[i].Count - 1)) s += " OR "; 
+                        }
+                        s += "]";
+                        s += Environment.NewLine;
+                    }
+                    else
+                    {
+                        s += reasoningList[i][0].Prefix;
+                        s += Environment.NewLine;
+                    }
+                }
+                Console.WriteLine(s);
                 
 
             }
