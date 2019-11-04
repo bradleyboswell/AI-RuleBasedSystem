@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.HomePanel = new System.Windows.Forms.Panel();
+            this.button32 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.startBtn = new System.Windows.Forms.Button();
             this.welcomeText = new System.Windows.Forms.Label();
@@ -127,13 +128,14 @@
             this.Eligible_CoursesTxt = new System.Windows.Forms.TextBox();
             this.button25 = new System.Windows.Forms.Button();
             this.SeasonPanel = new System.Windows.Forms.Panel();
-            this.button26 = new System.Windows.Forms.Button();
-            this.springbtn = new System.Windows.Forms.RadioButton();
-            this.summerbtn = new System.Windows.Forms.RadioButton();
-            this.fallbtn = new System.Windows.Forms.RadioButton();
-            this.label12 = new System.Windows.Forms.Label();
             this.button23 = new System.Windows.Forms.Button();
+            this.label12 = new System.Windows.Forms.Label();
+            this.fallbtn = new System.Windows.Forms.RadioButton();
+            this.summerbtn = new System.Windows.Forms.RadioButton();
+            this.springbtn = new System.Windows.Forms.RadioButton();
+            this.button26 = new System.Windows.Forms.Button();
             this.MRC2Panel = new System.Windows.Forms.Panel();
+            this.Software_Engineeringcb = new System.Windows.Forms.CheckBox();
             this.Distributed_Web_Systems_Designcb = new System.Windows.Forms.CheckBox();
             this.button24 = new System.Windows.Forms.Button();
             this.button27 = new System.Windows.Forms.Button();
@@ -142,26 +144,7 @@
             this.Data_Comm_and_Networkingcb = new System.Windows.Forms.CheckBox();
             this.Computer_Architecturecb = new System.Windows.Forms.CheckBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.Software_Engineeringcb = new System.Windows.Forms.CheckBox();
             this.E1Panel = new System.Windows.Forms.Panel();
-            this.Software_Testing_and_Quality_Assurancecb = new System.Windows.Forms.CheckBox();
-            this.Game_Programmingcb = new System.Windows.Forms.CheckBox();
-            this.button28 = new System.Windows.Forms.Button();
-            this.button29 = new System.Windows.Forms.Button();
-            this.Human_Computer_Interactioncb = new System.Windows.Forms.CheckBox();
-            this.Data_Warehouse_Designcb = new System.Windows.Forms.CheckBox();
-            this.Logic_Circuits_and_Microprocessorscb = new System.Windows.Forms.CheckBox();
-            this.Introduction_to_Computer_Engineeringcb = new System.Windows.Forms.CheckBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.Computer_Graphicscb = new System.Windows.Forms.CheckBox();
-            this.Artificial_Intelligencecb = new System.Windows.Forms.CheckBox();
-            this.Discrete_Simulationcb = new System.Windows.Forms.CheckBox();
-            this.Selected_Topicscb = new System.Windows.Forms.CheckBox();
-            this.Optical_Networkscb = new System.Windows.Forms.CheckBox();
-            this.Broadband_Networkscb = new System.Windows.Forms.CheckBox();
-            this.Network_Management_Systemscb = new System.Windows.Forms.CheckBox();
-            this.Systems_and_Software_Assurancecb = new System.Windows.Forms.CheckBox();
-            this.Animationcb = new System.Windows.Forms.CheckBox();
             this.Embedded_Systems_Programmingcb = new System.Windows.Forms.CheckBox();
             this.Compiler_Theorycb = new System.Windows.Forms.CheckBox();
             this.System_Prog_Under_Unixcb = new System.Windows.Forms.CheckBox();
@@ -177,7 +160,33 @@
             this.Comparative_Languagescb = new System.Windows.Forms.CheckBox();
             this.Introduction_to_Operating_Systemcb = new System.Windows.Forms.CheckBox();
             this.Wireless_and_Mobile_Systemscb = new System.Windows.Forms.CheckBox();
+            this.Network_Management_Systemscb = new System.Windows.Forms.CheckBox();
+            this.Systems_and_Software_Assurancecb = new System.Windows.Forms.CheckBox();
+            this.Animationcb = new System.Windows.Forms.CheckBox();
+            this.Computer_Graphicscb = new System.Windows.Forms.CheckBox();
+            this.Artificial_Intelligencecb = new System.Windows.Forms.CheckBox();
+            this.Discrete_Simulationcb = new System.Windows.Forms.CheckBox();
+            this.Selected_Topicscb = new System.Windows.Forms.CheckBox();
+            this.Optical_Networkscb = new System.Windows.Forms.CheckBox();
+            this.Broadband_Networkscb = new System.Windows.Forms.CheckBox();
+            this.Software_Testing_and_Quality_Assurancecb = new System.Windows.Forms.CheckBox();
+            this.Game_Programmingcb = new System.Windows.Forms.CheckBox();
+            this.button28 = new System.Windows.Forms.Button();
+            this.button29 = new System.Windows.Forms.Button();
+            this.Human_Computer_Interactioncb = new System.Windows.Forms.CheckBox();
+            this.Data_Warehouse_Designcb = new System.Windows.Forms.CheckBox();
+            this.Logic_Circuits_and_Microprocessorscb = new System.Windows.Forms.CheckBox();
+            this.Introduction_to_Computer_Engineeringcb = new System.Windows.Forms.CheckBox();
+            this.label14 = new System.Windows.Forms.Label();
             this.E2Panel = new System.Windows.Forms.Panel();
+            this.Advanced_Software_Engineeringcb = new System.Windows.Forms.CheckBox();
+            this.Computing_for_Engineerscb = new System.Windows.Forms.CheckBox();
+            this.Elementary_Statisticscb = new System.Windows.Forms.CheckBox();
+            this.Survey_of_Calculuscb = new System.Windows.Forms.CheckBox();
+            this.Introduction_To_Mathematical_Modelingcb = new System.Windows.Forms.CheckBox();
+            this.Quantitative_Reasoningcb = new System.Windows.Forms.CheckBox();
+            this.Principles_Of_Biology_1_With_Labcb = new System.Windows.Forms.CheckBox();
+            this.Linear_Algebracb = new System.Windows.Forms.CheckBox();
             this.Software_Security_and_Secure_Codingcb = new System.Windows.Forms.CheckBox();
             this.Data_Management_for_Math_and_the_Sciencescb = new System.Windows.Forms.CheckBox();
             this.Directed_Study_in_Computer_Sciencecb = new System.Windows.Forms.CheckBox();
@@ -188,18 +197,12 @@
             this.Numerical_Analysiscb = new System.Windows.Forms.CheckBox();
             this.Handheld_Ubiquitous_Computingcb = new System.Windows.Forms.CheckBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.Computing_for_Engineerscb = new System.Windows.Forms.CheckBox();
-            this.Elementary_Statisticscb = new System.Windows.Forms.CheckBox();
-            this.Survey_of_Calculuscb = new System.Windows.Forms.CheckBox();
-            this.Introduction_To_Mathematical_Modelingcb = new System.Windows.Forms.CheckBox();
-            this.Quantitative_Reasoningcb = new System.Windows.Forms.CheckBox();
-            this.Principles_Of_Biology_1_With_Labcb = new System.Windows.Forms.CheckBox();
-            this.Linear_Algebracb = new System.Windows.Forms.CheckBox();
             this.CreateCoursePanel = new System.Windows.Forms.Panel();
+            this.button36 = new System.Windows.Forms.Button();
+            this.button35 = new System.Windows.Forms.Button();
             this.label16 = new System.Windows.Forms.Label();
-            this.button32 = new System.Windows.Forms.Button();
-            this.Advanced_Software_Engineeringcb = new System.Windows.Forms.CheckBox();
             this.CustomClassesPanel = new System.Windows.Forms.Panel();
+            this.customClassesBox = new System.Windows.Forms.CheckedListBox();
             this.button33 = new System.Windows.Forms.Button();
             this.button34 = new System.Windows.Forms.Button();
             this.label17 = new System.Windows.Forms.Label();
@@ -250,6 +253,15 @@
             this.HomePanel.Name = "HomePanel";
             this.HomePanel.Size = new System.Drawing.Size(760, 437);
             this.HomePanel.TabIndex = 0;
+            // 
+            // button32
+            // 
+            this.button32.Location = new System.Drawing.Point(591, 22);
+            this.button32.Name = "button32";
+            this.button32.Size = new System.Drawing.Size(113, 23);
+            this.button32.TabIndex = 3;
+            this.button32.Text = "Create New Course";
+            this.button32.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -1385,7 +1397,17 @@
             this.SeasonPanel.Size = new System.Drawing.Size(760, 437);
             this.SeasonPanel.TabIndex = 18;
             // 
-            // button26
+            // button23
+            // 
+            this.button23.Location = new System.Drawing.Point(610, 380);
+            this.button23.Name = "button23";
+            this.button23.Size = new System.Drawing.Size(75, 23);
+            this.button23.TabIndex = 14;
+            this.button23.Text = "Next";
+            this.button23.UseVisualStyleBackColor = true;
+            this.button23.Click += new System.EventHandler(this.forward_Click);
+            // 
+            // label12
             // 
             this.button26.Location = new System.Drawing.Point(60, 380);
             this.button26.Name = "button26";
@@ -1394,6 +1416,26 @@
             this.button26.Text = "Back";
             this.button26.UseVisualStyleBackColor = true;
             this.button26.Click += new System.EventHandler(this.back_Click);
+            // 
+            // fallbtn
+            // 
+            this.fallbtn.AutoSize = true;
+            this.fallbtn.Location = new System.Drawing.Point(331, 217);
+            this.fallbtn.Name = "fallbtn";
+            this.fallbtn.Size = new System.Drawing.Size(41, 17);
+            this.fallbtn.TabIndex = 13;
+            this.fallbtn.Text = "Fall";
+            this.fallbtn.UseVisualStyleBackColor = true;
+            // 
+            // summerbtn
+            // 
+            this.summerbtn.AutoSize = true;
+            this.summerbtn.Location = new System.Drawing.Point(331, 165);
+            this.summerbtn.Name = "summerbtn";
+            this.summerbtn.Size = new System.Drawing.Size(63, 17);
+            this.summerbtn.TabIndex = 12;
+            this.summerbtn.Text = "Summer";
+            this.summerbtn.UseVisualStyleBackColor = true;
             // 
             // springbtn
             // 
@@ -1407,48 +1449,14 @@
             this.springbtn.Text = "Spring";
             this.springbtn.UseVisualStyleBackColor = true;
             // 
-            // summerbtn
+            // button26
             // 
-            this.summerbtn.AutoSize = true;
-            this.summerbtn.Location = new System.Drawing.Point(331, 165);
-            this.summerbtn.Name = "summerbtn";
-            this.summerbtn.Size = new System.Drawing.Size(63, 17);
-            this.summerbtn.TabIndex = 12;
-            this.summerbtn.Text = "Summer";
-            this.summerbtn.UseVisualStyleBackColor = true;
-            // 
-            // fallbtn
-            // 
-            this.fallbtn.AutoSize = true;
-            this.fallbtn.Location = new System.Drawing.Point(331, 217);
-            this.fallbtn.Name = "fallbtn";
-            this.fallbtn.Size = new System.Drawing.Size(41, 17);
-            this.fallbtn.TabIndex = 13;
-            this.fallbtn.Text = "Fall";
-            this.fallbtn.UseVisualStyleBackColor = true;
-            // 
-            // label12
-            // 
-            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(0, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(760, 45);
-            this.label12.TabIndex = 12;
-            this.label12.Text = "What Season is next semester?";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // button23
-            // 
-            this.button23.Location = new System.Drawing.Point(610, 380);
-            this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(75, 23);
-            this.button23.TabIndex = 14;
-            this.button23.Text = "Next";
-            this.button23.UseVisualStyleBackColor = true;
-            this.button23.Click += new System.EventHandler(this.forward_Click);
+            this.button26.Location = new System.Drawing.Point(60, 380);
+            this.button26.Name = "button26";
+            this.button26.Size = new System.Drawing.Size(75, 23);
+            this.button26.TabIndex = 10;
+            this.button26.Text = "Back";
+            this.button26.UseVisualStyleBackColor = true;
             // 
             // MRC2Panel
             // 
@@ -1465,6 +1473,18 @@
             this.MRC2Panel.Name = "MRC2Panel";
             this.MRC2Panel.Size = new System.Drawing.Size(760, 437);
             this.MRC2Panel.TabIndex = 19;
+            // 
+            // Software_Engineeringcb
+            // 
+            this.Software_Engineeringcb.AutoSize = true;
+            this.Software_Engineeringcb.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Software_Engineeringcb.Location = new System.Drawing.Point(181, 309);
+            this.Software_Engineeringcb.Name = "Software_Engineeringcb";
+            this.Software_Engineeringcb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Software_Engineeringcb.Size = new System.Drawing.Size(313, 28);
+            this.Software_Engineeringcb.TabIndex = 12;
+            this.Software_Engineeringcb.Text = "CSCI 5530 - Software Engineering";
+            this.Software_Engineeringcb.UseVisualStyleBackColor = true;
             // 
             // Distributed_Web_Systems_Designcb
             // 
@@ -1559,18 +1579,6 @@
             this.label13.Text = "Major Required Courses (Part 2/2)";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Software_Engineeringcb
-            // 
-            this.Software_Engineeringcb.AutoSize = true;
-            this.Software_Engineeringcb.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Software_Engineeringcb.Location = new System.Drawing.Point(181, 309);
-            this.Software_Engineeringcb.Name = "Software_Engineeringcb";
-            this.Software_Engineeringcb.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Software_Engineeringcb.Size = new System.Drawing.Size(313, 28);
-            this.Software_Engineeringcb.TabIndex = 12;
-            this.Software_Engineeringcb.Text = "CSCI 5530 - Software Engineering";
-            this.Software_Engineeringcb.UseVisualStyleBackColor = true;
-            // 
             // E1Panel
             // 
             this.E1Panel.Controls.Add(this.Embedded_Systems_Programmingcb);
@@ -1610,219 +1618,6 @@
             this.E1Panel.Name = "E1Panel";
             this.E1Panel.Size = new System.Drawing.Size(760, 437);
             this.E1Panel.TabIndex = 20;
-            // 
-            // Software_Testing_and_Quality_Assurancecb
-            // 
-            this.Software_Testing_and_Quality_Assurancecb.AutoSize = true;
-            this.Software_Testing_and_Quality_Assurancecb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Software_Testing_and_Quality_Assurancecb.Location = new System.Drawing.Point(36, 160);
-            this.Software_Testing_and_Quality_Assurancecb.Name = "Software_Testing_and_Quality_Assurancecb";
-            this.Software_Testing_and_Quality_Assurancecb.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Software_Testing_and_Quality_Assurancecb.Size = new System.Drawing.Size(272, 20);
-            this.Software_Testing_and_Quality_Assurancecb.TabIndex = 12;
-            this.Software_Testing_and_Quality_Assurancecb.Text = "CSCI 4534 - Software Testing and Testing";
-            this.Software_Testing_and_Quality_Assurancecb.UseVisualStyleBackColor = true;
-            // 
-            // Game_Programmingcb
-            // 
-            this.Game_Programmingcb.AutoSize = true;
-            this.Game_Programmingcb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Game_Programmingcb.Location = new System.Drawing.Point(36, 139);
-            this.Game_Programmingcb.Name = "Game_Programmingcb";
-            this.Game_Programmingcb.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Game_Programmingcb.Size = new System.Drawing.Size(219, 20);
-            this.Game_Programmingcb.TabIndex = 11;
-            this.Game_Programmingcb.Text = "CSCI 4439 - Game Programming";
-            this.Game_Programmingcb.UseVisualStyleBackColor = true;
-            // 
-            // button28
-            // 
-            this.button28.Location = new System.Drawing.Point(60, 380);
-            this.button28.Name = "button28";
-            this.button28.Size = new System.Drawing.Size(75, 23);
-            this.button28.TabIndex = 10;
-            this.button28.Text = "Back";
-            this.button28.UseVisualStyleBackColor = true;
-            this.button28.Click += new System.EventHandler(this.back_Click);
-            // 
-            // button29
-            // 
-            this.button29.Location = new System.Drawing.Point(610, 380);
-            this.button29.Name = "button29";
-            this.button29.Size = new System.Drawing.Size(75, 23);
-            this.button29.TabIndex = 7;
-            this.button29.Text = "Next";
-            this.button29.UseVisualStyleBackColor = true;
-            this.button29.Click += new System.EventHandler(this.forward_Click);
-            // 
-            // Human_Computer_Interactioncb
-            // 
-            this.Human_Computer_Interactioncb.AutoSize = true;
-            this.Human_Computer_Interactioncb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Human_Computer_Interactioncb.Location = new System.Drawing.Point(36, 119);
-            this.Human_Computer_Interactioncb.Name = "Human_Computer_Interactioncb";
-            this.Human_Computer_Interactioncb.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Human_Computer_Interactioncb.Size = new System.Drawing.Size(266, 20);
-            this.Human_Computer_Interactioncb.TabIndex = 4;
-            this.Human_Computer_Interactioncb.Text = "CSCI 4235 - Human Computer Interaction";
-            this.Human_Computer_Interactioncb.UseVisualStyleBackColor = true;
-            // 
-            // Data_Warehouse_Designcb
-            // 
-            this.Data_Warehouse_Designcb.AutoSize = true;
-            this.Data_Warehouse_Designcb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Data_Warehouse_Designcb.Location = new System.Drawing.Point(36, 101);
-            this.Data_Warehouse_Designcb.Name = "Data_Warehouse_Designcb";
-            this.Data_Warehouse_Designcb.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Data_Warehouse_Designcb.Size = new System.Drawing.Size(246, 20);
-            this.Data_Warehouse_Designcb.TabIndex = 3;
-            this.Data_Warehouse_Designcb.Text = "CSCI 4132 - Data Warehouse Design";
-            this.Data_Warehouse_Designcb.UseVisualStyleBackColor = true;
-            // 
-            // Logic_Circuits_and_Microprocessorscb
-            // 
-            this.Logic_Circuits_and_Microprocessorscb.AutoSize = true;
-            this.Logic_Circuits_and_Microprocessorscb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Logic_Circuits_and_Microprocessorscb.Location = new System.Drawing.Point(36, 82);
-            this.Logic_Circuits_and_Microprocessorscb.Name = "Logic_Circuits_and_Microprocessorscb";
-            this.Logic_Circuits_and_Microprocessorscb.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Logic_Circuits_and_Microprocessorscb.Size = new System.Drawing.Size(307, 20);
-            this.Logic_Circuits_and_Microprocessorscb.TabIndex = 2;
-            this.Logic_Circuits_and_Microprocessorscb.Text = "CSCI 3231 - Logic CIrcuits and Microprocessors";
-            this.Logic_Circuits_and_Microprocessorscb.UseVisualStyleBackColor = true;
-            // 
-            // Introduction_to_Computer_Engineeringcb
-            // 
-            this.Introduction_to_Computer_Engineeringcb.AutoSize = true;
-            this.Introduction_to_Computer_Engineeringcb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Introduction_to_Computer_Engineeringcb.Location = new System.Drawing.Point(36, 63);
-            this.Introduction_to_Computer_Engineeringcb.Name = "Introduction_to_Computer_Engineeringcb";
-            this.Introduction_to_Computer_Engineeringcb.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Introduction_to_Computer_Engineeringcb.Size = new System.Drawing.Size(325, 20);
-            this.Introduction_to_Computer_Engineeringcb.TabIndex = 1;
-            this.Introduction_to_Computer_Engineeringcb.Text = "ENGR 2332 - Introduction to Computer Engineering";
-            this.Introduction_to_Computer_Engineeringcb.UseVisualStyleBackColor = true;
-            // 
-            // label14
-            // 
-            this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(0, 0);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(760, 45);
-            this.label14.TabIndex = 0;
-            this.label14.Text = "CSCI Electives and Others (Part 1)";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Computer_Graphicscb
-            // 
-            this.Computer_Graphicscb.AutoSize = true;
-            this.Computer_Graphicscb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Computer_Graphicscb.Location = new System.Drawing.Point(36, 277);
-            this.Computer_Graphicscb.Name = "Computer_Graphicscb";
-            this.Computer_Graphicscb.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Computer_Graphicscb.Size = new System.Drawing.Size(213, 20);
-            this.Computer_Graphicscb.TabIndex = 18;
-            this.Computer_Graphicscb.Text = "CSCI 5437 - Computer Graphics";
-            this.Computer_Graphicscb.UseVisualStyleBackColor = true;
-            // 
-            // Artificial_Intelligencecb
-            // 
-            this.Artificial_Intelligencecb.AutoSize = true;
-            this.Artificial_Intelligencecb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Artificial_Intelligencecb.Location = new System.Drawing.Point(36, 256);
-            this.Artificial_Intelligencecb.Name = "Artificial_Intelligencecb";
-            this.Artificial_Intelligencecb.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Artificial_Intelligencecb.Size = new System.Drawing.Size(215, 20);
-            this.Artificial_Intelligencecb.TabIndex = 17;
-            this.Artificial_Intelligencecb.Text = "CSCI 5430 - Artificial Intelligence";
-            this.Artificial_Intelligencecb.UseVisualStyleBackColor = true;
-            // 
-            // Discrete_Simulationcb
-            // 
-            this.Discrete_Simulationcb.AutoSize = true;
-            this.Discrete_Simulationcb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Discrete_Simulationcb.Location = new System.Drawing.Point(36, 236);
-            this.Discrete_Simulationcb.Name = "Discrete_Simulationcb";
-            this.Discrete_Simulationcb.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Discrete_Simulationcb.Size = new System.Drawing.Size(213, 20);
-            this.Discrete_Simulationcb.TabIndex = 16;
-            this.Discrete_Simulationcb.Text = "CSCI 5230 - Discrete Simulation";
-            this.Discrete_Simulationcb.UseVisualStyleBackColor = true;
-            // 
-            // Selected_Topicscb
-            // 
-            this.Selected_Topicscb.AutoSize = true;
-            this.Selected_Topicscb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Selected_Topicscb.Location = new System.Drawing.Point(36, 218);
-            this.Selected_Topicscb.Name = "Selected_Topicscb";
-            this.Selected_Topicscb.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Selected_Topicscb.Size = new System.Drawing.Size(197, 20);
-            this.Selected_Topicscb.TabIndex = 15;
-            this.Selected_Topicscb.Text = "CSCI 5090 - Selected Topics";
-            this.Selected_Topicscb.UseVisualStyleBackColor = true;
-            // 
-            // Optical_Networkscb
-            // 
-            this.Optical_Networkscb.AutoSize = true;
-            this.Optical_Networkscb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Optical_Networkscb.Location = new System.Drawing.Point(36, 199);
-            this.Optical_Networkscb.Name = "Optical_Networkscb";
-            this.Optical_Networkscb.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Optical_Networkscb.Size = new System.Drawing.Size(199, 20);
-            this.Optical_Networkscb.TabIndex = 14;
-            this.Optical_Networkscb.Text = "CSCI 4539 - Optical Networks";
-            this.Optical_Networkscb.UseVisualStyleBackColor = true;
-            // 
-            // Broadband_Networkscb
-            // 
-            this.Broadband_Networkscb.AutoSize = true;
-            this.Broadband_Networkscb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Broadband_Networkscb.Location = new System.Drawing.Point(36, 179);
-            this.Broadband_Networkscb.Name = "Broadband_Networkscb";
-            this.Broadband_Networkscb.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Broadband_Networkscb.Size = new System.Drawing.Size(225, 20);
-            this.Broadband_Networkscb.TabIndex = 13;
-            this.Broadband_Networkscb.Text = "CSCI 4537 - Broadband Networks";
-            this.Broadband_Networkscb.UseVisualStyleBackColor = true;
-            // 
-            // Network_Management_Systemscb
-            // 
-            this.Network_Management_Systemscb.AutoSize = true;
-            this.Network_Management_Systemscb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Network_Management_Systemscb.Location = new System.Drawing.Point(36, 335);
-            this.Network_Management_Systemscb.Name = "Network_Management_Systemscb";
-            this.Network_Management_Systemscb.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Network_Management_Systemscb.Size = new System.Drawing.Size(284, 20);
-            this.Network_Management_Systemscb.TabIndex = 21;
-            this.Network_Management_Systemscb.Text = "CSCI 5532 - Network Management Systems";
-            this.Network_Management_Systemscb.UseVisualStyleBackColor = true;
-            // 
-            // Systems_and_Software_Assurancecb
-            // 
-            this.Systems_and_Software_Assurancecb.AutoSize = true;
-            this.Systems_and_Software_Assurancecb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Systems_and_Software_Assurancecb.Location = new System.Drawing.Point(36, 314);
-            this.Systems_and_Software_Assurancecb.Name = "Systems_and_Software_Assurancecb";
-            this.Systems_and_Software_Assurancecb.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Systems_and_Software_Assurancecb.Size = new System.Drawing.Size(298, 20);
-            this.Systems_and_Software_Assurancecb.TabIndex = 20;
-            this.Systems_and_Software_Assurancecb.Text = "CSCI 5531 - Systems and Software Assurance";
-            this.Systems_and_Software_Assurancecb.UseVisualStyleBackColor = true;
-            // 
-            // Animationcb
-            // 
-            this.Animationcb.AutoSize = true;
-            this.Animationcb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Animationcb.Location = new System.Drawing.Point(36, 295);
-            this.Animationcb.Name = "Animationcb";
-            this.Animationcb.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Animationcb.Size = new System.Drawing.Size(157, 20);
-            this.Animationcb.TabIndex = 19;
-            this.Animationcb.Text = "CSCI 5438 - Animation";
-            this.Animationcb.UseVisualStyleBackColor = true;
             // 
             // Embedded_Systems_Programmingcb
             // 
@@ -2004,6 +1799,219 @@
             this.Wireless_and_Mobile_Systemscb.Text = "CSCI 5538 - Wireless and Mobile Systems";
             this.Wireless_and_Mobile_Systemscb.UseVisualStyleBackColor = true;
             // 
+            // Network_Management_Systemscb
+            // 
+            this.Network_Management_Systemscb.AutoSize = true;
+            this.Network_Management_Systemscb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Network_Management_Systemscb.Location = new System.Drawing.Point(36, 335);
+            this.Network_Management_Systemscb.Name = "Network_Management_Systemscb";
+            this.Network_Management_Systemscb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Network_Management_Systemscb.Size = new System.Drawing.Size(284, 20);
+            this.Network_Management_Systemscb.TabIndex = 21;
+            this.Network_Management_Systemscb.Text = "CSCI 5532 - Network Management Systems";
+            this.Network_Management_Systemscb.UseVisualStyleBackColor = true;
+            // 
+            // Systems_and_Software_Assurancecb
+            // 
+            this.Systems_and_Software_Assurancecb.AutoSize = true;
+            this.Systems_and_Software_Assurancecb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Systems_and_Software_Assurancecb.Location = new System.Drawing.Point(36, 314);
+            this.Systems_and_Software_Assurancecb.Name = "Systems_and_Software_Assurancecb";
+            this.Systems_and_Software_Assurancecb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Systems_and_Software_Assurancecb.Size = new System.Drawing.Size(298, 20);
+            this.Systems_and_Software_Assurancecb.TabIndex = 20;
+            this.Systems_and_Software_Assurancecb.Text = "CSCI 5531 - Systems and Software Assurance";
+            this.Systems_and_Software_Assurancecb.UseVisualStyleBackColor = true;
+            // 
+            // Animationcb
+            // 
+            this.Animationcb.AutoSize = true;
+            this.Animationcb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Animationcb.Location = new System.Drawing.Point(36, 295);
+            this.Animationcb.Name = "Animationcb";
+            this.Animationcb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Animationcb.Size = new System.Drawing.Size(157, 20);
+            this.Animationcb.TabIndex = 19;
+            this.Animationcb.Text = "CSCI 5438 - Animation";
+            this.Animationcb.UseVisualStyleBackColor = true;
+            // 
+            // Computer_Graphicscb
+            // 
+            this.Computer_Graphicscb.AutoSize = true;
+            this.Computer_Graphicscb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Computer_Graphicscb.Location = new System.Drawing.Point(36, 277);
+            this.Computer_Graphicscb.Name = "Computer_Graphicscb";
+            this.Computer_Graphicscb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Computer_Graphicscb.Size = new System.Drawing.Size(213, 20);
+            this.Computer_Graphicscb.TabIndex = 18;
+            this.Computer_Graphicscb.Text = "CSCI 5437 - Computer Graphics";
+            this.Computer_Graphicscb.UseVisualStyleBackColor = true;
+            // 
+            // Artificial_Intelligencecb
+            // 
+            this.Artificial_Intelligencecb.AutoSize = true;
+            this.Artificial_Intelligencecb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Artificial_Intelligencecb.Location = new System.Drawing.Point(36, 256);
+            this.Artificial_Intelligencecb.Name = "Artificial_Intelligencecb";
+            this.Artificial_Intelligencecb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Artificial_Intelligencecb.Size = new System.Drawing.Size(215, 20);
+            this.Artificial_Intelligencecb.TabIndex = 17;
+            this.Artificial_Intelligencecb.Text = "CSCI 5430 - Artificial Intelligence";
+            this.Artificial_Intelligencecb.UseVisualStyleBackColor = true;
+            // 
+            // Discrete_Simulationcb
+            // 
+            this.Discrete_Simulationcb.AutoSize = true;
+            this.Discrete_Simulationcb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Discrete_Simulationcb.Location = new System.Drawing.Point(36, 236);
+            this.Discrete_Simulationcb.Name = "Discrete_Simulationcb";
+            this.Discrete_Simulationcb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Discrete_Simulationcb.Size = new System.Drawing.Size(213, 20);
+            this.Discrete_Simulationcb.TabIndex = 16;
+            this.Discrete_Simulationcb.Text = "CSCI 5230 - Discrete Simulation";
+            this.Discrete_Simulationcb.UseVisualStyleBackColor = true;
+            // 
+            // Selected_Topicscb
+            // 
+            this.Selected_Topicscb.AutoSize = true;
+            this.Selected_Topicscb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Selected_Topicscb.Location = new System.Drawing.Point(36, 218);
+            this.Selected_Topicscb.Name = "Selected_Topicscb";
+            this.Selected_Topicscb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Selected_Topicscb.Size = new System.Drawing.Size(197, 20);
+            this.Selected_Topicscb.TabIndex = 15;
+            this.Selected_Topicscb.Text = "CSCI 5090 - Selected Topics";
+            this.Selected_Topicscb.UseVisualStyleBackColor = true;
+            // 
+            // Optical_Networkscb
+            // 
+            this.Optical_Networkscb.AutoSize = true;
+            this.Optical_Networkscb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Optical_Networkscb.Location = new System.Drawing.Point(36, 199);
+            this.Optical_Networkscb.Name = "Optical_Networkscb";
+            this.Optical_Networkscb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Optical_Networkscb.Size = new System.Drawing.Size(199, 20);
+            this.Optical_Networkscb.TabIndex = 14;
+            this.Optical_Networkscb.Text = "CSCI 4539 - Optical Networks";
+            this.Optical_Networkscb.UseVisualStyleBackColor = true;
+            // 
+            // Broadband_Networkscb
+            // 
+            this.Broadband_Networkscb.AutoSize = true;
+            this.Broadband_Networkscb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Broadband_Networkscb.Location = new System.Drawing.Point(36, 179);
+            this.Broadband_Networkscb.Name = "Broadband_Networkscb";
+            this.Broadband_Networkscb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Broadband_Networkscb.Size = new System.Drawing.Size(225, 20);
+            this.Broadband_Networkscb.TabIndex = 13;
+            this.Broadband_Networkscb.Text = "CSCI 4537 - Broadband Networks";
+            this.Broadband_Networkscb.UseVisualStyleBackColor = true;
+            // 
+            // Software_Testing_and_Quality_Assurancecb
+            // 
+            this.Software_Testing_and_Quality_Assurancecb.AutoSize = true;
+            this.Software_Testing_and_Quality_Assurancecb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Software_Testing_and_Quality_Assurancecb.Location = new System.Drawing.Point(36, 160);
+            this.Software_Testing_and_Quality_Assurancecb.Name = "Software_Testing_and_Quality_Assurancecb";
+            this.Software_Testing_and_Quality_Assurancecb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Software_Testing_and_Quality_Assurancecb.Size = new System.Drawing.Size(272, 20);
+            this.Software_Testing_and_Quality_Assurancecb.TabIndex = 12;
+            this.Software_Testing_and_Quality_Assurancecb.Text = "CSCI 4534 - Software Testing and Testing";
+            this.Software_Testing_and_Quality_Assurancecb.UseVisualStyleBackColor = true;
+            // 
+            // Game_Programmingcb
+            // 
+            this.Game_Programmingcb.AutoSize = true;
+            this.Game_Programmingcb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Game_Programmingcb.Location = new System.Drawing.Point(36, 139);
+            this.Game_Programmingcb.Name = "Game_Programmingcb";
+            this.Game_Programmingcb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Game_Programmingcb.Size = new System.Drawing.Size(219, 20);
+            this.Game_Programmingcb.TabIndex = 11;
+            this.Game_Programmingcb.Text = "CSCI 4439 - Game Programming";
+            this.Game_Programmingcb.UseVisualStyleBackColor = true;
+            // 
+            // button28
+            // 
+            this.button28.Location = new System.Drawing.Point(60, 380);
+            this.button28.Name = "button28";
+            this.button28.Size = new System.Drawing.Size(75, 23);
+            this.button28.TabIndex = 10;
+            this.button28.Text = "Back";
+            this.button28.UseVisualStyleBackColor = true;
+            this.button28.Click += new System.EventHandler(this.back_Click);
+            // 
+            // button29
+            // 
+            this.button29.Location = new System.Drawing.Point(610, 380);
+            this.button29.Name = "button29";
+            this.button29.Size = new System.Drawing.Size(75, 23);
+            this.button29.TabIndex = 7;
+            this.button29.Text = "Next";
+            this.button29.UseVisualStyleBackColor = true;
+            this.button29.Click += new System.EventHandler(this.forward_Click);
+            // 
+            // Human_Computer_Interactioncb
+            // 
+            this.Human_Computer_Interactioncb.AutoSize = true;
+            this.Human_Computer_Interactioncb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Human_Computer_Interactioncb.Location = new System.Drawing.Point(36, 119);
+            this.Human_Computer_Interactioncb.Name = "Human_Computer_Interactioncb";
+            this.Human_Computer_Interactioncb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Human_Computer_Interactioncb.Size = new System.Drawing.Size(266, 20);
+            this.Human_Computer_Interactioncb.TabIndex = 4;
+            this.Human_Computer_Interactioncb.Text = "CSCI 4235 - Human Computer Interaction";
+            this.Human_Computer_Interactioncb.UseVisualStyleBackColor = true;
+            // 
+            // Data_Warehouse_Designcb
+            // 
+            this.Data_Warehouse_Designcb.AutoSize = true;
+            this.Data_Warehouse_Designcb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Data_Warehouse_Designcb.Location = new System.Drawing.Point(36, 101);
+            this.Data_Warehouse_Designcb.Name = "Data_Warehouse_Designcb";
+            this.Data_Warehouse_Designcb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Data_Warehouse_Designcb.Size = new System.Drawing.Size(246, 20);
+            this.Data_Warehouse_Designcb.TabIndex = 3;
+            this.Data_Warehouse_Designcb.Text = "CSCI 4132 - Data Warehouse Design";
+            this.Data_Warehouse_Designcb.UseVisualStyleBackColor = true;
+            // 
+            // Logic_Circuits_and_Microprocessorscb
+            // 
+            this.Logic_Circuits_and_Microprocessorscb.AutoSize = true;
+            this.Logic_Circuits_and_Microprocessorscb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Logic_Circuits_and_Microprocessorscb.Location = new System.Drawing.Point(36, 82);
+            this.Logic_Circuits_and_Microprocessorscb.Name = "Logic_Circuits_and_Microprocessorscb";
+            this.Logic_Circuits_and_Microprocessorscb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Logic_Circuits_and_Microprocessorscb.Size = new System.Drawing.Size(307, 20);
+            this.Logic_Circuits_and_Microprocessorscb.TabIndex = 2;
+            this.Logic_Circuits_and_Microprocessorscb.Text = "CSCI 3231 - Logic CIrcuits and Microprocessors";
+            this.Logic_Circuits_and_Microprocessorscb.UseVisualStyleBackColor = true;
+            // 
+            // Introduction_to_Computer_Engineeringcb
+            // 
+            this.Introduction_to_Computer_Engineeringcb.AutoSize = true;
+            this.Introduction_to_Computer_Engineeringcb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Introduction_to_Computer_Engineeringcb.Location = new System.Drawing.Point(36, 63);
+            this.Introduction_to_Computer_Engineeringcb.Name = "Introduction_to_Computer_Engineeringcb";
+            this.Introduction_to_Computer_Engineeringcb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Introduction_to_Computer_Engineeringcb.Size = new System.Drawing.Size(325, 20);
+            this.Introduction_to_Computer_Engineeringcb.TabIndex = 1;
+            this.Introduction_to_Computer_Engineeringcb.Text = "ENGR 2332 - Introduction to Computer Engineering";
+            this.Introduction_to_Computer_Engineeringcb.UseVisualStyleBackColor = true;
+            // 
+            // label14
+            // 
+            this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(0, 0);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(760, 45);
+            this.label14.TabIndex = 0;
+            this.label14.Text = "CSCI Electives and Others (Part 1)";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // E2Panel
             // 
             this.E2Panel.Controls.Add(this.Advanced_Software_Engineeringcb);
@@ -2028,6 +2036,102 @@
             this.E2Panel.Name = "E2Panel";
             this.E2Panel.Size = new System.Drawing.Size(760, 437);
             this.E2Panel.TabIndex = 21;
+            // 
+            // Advanced_Software_Engineeringcb
+            // 
+            this.Advanced_Software_Engineeringcb.AutoSize = true;
+            this.Advanced_Software_Engineeringcb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Advanced_Software_Engineeringcb.Location = new System.Drawing.Point(211, 340);
+            this.Advanced_Software_Engineeringcb.Name = "Advanced_Software_Engineeringcb";
+            this.Advanced_Software_Engineeringcb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Advanced_Software_Engineeringcb.Size = new System.Drawing.Size(290, 20);
+            this.Advanced_Software_Engineeringcb.TabIndex = 22;
+            this.Advanced_Software_Engineeringcb.Text = "CSCI 4322 - Advanced Software Engineering";
+            this.Advanced_Software_Engineeringcb.UseVisualStyleBackColor = true;
+            // 
+            // Computing_for_Engineerscb
+            // 
+            this.Computing_for_Engineerscb.AutoSize = true;
+            this.Computing_for_Engineerscb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Computing_for_Engineerscb.Location = new System.Drawing.Point(211, 317);
+            this.Computing_for_Engineerscb.Name = "Computing_for_Engineerscb";
+            this.Computing_for_Engineerscb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Computing_for_Engineerscb.Size = new System.Drawing.Size(253, 20);
+            this.Computing_for_Engineerscb.TabIndex = 21;
+            this.Computing_for_Engineerscb.Text = "ENGR 1731 - Computing for Engineers";
+            this.Computing_for_Engineerscb.UseVisualStyleBackColor = true;
+            // 
+            // Elementary_Statisticscb
+            // 
+            this.Elementary_Statisticscb.AutoSize = true;
+            this.Elementary_Statisticscb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Elementary_Statisticscb.Location = new System.Drawing.Point(211, 295);
+            this.Elementary_Statisticscb.Name = "Elementary_Statisticscb";
+            this.Elementary_Statisticscb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Elementary_Statisticscb.Size = new System.Drawing.Size(228, 20);
+            this.Elementary_Statisticscb.TabIndex = 20;
+            this.Elementary_Statisticscb.Text = "STAT 1401 - Elementary Statistics";
+            this.Elementary_Statisticscb.UseVisualStyleBackColor = true;
+            // 
+            // Survey_of_Calculuscb
+            // 
+            this.Survey_of_Calculuscb.AutoSize = true;
+            this.Survey_of_Calculuscb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Survey_of_Calculuscb.Location = new System.Drawing.Point(211, 274);
+            this.Survey_of_Calculuscb.Name = "Survey_of_Calculuscb";
+            this.Survey_of_Calculuscb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Survey_of_Calculuscb.Size = new System.Drawing.Size(217, 20);
+            this.Survey_of_Calculuscb.TabIndex = 19;
+            this.Survey_of_Calculuscb.Text = "MATH 1232 - Survey of Calculus";
+            this.Survey_of_Calculuscb.UseVisualStyleBackColor = true;
+            // 
+            // Introduction_To_Mathematical_Modelingcb
+            // 
+            this.Introduction_To_Mathematical_Modelingcb.AutoSize = true;
+            this.Introduction_To_Mathematical_Modelingcb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Introduction_To_Mathematical_Modelingcb.Location = new System.Drawing.Point(211, 254);
+            this.Introduction_To_Mathematical_Modelingcb.Name = "Introduction_To_Mathematical_Modelingcb";
+            this.Introduction_To_Mathematical_Modelingcb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Introduction_To_Mathematical_Modelingcb.Size = new System.Drawing.Size(331, 20);
+            this.Introduction_To_Mathematical_Modelingcb.TabIndex = 18;
+            this.Introduction_To_Mathematical_Modelingcb.Text = "MATH 1101 - Introduction to Mathematical Modeling";
+            this.Introduction_To_Mathematical_Modelingcb.UseVisualStyleBackColor = true;
+            // 
+            // Quantitative_Reasoningcb
+            // 
+            this.Quantitative_Reasoningcb.AutoSize = true;
+            this.Quantitative_Reasoningcb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Quantitative_Reasoningcb.Location = new System.Drawing.Point(211, 236);
+            this.Quantitative_Reasoningcb.Name = "Quantitative_Reasoningcb";
+            this.Quantitative_Reasoningcb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Quantitative_Reasoningcb.Size = new System.Drawing.Size(246, 20);
+            this.Quantitative_Reasoningcb.TabIndex = 17;
+            this.Quantitative_Reasoningcb.Text = "MATH 1001 - Quantitative Reasoning";
+            this.Quantitative_Reasoningcb.UseVisualStyleBackColor = true;
+            // 
+            // Principles_Of_Biology_1_With_Labcb
+            // 
+            this.Principles_Of_Biology_1_With_Labcb.AutoSize = true;
+            this.Principles_Of_Biology_1_With_Labcb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Principles_Of_Biology_1_With_Labcb.Location = new System.Drawing.Point(211, 217);
+            this.Principles_Of_Biology_1_With_Labcb.Name = "Principles_Of_Biology_1_With_Labcb";
+            this.Principles_Of_Biology_1_With_Labcb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Principles_Of_Biology_1_With_Labcb.Size = new System.Drawing.Size(151, 20);
+            this.Principles_Of_Biology_1_With_Labcb.TabIndex = 16;
+            this.Principles_Of_Biology_1_With_Labcb.Text = "BIOL 1107 and 1107L";
+            this.Principles_Of_Biology_1_With_Labcb.UseVisualStyleBackColor = true;
+            // 
+            // Linear_Algebracb
+            // 
+            this.Linear_Algebracb.AutoSize = true;
+            this.Linear_Algebracb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Linear_Algebracb.Location = new System.Drawing.Point(211, 198);
+            this.Linear_Algebracb.Name = "Linear_Algebracb";
+            this.Linear_Algebracb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Linear_Algebracb.Size = new System.Drawing.Size(195, 20);
+            this.Linear_Algebracb.TabIndex = 15;
+            this.Linear_Algebracb.Text = "MATH 2160 - Linear Algebra";
+            this.Linear_Algebracb.UseVisualStyleBackColor = true;
             // 
             // Software_Security_and_Secure_Codingcb
             // 
@@ -2146,90 +2250,6 @@
             this.label15.Text = "CSCI Electives and Others (Part 2)";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Computing_for_Engineerscb
-            // 
-            this.Computing_for_Engineerscb.AutoSize = true;
-            this.Computing_for_Engineerscb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Computing_for_Engineerscb.Location = new System.Drawing.Point(211, 317);
-            this.Computing_for_Engineerscb.Name = "Computing_for_Engineerscb";
-            this.Computing_for_Engineerscb.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Computing_for_Engineerscb.Size = new System.Drawing.Size(253, 20);
-            this.Computing_for_Engineerscb.TabIndex = 21;
-            this.Computing_for_Engineerscb.Text = "ENGR 1731 - Computing for Engineers";
-            this.Computing_for_Engineerscb.UseVisualStyleBackColor = true;
-            // 
-            // Elementary_Statisticscb
-            // 
-            this.Elementary_Statisticscb.AutoSize = true;
-            this.Elementary_Statisticscb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Elementary_Statisticscb.Location = new System.Drawing.Point(211, 295);
-            this.Elementary_Statisticscb.Name = "Elementary_Statisticscb";
-            this.Elementary_Statisticscb.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Elementary_Statisticscb.Size = new System.Drawing.Size(228, 20);
-            this.Elementary_Statisticscb.TabIndex = 20;
-            this.Elementary_Statisticscb.Text = "STAT 1401 - Elementary Statistics";
-            this.Elementary_Statisticscb.UseVisualStyleBackColor = true;
-            // 
-            // Survey_of_Calculuscb
-            // 
-            this.Survey_of_Calculuscb.AutoSize = true;
-            this.Survey_of_Calculuscb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Survey_of_Calculuscb.Location = new System.Drawing.Point(211, 274);
-            this.Survey_of_Calculuscb.Name = "Survey_of_Calculuscb";
-            this.Survey_of_Calculuscb.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Survey_of_Calculuscb.Size = new System.Drawing.Size(217, 20);
-            this.Survey_of_Calculuscb.TabIndex = 19;
-            this.Survey_of_Calculuscb.Text = "MATH 1232 - Survey of Calculus";
-            this.Survey_of_Calculuscb.UseVisualStyleBackColor = true;
-            // 
-            // Introduction_To_Mathematical_Modelingcb
-            // 
-            this.Introduction_To_Mathematical_Modelingcb.AutoSize = true;
-            this.Introduction_To_Mathematical_Modelingcb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Introduction_To_Mathematical_Modelingcb.Location = new System.Drawing.Point(211, 254);
-            this.Introduction_To_Mathematical_Modelingcb.Name = "Introduction_To_Mathematical_Modelingcb";
-            this.Introduction_To_Mathematical_Modelingcb.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Introduction_To_Mathematical_Modelingcb.Size = new System.Drawing.Size(331, 20);
-            this.Introduction_To_Mathematical_Modelingcb.TabIndex = 18;
-            this.Introduction_To_Mathematical_Modelingcb.Text = "MATH 1101 - Introduction to Mathematical Modeling";
-            this.Introduction_To_Mathematical_Modelingcb.UseVisualStyleBackColor = true;
-            // 
-            // Quantitative_Reasoningcb
-            // 
-            this.Quantitative_Reasoningcb.AutoSize = true;
-            this.Quantitative_Reasoningcb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Quantitative_Reasoningcb.Location = new System.Drawing.Point(211, 236);
-            this.Quantitative_Reasoningcb.Name = "Quantitative_Reasoningcb";
-            this.Quantitative_Reasoningcb.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Quantitative_Reasoningcb.Size = new System.Drawing.Size(246, 20);
-            this.Quantitative_Reasoningcb.TabIndex = 17;
-            this.Quantitative_Reasoningcb.Text = "MATH 1001 - Quantitative Reasoning";
-            this.Quantitative_Reasoningcb.UseVisualStyleBackColor = true;
-            // 
-            // Principles_Of_Biology_1_With_Labcb
-            // 
-            this.Principles_Of_Biology_1_With_Labcb.AutoSize = true;
-            this.Principles_Of_Biology_1_With_Labcb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Principles_Of_Biology_1_With_Labcb.Location = new System.Drawing.Point(211, 217);
-            this.Principles_Of_Biology_1_With_Labcb.Name = "Principles_Of_Biology_1_With_Labcb";
-            this.Principles_Of_Biology_1_With_Labcb.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Principles_Of_Biology_1_With_Labcb.Size = new System.Drawing.Size(151, 20);
-            this.Principles_Of_Biology_1_With_Labcb.TabIndex = 16;
-            this.Principles_Of_Biology_1_With_Labcb.Text = "BIOL 1107 and 1107L";
-            this.Principles_Of_Biology_1_With_Labcb.UseVisualStyleBackColor = true;
-            // 
-            // Linear_Algebracb
-            // 
-            this.Linear_Algebracb.AutoSize = true;
-            this.Linear_Algebracb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Linear_Algebracb.Location = new System.Drawing.Point(211, 198);
-            this.Linear_Algebracb.Name = "Linear_Algebracb";
-            this.Linear_Algebracb.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Linear_Algebracb.Size = new System.Drawing.Size(195, 20);
-            this.Linear_Algebracb.TabIndex = 15;
-            this.Linear_Algebracb.Text = "MATH 2160 - Linear Algebra";
-            this.Linear_Algebracb.UseVisualStyleBackColor = true;
-            // 
             // CreateCoursePanel
             // 
             this.CreateCoursePanel.Controls.Add(this.button38);
@@ -2250,6 +2270,25 @@
             this.CreateCoursePanel.Name = "CreateCoursePanel";
             this.CreateCoursePanel.Size = new System.Drawing.Size(760, 437);
             this.CreateCoursePanel.TabIndex = 22;
+            // 
+            // button36
+            // 
+            this.button36.Location = new System.Drawing.Point(71, 380);
+            this.button36.Name = "button36";
+            this.button36.Size = new System.Drawing.Size(75, 23);
+            this.button36.TabIndex = 11;
+            this.button36.Text = "Back";
+            this.button36.UseVisualStyleBackColor = true;
+            this.button36.Click += new System.EventHandler(this.button36_Click);
+            // 
+            // button35
+            // 
+            this.button35.Location = new System.Drawing.Point(610, 380);
+            this.button35.Name = "button35";
+            this.button35.Size = new System.Drawing.Size(75, 23);
+            this.button35.TabIndex = 8;
+            this.button35.Text = "Save";
+            this.button35.UseVisualStyleBackColor = true;
             // 
             // label16
             // 
@@ -2292,6 +2331,15 @@
             this.CustomClassesPanel.Name = "CustomClassesPanel";
             this.CustomClassesPanel.Size = new System.Drawing.Size(760, 437);
             this.CustomClassesPanel.TabIndex = 23;
+            // 
+            // customClassesBox
+            // 
+            this.customClassesBox.FormattingEnabled = true;
+            this.customClassesBox.Location = new System.Drawing.Point(0, 45);
+            this.customClassesBox.MultiColumn = true;
+            this.customClassesBox.Name = "customClassesBox";
+            this.customClassesBox.Size = new System.Drawing.Size(760, 319);
+            this.customClassesBox.TabIndex = 11;
             // 
             // button33
             // 
