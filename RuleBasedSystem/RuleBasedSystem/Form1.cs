@@ -37,7 +37,7 @@ namespace RuleBasedSystem
             Course Healthful_Living = new Course
             {
                 Prefix = "HLTH 1520",
-                IsCompleted = false,
+                IsCompleted = Healthful_Livingcb.Checked,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -47,7 +47,7 @@ namespace RuleBasedSystem
             Course Physical_Activity_1 = new Course
             {
                 Prefix = "KINS 1XXX",
-                IsCompleted = false,
+                IsCompleted = Physical_Activity_1cb.Checked,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -57,7 +57,7 @@ namespace RuleBasedSystem
             Course Physical_Activity_2 = new Course
             {
                 Prefix = "KINS 1XXX",
-                IsCompleted = false,
+                IsCompleted = Physical_Activity_2cb.Checked,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -67,7 +67,7 @@ namespace RuleBasedSystem
             Course First_Year_Experience = new Course
             {
                 Prefix = "FYE 1220",
-                IsCompleted = false,
+                IsCompleted = First_Year_Experiencecb.Checked,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -88,8 +88,7 @@ namespace RuleBasedSystem
             Course Composition_2 = new Course
             {
                 Prefix = "ENGL 1102",
-                IsCompleted = false,
-                hasPreReqs = true,
+                IsCompleted = Composition_2cb.Checked,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -99,7 +98,7 @@ namespace RuleBasedSystem
             Course College_Algebra = new Course
             {
                 Prefix = "MATH 1111",
-                IsCompleted = true,
+                IsCompleted = College_Algebracb.Checked,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -109,7 +108,7 @@ namespace RuleBasedSystem
             Course Trigonometry = new Course
             {
                 Prefix = "MATH 1112",
-                IsCompleted = false,
+                IsCompleted = Trigonometrycb.Checked,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -119,7 +118,7 @@ namespace RuleBasedSystem
             Course Pre_Calculus = new Course
             {
                 Prefix = "MATH 1113",
-                IsCompleted = false,
+                IsCompleted = Pre_Calculuscb.Checked,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -129,7 +128,7 @@ namespace RuleBasedSystem
             Course Calculus_1 = new Course
             {
                 Prefix = "MATH 1441",
-                IsCompleted = false,
+                IsCompleted = Calculus_1cb.Checked,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -141,7 +140,7 @@ namespace RuleBasedSystem
             Course Quantitative_Reasoning = new Course
             {
                 Prefix = "MATH 1001",
-                IsCompleted = false,
+                IsCompleted = Quantitative_Reasoningcb.Checked,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -151,7 +150,7 @@ namespace RuleBasedSystem
             Course Introduction_To_Mathematical_Modeling = new Course
             {
                 Prefix = "MATH 1101",
-                IsCompleted = false,
+                IsCompleted = Introduction_To_Mathematical_Modelingcb.Checked,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -161,7 +160,7 @@ namespace RuleBasedSystem
             Course Survey_of_Calculus = new Course
             {
                 Prefix = "MATH 1232",
-                IsCompleted = false,
+                IsCompleted = Survey_of_Calculuscb.Checked,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -171,7 +170,7 @@ namespace RuleBasedSystem
             Course Elementary_Statistics = new Course
             {
                 Prefix = "STAT 1401",
-                IsCompleted = false,
+                IsCompleted = Elementary_Statisticscb.Checked,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -183,7 +182,7 @@ namespace RuleBasedSystem
             Course World_History_2 = new Course
             {
                 Prefix = "HIST 1112",
-                IsCompleted = false,
+                IsCompleted = World_History_2cb.Checked,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -193,7 +192,7 @@ namespace RuleBasedSystem
             Course Global_Citizens = new Course
             {
                 Prefix = "FYE 1410",
-                IsCompleted = false,
+                IsCompleted = Global_Citizenscb.Checked,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -204,7 +203,7 @@ namespace RuleBasedSystem
             Course World_Literature_1_or_2 = new Course
             {
                 Prefix = "ENGL 2111/2112",
-                IsCompleted = false,
+                IsCompleted = World_Literature_1_or_2cb.Checked,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -214,7 +213,7 @@ namespace RuleBasedSystem
             Course Public_Speaking = new Course
             {
                 Prefix = "COMM 1110",
-                IsCompleted = false,
+                IsCompleted = Public_Speakingcb.Checked,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -225,7 +224,7 @@ namespace RuleBasedSystem
             Course Principles_of_Chemistry_1_with_lab = new Course
             {
                 Prefix = "CHEM 1211K",
-                IsCompleted = false,
+                IsCompleted = Principles_of_Chemistry_1_with_labcb.Checked,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -235,7 +234,7 @@ namespace RuleBasedSystem
             Course Introduction_to_the_Earth = new Course
             {
                 Prefix = "GEOL 1121",
-                IsCompleted = false,
+                IsCompleted = Introduction_to_the_Earthcb.Checked,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -245,7 +244,7 @@ namespace RuleBasedSystem
             Course Introduction_to_Physics_1 = new Course
             {
                 Prefix = "PHYS 1111K",
-                IsCompleted = false,
+                IsCompleted = Introduction_to_Physics_1cb.Checked,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -255,7 +254,7 @@ namespace RuleBasedSystem
             Course Principles_of_Physics_1 = new Course
             {
                 Prefix = "PHYS 2211K",
-                IsCompleted = false,
+                IsCompleted = Principles_of_Physics_1cb.Checked,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -266,7 +265,7 @@ namespace RuleBasedSystem
             Course Environmental_Biology_with_lab = new Course
             {
                 Prefix = "BIOL 1230 & 1210",
-                IsCompleted = false,
+                IsCompleted = Environmental_Biology_with_labcb.Checked,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -276,7 +275,7 @@ namespace RuleBasedSystem
             Course Chemistry_and_the_Environment_with_lab = new Course
             {
                 Prefix = "CHEM 1040",
-                IsCompleted = false,
+                IsCompleted = Chemistry_and_the_Environment_with_labcb.Checked,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -286,7 +285,7 @@ namespace RuleBasedSystem
             Course Environment_Geology_with_lab = new Course
             {
                 Prefix = "GEOL 1340",
-                IsCompleted = false,
+                IsCompleted = Environment_Geology_with_labcb.Checked,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -296,7 +295,7 @@ namespace RuleBasedSystem
             Course Environment_Physics_with_lab = new Course
             {
                 Prefix = "PHYS 1149",
-                IsCompleted = false,
+                IsCompleted = Environment_Physics_with_labcb.Checked,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -307,7 +306,7 @@ namespace RuleBasedSystem
             Course Economics_in_a_Global_Society = new Course
             {
                 Prefix = "ECON 2105",
-                IsCompleted = false,
+                IsCompleted = Economics_in_a_Global_Societycb.Checked,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -317,7 +316,7 @@ namespace RuleBasedSystem
             Course US_A_Comprehensive_Survey = new Course
             {
                 Prefix = "HIST 2110",
-                IsCompleted = false,
+                IsCompleted = US_A_Comprehensive_Surveycb.Checked,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -327,7 +326,7 @@ namespace RuleBasedSystem
             Course American_Government = new Course
             {
                 Prefix = "POLS 1101",
-                IsCompleted = false,
+                IsCompleted = American_Governmentcb.Checked,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -337,7 +336,7 @@ namespace RuleBasedSystem
             Course Introduction_to_Anthropology = new Course
             {
                 Prefix = "ANTH 1102",
-                IsCompleted = false,
+                IsCompleted = Introduction_to_Anthropologycb.Checked,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -347,7 +346,7 @@ namespace RuleBasedSystem
             Course World_Regional_Geography = new Course
             {
                 Prefix = "GEOG 1130",
-                IsCompleted = false,
+                IsCompleted = World_Regional_Geographycb.Checked,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -357,7 +356,7 @@ namespace RuleBasedSystem
             Course Introduction_to_Phychology = new Course
             {
                 Prefix = "PSYC 1101",
-                IsCompleted = false,
+                IsCompleted = Introduction_to_Phychologycb.Checked,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -367,7 +366,7 @@ namespace RuleBasedSystem
             Course Introduction_to_Sociology = new Course
             {
                 Prefix = "SOCI 1101",
-                IsCompleted = false,
+                IsCompleted = Introduction_to_Sociologycb.Checked,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -378,7 +377,7 @@ namespace RuleBasedSystem
             Course Programming_Principles_1 = new Course
             {
                 Prefix = "CSCI 1301",
-                IsCompleted = false,
+                IsCompleted = Programming_Principles_1cb.Checked,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -388,7 +387,7 @@ namespace RuleBasedSystem
             Course Calculus_2 = new Course
             {
                 Prefix = "MATH 2242",
-                IsCompleted = false,
+                IsCompleted = Calculus_2cb.Checked,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -398,7 +397,7 @@ namespace RuleBasedSystem
             Course Discrete_Math = new Course
             {
                 Prefix = "MATH 2130",
-                IsCompleted = false,
+                IsCompleted = Discrete_Mathcb.Checked,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -408,7 +407,7 @@ namespace RuleBasedSystem
             Course Programming_Principles_2 = new Course
             {
                 Prefix = "CSCI 1302",
-                IsCompleted = false,
+                IsCompleted = Programming_Principles_2cb.Checked,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -418,7 +417,7 @@ namespace RuleBasedSystem
             Course Statistics_1 = new Course
             {
                 Prefix = "STAT 2231",
-                IsCompleted = false,
+                IsCompleted = Statistics_1cb.Checked,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -428,7 +427,7 @@ namespace RuleBasedSystem
             Course Linear_Algebra = new Course
             {
                 Prefix = "MATH 2160",
-                IsCompleted = false,
+                IsCompleted = Linear_Algebracb.Checked,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -438,7 +437,7 @@ namespace RuleBasedSystem
             Course Computers_Ethics_and_Society = new Course
             {
                 Prefix = "CSCI 2120",
-                IsCompleted = false,
+                IsCompleted = Computers_Ethics_and_Societycb.Checked,
                 Fall = true,
                 Summer = false,
                 Spring = true,
@@ -449,7 +448,7 @@ namespace RuleBasedSystem
             Course Introduction_To_International_Studies = new Course
             {
                 Prefix = "INTS 2130",
-                IsCompleted = false,
+                IsCompleted = Introduction_to_International_Studiescb.Checked,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -461,8 +460,7 @@ namespace RuleBasedSystem
             Course Principles_Of_Biology_1_With_Lab = new Course
             {
                 Prefix = "BIOL 1107 & 1107L",
-                IsCompleted = false,
-
+                IsCompleted = Principles_of_Biology_1_with_labcb.Checked,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -473,8 +471,7 @@ namespace RuleBasedSystem
             Course Principles_Of_Biology_2_With_Lab = new Course
             {
                 Prefix = "BIOL 1108 & 1108L",
-                IsCompleted = false,
-
+                IsCompleted = Principles_of_Biology_2_with_labcb.Checked,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -484,7 +481,7 @@ namespace RuleBasedSystem
             Course Principles_Of_Chemistry_2_With_Lab = new Course
             {
                 Prefix = "CHEM 1212K",
-                IsCompleted = false,
+                IsCompleted = Principles_of_Chemistry_2_with_labcb.Checked,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -494,7 +491,7 @@ namespace RuleBasedSystem
             Course General_Historical_Geology_With_Lab = new Course
             {
                 Prefix = "GEOL 1122",
-                IsCompleted = false,
+                IsCompleted = General_Historal_Geology_with_labcb.Checked,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -504,7 +501,7 @@ namespace RuleBasedSystem
             Course Introduction_to_Physics_2_with_Lab = new Course
             {
                 Prefix = "PHYS 1112K",
-                IsCompleted = false,
+                IsCompleted = Introduction_to_Physics_2_with_labcb.Checked,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -514,7 +511,7 @@ namespace RuleBasedSystem
             Course Principles_of_Physics_2 = new Course
             {
                 Prefix = "PHYS 2212K",
-                IsCompleted = false,
+                IsCompleted = Principles_of_Physics_2cb.Checked,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -526,7 +523,7 @@ namespace RuleBasedSystem
             Course Data_Structures = new Course
             {
                 Prefix = "CSCI 3230",
-                IsCompleted = false,
+                IsCompleted = Data_Structurescb.Checked,
                 Fall = true,
                 Summer = false,
                 Spring = true,
@@ -536,7 +533,7 @@ namespace RuleBasedSystem
             Course Systems_Software = new Course
             {
                 Prefix = "CSCI 3232",
-                IsCompleted = false,
+                IsCompleted = Systems_Softwarecb.Checked,
                 Fall = false,
                 Summer = false,
                 Spring = true,
@@ -546,7 +543,7 @@ namespace RuleBasedSystem
             Course Cpp_Programming = new Course
             {
                 Prefix = "CSCI 2490",
-                IsCompleted = false,
+                IsCompleted = Cpp_Programming.Checked,
                 Fall = false,
                 Summer = false,
                 Spring = false,
@@ -556,7 +553,7 @@ namespace RuleBasedSystem
             Course Introduction_To_Operating_Systems = new Course
             {
                 Prefix = "CSCI 3341",
-                IsCompleted = false,
+                IsCompleted = Introduction_To_Operating_Systemscb.Checked,
                 Fall = true,
                 Summer = false,
                 Spring = false,
@@ -566,7 +563,7 @@ namespace RuleBasedSystem
             Course Theoretical_Foundations = new Course
             {
                 Prefix = "CSCI 3236",
-                IsCompleted = false,
+                IsCompleted = Theoretical_Foundationscb.Checked,
                 Fall = true,
                 Summer = false,
                 Spring = true,
@@ -576,7 +573,7 @@ namespace RuleBasedSystem
             Course Database_Systems = new Course
             {
                 Prefix = "CSCI 3432",
-                IsCompleted = false,
+                IsCompleted = Database_Systemscb.Checked,
                 Fall = false,
                 Summer = false,
                 Spring = true,
@@ -586,7 +583,7 @@ namespace RuleBasedSystem
             Course Algorithm_Design_and_Analysis = new Course
             {
                 Prefix = "CSCI 5330",
-                IsCompleted = false,
+                IsCompleted = Algorithm_Design_and_Analysiscb.Checked,
                 Fall = true,
                 Summer = false,
                 Spring = true,
@@ -596,7 +593,7 @@ namespace RuleBasedSystem
             Course Computer_Architecture = new Course
             {
                 Prefix = "CSCI 5331",
-                IsCompleted = false,
+                IsCompleted = Computer_Architecturecb.Checked,
                 Fall = true,
                 Summer = false,
                 Spring = true,
@@ -606,7 +603,7 @@ namespace RuleBasedSystem
             Course Data_Communications_And_Networking = new Course
             {
                 Prefix = "CSCI 5332",
-                IsCompleted = false,
+                IsCompleted = Data_Communications_And_Networkingcb.Checked,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -616,7 +613,7 @@ namespace RuleBasedSystem
             Course Object_Oriented_Design = new Course
             {
                 Prefix = "CSCI 5335",
-                IsCompleted = false,
+                IsCompleted = Object_Oriented_Designcb.Checked,
                 Fall = true,
                 Summer = false,
                 Spring = true,
@@ -626,7 +623,7 @@ namespace RuleBasedSystem
             Course Computer_Security = new Course
             {
                 Prefix = "CSCI 5431",
-                IsCompleted = false,
+                IsCompleted = Computer_Securitycb.Checked,
                 Fall = true,
                 Summer = false,
                 Spring = true,
@@ -636,7 +633,7 @@ namespace RuleBasedSystem
             Course Distributed_Web_Systems_Design = new Course
             {
                 Prefix = "CSCI 5436",
-                IsCompleted = false,
+                IsCompleted = Distributed_Web_Systems_Designcb.Checked,
                 Fall = true,
                 Summer = false,
                 Spring = true,
@@ -646,7 +643,7 @@ namespace RuleBasedSystem
             Course Software_Engineering = new Course
             {
                 Prefix = "CSCI 5530",
-                IsCompleted = false,
+                IsCompleted = Software_Engineeringcb.Checked,
                 Fall = true,
                 Summer = false,
                 Spring = true,
@@ -656,7 +653,7 @@ namespace RuleBasedSystem
             Course Computing_for_Engineers = new Course
             {
                 Prefix = "ENGR 1731",
-                IsCompleted = false,
+                IsCompleted = Computing_for_Engineerscb.Checked,
                 Fall = false,
                 Summer = false,
                 Spring = false,
@@ -666,7 +663,7 @@ namespace RuleBasedSystem
             Course Logic_Circuit_Design = new Course
             {
                 Prefix = "ENGR 2332",
-                IsCompleted = false,
+                IsCompleted = Logic_Circuit_Designcb.Checked,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -676,7 +673,7 @@ namespace RuleBasedSystem
             Course Logic_Circuits_and_Microprocessors = new Course
             {
                 Prefix = "CSCI 3231",
-                IsCompleted = false,
+                IsCompleted = Logic_Circuits_and_Microprocessorscb.Checked,
                 Fall = false,
                 Summer = false,
                 Spring = false,
@@ -686,7 +683,7 @@ namespace RuleBasedSystem
             Course Comparative_Languages = new Course
             {
                 Prefix = "CSCI 3330",
-                IsCompleted = false,
+                IsCompleted = Comparative_Languagescb.Checked,
                 Fall = false,
                 Summer = false,
                 Spring = true,
@@ -696,7 +693,7 @@ namespace RuleBasedSystem
             Course Data_Warehouse_Design = new Course
             {
                 Prefix = "CSCI 4132",
-                IsCompleted = false,
+                IsCompleted = Data_Warehouse_Designcb.Checked,
                 Fall = false,
                 Summer = false,
                 Spring = true,
@@ -706,7 +703,7 @@ namespace RuleBasedSystem
             Course High_Performance_Computing = new Course
             {
                 Prefix = "CSCI 4210",
-                IsCompleted = false,
+                IsCompleted = High_Performance_Computingcb.Checked,
                 Fall = false,
                 Summer = false,
                 Spring = false,
@@ -716,7 +713,7 @@ namespace RuleBasedSystem
             Course Human_Computer_Interaction = new Course
             {
                 Prefix = "CSCI 4235",
-                IsCompleted = false,
+                IsCompleted = Human_Computer_Interactioncb.Checked,
                 Fall = true,
                 Summer = false,
                 Spring = false,
@@ -726,7 +723,7 @@ namespace RuleBasedSystem
             Course Game_Programming = new Course
             {
                 Prefix = "CSCI 4439",
-                IsCompleted = false,
+                IsCompleted = Game_Programmingcb.Checked,
                 Fall = true,
                 Summer = false,
                 Spring = false,
@@ -736,7 +733,7 @@ namespace RuleBasedSystem
             Course Machine_Learning = new Course
             {
                 Prefix = "CSCI 4520",
-                IsCompleted = false,
+                IsCompleted = Machine_Learningcb.Checked,
                 Fall = false,
                 Summer = false,
                 Spring = true,
@@ -746,7 +743,7 @@ namespace RuleBasedSystem
             Course Numerical_Analysis = new Course
             {
                 Prefix = "CSCI 4610",
-                IsCompleted = false,
+                IsCompleted = Numerical_Analysiscb.Checked,
                 Fall = false,
                 Summer = false,
                 Spring = false,
@@ -756,7 +753,7 @@ namespace RuleBasedSystem
             Course Software_Testing_and_Quality_Assurance = new Course
             {
                 Prefix = "CSCI 4534",
-                IsCompleted = false,
+                IsCompleted = Software_Testing_and_Quality_Assurancecb.Checked,
                 Fall = false,
                 Summer = false,
                 Spring = true,
@@ -766,7 +763,7 @@ namespace RuleBasedSystem
             Course Broadband_Networks = new Course
             {
                 Prefix = "CSCI 4537",
-                IsCompleted = false,
+                IsCompleted = Broadband_Networkscb.Checked,
                 Fall = false,
                 Summer = false,
                 Spring = false,
@@ -776,7 +773,7 @@ namespace RuleBasedSystem
             Course Optical_Networks = new Course
             {
                 Prefix = "CSCI 4539",
-                IsCompleted = false,
+                IsCompleted = Optical_Networkscb.Checked,
                 Fall = false,
                 Summer = false,
                 Spring = false,
@@ -786,7 +783,7 @@ namespace RuleBasedSystem
             Course Selected_Topics = new Course
             {
                 Prefix = "CSCI 5090",
-                IsCompleted = false,
+                IsCompleted = Selected_Topicscb.Checked,
                 Fall = false,
                 Summer = false,
                 Spring = false,
@@ -796,7 +793,7 @@ namespace RuleBasedSystem
             Course Discrete_Simulation = new Course
             {
                 Prefix = "CSCI 5230",
-                IsCompleted = false,
+                IsCompleted = Discrete_Simulationcb.Checked,
                 Fall = false,
                 Summer = false,
                 Spring = false,
@@ -806,7 +803,7 @@ namespace RuleBasedSystem
             Course Artificial_Intelligence = new Course
             {
                 Prefix = "CSCI 5430",
-                IsCompleted = false,
+                IsCompleted = Artificial_Intelligencecb.Checked,
                 Fall = true,
                 Summer = false,
                 Spring = false,
@@ -816,7 +813,7 @@ namespace RuleBasedSystem
             Course Computer_Graphics = new Course
             {
                 Prefix = "CSCI 5437",
-                IsCompleted = false,
+                IsCompleted = Computer_Graphicscb.Checked,
                 Fall = true,
                 Summer = false,
                 Spring = false,
@@ -826,7 +823,7 @@ namespace RuleBasedSystem
             Course Animation = new Course
             {
                 Prefix = "CSCI 5438",
-                IsCompleted = false,
+                IsCompleted = Animationcb.Checked,
                 Fall = false,
                 Summer = false,
                 Spring = false,
@@ -836,7 +833,7 @@ namespace RuleBasedSystem
             Course Systems_and_Software_Assurance = new Course
             {
                 Prefix = "CSCI 5531",
-                IsCompleted = false,
+                IsCompleted = Systems_and_Software_Assurancecb.Checked,
                 Fall = false,
                 Summer = false,
                 Spring = false,
@@ -846,7 +843,7 @@ namespace RuleBasedSystem
             Course Network_Management_Systems = new Course
             {
                 Prefix = "CSCI 5532",
-                IsCompleted = false,
+                IsCompleted = Network_Management_Systemscb.Checked,
                 Fall = false,
                 Summer = false,
                 Spring = false,
@@ -856,7 +853,7 @@ namespace RuleBasedSystem
             Course Wireless_and_Mobile_Systems = new Course
             {
                 Prefix = "CSCI 5538",
-                IsCompleted = false,
+                IsCompleted = Wireless_and_Mobile_Systemscb.Checked,
                 Fall = false,
                 Summer = false,
                 Spring = false,
@@ -869,7 +866,7 @@ namespace RuleBasedSystem
             Course Comp_App_For_Bus_Majors = new Course
             {
                 Prefix = "CSCI 1130M",
-                IsCompleted = false,
+                IsCompleted = Comp_App_For_Bus_Majorscb.Checked,
                 Fall = false,
                 Summer = false,
                 Spring = false,
@@ -879,7 +876,7 @@ namespace RuleBasedSystem
             Course Introduction_To_BASIC_Programming = new Course
             {
                 Prefix = "CSCI 1230",
-                IsCompleted = false,
+                IsCompleted = Introduction_To_BASIC_Programmingcb.Checked,
                 Fall = false,
                 Summer = false,
                 Spring = false,
@@ -889,7 +886,7 @@ namespace RuleBasedSystem
             Course Introduction_To_Java_Programming = new Course
             {
                 Prefix = "CSCI 1236",
-                IsCompleted = false,
+                IsCompleted = Introduction_To_Java_Programmingcb.Checked,
                 Fall = false,
                 Summer = false,
                 Spring = false,
@@ -899,7 +896,7 @@ namespace RuleBasedSystem
             Course Networks = new Course
             {
                 Prefix = "CSCI 4220",
-                IsCompleted = false,
+                IsCompleted = Networkscb.Checked,
                 Fall = false,
                 Summer = false,
                 Spring = false,
@@ -909,7 +906,7 @@ namespace RuleBasedSystem
             Course Advanced_Database_Systems = new Course
             {
                 Prefix = "CSCI 4320",
-                IsCompleted = false,
+                IsCompleted = Advanced_Database_Systemscb.Checked,
                 Fall = false,
                 Summer = false,
                 Spring = false,
@@ -919,7 +916,7 @@ namespace RuleBasedSystem
             Course Advanced_Software_Engineering = new Course
             {
                 Prefix = "CSCI 4322",
-                IsCompleted = false,
+                IsCompleted = Advanced_Software_Engineeringcb.Checked,
                 Fall = false,
                 Summer = false,
                 Spring = false,
@@ -929,7 +926,7 @@ namespace RuleBasedSystem
             Course Advanced_Operating_Systems = new Course
             {
                 Prefix = "CSCI 4342",
-                IsCompleted = false,
+                IsCompleted = Advanced_Operating_Systemscb.Checked,
                 Fall = false,
                 Summer = false,
                 Spring = false,
@@ -939,7 +936,7 @@ namespace RuleBasedSystem
             Course System_Prog_Under_Unix = new Course
             {
                 Prefix = "CSCI 4343",
-                IsCompleted = false,
+                IsCompleted = System_Prog_Under_Unixcb.Checked,
                 Fall = false,
                 Summer = false,
                 Spring = false,
@@ -949,7 +946,7 @@ namespace RuleBasedSystem
             Course Compiler_Theory = new Course
             {
                 Prefix = "CSCI 4342",
-                IsCompleted = false,
+                IsCompleted = Compiler_Theorycb.Checked,
                 Fall = false,
                 Summer = false,
                 Spring = false,
@@ -959,7 +956,7 @@ namespace RuleBasedSystem
             Course Embedded_Systems_Programming = new Course
             {
                 Prefix = "CSCI 4360",
-                IsCompleted = false,
+                IsCompleted = Embedded_Systems_Programmingcb.Checked,
                 Fall = false,
                 Summer = false,
                 Spring = false,
@@ -969,7 +966,7 @@ namespace RuleBasedSystem
             Course Handheld_Ubiquitous_Computing = new Course
             {
                 Prefix = "CSCI 4370",
-                IsCompleted = false,
+                IsCompleted = Handheld_Ubiquitous_Computingcb.Checked,
                 Fall = false,
                 Summer = false,
                 Spring = false,
@@ -979,7 +976,7 @@ namespace RuleBasedSystem
             Course Data_Mining = new Course
             {
                 Prefix = "CSCI 4535",
-                IsCompleted = false,
+                IsCompleted = Data_Miningcb.Checked,
                 Fall = false,
                 Summer = false,
                 Spring = false,
@@ -989,7 +986,7 @@ namespace RuleBasedSystem
             Course Special_Problems_CO_OP = new Course
             {
                 Prefix = "CSCI 4790",
-                IsCompleted = false,
+                IsCompleted = Special_Problems_CO_OPcb.Checked,
                 Fall = false,
                 Summer = false,
                 Spring = false,
@@ -999,7 +996,7 @@ namespace RuleBasedSystem
             Course Directed_Study_In_Computer_Science = new Course
             {
                 Prefix = "CSCI 4890",
-                IsCompleted = false,
+                IsCompleted = Directed_Study_In_Computer_Sciencecb.Checked,
                 Fall = false,
                 Summer = false,
                 Spring = false,
@@ -1009,7 +1006,7 @@ namespace RuleBasedSystem
             Course Data_Management_For_Math_And_The_Sciences = new Course
             {
                 Prefix = "CSCI 5130",
-                IsCompleted = false,
+                IsCompleted = Data_Management_For_Math_And_The_Sciencescb.Checked,
                 Fall = false,
                 Summer = false,
                 Spring = false,
@@ -1019,7 +1016,7 @@ namespace RuleBasedSystem
             Course Software_Security_And_Secure_Coding = new Course
             {
                 Prefix = "CSCI 5380",
-                IsCompleted = false,
+                IsCompleted = Software_Security_And_Secure_Codingcb.Checked,
                 Fall = false,
                 Summer = false,
                 Spring = false,
@@ -1135,7 +1132,18 @@ namespace RuleBasedSystem
                 Directed_Study_In_Computer_Science,
                 Data_Management_For_Math_And_The_Sciences,
                 Discrete_Simulation,
-                Software_Security_And_Secure_Coding
+                Software_Security_And_Secure_Coding,
+
+                //Other random Pre-reqs or conflicts b/w handout and current curriculuum
+                Statistics_1,
+                Linear_Algebra,
+                Principles_Of_Biology_1_With_Lab,
+                Quantitative_Reasoning,
+                Introduction_To_Mathematical_Modeling,
+                Survey_of_Calculus,
+                Elementary_Statistics,
+                Computing_for_Engineers
+
             };
 
 
@@ -1385,21 +1393,9 @@ namespace RuleBasedSystem
                 get;
                 set;
             }
-            public bool hasPreReqs
-            {
-                get;
-                set;
-            }
 
             //True = Student passed with C or better ---- False = Student did not take or did not pass the course
             public bool IsCompleted
-            {
-                get;
-                set;
-            }
-
-            //We might need this for output query of available classes to be taken for that term after rules are triggered and we change this value accordingly in the loops
-            public bool IsAvailable
             {
                 get;
                 set;
@@ -1441,58 +1437,14 @@ namespace RuleBasedSystem
             //To string method for returning info to the user about the status of this course
             public new string ToString()
             {
-                if (this.IsCompleted)
-                {
-                    return Prefix + " has been passed with a C or better";
-                }
-                else
+                if (!IsCompleted)
                 {
                     return Prefix + " has either not been taken, or not been passed with a C or better";
                 }
-            }
-        }
-
-
-        public class Rule
-        {
-            public string Source
-            {
-                get;
-                set;
-            }
-
-            public ExpressionType Operator
-            {
-                get;
-                set;
-            }
-
-            public string Target
-            {
-                get;
-                set;
-            }
-
-            public Rule(string Source, ExpressionType Operator, string Target)
-            {
-                this.Source = Source;
-                this.Operator = Operator;
-                this.Target = Target;
-            }
-        }
-
-        public class User
-        {
-            public int Age
-            {
-                get;
-                set;
-            }
-
-            public string Name
-            {
-                get;
-                set;
+                else
+                {
+                    return Prefix + " has been passed with a C or better";
+                }
             }
         }
 
