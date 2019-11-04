@@ -1305,13 +1305,32 @@ namespace RuleBasedSystem
 
         public List<List<Course>> startBackwardChaining(Course course_to_check)
         {
-            List<List<Course>> needed_courses_to_take = new List<List<Course>>();
-            
+            List<List<Course>> courses_related_to_target = new List<List<Course>>();
+
             if(course_to_check.Spring && nextSemester == 1)
             {
                 if (course_to_check.Prereqs.Length != 0)
-                {
-                   
+                { 
+                    for (int i = 0; i < course_to_check.Prereqs.Length; i++)
+                    {
+                        // Gather ORS
+                        if (course_to_check.Prereqs[i].Length > 1)
+                        {
+                            List<Course> orTemp = new List<Course>();
+                            //CHECK THE ORS
+                            for (int j = 0; j < course_to_check.Prereqs[i].Length; j++)
+                            {
+                                //Console.WriteLine("Option: " + course.Prereqs[i][j].Prefix);
+                                orTemp.Add(course_to_check.Prereqs[i][j]);                               
+                            }
+                            courses_related_to_target.Add(orTemp);
+                        }
+                        //AND AND AND AND
+                        else
+                        {
+                            courses_related_to_target.Add(new List<Course>() { course_to_check.Prereqs[i][0] });
+                        }
+                    }
                 }
             }
             else if(course_to_check.Summer && nextSemester == 2)
@@ -1327,10 +1346,13 @@ namespace RuleBasedSystem
                 {
 
                 }
+            }else if (course_to_check.OnDemand)
+            {
+
             }
 
 
-            return needed_courses_to_take;
+            return courses_related_to_target;
         }
 
         public class Course
@@ -1453,8 +1475,38 @@ namespace RuleBasedSystem
         private void button22_Click(object sender, EventArgs e)
         {
             compileCourses();
-            Course course_to_check = new Course();
-     //       List<Course> reasoningList = startBackwardChaining(course_to_check);
+            Course course_to_check = courses.Find(x=>x.Prefix== "MATH 2130");      //Get course from UI here
+            List<List<Course>> reasoningList = startBackwardChaining(course_to_check);
+            bool isEligible = true;
+            for (int i = 0; i < reasoningList.Count; i++)
+            {
+                // OR OR OR OR OR OR OR 
+                if (reasoningList[i].Count > 1)
+                {
+                    bool OReligible = false;
+                    //CHECK THE ORS
+                    for (int j = 0; j < reasoningList[i].Count; j++)
+                    {
+                        //Console.WriteLine("Option: " + course.Prereqs[i][j].Prefix);
+                        if (reasoningList[i][j].IsCompleted) OReligible = true;
+                    }
+                    if (!OReligible)
+                    {
+                        isEligible = false;
+                    }
+                }
+                //AND AND AND AND
+                else
+                {
+                    if (reasoningList[i][0].IsCompleted)
+                    {
+                        isEligible = false;
+                    }
+                }
+            }
+            if (isEligible) Console.WriteLine("You are eligible to take: " + course_to_check.Prefix);
+            else Console.WriteLine("You are NOT eligible to take: " + course_to_check.Prefix);
+
         }
         
         private void forward_Click(object sender, EventArgs e)
