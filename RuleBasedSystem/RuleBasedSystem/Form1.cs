@@ -30,7 +30,11 @@ namespace RuleBasedSystem
         public void compileCourses()
         {
             //1 = Spring, 2 = Summer, 3 = Fall
-            int nextSemester = 1;
+            int nextSemester = 0;
+
+            if (springbtn.Checked) nextSemester = 1;
+            if (summerbtn.Checked) nextSemester = 2;
+            if (fallbtn.Checked) nextSemester = 3;
 
 
             //Course List set to IsCompleted = false by default
@@ -137,46 +141,46 @@ namespace RuleBasedSystem
             };
 
             //EXTRA POSSIBLE COURSES
-            Course Quantitative_Reasoning = new Course
-            {
-                Prefix = "MATH 1001",
-                IsCompleted = Quantitative_Reasoningcb.Checked,
-                Fall = true,
-                Summer = true,
-                Spring = true,
-                OnDemand = false,
-                Prereqs = new Course[][] { }
-            };
-            Course Introduction_To_Mathematical_Modeling = new Course
-            {
-                Prefix = "MATH 1101",
-                IsCompleted = Introduction_To_Mathematical_Modelingcb.Checked,
-                Fall = true,
-                Summer = true,
-                Spring = true,
-                OnDemand = false,
-                Prereqs = new Course[][] { }
-            };
-            Course Survey_of_Calculus = new Course
-            {
-                Prefix = "MATH 1232",
-                IsCompleted = Survey_of_Calculuscb.Checked,
-                Fall = true,
-                Summer = true,
-                Spring = true,
-                OnDemand = false,
-                Prereqs = new Course[][] { new Course[] { Introduction_To_Mathematical_Modeling, College_Algebra, Trigonometry, Pre_Calculus } }
-            };
-            Course Elementary_Statistics = new Course
-            {
-                Prefix = "STAT 1401",
-                IsCompleted = Elementary_Statisticscb.Checked,
-                Fall = true,
-                Summer = true,
-                Spring = true,
-                OnDemand = false,
-                Prereqs = new Course[][] { new Course[] { Quantitative_Reasoning } }
-            };
+            //Course Quantitative_Reasoning = new Course
+            //{
+            //    Prefix = "MATH 1001",
+            //    IsCompleted = Quantitative_Reasoningcb.Checked,
+            //    Fall = true,
+            //    Summer = true,
+            //    Spring = true,
+            //    OnDemand = false,
+            //    Prereqs = new Course[][] { }
+            //};
+            //Course Introduction_To_Mathematical_Modeling = new Course
+            //{
+            //    Prefix = "MATH 1101",
+            //    IsCompleted = Introduction_To_Mathematical_Modelingcb.Checked,
+            //    Fall = true,
+            //    Summer = true,
+            //    Spring = true,
+            //    OnDemand = false,
+            //    Prereqs = new Course[][] { }
+            //};
+            //Course Survey_of_Calculus = new Course
+            //{
+            //    Prefix = "MATH 1232",
+            //    IsCompleted = Survey_of_Calculuscb.Checked,
+            //    Fall = true,
+            //    Summer = true,
+            //    Spring = true,
+            //    OnDemand = false,
+            //    Prereqs = new Course[][] { new Course[] { Introduction_To_Mathematical_Modeling, College_Algebra, Trigonometry, Pre_Calculus } }
+            //};
+            //Course Elementary_Statistics = new Course
+            //{
+            //    Prefix = "STAT 1401",
+            //    IsCompleted = Elementary_Statisticscb.Checked,
+            //    Fall = true,
+            //    Summer = true,
+            //    Spring = true,
+            //    OnDemand = false,
+            //    Prereqs = new Course[][] { new Course[] { Quantitative_Reasoning } }
+            //};
             //EXTRA POSSIBLE COURSES
 
             Course World_History_2 = new Course
@@ -394,26 +398,26 @@ namespace RuleBasedSystem
                 OnDemand = false,
                 Prereqs = new Course[][] { new Course[] { Calculus_1 } }
             };
-            Course Discrete_Math = new Course
-            {
-                Prefix = "MATH 2130",
-                IsCompleted = Discrete_Mathcb.Checked,
-                Fall = true,
-                Summer = true,
-                Spring = true,
-                OnDemand = false,
-                Prereqs = new Course[][] { new Course[] { Introduction_To_Mathematical_Modeling, College_Algebra, Trigonometry, Pre_Calculus, Calculus_1, Calculus_2 } }
-            };
-            Course Programming_Principles_2 = new Course
-            {
-                Prefix = "CSCI 1302",
-                IsCompleted = Programming_Principles_2cb.Checked,
-                Fall = true,
-                Summer = true,
-                Spring = true,
-                OnDemand = false,
-                Prereqs = new Course[][] { new Course[] { Programming_Principles_1 }, new Course[] { Discrete_Math }, new Course[] { Calculus_1 } }
-            };
+            //Course Discrete_Math = new Course
+            //{
+            //    Prefix = "MATH 2130",
+            //    IsCompleted = Discrete_Mathcb.Checked,
+            //    Fall = true,
+            //    Summer = true,
+            //    Spring = true,
+            //    OnDemand = false,
+            //    Prereqs = new Course[][] { new Course[] { Introduction_To_Mathematical_Modeling, College_Algebra, Trigonometry, Pre_Calculus, Calculus_1, Calculus_2 } }
+            //};
+            //Course Programming_Principles_2 = new Course
+            //{
+            //    Prefix = "CSCI 1302",
+            //    IsCompleted = Programming_Principles_2cb.Checked,
+            //    Fall = true,
+            //    Summer = true,
+            //    Spring = true,
+            //    OnDemand = false,
+            //    Prereqs = new Course[][] { new Course[] { Programming_Principles_1 }, new Course[] { Discrete_Math }, new Course[] { Calculus_1 } }
+            //};
             Course Statistics_1 = new Course
             {
                 Prefix = "STAT 2231",
@@ -424,16 +428,16 @@ namespace RuleBasedSystem
                 OnDemand = false,
                 Prereqs = new Course[][] { new Course[] { College_Algebra, Trigonometry, Pre_Calculus, Calculus_1 } }
             };
-            Course Linear_Algebra = new Course
-            {
-                Prefix = "MATH 2160",
-                IsCompleted = Linear_Algebracb.Checked,
-                Fall = true,
-                Summer = true,
-                Spring = true,
-                OnDemand = false,
-                Prereqs = new Course[][] { new Course[] { Calculus_2 } }
-            };
+            //Course Linear_Algebra = new Course
+            //{
+            //    Prefix = "MATH 2160",
+            //    IsCompleted = Linear_Algebracb.Checked,
+            //    Fall = true,
+            //    Summer = true,
+            //    Spring = true,
+            //    OnDemand = false,
+            //    Prereqs = new Course[][] { new Course[] { Calculus_2 } }
+            //};
             Course Computers_Ethics_and_Society = new Course
             {
                 Prefix = "CSCI 2120",
@@ -457,27 +461,27 @@ namespace RuleBasedSystem
             };
 
             //EXTRA
-            Course Principles_Of_Biology_1_With_Lab = new Course
-            {
-                Prefix = "BIOL 1107 & 1107L",
-                IsCompleted = Principles_of_Biology_1_with_labcb.Checked,
-                Fall = true,
-                Summer = true,
-                Spring = true,
-                OnDemand = false,
-                Prereqs = new Course[][] { new Course[] { College_Algebra, Pre_Calculus }, new Course[] { Composition_1 } }
-            };
+            //Course Principles_Of_Biology_1_With_Lab = new Course
+            //{
+            //    Prefix = "BIOL 1107 & 1107L",
+            //    IsCompleted = Principles_of_Biology_1_with_labcb.Checked,
+            //    Fall = true,
+            //    Summer = true,
+            //    Spring = true,
+            //    OnDemand = false,
+            //    Prereqs = new Course[][] { new Course[] { College_Algebra, Pre_Calculus }, new Course[] { Composition_1 } }
+            //};
             //End EXTRA
-            Course Principles_Of_Biology_2_With_Lab = new Course
-            {
-                Prefix = "BIOL 1108 & 1108L",
-                IsCompleted = Principles_of_Biology_2_with_labcb.Checked,
-                Fall = true,
-                Summer = true,
-                Spring = true,
-                OnDemand = false,
-                Prereqs = new Course[][] { new Course[] { Principles_Of_Biology_1_With_Lab } }
-            };
+            //Course Principles_Of_Biology_2_With_Lab = new Course
+            //{
+            //    Prefix = "BIOL 1108 & 1108L",
+            //    IsCompleted = Principles_of_Biology_2_with_labcb.Checked,
+            //    Fall = true,
+            //    Summer = true,
+            //    Spring = true,
+            //    OnDemand = false,
+            //    Prereqs = new Course[][] { new Course[] { Principles_Of_Biology_1_With_Lab } }
+            //};
             Course Principles_Of_Chemistry_2_With_Lab = new Course
             {
                 Prefix = "CHEM 1212K",
@@ -520,509 +524,509 @@ namespace RuleBasedSystem
             };
 
             //MAJOR REQUIRED COURSES
-            Course Data_Structures = new Course
-            {
-                Prefix = "CSCI 3230",
-                IsCompleted = Data_Structurescb.Checked,
-                Fall = true,
-                Summer = false,
-                Spring = true,
-                OnDemand = false,
-                Prereqs = new Course[][] { new Course[] { Programming_Principles_2 }, new Course[] { Discrete_Math } }
-            };
-            Course Systems_Software = new Course
-            {
-                Prefix = "CSCI 3232",
-                IsCompleted = Systems_Softwarecb.Checked,
-                Fall = false,
-                Summer = false,
-                Spring = true,
-                OnDemand = false,
-                Prereqs = new Course[][] { new Course[] { Programming_Principles_2 } } //concurrent or prior DS
-            };
-            Course Cpp_Programming = new Course
-            {
-                Prefix = "CSCI 2490",
-                IsCompleted = Cpp_Programming.Checked,
-                Fall = false,
-                Summer = false,
-                Spring = false,
-                OnDemand = true,
-                Prereqs = new Course[][] { new Course[] { Programming_Principles_2 } }
-            };
-            Course Introduction_To_Operating_Systems = new Course
-            {
-                Prefix = "CSCI 3341",
-                IsCompleted = Introduction_To_Operating_Systemscb.Checked,
-                Fall = true,
-                Summer = false,
-                Spring = false,
-                OnDemand = false,
-                Prereqs = new Course[][] { new Course[] { Data_Structures }, new Course[] { Cpp_Programming } }
-            };
-            Course Theoretical_Foundations = new Course
-            {
-                Prefix = "CSCI 3236",
-                IsCompleted = Theoretical_Foundationscb.Checked,
-                Fall = true,
-                Summer = false,
-                Spring = true,
-                OnDemand = false,
-                Prereqs = new Course[][] { new Course[] { Programming_Principles_2 }, new Course[] { Discrete_Math } }
-            };
-            Course Database_Systems = new Course
-            {
-                Prefix = "CSCI 3432",
-                IsCompleted = Database_Systemscb.Checked,
-                Fall = false,
-                Summer = false,
-                Spring = true,
-                OnDemand = false,
-                Prereqs = new Course[][] { new Course[] { Programming_Principles_1 }, new Course[] { Discrete_Math } }
-            };
-            Course Algorithm_Design_and_Analysis = new Course
-            {
-                Prefix = "CSCI 5330",
-                IsCompleted = Algorithm_Design_and_Analysiscb.Checked,
-                Fall = true,
-                Summer = false,
-                Spring = true,
-                OnDemand = false,
-                Prereqs = new Course[][] { new Course[] { Theoretical_Foundations }, new Course[] { Calculus_2 } }
-            };
-            Course Computer_Architecture = new Course
-            {
-                Prefix = "CSCI 5331",
-                IsCompleted = Computer_Architecturecb.Checked,
-                Fall = true,
-                Summer = false,
-                Spring = true,
-                OnDemand = false,
-                Prereqs = new Course[][] { new Course[] { Systems_Software, Introduction_To_Operating_Systems } }
-            };
-            Course Data_Communications_And_Networking = new Course
-            {
-                Prefix = "CSCI 5332",
-                IsCompleted = Data_Communications_And_Networkingcb.Checked,
-                Fall = true,
-                Summer = true,
-                Spring = true,
-                OnDemand = false,
-                Prereqs = new Course[][] { new Course[] { Systems_Software, Introduction_To_Operating_Systems }, new Course[] { Elementary_Statistics } }
-            };
-            Course Object_Oriented_Design = new Course
-            {
-                Prefix = "CSCI 5335",
-                IsCompleted = Object_Oriented_Designcb.Checked,
-                Fall = true,
-                Summer = false,
-                Spring = true,
-                OnDemand = false,
-                Prereqs = new Course[][] { new Course[] { Data_Structures } }
-            };
-            Course Computer_Security = new Course
-            {
-                Prefix = "CSCI 5431",
-                IsCompleted = Computer_Securitycb.Checked,
-                Fall = true,
-                Summer = false,
-                Spring = true,
-                OnDemand = false,
-                Prereqs = new Course[][] { new Course[] { Computers_Ethics_and_Society } }
-            };
-            Course Distributed_Web_Systems_Design = new Course
-            {
-                Prefix = "CSCI 5436",
-                IsCompleted = Distributed_Web_Systems_Designcb.Checked,
-                Fall = true,
-                Summer = false,
-                Spring = true,
-                OnDemand = false,
-                Prereqs = new Course[][] { new Course[] { Database_Systems } }
-            };
-            Course Software_Engineering = new Course
-            {
-                Prefix = "CSCI 5530",
-                IsCompleted = Software_Engineeringcb.Checked,
-                Fall = true,
-                Summer = false,
-                Spring = true,
-                OnDemand = false,
-                Prereqs = new Course[][] { new Course[] { Algorithm_Design_and_Analysis }, new Course[] { Object_Oriented_Design }, new Course[] { Database_Systems } }
-            };
-            Course Computing_for_Engineers = new Course
-            {
-                Prefix = "ENGR 1731",
-                IsCompleted = Computing_for_Engineerscb.Checked,
-                Fall = false,
-                Summer = false,
-                Spring = false,
-                OnDemand = true,
-                Prereqs = new Course[][] { new Course[] { Calculus_1 } }
-            };
-            Course Logic_Circuit_Design = new Course
-            {
-                Prefix = "ENGR 2332",
-                IsCompleted = Logic_Circuit_Designcb.Checked,
-                Fall = true,
-                Summer = true,
-                Spring = true,
-                OnDemand = false,
-                Prereqs = new Course[][] { new Course[] { Computing_for_Engineers } }
-            };
-            Course Logic_Circuits_and_Microprocessors = new Course
-            {
-                Prefix = "CSCI 3231",
-                IsCompleted = Logic_Circuits_and_Microprocessorscb.Checked,
-                Fall = false,
-                Summer = false,
-                Spring = false,
-                OnDemand = true,
-                Prereqs = new Course[][] { new Course[] { Programming_Principles_2 } }
-            };
-            Course Comparative_Languages = new Course
-            {
-                Prefix = "CSCI 3330",
-                IsCompleted = Comparative_Languagescb.Checked,
-                Fall = false,
-                Summer = false,
-                Spring = true,
-                OnDemand = false,
-                Prereqs = new Course[][] { new Course[] { Cpp_Programming } }
-            };
-            Course Data_Warehouse_Design = new Course
-            {
-                Prefix = "CSCI 4132",
-                IsCompleted = Data_Warehouse_Designcb.Checked,
-                Fall = false,
-                Summer = false,
-                Spring = true,
-                OnDemand = false,
-                Prereqs = new Course[][] { new Course[] { Database_Systems } }
-            };
-            Course High_Performance_Computing = new Course
-            {
-                Prefix = "CSCI 4210",
-                IsCompleted = High_Performance_Computingcb.Checked,
-                Fall = false,
-                Summer = false,
-                Spring = false,
-                OnDemand = true,
-                Prereqs = new Course[][] { new Course[] { Introduction_To_Operating_Systems } }
-            };
-            Course Human_Computer_Interaction = new Course
-            {
-                Prefix = "CSCI 4235",
-                IsCompleted = Human_Computer_Interactioncb.Checked,
-                Fall = true,
-                Summer = false,
-                Spring = false,
-                OnDemand = false,
-                Prereqs = new Course[][] { new Course[] { Data_Structures } }
-            };
-            Course Game_Programming = new Course
-            {
-                Prefix = "CSCI 4439",
-                IsCompleted = Game_Programmingcb.Checked,
-                Fall = true,
-                Summer = false,
-                Spring = false,
-                OnDemand = false,
-                Prereqs = new Course[][] { new Course[] { Programming_Principles_2 } }
-            };
-            Course Machine_Learning = new Course
-            {
-                Prefix = "CSCI 4520",
-                IsCompleted = Machine_Learningcb.Checked,
-                Fall = false,
-                Summer = false,
-                Spring = true,
-                OnDemand = false,
-                Prereqs = new Course[][] { new Course[] { Cpp_Programming }, new Course[] { Discrete_Math } }
-            };
-            Course Numerical_Analysis = new Course
-            {
-                Prefix = "CSCI 4610",
-                IsCompleted = Numerical_Analysiscb.Checked,
-                Fall = false,
-                Summer = false,
-                Spring = false,
-                OnDemand = true,
-                Prereqs = new Course[][] { new Course[] { Programming_Principles_1 }, new Course[] { Calculus_2 } }
-            };
-            Course Software_Testing_and_Quality_Assurance = new Course
-            {
-                Prefix = "CSCI 4534",
-                IsCompleted = Software_Testing_and_Quality_Assurancecb.Checked,
-                Fall = false,
-                Summer = false,
-                Spring = true,
-                OnDemand = false,
-                Prereqs = new Course[][] { new Course[] { Theoretical_Foundations } }
-            };
-            Course Broadband_Networks = new Course
-            {
-                Prefix = "CSCI 4537",
-                IsCompleted = Broadband_Networkscb.Checked,
-                Fall = false,
-                Summer = false,
-                Spring = false,
-                OnDemand = true,
-                Prereqs = new Course[][] { new Course[] { Data_Communications_And_Networking } }
-            };
-            Course Optical_Networks = new Course
-            {
-                Prefix = "CSCI 4539",
-                IsCompleted = Optical_Networkscb.Checked,
-                Fall = false,
-                Summer = false,
-                Spring = false,
-                OnDemand = true,
-                Prereqs = new Course[][] { new Course[] { Data_Communications_And_Networking } }
-            };
-            Course Selected_Topics = new Course
-            {
-                Prefix = "CSCI 5090",
-                IsCompleted = Selected_Topicscb.Checked,
-                Fall = false,
-                Summer = false,
-                Spring = false,
-                OnDemand = true,
-                Prereqs = new Course[][] { }
-            };
-            Course Discrete_Simulation = new Course
-            {
-                Prefix = "CSCI 5230",
-                IsCompleted = Discrete_Simulationcb.Checked,
-                Fall = false,
-                Summer = false,
-                Spring = false,
-                OnDemand = true,
-                Prereqs = new Course[][] { new Course[] { Elementary_Statistics }, new Course[] { Data_Structures } }
-            };
-            Course Artificial_Intelligence = new Course
-            {
-                Prefix = "CSCI 5430",
-                IsCompleted = Artificial_Intelligencecb.Checked,
-                Fall = true,
-                Summer = false,
-                Spring = false,
-                OnDemand = false,
-                Prereqs = new Course[][] { new Course[] { Data_Structures }, new Course[] { Algorithm_Design_and_Analysis } }
-            };
-            Course Computer_Graphics = new Course
-            {
-                Prefix = "CSCI 5437",
-                IsCompleted = Computer_Graphicscb.Checked,
-                Fall = true,
-                Summer = false,
-                Spring = false,
-                OnDemand = false,
-                Prereqs = new Course[][] { new Course[] { Data_Structures }, new Course[] { Theoretical_Foundations } }
-            };
-            Course Animation = new Course
-            {
-                Prefix = "CSCI 5438",
-                IsCompleted = Animationcb.Checked,
-                Fall = false,
-                Summer = false,
-                Spring = false,
-                OnDemand = true,
-                Prereqs = new Course[][] { new Course[] { Computer_Graphics } }
-            };
-            Course Systems_and_Software_Assurance = new Course
-            {
-                Prefix = "CSCI 5531",
-                IsCompleted = Systems_and_Software_Assurancecb.Checked,
-                Fall = false,
-                Summer = false,
-                Spring = false,
-                OnDemand = true,
-                Prereqs = new Course[][] { new Course[] { Programming_Principles_2 }, new Course[] { Database_Systems } }
-            };
-            Course Network_Management_Systems = new Course
-            {
-                Prefix = "CSCI 5532",
-                IsCompleted = Network_Management_Systemscb.Checked,
-                Fall = false,
-                Summer = false,
-                Spring = false,
-                OnDemand = true,
-                Prereqs = new Course[][] { new Course[] { Data_Communications_And_Networking } }
-            };
-            Course Wireless_and_Mobile_Systems = new Course
-            {
-                Prefix = "CSCI 5538",
-                IsCompleted = Wireless_and_Mobile_Systemscb.Checked,
-                Fall = false,
-                Summer = false,
-                Spring = false,
-                OnDemand = true,
-                Prereqs = new Course[][] { new Course[] { Data_Communications_And_Networking }, new Course[] { Calculus_1 } }
-            };
+            //Course Data_Structures = new Course
+            //{
+            //    Prefix = "CSCI 3230",
+            //    IsCompleted = Data_Structurescb.Checked,
+            //    Fall = true,
+            //    Summer = false,
+            //    Spring = true,
+            //    OnDemand = false,
+            //    Prereqs = new Course[][] { new Course[] { Programming_Principles_2 }, new Course[] { Discrete_Math } }
+            //};
+            //Course Systems_Software = new Course
+            //{
+            //    Prefix = "CSCI 3232",
+            //    IsCompleted = Systems_Softwarecb.Checked,
+            //    Fall = false,
+            //    Summer = false,
+            //    Spring = true,
+            //    OnDemand = false,
+            //    Prereqs = new Course[][] { new Course[] { Programming_Principles_2 } } //concurrent or prior DS
+            //};
+            //Course Cpp_Programming = new Course
+            //{
+            //    Prefix = "CSCI 2490",
+            //    IsCompleted = Cpp_Programming.Checked,
+            //    Fall = false,
+            //    Summer = false,
+            //    Spring = false,
+            //    OnDemand = true,
+            //    Prereqs = new Course[][] { new Course[] { Programming_Principles_2 } }
+            //};
+            //Course Introduction_To_Operating_Systems = new Course
+            //{
+            //    Prefix = "CSCI 3341",
+            //    IsCompleted = Introduction_To_Operating_Systemscb.Checked,
+            //    Fall = true,
+            //    Summer = false,
+            //    Spring = false,
+            //    OnDemand = false,
+            //    Prereqs = new Course[][] { new Course[] { Data_Structures }, new Course[] { Cpp_Programming } }
+            //};
+            //Course Theoretical_Foundations = new Course
+            //{
+            //    Prefix = "CSCI 3236",
+            //    IsCompleted = Theoretical_Foundationscb.Checked,
+            //    Fall = true,
+            //    Summer = false,
+            //    Spring = true,
+            //    OnDemand = false,
+            //    Prereqs = new Course[][] { new Course[] { Programming_Principles_2 }, new Course[] { Discrete_Math } }
+            //};
+            //Course Database_Systems = new Course
+            //{
+            //    Prefix = "CSCI 3432",
+            //    IsCompleted = Database_Systemscb.Checked,
+            //    Fall = false,
+            //    Summer = false,
+            //    Spring = true,
+            //    OnDemand = false,
+            //    Prereqs = new Course[][] { new Course[] { Programming_Principles_1 }, new Course[] { Discrete_Math } }
+            //};
+            //Course Algorithm_Design_and_Analysis = new Course
+            //{
+            //    Prefix = "CSCI 5330",
+            //    IsCompleted = Algorithm_Design_and_Analysiscb.Checked,
+            //    Fall = true,
+            //    Summer = false,
+            //    Spring = true,
+            //    OnDemand = false,
+            //    Prereqs = new Course[][] { new Course[] { Theoretical_Foundations }, new Course[] { Calculus_2 } }
+            //};
+            //Course Computer_Architecture = new Course
+            //{
+            //    Prefix = "CSCI 5331",
+            //    IsCompleted = Computer_Architecturecb.Checked,
+            //    Fall = true,
+            //    Summer = false,
+            //    Spring = true,
+            //    OnDemand = false,
+            //    Prereqs = new Course[][] { new Course[] { Systems_Software, Introduction_To_Operating_Systems } }
+            //};
+            //Course Data_Communications_And_Networking = new Course
+            //{
+            //    Prefix = "CSCI 5332",
+            //    IsCompleted = Data_Communications_And_Networkingcb.Checked,
+            //    Fall = true,
+            //    Summer = true,
+            //    Spring = true,
+            //    OnDemand = false,
+            //    Prereqs = new Course[][] { new Course[] { Systems_Software, Introduction_To_Operating_Systems }, new Course[] { Elementary_Statistics } }
+            //};
+            //Course Object_Oriented_Design = new Course
+            //{
+            //    Prefix = "CSCI 5335",
+            //    IsCompleted = Object_Oriented_Designcb.Checked,
+            //    Fall = true,
+            //    Summer = false,
+            //    Spring = true,
+            //    OnDemand = false,
+            //    Prereqs = new Course[][] { new Course[] { Data_Structures } }
+            //};
+            //Course Computer_Security = new Course
+            //{
+            //    Prefix = "CSCI 5431",
+            //    IsCompleted = Computer_Securitycb.Checked,
+            //    Fall = true,
+            //    Summer = false,
+            //    Spring = true,
+            //    OnDemand = false,
+            //    Prereqs = new Course[][] { new Course[] { Computers_Ethics_and_Society } }
+            //};
+            //Course Distributed_Web_Systems_Design = new Course
+            //{
+            //    Prefix = "CSCI 5436",
+            //    IsCompleted = Distributed_Web_Systems_Designcb.Checked,
+            //    Fall = true,
+            //    Summer = false,
+            //    Spring = true,
+            //    OnDemand = false,
+            //    Prereqs = new Course[][] { new Course[] { Database_Systems } }
+            //};
+            //Course Software_Engineering = new Course
+            //{
+            //    Prefix = "CSCI 5530",
+            //    IsCompleted = Software_Engineeringcb.Checked,
+            //    Fall = true,
+            //    Summer = false,
+            //    Spring = true,
+            //    OnDemand = false,
+            //    Prereqs = new Course[][] { new Course[] { Algorithm_Design_and_Analysis }, new Course[] { Object_Oriented_Design }, new Course[] { Database_Systems } }
+            //};
+            //Course Computing_for_Engineers = new Course
+            //{
+            //    Prefix = "ENGR 1731",
+            //    IsCompleted = Computing_for_Engineerscb.Checked,
+            //    Fall = false,
+            //    Summer = false,
+            //    Spring = false,
+            //    OnDemand = true,
+            //    Prereqs = new Course[][] { new Course[] { Calculus_1 } }
+            //};
+            //Course Logic_Circuit_Design = new Course
+            //{
+            //    Prefix = "ENGR 2332",
+            //    IsCompleted = Logic_Circuit_Designcb.Checked,
+            //    Fall = true,
+            //    Summer = true,
+            //    Spring = true,
+            //    OnDemand = false,
+            //    Prereqs = new Course[][] { new Course[] { Computing_for_Engineers } }
+            //};
+            //Course Logic_Circuits_and_Microprocessors = new Course
+            //{
+            //    Prefix = "CSCI 3231",
+            //    IsCompleted = Logic_Circuits_and_Microprocessorscb.Checked,
+            //    Fall = false,
+            //    Summer = false,
+            //    Spring = false,
+            //    OnDemand = true,
+            //    Prereqs = new Course[][] { new Course[] { Programming_Principles_2 } }
+            //};
+            //Course Comparative_Languages = new Course
+            //{
+            //    Prefix = "CSCI 3330",
+            //    IsCompleted = Comparative_Languagescb.Checked,
+            //    Fall = false,
+            //    Summer = false,
+            //    Spring = true,
+            //    OnDemand = false,
+            //    Prereqs = new Course[][] { new Course[] { Cpp_Programming } }
+            //};
+            //Course Data_Warehouse_Design = new Course
+            //{
+            //    Prefix = "CSCI 4132",
+            //    IsCompleted = Data_Warehouse_Designcb.Checked,
+            //    Fall = false,
+            //    Summer = false,
+            //    Spring = true,
+            //    OnDemand = false,
+            //    Prereqs = new Course[][] { new Course[] { Database_Systems } }
+            //};
+            //Course High_Performance_Computing = new Course
+            //{
+            //    Prefix = "CSCI 4210",
+            //    IsCompleted = High_Performance_Computingcb.Checked,
+            //    Fall = false,
+            //    Summer = false,
+            //    Spring = false,
+            //    OnDemand = true,
+            //    Prereqs = new Course[][] { new Course[] { Introduction_To_Operating_Systems } }
+            //};
+            //Course Human_Computer_Interaction = new Course
+            //{
+            //    Prefix = "CSCI 4235",
+            //    IsCompleted = Human_Computer_Interactioncb.Checked,
+            //    Fall = true,
+            //    Summer = false,
+            //    Spring = false,
+            //    OnDemand = false,
+            //    Prereqs = new Course[][] { new Course[] { Data_Structures } }
+            //};
+            //Course Game_Programming = new Course
+            //{
+            //    Prefix = "CSCI 4439",
+            //    IsCompleted = Game_Programmingcb.Checked,
+            //    Fall = true,
+            //    Summer = false,
+            //    Spring = false,
+            //    OnDemand = false,
+            //    Prereqs = new Course[][] { new Course[] { Programming_Principles_2 } }
+            //};
+            //Course Machine_Learning = new Course
+            //{
+            //    Prefix = "CSCI 4520",
+            //    IsCompleted = Machine_Learningcb.Checked,
+            //    Fall = false,
+            //    Summer = false,
+            //    Spring = true,
+            //    OnDemand = false,
+            //    Prereqs = new Course[][] { new Course[] { Cpp_Programming }, new Course[] { Discrete_Math } }
+            //};
+            //Course Numerical_Analysis = new Course
+            //{
+            //    Prefix = "CSCI 4610",
+            //    IsCompleted = Numerical_Analysiscb.Checked,
+            //    Fall = false,
+            //    Summer = false,
+            //    Spring = false,
+            //    OnDemand = true,
+            //    Prereqs = new Course[][] { new Course[] { Programming_Principles_1 }, new Course[] { Calculus_2 } }
+            //};
+            //Course Software_Testing_and_Quality_Assurance = new Course
+            //{
+            //    Prefix = "CSCI 4534",
+            //    IsCompleted = Software_Testing_and_Quality_Assurancecb.Checked,
+            //    Fall = false,
+            //    Summer = false,
+            //    Spring = true,
+            //    OnDemand = false,
+            //    Prereqs = new Course[][] { new Course[] { Theoretical_Foundations } }
+            //};
+            //Course Broadband_Networks = new Course
+            //{
+            //    Prefix = "CSCI 4537",
+            //    IsCompleted = Broadband_Networkscb.Checked,
+            //    Fall = false,
+            //    Summer = false,
+            //    Spring = false,
+            //    OnDemand = true,
+            //    Prereqs = new Course[][] { new Course[] { Data_Communications_And_Networking } }
+            //};
+            //Course Optical_Networks = new Course
+            //{
+            //    Prefix = "CSCI 4539",
+            //    IsCompleted = Optical_Networkscb.Checked,
+            //    Fall = false,
+            //    Summer = false,
+            //    Spring = false,
+            //    OnDemand = true,
+            //    Prereqs = new Course[][] { new Course[] { Data_Communications_And_Networking } }
+            //};
+            //Course Selected_Topics = new Course
+            //{
+            //    Prefix = "CSCI 5090",
+            //    IsCompleted = Selected_Topicscb.Checked,
+            //    Fall = false,
+            //    Summer = false,
+            //    Spring = false,
+            //    OnDemand = true,
+            //    Prereqs = new Course[][] { }
+            //};
+            //Course Discrete_Simulation = new Course
+            //{
+            //    Prefix = "CSCI 5230",
+            //    IsCompleted = Discrete_Simulationcb.Checked,
+            //    Fall = false,
+            //    Summer = false,
+            //    Spring = false,
+            //    OnDemand = true,
+            //    Prereqs = new Course[][] { new Course[] { Elementary_Statistics }, new Course[] { Data_Structures } }
+            //};
+            //Course Artificial_Intelligence = new Course
+            //{
+            //    Prefix = "CSCI 5430",
+            //    IsCompleted = Artificial_Intelligencecb.Checked,
+            //    Fall = true,
+            //    Summer = false,
+            //    Spring = false,
+            //    OnDemand = false,
+            //    Prereqs = new Course[][] { new Course[] { Data_Structures }, new Course[] { Algorithm_Design_and_Analysis } }
+            //};
+            //Course Computer_Graphics = new Course
+            //{
+            //    Prefix = "CSCI 5437",
+            //    IsCompleted = Computer_Graphicscb.Checked,
+            //    Fall = true,
+            //    Summer = false,
+            //    Spring = false,
+            //    OnDemand = false,
+            //    Prereqs = new Course[][] { new Course[] { Data_Structures }, new Course[] { Theoretical_Foundations } }
+            //};
+            //Course Animation = new Course
+            //{
+            //    Prefix = "CSCI 5438",
+            //    IsCompleted = Animationcb.Checked,
+            //    Fall = false,
+            //    Summer = false,
+            //    Spring = false,
+            //    OnDemand = true,
+            //    Prereqs = new Course[][] { new Course[] { Computer_Graphics } }
+            //};
+            //Course Systems_and_Software_Assurance = new Course
+            //{
+            //    Prefix = "CSCI 5531",
+            //    IsCompleted = Systems_and_Software_Assurancecb.Checked,
+            //    Fall = false,
+            //    Summer = false,
+            //    Spring = false,
+            //    OnDemand = true,
+            //    Prereqs = new Course[][] { new Course[] { Programming_Principles_2 }, new Course[] { Database_Systems } }
+            //};
+            //Course Network_Management_Systems = new Course
+            //{
+            //    Prefix = "CSCI 5532",
+            //    IsCompleted = Network_Management_Systemscb.Checked,
+            //    Fall = false,
+            //    Summer = false,
+            //    Spring = false,
+            //    OnDemand = true,
+            //    Prereqs = new Course[][] { new Course[] { Data_Communications_And_Networking } }
+            //};
+            //Course Wireless_and_Mobile_Systems = new Course
+            //{
+            //    Prefix = "CSCI 5538",
+            //    IsCompleted = Wireless_and_Mobile_Systemscb.Checked,
+            //    Fall = false,
+            //    Summer = false,
+            //    Spring = false,
+            //    OnDemand = true,
+            //    Prereqs = new Course[][] { new Course[] { Data_Communications_And_Networking }, new Course[] { Calculus_1 } }
+            //};
 
 
-            //MORE EXTRAS FROM THE WEBLINK 
-            Course Comp_App_For_Bus_Majors = new Course
-            {
-                Prefix = "CSCI 1130M",
-                IsCompleted = Comp_App_For_Bus_Majorscb.Checked,
-                Fall = false,
-                Summer = false,
-                Spring = false,
-                OnDemand = true,
-                Prereqs = new Course[][] { new Course[] { Data_Communications_And_Networking } }
-            };
-            Course Introduction_To_BASIC_Programming = new Course
-            {
-                Prefix = "CSCI 1230",
-                IsCompleted = Introduction_To_BASIC_Programmingcb.Checked,
-                Fall = false,
-                Summer = false,
-                Spring = false,
-                OnDemand = true,
-                Prereqs = new Course[][] { }
-            };
-            Course Introduction_To_Java_Programming = new Course
-            {
-                Prefix = "CSCI 1236",
-                IsCompleted = Introduction_To_Java_Programmingcb.Checked,
-                Fall = false,
-                Summer = false,
-                Spring = false,
-                OnDemand = true,
-                Prereqs = new Course[][] { new Course[] { College_Algebra, Pre_Calculus, Survey_of_Calculus, Calculus_1 } }
-            };
-            Course Networks = new Course
-            {
-                Prefix = "CSCI 4220",
-                IsCompleted = Networkscb.Checked,
-                Fall = false,
-                Summer = false,
-                Spring = false,
-                OnDemand = true,
-                Prereqs = new Course[][] { }
-            };
-            Course Advanced_Database_Systems = new Course
-            {
-                Prefix = "CSCI 4320",
-                IsCompleted = Advanced_Database_Systemscb.Checked,
-                Fall = false,
-                Summer = false,
-                Spring = false,
-                OnDemand = true,
-                Prereqs = new Course[][] { new Course[] { Database_Systems } }
-            };
-            Course Advanced_Software_Engineering = new Course
-            {
-                Prefix = "CSCI 4322",
-                IsCompleted = Advanced_Software_Engineeringcb.Checked,
-                Fall = false,
-                Summer = false,
-                Spring = false,
-                OnDemand = true,
-                Prereqs = new Course[][] { }
-            };
-            Course Advanced_Operating_Systems = new Course
-            {
-                Prefix = "CSCI 4342",
-                IsCompleted = Advanced_Operating_Systemscb.Checked,
-                Fall = false,
-                Summer = false,
-                Spring = false,
-                OnDemand = true,
-                Prereqs = new Course[][] { new Course[] { Introduction_To_Operating_Systems } }
-            };
-            Course System_Prog_Under_Unix = new Course
-            {
-                Prefix = "CSCI 4343",
-                IsCompleted = System_Prog_Under_Unixcb.Checked,
-                Fall = false,
-                Summer = false,
-                Spring = false,
-                OnDemand = true,
-                Prereqs = new Course[][] { new Course[] { Introduction_To_Operating_Systems } }
-            };
-            Course Compiler_Theory = new Course
-            {
-                Prefix = "CSCI 4342",
-                IsCompleted = Compiler_Theorycb.Checked,
-                Fall = false,
-                Summer = false,
-                Spring = false,
-                OnDemand = true,
-                Prereqs = new Course[][] { new Course[] { Comparative_Languages } }
-            };
-            Course Embedded_Systems_Programming = new Course
-            {
-                Prefix = "CSCI 4360",
-                IsCompleted = Embedded_Systems_Programmingcb.Checked,
-                Fall = false,
-                Summer = false,
-                Spring = false,
-                OnDemand = true,
-                Prereqs = new Course[][] { }
-            };
-            Course Handheld_Ubiquitous_Computing = new Course
-            {
-                Prefix = "CSCI 4370",
-                IsCompleted = Handheld_Ubiquitous_Computingcb.Checked,
-                Fall = false,
-                Summer = false,
-                Spring = false,
-                OnDemand = true,
-                Prereqs = new Course[][] { }
-            };
-            Course Data_Mining = new Course
-            {
-                Prefix = "CSCI 4535",
-                IsCompleted = Data_Miningcb.Checked,
-                Fall = false,
-                Summer = false,
-                Spring = false,
-                OnDemand = true,
-                Prereqs = new Course[][] { new Course[] { Database_Systems } }
-            };
-            Course Special_Problems_CO_OP = new Course
-            {
-                Prefix = "CSCI 4790",
-                IsCompleted = Special_Problems_CO_OPcb.Checked,
-                Fall = false,
-                Summer = false,
-                Spring = false,
-                OnDemand = true,
-                Prereqs = new Course[][] { }
-            };
-            Course Directed_Study_In_Computer_Science = new Course
-            {
-                Prefix = "CSCI 4890",
-                IsCompleted = Directed_Study_In_Computer_Sciencecb.Checked,
-                Fall = false,
-                Summer = false,
-                Spring = false,
-                OnDemand = true,
-                Prereqs = new Course[][] { }
-            };
-            Course Data_Management_For_Math_And_The_Sciences = new Course
-            {
-                Prefix = "CSCI 5130",
-                IsCompleted = Data_Management_For_Math_And_The_Sciencescb.Checked,
-                Fall = false,
-                Summer = false,
-                Spring = false,
-                OnDemand = true,
-                Prereqs = new Course[][] { new Course[] { Introduction_To_BASIC_Programming } }
-            };
-            Course Software_Security_And_Secure_Coding = new Course
-            {
-                Prefix = "CSCI 5380",
-                IsCompleted = Software_Security_And_Secure_Codingcb.Checked,
-                Fall = false,
-                Summer = false,
-                Spring = false,
-                OnDemand = true,
-                Prereqs = new Course[][] { new Course[] { Programming_Principles_2 } }
-            };
+            ////MORE EXTRAS FROM THE WEBLINK 
+            //Course Comp_App_For_Bus_Majors = new Course
+            //{
+            //    Prefix = "CSCI 1130M",
+            //    IsCompleted = Comp_App_For_Bus_Majorscb.Checked,
+            //    Fall = false,
+            //    Summer = false,
+            //    Spring = false,
+            //    OnDemand = true,
+            //    Prereqs = new Course[][] { new Course[] { Data_Communications_And_Networking } }
+            //};
+            //Course Introduction_To_BASIC_Programming = new Course
+            //{
+            //    Prefix = "CSCI 1230",
+            //    IsCompleted = Introduction_To_BASIC_Programmingcb.Checked,
+            //    Fall = false,
+            //    Summer = false,
+            //    Spring = false,
+            //    OnDemand = true,
+            //    Prereqs = new Course[][] { }
+            //};
+            //Course Introduction_To_Java_Programming = new Course
+            //{
+            //    Prefix = "CSCI 1236",
+            //    IsCompleted = Introduction_To_Java_Programmingcb.Checked,
+            //    Fall = false,
+            //    Summer = false,
+            //    Spring = false,
+            //    OnDemand = true,
+            //    Prereqs = new Course[][] { new Course[] { College_Algebra, Pre_Calculus, Survey_of_Calculus, Calculus_1 } }
+            //};
+            //Course Networks = new Course
+            //{
+            //    Prefix = "CSCI 4220",
+            //    IsCompleted = Networkscb.Checked,
+            //    Fall = false,
+            //    Summer = false,
+            //    Spring = false,
+            //    OnDemand = true,
+            //    Prereqs = new Course[][] { }
+            //};
+            //Course Advanced_Database_Systems = new Course
+            //{
+            //    Prefix = "CSCI 4320",
+            //    IsCompleted = Advanced_Database_Systemscb.Checked,
+            //    Fall = false,
+            //    Summer = false,
+            //    Spring = false,
+            //    OnDemand = true,
+            //    Prereqs = new Course[][] { new Course[] { Database_Systems } }
+            //};
+            //Course Advanced_Software_Engineering = new Course
+            //{
+            //    Prefix = "CSCI 4322",
+            //    IsCompleted = Advanced_Software_Engineeringcb.Checked,
+            //    Fall = false,
+            //    Summer = false,
+            //    Spring = false,
+            //    OnDemand = true,
+            //    Prereqs = new Course[][] { }
+            //};
+            //Course Advanced_Operating_Systems = new Course
+            //{
+            //    Prefix = "CSCI 4342",
+            //    IsCompleted = Advanced_Operating_Systemscb.Checked,
+            //    Fall = false,
+            //    Summer = false,
+            //    Spring = false,
+            //    OnDemand = true,
+            //    Prereqs = new Course[][] { new Course[] { Introduction_To_Operating_Systems } }
+            //};
+            //Course System_Prog_Under_Unix = new Course
+            //{
+            //    Prefix = "CSCI 4343",
+            //    IsCompleted = System_Prog_Under_Unixcb.Checked,
+            //    Fall = false,
+            //    Summer = false,
+            //    Spring = false,
+            //    OnDemand = true,
+            //    Prereqs = new Course[][] { new Course[] { Introduction_To_Operating_Systems } }
+            //};
+            //Course Compiler_Theory = new Course
+            //{
+            //    Prefix = "CSCI 4342",
+            //    IsCompleted = Compiler_Theorycb.Checked,
+            //    Fall = false,
+            //    Summer = false,
+            //    Spring = false,
+            //    OnDemand = true,
+            //    Prereqs = new Course[][] { new Course[] { Comparative_Languages } }
+            //};
+            //Course Embedded_Systems_Programming = new Course
+            //{
+            //    Prefix = "CSCI 4360",
+            //    IsCompleted = Embedded_Systems_Programmingcb.Checked,
+            //    Fall = false,
+            //    Summer = false,
+            //    Spring = false,
+            //    OnDemand = true,
+            //    Prereqs = new Course[][] { }
+            //};
+            //Course Handheld_Ubiquitous_Computing = new Course
+            //{
+            //    Prefix = "CSCI 4370",
+            //    IsCompleted = Handheld_Ubiquitous_Computingcb.Checked,
+            //    Fall = false,
+            //    Summer = false,
+            //    Spring = false,
+            //    OnDemand = true,
+            //    Prereqs = new Course[][] { }
+            //};
+            //Course Data_Mining = new Course
+            //{
+            //    Prefix = "CSCI 4535",
+            //    IsCompleted = Data_Miningcb.Checked,
+            //    Fall = false,
+            //    Summer = false,
+            //    Spring = false,
+            //    OnDemand = true,
+            //    Prereqs = new Course[][] { new Course[] { Database_Systems } }
+            //};
+            //Course Special_Problems_CO_OP = new Course
+            //{
+            //    Prefix = "CSCI 4790",
+            //    IsCompleted = Special_Problems_CO_OPcb.Checked,
+            //    Fall = false,
+            //    Summer = false,
+            //    Spring = false,
+            //    OnDemand = true,
+            //    Prereqs = new Course[][] { }
+            //};
+            //Course Directed_Study_In_Computer_Science = new Course
+            //{
+            //    Prefix = "CSCI 4890",
+            //    IsCompleted = Directed_Study_In_Computer_Sciencecb.Checked,
+            //    Fall = false,
+            //    Summer = false,
+            //    Spring = false,
+            //    OnDemand = true,
+            //    Prereqs = new Course[][] { }
+            //};
+            //Course Data_Management_For_Math_And_The_Sciences = new Course
+            //{
+            //    Prefix = "CSCI 5130",
+            //    IsCompleted = Data_Management_For_Math_And_The_Sciencescb.Checked,
+            //    Fall = false,
+            //    Summer = false,
+            //    Spring = false,
+            //    OnDemand = true,
+            //    Prereqs = new Course[][] { new Course[] { Introduction_To_BASIC_Programming } }
+            //};
+            //Course Software_Security_And_Secure_Coding = new Course
+            //{
+            //    Prefix = "CSCI 5380",
+            //    IsCompleted = Software_Security_And_Secure_Codingcb.Checked,
+            //    Fall = false,
+            //    Summer = false,
+            //    Spring = false,
+            //    OnDemand = true,
+            //    Prereqs = new Course[][] { new Course[] { Programming_Principles_2 } }
+            //};
 
 
             courses = new List<Course>
@@ -1066,83 +1070,83 @@ namespace RuleBasedSystem
                 First_Year_Experience,
 
                 Programming_Principles_1,
-                Programming_Principles_2,
+            //    Programming_Principles_2,
                 Computers_Ethics_and_Society,
-                Discrete_Math,
+                //Discrete_Math,
                 Calculus_2,
 
                 Introduction_To_International_Studies,
 
-                Principles_Of_Biology_2_With_Lab,
+             //   Principles_Of_Biology_2_With_Lab,
                 Principles_Of_Chemistry_2_With_Lab,
                 General_Historical_Geology_With_Lab,
                 Introduction_to_Physics_2_with_Lab,
                 Principles_of_Physics_2,
 
-                Data_Structures,
-                Systems_Software,
-                Theoretical_Foundations,
-                Database_Systems,
-                Algorithm_Design_and_Analysis,
-                Computer_Architecture,
-                Data_Communications_And_Networking,
-                Object_Oriented_Design,
-                Computer_Security,
-                Distributed_Web_Systems_Design,
-                Software_Engineering,
+                //Data_Structures,
+                //Systems_Software,
+                //Theoretical_Foundations,
+                //Database_Systems,
+                //Algorithm_Design_and_Analysis,
+                //Computer_Architecture,
+                //Data_Communications_And_Networking,
+                //Object_Oriented_Design,
+                //Computer_Security,
+                //Distributed_Web_Systems_Design,
+                //Software_Engineering,
 
-                Logic_Circuit_Design,
-                Logic_Circuits_and_Microprocessors,
-                Data_Warehouse_Design,
-                Human_Computer_Interaction,
-                Game_Programming,
-                Software_Testing_and_Quality_Assurance,
-                Broadband_Networks,
-                Optical_Networks,
-                Selected_Topics,
-                Discrete_Simulation,
-                Artificial_Intelligence,
-                Computer_Graphics,
-                Animation,
-                Systems_and_Software_Assurance,
-                Network_Management_Systems,
-                Wireless_and_Mobile_Systems,
+                //Logic_Circuit_Design,
+                //Logic_Circuits_and_Microprocessors,
+                //Data_Warehouse_Design,
+                //Human_Computer_Interaction,
+                //Game_Programming,
+                //Software_Testing_and_Quality_Assurance,
+                //Broadband_Networks,
+                //Optical_Networks,
+                //Selected_Topics,
+                //Discrete_Simulation,
+                //Artificial_Intelligence,
+                //Computer_Graphics,
+                //Animation,
+                //Systems_and_Software_Assurance,
+                //Network_Management_Systems,
+                //Wireless_and_Mobile_Systems,
 
-                Introduction_To_Operating_Systems,
-                Comparative_Languages,
-                Machine_Learning,
+                //Introduction_To_Operating_Systems,
+                //Comparative_Languages,
+                //Machine_Learning,
 
-                ////https://catalog.georgiasouthern.edu/academics/course-descriptions/csci/
-                Comp_App_For_Bus_Majors,
-                Introduction_To_BASIC_Programming,
-                Introduction_To_Java_Programming,
-                Cpp_Programming,
-                High_Performance_Computing,
-                Networks,
-                Advanced_Database_Systems,
-                Advanced_Software_Engineering,
-                Advanced_Operating_Systems,
-                System_Prog_Under_Unix,
-                Compiler_Theory,
-                Embedded_Systems_Programming,
-                Handheld_Ubiquitous_Computing,
-                Numerical_Analysis,
-                Data_Mining,
-                Special_Problems_CO_OP,
-                Directed_Study_In_Computer_Science,
-                Data_Management_For_Math_And_The_Sciences,
-                Discrete_Simulation,
-                Software_Security_And_Secure_Coding,
+                //////https://catalog.georgiasouthern.edu/academics/course-descriptions/csci/
+                //Comp_App_For_Bus_Majors,
+                //Introduction_To_BASIC_Programming,
+                //Introduction_To_Java_Programming,
+                //Cpp_Programming,
+                //High_Performance_Computing,
+                //Networks,
+                //Advanced_Database_Systems,
+                //Advanced_Software_Engineering,
+                //Advanced_Operating_Systems,
+                //System_Prog_Under_Unix,
+                //Compiler_Theory,
+                //Embedded_Systems_Programming,
+                //Handheld_Ubiquitous_Computing,
+                //Numerical_Analysis,
+                //Data_Mining,
+                //Special_Problems_CO_OP,
+                //Directed_Study_In_Computer_Science,
+                //Data_Management_For_Math_And_The_Sciences,
+                //Discrete_Simulation,
+                //Software_Security_And_Secure_Coding,
 
-                //Other random Pre-reqs or conflicts b/w handout and current curriculuum
+                ////Other random Pre-reqs or conflicts b/w handout and current curriculuum
                 Statistics_1,
-                Linear_Algebra,
-                Principles_Of_Biology_1_With_Lab,
-                Quantitative_Reasoning,
-                Introduction_To_Mathematical_Modeling,
-                Survey_of_Calculus,
-                Elementary_Statistics,
-                Computing_for_Engineers
+                //Linear_Algebra,
+                //Principles_Of_Biology_1_With_Lab,
+                //Quantitative_Reasoning,
+                //Introduction_To_Mathematical_Modeling,
+                //Survey_of_Calculus,
+                //Elementary_Statistics,
+                //Computing_for_Engineers
 
             };
 
@@ -1463,6 +1467,7 @@ namespace RuleBasedSystem
             listpanel.Add(panel11);
             listpanel.Add(panel12);
             listpanel.Add(panel13);
+            listpanel.Add(panel14);
         }
 
         private void button21_Click(object sender, EventArgs e)

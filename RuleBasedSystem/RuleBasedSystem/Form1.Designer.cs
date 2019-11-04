@@ -118,13 +118,20 @@
             this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.checkBox5 = new System.Windows.Forms.CheckBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.panel12 = new System.Windows.Forms.Panel();
+            this.panel13 = new System.Windows.Forms.Panel();
             this.button22 = new System.Windows.Forms.Button();
             this.button21 = new System.Windows.Forms.Button();
             this.button20 = new System.Windows.Forms.Button();
-            this.panel13 = new System.Windows.Forms.Panel();
+            this.panel14 = new System.Windows.Forms.Panel();
             this.Eligible_CoursesTxt = new System.Windows.Forms.TextBox();
             this.button25 = new System.Windows.Forms.Button();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.button26 = new System.Windows.Forms.Button();
+            this.springbtn = new System.Windows.Forms.RadioButton();
+            this.summerbtn = new System.Windows.Forms.RadioButton();
+            this.fallbtn = new System.Windows.Forms.RadioButton();
+            this.label12 = new System.Windows.Forms.Label();
+            this.button23 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -136,8 +143,9 @@
             this.panel9.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel11.SuspendLayout();
-            this.panel12.SuspendLayout();
             this.panel13.SuspendLayout();
+            this.panel14.SuspendLayout();
+            this.panel12.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -1199,15 +1207,15 @@
             this.label11.Text = "Major Required Courses";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel12
+            // panel13
             // 
-            this.panel12.Controls.Add(this.button22);
-            this.panel12.Controls.Add(this.button21);
-            this.panel12.Controls.Add(this.button20);
-            this.panel12.Location = new System.Drawing.Point(12, 12);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(760, 437);
-            this.panel12.TabIndex = 16;
+            this.panel13.Controls.Add(this.button22);
+            this.panel13.Controls.Add(this.button21);
+            this.panel13.Controls.Add(this.button20);
+            this.panel13.Location = new System.Drawing.Point(12, 12);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(760, 437);
+            this.panel13.TabIndex = 16;
             // 
             // button22
             // 
@@ -1241,14 +1249,14 @@
             this.button20.UseVisualStyleBackColor = true;
             this.button20.Click += new System.EventHandler(this.back_Click);
             // 
-            // panel13
+            // panel14
             // 
-            this.panel13.Controls.Add(this.Eligible_CoursesTxt);
-            this.panel13.Controls.Add(this.button25);
-            this.panel13.Location = new System.Drawing.Point(12, 12);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(760, 437);
-            this.panel13.TabIndex = 17;
+            this.panel14.Controls.Add(this.Eligible_CoursesTxt);
+            this.panel14.Controls.Add(this.button25);
+            this.panel14.Location = new System.Drawing.Point(12, 12);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(760, 437);
+            this.panel14.TabIndex = 17;
             // 
             // Eligible_CoursesTxt
             // 
@@ -1271,20 +1279,100 @@
             this.button25.UseVisualStyleBackColor = true;
             this.button25.Click += new System.EventHandler(this.back_Click);
             // 
+            // panel12
+            // 
+            this.panel12.Controls.Add(this.button23);
+            this.panel12.Controls.Add(this.label12);
+            this.panel12.Controls.Add(this.fallbtn);
+            this.panel12.Controls.Add(this.summerbtn);
+            this.panel12.Controls.Add(this.springbtn);
+            this.panel12.Controls.Add(this.button26);
+            this.panel12.Location = new System.Drawing.Point(12, 12);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(760, 437);
+            this.panel12.TabIndex = 18;
+            // 
+            // button26
+            // 
+            this.button26.Location = new System.Drawing.Point(60, 380);
+            this.button26.Name = "button26";
+            this.button26.Size = new System.Drawing.Size(75, 23);
+            this.button26.TabIndex = 10;
+            this.button26.Text = "Back";
+            this.button26.UseVisualStyleBackColor = true;
+            // 
+            // springbtn
+            // 
+            this.springbtn.AutoSize = true;
+            this.springbtn.Checked = true;
+            this.springbtn.Location = new System.Drawing.Point(331, 115);
+            this.springbtn.Name = "springbtn";
+            this.springbtn.Size = new System.Drawing.Size(55, 17);
+            this.springbtn.TabIndex = 11;
+            this.springbtn.TabStop = true;
+            this.springbtn.Text = "Spring";
+            this.springbtn.UseVisualStyleBackColor = true;
+            // 
+            // summerbtn
+            // 
+            this.summerbtn.AutoSize = true;
+            this.summerbtn.Location = new System.Drawing.Point(331, 165);
+            this.summerbtn.Name = "summerbtn";
+            this.summerbtn.Size = new System.Drawing.Size(63, 17);
+            this.summerbtn.TabIndex = 12;
+            this.summerbtn.TabStop = true;
+            this.summerbtn.Text = "Summer";
+            this.summerbtn.UseVisualStyleBackColor = true;
+            // 
+            // fallbtn
+            // 
+            this.fallbtn.AutoSize = true;
+            this.fallbtn.Location = new System.Drawing.Point(331, 217);
+            this.fallbtn.Name = "fallbtn";
+            this.fallbtn.Size = new System.Drawing.Size(41, 17);
+            this.fallbtn.TabIndex = 13;
+            this.fallbtn.TabStop = true;
+            this.fallbtn.Text = "Fall";
+            this.fallbtn.UseVisualStyleBackColor = true;
+            // 
+            // label12
+            // 
+            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(0, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(760, 45);
+            this.label12.TabIndex = 12;
+            this.label12.Text = "What Season is next semester?";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // button23
+            // 
+            this.button23.Location = new System.Drawing.Point(610, 380);
+            this.button23.Name = "button23";
+            this.button23.Size = new System.Drawing.Size(75, 23);
+            this.button23.TabIndex = 14;
+            this.button23.Text = "Next";
+            this.button23.UseVisualStyleBackColor = true;
+            this.button23.Click += new System.EventHandler(this.forward_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 461);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panel13);
             this.Controls.Add(this.panel12);
+            this.Controls.Add(this.panel11);
+            this.Controls.Add(this.panel14);
+            this.Controls.Add(this.panel13);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel11);
             this.Controls.Add(this.panel10);
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.panel8);
@@ -1313,9 +1401,11 @@
             this.panel10.PerformLayout();
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
-            this.panel12.ResumeLayout(false);
             this.panel13.ResumeLayout(false);
-            this.panel13.PerformLayout();
+            this.panel14.ResumeLayout(false);
+            this.panel14.PerformLayout();
+            this.panel12.ResumeLayout(false);
+            this.panel12.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1412,13 +1502,20 @@
         private System.Windows.Forms.CheckBox checkBox4;
         private System.Windows.Forms.CheckBox checkBox5;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.Button button22;
         private System.Windows.Forms.Button button21;
         private System.Windows.Forms.Button button20;
-        private System.Windows.Forms.Panel panel13;
+        private System.Windows.Forms.Panel panel14;
         private System.Windows.Forms.TextBox Eligible_CoursesTxt;
         private System.Windows.Forms.Button button25;
+        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.Button button26;
+        private System.Windows.Forms.Button button23;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.RadioButton fallbtn;
+        private System.Windows.Forms.RadioButton summerbtn;
+        private System.Windows.Forms.RadioButton springbtn;
     }
 }
 
