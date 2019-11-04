@@ -197,6 +197,13 @@
             this.Handheld_Ubiquitous_Computingcb = new System.Windows.Forms.CheckBox();
             this.label15 = new System.Windows.Forms.Label();
             this.CreateCoursePanel = new System.Windows.Forms.Panel();
+            this.clearBtn = new System.Windows.Forms.Button();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.button41 = new System.Windows.Forms.Button();
+            this.button40 = new System.Windows.Forms.Button();
+            this.button39 = new System.Windows.Forms.Button();
+            this.label20 = new System.Windows.Forms.Label();
+            this.ORtxt = new System.Windows.Forms.TextBox();
             this.button38 = new System.Windows.Forms.Button();
             this.button37 = new System.Windows.Forms.Button();
             this.prereqscbb = new System.Windows.Forms.ComboBox();
@@ -216,13 +223,6 @@
             this.button33 = new System.Windows.Forms.Button();
             this.button34 = new System.Windows.Forms.Button();
             this.label17 = new System.Windows.Forms.Label();
-            this.ORtxt = new System.Windows.Forms.TextBox();
-            this.label20 = new System.Windows.Forms.Label();
-            this.button39 = new System.Windows.Forms.Button();
-            this.button40 = new System.Windows.Forms.Button();
-            this.button41 = new System.Windows.Forms.Button();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.clearBtn = new System.Windows.Forms.Button();
             this.HomePanel.SuspendLayout();
             this.AreaAPanel.SuspendLayout();
             this.AreaBPanel.SuspendLayout();
@@ -2278,6 +2278,77 @@
             this.CreateCoursePanel.Size = new System.Drawing.Size(760, 437);
             this.CreateCoursePanel.TabIndex = 22;
             // 
+            // clearBtn
+            // 
+            this.clearBtn.Location = new System.Drawing.Point(610, 337);
+            this.clearBtn.Name = "clearBtn";
+            this.clearBtn.Size = new System.Drawing.Size(75, 23);
+            this.clearBtn.TabIndex = 29;
+            this.clearBtn.Text = "Clear All";
+            this.clearBtn.UseVisualStyleBackColor = true;
+            this.clearBtn.Click += new System.EventHandler(this.clearBtn_Click);
+            // 
+            // checkBox4
+            // 
+            this.checkBox4.AutoSize = true;
+            this.checkBox4.Location = new System.Drawing.Point(467, 116);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.checkBox4.Size = new System.Drawing.Size(152, 17);
+            this.checkBox4.TabIndex = 28;
+            this.checkBox4.Text = ":Available only on Demand";
+            this.checkBox4.UseVisualStyleBackColor = true;
+            this.checkBox4.Click += new System.EventHandler(this.checkBox4_CheckedChanged);
+            // 
+            // button41
+            // 
+            this.button41.Location = new System.Drawing.Point(36, 306);
+            this.button41.Name = "button41";
+            this.button41.Size = new System.Drawing.Size(121, 23);
+            this.button41.TabIndex = 27;
+            this.button41.Text = "Add PreReq to OR";
+            this.button41.UseVisualStyleBackColor = true;
+            this.button41.Click += new System.EventHandler(this.button41_Click);
+            // 
+            // button40
+            // 
+            this.button40.Location = new System.Drawing.Point(204, 362);
+            this.button40.Name = "button40";
+            this.button40.Size = new System.Drawing.Size(109, 23);
+            this.button40.TabIndex = 26;
+            this.button40.Text = "Add OR to PreReqs";
+            this.button40.UseVisualStyleBackColor = true;
+            this.button40.Click += new System.EventHandler(this.button40_Click);
+            // 
+            // button39
+            // 
+            this.button39.Location = new System.Drawing.Point(204, 391);
+            this.button39.Name = "button39";
+            this.button39.Size = new System.Drawing.Size(109, 23);
+            this.button39.TabIndex = 25;
+            this.button39.Text = "Clear OR";
+            this.button39.UseVisualStyleBackColor = true;
+            this.button39.Click += new System.EventHandler(this.button39_Click);
+            // 
+            // label20
+            // 
+            this.label20.Location = new System.Drawing.Point(204, 170);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(109, 73);
+            this.label20.TabIndex = 24;
+            this.label20.Text = "Courses \"OR\"\'d Together \r\n(e.g. Take either MATH 1112 OR MATH 1113):\r\n";
+            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // ORtxt
+            // 
+            this.ORtxt.BackColor = System.Drawing.SystemColors.Window;
+            this.ORtxt.Location = new System.Drawing.Point(204, 246);
+            this.ORtxt.Multiline = true;
+            this.ORtxt.Name = "ORtxt";
+            this.ORtxt.ReadOnly = true;
+            this.ORtxt.Size = new System.Drawing.Size(109, 109);
+            this.ORtxt.TabIndex = 23;
+            // 
             // button38
             // 
             this.button38.Location = new System.Drawing.Point(36, 332);
@@ -2466,85 +2537,14 @@
             this.label17.Text = "Custom Classes";
             this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // ORtxt
-            // 
-            this.ORtxt.BackColor = System.Drawing.SystemColors.Window;
-            this.ORtxt.Location = new System.Drawing.Point(204, 246);
-            this.ORtxt.Multiline = true;
-            this.ORtxt.Name = "ORtxt";
-            this.ORtxt.ReadOnly = true;
-            this.ORtxt.Size = new System.Drawing.Size(109, 109);
-            this.ORtxt.TabIndex = 23;
-            // 
-            // label20
-            // 
-            this.label20.Location = new System.Drawing.Point(204, 170);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(109, 73);
-            this.label20.TabIndex = 24;
-            this.label20.Text = "Courses \"OR\"\'d Together \r\n(e.g. Take either MATH 1112 OR MATH 1113):\r\n";
-            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // button39
-            // 
-            this.button39.Location = new System.Drawing.Point(204, 391);
-            this.button39.Name = "button39";
-            this.button39.Size = new System.Drawing.Size(109, 23);
-            this.button39.TabIndex = 25;
-            this.button39.Text = "Clear OR";
-            this.button39.UseVisualStyleBackColor = true;
-            this.button39.Click += new System.EventHandler(this.button39_Click);
-            // 
-            // button40
-            // 
-            this.button40.Location = new System.Drawing.Point(204, 362);
-            this.button40.Name = "button40";
-            this.button40.Size = new System.Drawing.Size(109, 23);
-            this.button40.TabIndex = 26;
-            this.button40.Text = "Add OR to PreReqs";
-            this.button40.UseVisualStyleBackColor = true;
-            this.button40.Click += new System.EventHandler(this.button40_Click);
-            // 
-            // button41
-            // 
-            this.button41.Location = new System.Drawing.Point(36, 306);
-            this.button41.Name = "button41";
-            this.button41.Size = new System.Drawing.Size(121, 23);
-            this.button41.TabIndex = 27;
-            this.button41.Text = "Add PreReq to OR";
-            this.button41.UseVisualStyleBackColor = true;
-            this.button41.Click += new System.EventHandler(this.button41_Click);
-            // 
-            // checkBox4
-            // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(467, 116);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.checkBox4.Size = new System.Drawing.Size(152, 17);
-            this.checkBox4.TabIndex = 28;
-            this.checkBox4.Text = ":Available only on Demand";
-            this.checkBox4.UseVisualStyleBackColor = true;
-            this.checkBox4.Click += new System.EventHandler(this.checkBox4_CheckedChanged);
-            // 
-            // clearBtn
-            // 
-            this.clearBtn.Location = new System.Drawing.Point(610, 337);
-            this.clearBtn.Name = "clearBtn";
-            this.clearBtn.Size = new System.Drawing.Size(75, 23);
-            this.clearBtn.TabIndex = 29;
-            this.clearBtn.Text = "Clear All";
-            this.clearBtn.UseVisualStyleBackColor = true;
-            this.clearBtn.Click += new System.EventHandler(this.clearBtn_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 461);
+            this.Controls.Add(this.HomePanel);
             this.Controls.Add(this.CreateCoursePanel);
             this.Controls.Add(this.CustomClassesPanel);
-            this.Controls.Add(this.HomePanel);
             this.Controls.Add(this.ChainingPanel);
             this.Controls.Add(this.SeasonPanel);
             this.Controls.Add(this.E1Panel);
