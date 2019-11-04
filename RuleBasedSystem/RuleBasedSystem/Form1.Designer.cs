@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.HomePanel = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.startBtn = new System.Windows.Forms.Button();
@@ -205,6 +206,18 @@
             this.customClassesBox = new System.Windows.Forms.CheckedListBox();
             this.button35 = new System.Windows.Forms.Button();
             this.button36 = new System.Windows.Forms.Button();
+            this.customPrefixtxt = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.customNametxt = new System.Windows.Forms.TextBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.customPrereqstxt = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.prereqscbb = new System.Windows.Forms.ComboBox();
+            this.button37 = new System.Windows.Forms.Button();
+            this.button38 = new System.Windows.Forms.Button();
+            this.courseBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.HomePanel.SuspendLayout();
             this.AreaAPanel.SuspendLayout();
             this.AreaBPanel.SuspendLayout();
@@ -224,6 +237,7 @@
             this.E2Panel.SuspendLayout();
             this.CreateCoursePanel.SuspendLayout();
             this.CustomClassesPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.courseBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // HomePanel
@@ -1379,6 +1393,7 @@
             this.button26.TabIndex = 10;
             this.button26.Text = "Back";
             this.button26.UseVisualStyleBackColor = true;
+            this.button26.Click += new System.EventHandler(this.back_Click);
             // 
             // springbtn
             // 
@@ -2217,6 +2232,17 @@
             // 
             // CreateCoursePanel
             // 
+            this.CreateCoursePanel.Controls.Add(this.button38);
+            this.CreateCoursePanel.Controls.Add(this.button37);
+            this.CreateCoursePanel.Controls.Add(this.prereqscbb);
+            this.CreateCoursePanel.Controls.Add(this.label19);
+            this.CreateCoursePanel.Controls.Add(this.customPrereqstxt);
+            this.CreateCoursePanel.Controls.Add(this.checkBox3);
+            this.CreateCoursePanel.Controls.Add(this.checkBox2);
+            this.CreateCoursePanel.Controls.Add(this.checkBox1);
+            this.CreateCoursePanel.Controls.Add(this.customNametxt);
+            this.CreateCoursePanel.Controls.Add(this.label18);
+            this.CreateCoursePanel.Controls.Add(this.customPrefixtxt);
             this.CreateCoursePanel.Controls.Add(this.button36);
             this.CreateCoursePanel.Controls.Add(this.button35);
             this.CreateCoursePanel.Controls.Add(this.label16);
@@ -2228,11 +2254,11 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(152, 49);
+            this.label16.Location = new System.Drawing.Point(152, 28);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(119, 13);
+            this.label16.Size = new System.Drawing.Size(132, 13);
             this.label16.TabIndex = 0;
-            this.label16.Text = "Prefix (e.g. ENGL 1101)";
+            this.label16.Text = "Prefix (e.g. \"ENGL 1101\"):";
             // 
             // button32
             // 
@@ -2242,6 +2268,7 @@
             this.button32.TabIndex = 3;
             this.button32.Text = "Create New Course";
             this.button32.UseVisualStyleBackColor = true;
+            this.button32.Click += new System.EventHandler(this.button32_Click);
             // 
             // Advanced_Software_Engineeringcb
             // 
@@ -2327,19 +2354,124 @@
             this.button36.UseVisualStyleBackColor = true;
             this.button36.Click += new System.EventHandler(this.button36_Click);
             // 
+            // customPrefixtxt
+            // 
+            this.customPrefixtxt.Location = new System.Drawing.Point(340, 25);
+            this.customPrefixtxt.Name = "customPrefixtxt";
+            this.customPrefixtxt.Size = new System.Drawing.Size(228, 20);
+            this.customPrefixtxt.TabIndex = 12;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(152, 60);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(172, 13);
+            this.label18.TabIndex = 13;
+            this.label18.Text = "Class Name (e.g. \"Composition 1\"):";
+            // 
+            // customNametxt
+            // 
+            this.customNametxt.Location = new System.Drawing.Point(340, 56);
+            this.customNametxt.Name = "customNametxt";
+            this.customNametxt.Size = new System.Drawing.Size(228, 20);
+            this.customNametxt.TabIndex = 14;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(238, 96);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.checkBox1.Size = new System.Drawing.Size(116, 17);
+            this.checkBox1.TabIndex = 15;
+            this.checkBox1.Text = ":Available in Spring";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(230, 115);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.checkBox2.Size = new System.Drawing.Size(124, 17);
+            this.checkBox2.TabIndex = 16;
+            this.checkBox2.Text = ":Available in Summer";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // checkBox3
+            // 
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Location = new System.Drawing.Point(252, 134);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.checkBox3.Size = new System.Drawing.Size(102, 17);
+            this.checkBox3.TabIndex = 17;
+            this.checkBox3.Text = ":Available in Fall";
+            this.checkBox3.UseVisualStyleBackColor = true;
+            // 
+            // customPrereqstxt
+            // 
+            this.customPrereqstxt.Location = new System.Drawing.Point(340, 183);
+            this.customPrereqstxt.Multiline = true;
+            this.customPrereqstxt.Name = "customPrereqstxt";
+            this.customPrereqstxt.Size = new System.Drawing.Size(233, 220);
+            this.customPrereqstxt.TabIndex = 18;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(434, 166);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(51, 13);
+            this.label19.TabIndex = 19;
+            this.label19.Text = "PreReqs:";
+            // 
+            // prereqscbb
+            // 
+            this.prereqscbb.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.courseBindingSource, "Prefix", true));
+            this.prereqscbb.FormattingEnabled = true;
+            this.prereqscbb.Location = new System.Drawing.Point(199, 288);
+            this.prereqscbb.Name = "prereqscbb";
+            this.prereqscbb.Size = new System.Drawing.Size(121, 21);
+            this.prereqscbb.TabIndex = 20;
+            // 
+            // button37
+            // 
+            this.button37.Location = new System.Drawing.Point(199, 323);
+            this.button37.Name = "button37";
+            this.button37.Size = new System.Drawing.Size(121, 23);
+            this.button37.TabIndex = 21;
+            this.button37.Text = "Add PreReq";
+            this.button37.UseVisualStyleBackColor = true;
+            // 
+            // button38
+            // 
+            this.button38.Location = new System.Drawing.Point(199, 361);
+            this.button38.Name = "button38";
+            this.button38.Size = new System.Drawing.Size(121, 23);
+            this.button38.TabIndex = 22;
+            this.button38.Text = "Clear all PreReqs";
+            this.button38.UseVisualStyleBackColor = true;
+            this.button38.Click += new System.EventHandler(this.button38_Click);
+            // 
+            // courseBindingSource
+            // 
+            this.courseBindingSource.DataSource = typeof(RuleBasedSystem.Form1.Course);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 461);
-            this.Controls.Add(this.CreateCoursePanel);
-            this.Controls.Add(this.CustomClassesPanel);
             this.Controls.Add(this.HomePanel);
+            this.Controls.Add(this.CreateCoursePanel);
+            this.Controls.Add(this.SeasonPanel);
+            this.Controls.Add(this.CustomClassesPanel);
             this.Controls.Add(this.E1Panel);
             this.Controls.Add(this.E2Panel);
             this.Controls.Add(this.ChainingPanel);
             this.Controls.Add(this.EligibleCoursesPanel);
-            this.Controls.Add(this.SeasonPanel);
             this.Controls.Add(this.MRC1Panel);
             this.Controls.Add(this.MRC2Panel);
             this.Controls.Add(this.SLSsRPanel);
@@ -2389,6 +2521,7 @@
             this.CreateCoursePanel.ResumeLayout(false);
             this.CreateCoursePanel.PerformLayout();
             this.CustomClassesPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.courseBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2572,6 +2705,18 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Button button36;
         private System.Windows.Forms.Button button35;
+        private System.Windows.Forms.TextBox customNametxt;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.TextBox customPrefixtxt;
+        private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.TextBox customPrereqstxt;
+        private System.Windows.Forms.Button button38;
+        private System.Windows.Forms.Button button37;
+        private System.Windows.Forms.ComboBox prereqscbb;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.BindingSource courseBindingSource;
     }
 }
 

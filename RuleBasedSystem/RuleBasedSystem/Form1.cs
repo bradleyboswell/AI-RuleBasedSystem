@@ -1506,5 +1506,20 @@ namespace RuleBasedSystem
             pageIndex = 0;
             listpanel[0].BringToFront();
         }
+
+        private void button38_Click(object sender, EventArgs e)
+        {
+            customPrereqstxt.Text = "";
+        }
+
+        private void button32_Click(object sender, EventArgs e)
+        {
+            foreach(Course c in courses)
+            {
+                prereqscbb.Text += c.Prefix;
+                prereqscbb.Text += Environment.NewLine;
+            }
+            CreateCoursePanel.BringToFront();
+        }
     }
 }
