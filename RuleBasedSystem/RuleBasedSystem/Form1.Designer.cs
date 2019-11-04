@@ -110,13 +110,13 @@
             this.Principles_of_Biology_2_with_labcb = new System.Windows.Forms.CheckBox();
             this.label10 = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.Algorithm_Design_and_Analysiscb = new System.Windows.Forms.CheckBox();
             this.button18 = new System.Windows.Forms.Button();
             this.button19 = new System.Windows.Forms.Button();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
+            this.Database_Systemscb = new System.Windows.Forms.CheckBox();
+            this.Theoretical_Foundationscb = new System.Windows.Forms.CheckBox();
+            this.Systems_Softwarecb = new System.Windows.Forms.CheckBox();
+            this.Data_Structurescb = new System.Windows.Forms.CheckBox();
             this.label11 = new System.Windows.Forms.Label();
             this.panel13 = new System.Windows.Forms.Panel();
             this.button22 = new System.Windows.Forms.Button();
@@ -132,6 +132,16 @@
             this.fallbtn = new System.Windows.Forms.RadioButton();
             this.label12 = new System.Windows.Forms.Label();
             this.button23 = new System.Windows.Forms.Button();
+            this.panel15 = new System.Windows.Forms.Panel();
+            this.checkBox6 = new System.Windows.Forms.CheckBox();
+            this.button24 = new System.Windows.Forms.Button();
+            this.button27 = new System.Windows.Forms.Button();
+            this.checkBox7 = new System.Windows.Forms.CheckBox();
+            this.checkBox8 = new System.Windows.Forms.CheckBox();
+            this.checkBox9 = new System.Windows.Forms.CheckBox();
+            this.checkBox10 = new System.Windows.Forms.CheckBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.checkBox11 = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -146,6 +156,7 @@
             this.panel13.SuspendLayout();
             this.panel14.SuspendLayout();
             this.panel12.SuspendLayout();
+            this.panel15.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -1101,30 +1112,30 @@
             // 
             // panel11
             // 
-            this.panel11.Controls.Add(this.checkBox1);
+            this.panel11.Controls.Add(this.Algorithm_Design_and_Analysiscb);
             this.panel11.Controls.Add(this.button18);
             this.panel11.Controls.Add(this.button19);
-            this.panel11.Controls.Add(this.checkBox2);
-            this.panel11.Controls.Add(this.checkBox3);
-            this.panel11.Controls.Add(this.checkBox4);
-            this.panel11.Controls.Add(this.checkBox5);
+            this.panel11.Controls.Add(this.Database_Systemscb);
+            this.panel11.Controls.Add(this.Theoretical_Foundationscb);
+            this.panel11.Controls.Add(this.Systems_Softwarecb);
+            this.panel11.Controls.Add(this.Data_Structurescb);
             this.panel11.Controls.Add(this.label11);
             this.panel11.Location = new System.Drawing.Point(12, 12);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(760, 437);
             this.panel11.TabIndex = 15;
             // 
-            // checkBox1
+            // Algorithm_Design_and_Analysiscb
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(175, 282);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.checkBox1.Size = new System.Drawing.Size(341, 28);
-            this.checkBox1.TabIndex = 11;
-            this.checkBox1.Text = "PHYS 2212 K - Principles of Physics II";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.Algorithm_Design_and_Analysiscb.AutoSize = true;
+            this.Algorithm_Design_and_Analysiscb.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Algorithm_Design_and_Analysiscb.Location = new System.Drawing.Point(175, 282);
+            this.Algorithm_Design_and_Analysiscb.Name = "Algorithm_Design_and_Analysiscb";
+            this.Algorithm_Design_and_Analysiscb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Algorithm_Design_and_Analysiscb.Size = new System.Drawing.Size(387, 28);
+            this.Algorithm_Design_and_Analysiscb.TabIndex = 11;
+            this.Algorithm_Design_and_Analysiscb.Text = "CSCI 5330 - Algorithm Design and Analysis";
+            this.Algorithm_Design_and_Analysiscb.UseVisualStyleBackColor = true;
             // 
             // button18
             // 
@@ -1146,53 +1157,53 @@
             this.button19.UseVisualStyleBackColor = true;
             this.button19.Click += new System.EventHandler(this.forward_Click);
             // 
-            // checkBox2
+            // Database_Systemscb
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox2.Location = new System.Drawing.Point(175, 240);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.checkBox2.Size = new System.Drawing.Size(406, 28);
-            this.checkBox2.TabIndex = 4;
-            this.checkBox2.Text = "PHYS 1112K - Introduction to Physics II w/ lab";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.Database_Systemscb.AutoSize = true;
+            this.Database_Systemscb.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Database_Systemscb.Location = new System.Drawing.Point(175, 240);
+            this.Database_Systemscb.Name = "Database_Systemscb";
+            this.Database_Systemscb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Database_Systemscb.Size = new System.Drawing.Size(285, 28);
+            this.Database_Systemscb.TabIndex = 4;
+            this.Database_Systemscb.Text = "CSCI 3432 - Database Systems";
+            this.Database_Systemscb.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // Theoretical_Foundationscb
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox3.Location = new System.Drawing.Point(175, 198);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.checkBox3.Size = new System.Drawing.Size(420, 28);
-            this.checkBox3.TabIndex = 3;
-            this.checkBox3.Text = "GEOL 1122 - General Historical Geology w/ lab";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.Theoretical_Foundationscb.AutoSize = true;
+            this.Theoretical_Foundationscb.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Theoretical_Foundationscb.Location = new System.Drawing.Point(175, 198);
+            this.Theoretical_Foundationscb.Name = "Theoretical_Foundationscb";
+            this.Theoretical_Foundationscb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Theoretical_Foundationscb.Size = new System.Drawing.Size(336, 28);
+            this.Theoretical_Foundationscb.TabIndex = 3;
+            this.Theoretical_Foundationscb.Text = "CSCI 3236 - Theoretical Foundations";
+            this.Theoretical_Foundationscb.UseVisualStyleBackColor = true;
             // 
-            // checkBox4
+            // Systems_Softwarecb
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox4.Location = new System.Drawing.Point(175, 154);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.checkBox4.Size = new System.Drawing.Size(415, 28);
-            this.checkBox4.TabIndex = 2;
-            this.checkBox4.Text = "CHEM 1212K - Principles of Chemistry II w/ lab";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.Systems_Softwarecb.AutoSize = true;
+            this.Systems_Softwarecb.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Systems_Softwarecb.Location = new System.Drawing.Point(175, 154);
+            this.Systems_Softwarecb.Name = "Systems_Softwarecb";
+            this.Systems_Softwarecb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Systems_Softwarecb.Size = new System.Drawing.Size(279, 28);
+            this.Systems_Softwarecb.TabIndex = 2;
+            this.Systems_Softwarecb.Text = "CSCI 3232 - Systems Software";
+            this.Systems_Softwarecb.UseVisualStyleBackColor = true;
             // 
-            // checkBox5
+            // Data_Structurescb
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox5.Location = new System.Drawing.Point(175, 108);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.checkBox5.Size = new System.Drawing.Size(459, 28);
-            this.checkBox5.TabIndex = 1;
-            this.checkBox5.Text = "BIOL 2108 and 2108L - Principles of Biology II w/ lab";
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.Data_Structurescb.AutoSize = true;
+            this.Data_Structurescb.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Data_Structurescb.Location = new System.Drawing.Point(175, 108);
+            this.Data_Structurescb.Name = "Data_Structurescb";
+            this.Data_Structurescb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Data_Structurescb.Size = new System.Drawing.Size(258, 28);
+            this.Data_Structurescb.TabIndex = 1;
+            this.Data_Structurescb.Text = "CSCI 3230 - Data Structures";
+            this.Data_Structurescb.UseVisualStyleBackColor = true;
             // 
             // label11
             // 
@@ -1204,7 +1215,7 @@
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(760, 45);
             this.label11.TabIndex = 0;
-            this.label11.Text = "Major Required Courses";
+            this.label11.Text = "Major Required Courses (Part 1/2)";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel13
@@ -1320,7 +1331,6 @@
             this.summerbtn.Name = "summerbtn";
             this.summerbtn.Size = new System.Drawing.Size(63, 17);
             this.summerbtn.TabIndex = 12;
-            this.summerbtn.TabStop = true;
             this.summerbtn.Text = "Summer";
             this.summerbtn.UseVisualStyleBackColor = true;
             // 
@@ -1331,7 +1341,6 @@
             this.fallbtn.Name = "fallbtn";
             this.fallbtn.Size = new System.Drawing.Size(41, 17);
             this.fallbtn.TabIndex = 13;
-            this.fallbtn.TabStop = true;
             this.fallbtn.Text = "Fall";
             this.fallbtn.UseVisualStyleBackColor = true;
             // 
@@ -1358,14 +1367,137 @@
             this.button23.UseVisualStyleBackColor = true;
             this.button23.Click += new System.EventHandler(this.forward_Click);
             // 
+            // panel15
+            // 
+            this.panel15.Controls.Add(this.checkBox11);
+            this.panel15.Controls.Add(this.checkBox6);
+            this.panel15.Controls.Add(this.button24);
+            this.panel15.Controls.Add(this.button27);
+            this.panel15.Controls.Add(this.checkBox7);
+            this.panel15.Controls.Add(this.checkBox8);
+            this.panel15.Controls.Add(this.checkBox9);
+            this.panel15.Controls.Add(this.checkBox10);
+            this.panel15.Controls.Add(this.label13);
+            this.panel15.Location = new System.Drawing.Point(12, 12);
+            this.panel15.Name = "panel15";
+            this.panel15.Size = new System.Drawing.Size(760, 437);
+            this.panel15.TabIndex = 19;
+            // 
+            // checkBox6
+            // 
+            this.checkBox6.AutoSize = true;
+            this.checkBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox6.Location = new System.Drawing.Point(181, 268);
+            this.checkBox6.Name = "checkBox6";
+            this.checkBox6.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.checkBox6.Size = new System.Drawing.Size(404, 28);
+            this.checkBox6.TabIndex = 11;
+            this.checkBox6.Text = "CSCI 5436 - Distributed Web Systems Design";
+            this.checkBox6.UseVisualStyleBackColor = true;
+            // 
+            // button24
+            // 
+            this.button24.Location = new System.Drawing.Point(60, 380);
+            this.button24.Name = "button24";
+            this.button24.Size = new System.Drawing.Size(75, 23);
+            this.button24.TabIndex = 10;
+            this.button24.Text = "Back";
+            this.button24.UseVisualStyleBackColor = true;
+            this.button24.Click += new System.EventHandler(this.back_Click);
+            // 
+            // button27
+            // 
+            this.button27.Location = new System.Drawing.Point(610, 380);
+            this.button27.Name = "button27";
+            this.button27.Size = new System.Drawing.Size(75, 23);
+            this.button27.TabIndex = 7;
+            this.button27.Text = "Next";
+            this.button27.UseVisualStyleBackColor = true;
+            this.button27.Click += new System.EventHandler(this.forward_Click);
+            // 
+            // checkBox7
+            // 
+            this.checkBox7.AutoSize = true;
+            this.checkBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox7.Location = new System.Drawing.Point(181, 226);
+            this.checkBox7.Name = "checkBox7";
+            this.checkBox7.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.checkBox7.Size = new System.Drawing.Size(287, 28);
+            this.checkBox7.TabIndex = 4;
+            this.checkBox7.Text = "CSCI 5431 - Computer Security";
+            this.checkBox7.UseVisualStyleBackColor = true;
+            // 
+            // checkBox8
+            // 
+            this.checkBox8.AutoSize = true;
+            this.checkBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox8.Location = new System.Drawing.Point(181, 184);
+            this.checkBox8.Name = "checkBox8";
+            this.checkBox8.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.checkBox8.Size = new System.Drawing.Size(329, 28);
+            this.checkBox8.TabIndex = 3;
+            this.checkBox8.Text = "CSCI 5335 - Object Oriented Design";
+            this.checkBox8.UseVisualStyleBackColor = true;
+            // 
+            // checkBox9
+            // 
+            this.checkBox9.AutoSize = true;
+            this.checkBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox9.Location = new System.Drawing.Point(181, 140);
+            this.checkBox9.Name = "checkBox9";
+            this.checkBox9.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.checkBox9.Size = new System.Drawing.Size(367, 28);
+            this.checkBox9.TabIndex = 2;
+            this.checkBox9.Text = "CSCI 5332 - Data Comm and Networking";
+            this.checkBox9.UseVisualStyleBackColor = true;
+            // 
+            // checkBox10
+            // 
+            this.checkBox10.AutoSize = true;
+            this.checkBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox10.Location = new System.Drawing.Point(181, 94);
+            this.checkBox10.Name = "checkBox10";
+            this.checkBox10.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.checkBox10.Size = new System.Drawing.Size(321, 28);
+            this.checkBox10.TabIndex = 1;
+            this.checkBox10.Text = "CSCI 5331 - Computer Architecture";
+            this.checkBox10.UseVisualStyleBackColor = true;
+            // 
+            // label13
+            // 
+            this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(0, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(760, 45);
+            this.label13.TabIndex = 0;
+            this.label13.Text = "Major Required Courses (Part 2/2)";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // checkBox11
+            // 
+            this.checkBox11.AutoSize = true;
+            this.checkBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox11.Location = new System.Drawing.Point(181, 309);
+            this.checkBox11.Name = "checkBox11";
+            this.checkBox11.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.checkBox11.Size = new System.Drawing.Size(313, 28);
+            this.checkBox11.TabIndex = 12;
+            this.checkBox11.Text = "CSCI 5530 - Software Engineering";
+            this.checkBox11.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 461);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panel12);
+            this.Controls.Add(this.panel15);
             this.Controls.Add(this.panel11);
+            this.Controls.Add(this.panel10);
+            this.Controls.Add(this.panel12);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel14);
             this.Controls.Add(this.panel13);
             this.Controls.Add(this.panel6);
@@ -1373,7 +1505,6 @@
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel10);
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel7);
@@ -1406,6 +1537,8 @@
             this.panel14.PerformLayout();
             this.panel12.ResumeLayout(false);
             this.panel12.PerformLayout();
+            this.panel15.ResumeLayout(false);
+            this.panel15.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1494,13 +1627,13 @@
         private System.Windows.Forms.CheckBox Principles_of_Biology_2_with_labcb;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox Algorithm_Design_and_Analysiscb;
         private System.Windows.Forms.Button button18;
         private System.Windows.Forms.Button button19;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox5;
+        private System.Windows.Forms.CheckBox Database_Systemscb;
+        private System.Windows.Forms.CheckBox Theoretical_Foundationscb;
+        private System.Windows.Forms.CheckBox Systems_Softwarecb;
+        private System.Windows.Forms.CheckBox Data_Structurescb;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.Button button22;
@@ -1516,6 +1649,16 @@
         private System.Windows.Forms.RadioButton fallbtn;
         private System.Windows.Forms.RadioButton summerbtn;
         private System.Windows.Forms.RadioButton springbtn;
+        private System.Windows.Forms.Panel panel15;
+        private System.Windows.Forms.CheckBox checkBox6;
+        private System.Windows.Forms.Button button24;
+        private System.Windows.Forms.Button button27;
+        private System.Windows.Forms.CheckBox checkBox7;
+        private System.Windows.Forms.CheckBox checkBox8;
+        private System.Windows.Forms.CheckBox checkBox9;
+        private System.Windows.Forms.CheckBox checkBox10;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.CheckBox checkBox11;
     }
 }
 
