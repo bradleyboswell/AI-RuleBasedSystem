@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.HomePanel = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.startBtn = new System.Windows.Forms.Button();
             this.welcomeText = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.AreaAPanel = new System.Windows.Forms.Panel();
             this.button8 = new System.Windows.Forms.Button();
             this.nextBtn = new System.Windows.Forms.Button();
             this.Calculus_1cb = new System.Windows.Forms.CheckBox();
@@ -42,19 +42,19 @@
             this.Composition_2cb = new System.Windows.Forms.CheckBox();
             this.Composition_1cb = new System.Windows.Forms.CheckBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.AreaBPanel = new System.Windows.Forms.Panel();
             this.button7 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.Global_Citizenscb = new System.Windows.Forms.CheckBox();
             this.World_History_2cb = new System.Windows.Forms.CheckBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.AreaCPanel = new System.Windows.Forms.Panel();
             this.button6 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.Public_Speakingcb = new System.Windows.Forms.CheckBox();
             this.World_Literature_1_or_2cb = new System.Windows.Forms.CheckBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
+            this.AreaDPanel = new System.Windows.Forms.Panel();
             this.button9 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.Environment_Physics_with_labcb = new System.Windows.Forms.CheckBox();
@@ -66,7 +66,7 @@
             this.Introduction_to_the_Earthcb = new System.Windows.Forms.CheckBox();
             this.Principles_of_Chemistry_1_with_labcb = new System.Windows.Forms.CheckBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
+            this.AreaEPanel = new System.Windows.Forms.Panel();
             this.Introduction_to_Sociologycb = new System.Windows.Forms.CheckBox();
             this.button10 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -77,7 +77,7 @@
             this.US_A_Comprehensive_Surveycb = new System.Windows.Forms.CheckBox();
             this.Economics_in_a_Global_Societycb = new System.Windows.Forms.CheckBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.panel7 = new System.Windows.Forms.Panel();
+            this.URPanel = new System.Windows.Forms.Panel();
             this.button11 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.First_Year_Experiencecb = new System.Windows.Forms.CheckBox();
@@ -85,7 +85,7 @@
             this.Physical_Activity_1cb = new System.Windows.Forms.CheckBox();
             this.Healthful_Livingcb = new System.Windows.Forms.CheckBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.panel8 = new System.Windows.Forms.Panel();
+            this.AreaFPanel = new System.Windows.Forms.Panel();
             this.Statistics_1cb = new System.Windows.Forms.CheckBox();
             this.Calculus_2cb = new System.Windows.Forms.CheckBox();
             this.button12 = new System.Windows.Forms.Button();
@@ -95,12 +95,12 @@
             this.Programming_Principles_2cb = new System.Windows.Forms.CheckBox();
             this.Programming_Principles_1cb = new System.Windows.Forms.CheckBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.panel9 = new System.Windows.Forms.Panel();
+            this.SIRPanel = new System.Windows.Forms.Panel();
             this.button14 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
             this.Introduction_to_International_Studiescb = new System.Windows.Forms.CheckBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.panel10 = new System.Windows.Forms.Panel();
+            this.SLSsRPanel = new System.Windows.Forms.Panel();
             this.Principles_of_Physics_2cb = new System.Windows.Forms.CheckBox();
             this.button16 = new System.Windows.Forms.Button();
             this.button17 = new System.Windows.Forms.Button();
@@ -109,7 +109,7 @@
             this.Principles_of_Chemistry_2_with_labcb = new System.Windows.Forms.CheckBox();
             this.Principles_of_Biology_2_with_labcb = new System.Windows.Forms.CheckBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.panel11 = new System.Windows.Forms.Panel();
+            this.MRC1Panel = new System.Windows.Forms.Panel();
             this.Algorithm_Design_and_Analysiscb = new System.Windows.Forms.CheckBox();
             this.button18 = new System.Windows.Forms.Button();
             this.button19 = new System.Windows.Forms.Button();
@@ -118,21 +118,21 @@
             this.Systems_Softwarecb = new System.Windows.Forms.CheckBox();
             this.Data_Structurescb = new System.Windows.Forms.CheckBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.panel13 = new System.Windows.Forms.Panel();
+            this.ChainingPanel = new System.Windows.Forms.Panel();
             this.button22 = new System.Windows.Forms.Button();
             this.button21 = new System.Windows.Forms.Button();
             this.button20 = new System.Windows.Forms.Button();
-            this.panel14 = new System.Windows.Forms.Panel();
+            this.EligibleCoursesPanel = new System.Windows.Forms.Panel();
             this.Eligible_CoursesTxt = new System.Windows.Forms.TextBox();
             this.button25 = new System.Windows.Forms.Button();
-            this.panel12 = new System.Windows.Forms.Panel();
+            this.SeasonPanel = new System.Windows.Forms.Panel();
             this.button26 = new System.Windows.Forms.Button();
             this.springbtn = new System.Windows.Forms.RadioButton();
             this.summerbtn = new System.Windows.Forms.RadioButton();
             this.fallbtn = new System.Windows.Forms.RadioButton();
             this.label12 = new System.Windows.Forms.Label();
             this.button23 = new System.Windows.Forms.Button();
-            this.panel15 = new System.Windows.Forms.Panel();
+            this.MRC2Panel = new System.Windows.Forms.Panel();
             this.Distributed_Web_Systems_Designcb = new System.Windows.Forms.CheckBox();
             this.button24 = new System.Windows.Forms.Button();
             this.button27 = new System.Windows.Forms.Button();
@@ -142,32 +142,100 @@
             this.Computer_Architecturecb = new System.Windows.Forms.CheckBox();
             this.label13 = new System.Windows.Forms.Label();
             this.Software_Engineeringcb = new System.Windows.Forms.CheckBox();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.panel6.SuspendLayout();
-            this.panel7.SuspendLayout();
-            this.panel8.SuspendLayout();
-            this.panel9.SuspendLayout();
-            this.panel10.SuspendLayout();
-            this.panel11.SuspendLayout();
-            this.panel13.SuspendLayout();
-            this.panel14.SuspendLayout();
-            this.panel12.SuspendLayout();
-            this.panel15.SuspendLayout();
+            this.E1Panel = new System.Windows.Forms.Panel();
+            this.Software_Testing_and_Quality_Assurancecb = new System.Windows.Forms.CheckBox();
+            this.Game_Programmingcb = new System.Windows.Forms.CheckBox();
+            this.button28 = new System.Windows.Forms.Button();
+            this.button29 = new System.Windows.Forms.Button();
+            this.Human_Computer_Interactioncb = new System.Windows.Forms.CheckBox();
+            this.Data_Warehouse_Designcb = new System.Windows.Forms.CheckBox();
+            this.Logic_Circuits_and_Microprocessorscb = new System.Windows.Forms.CheckBox();
+            this.Introduction_to_Computer_Engineeringcb = new System.Windows.Forms.CheckBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.Computer_Graphicscb = new System.Windows.Forms.CheckBox();
+            this.Artificial_Intelligencecb = new System.Windows.Forms.CheckBox();
+            this.Discrete_Simulationcb = new System.Windows.Forms.CheckBox();
+            this.Selected_Topicscb = new System.Windows.Forms.CheckBox();
+            this.Optical_Networkscb = new System.Windows.Forms.CheckBox();
+            this.Broadband_Networkscb = new System.Windows.Forms.CheckBox();
+            this.Network_Management_Systemscb = new System.Windows.Forms.CheckBox();
+            this.Systems_and_Software_Assurancecb = new System.Windows.Forms.CheckBox();
+            this.Animationcb = new System.Windows.Forms.CheckBox();
+            this.Embedded_Systems_Programmingcb = new System.Windows.Forms.CheckBox();
+            this.Compiler_Theorycb = new System.Windows.Forms.CheckBox();
+            this.System_Prog_Under_Unixcb = new System.Windows.Forms.CheckBox();
+            this.Advanced_Operating_Systemscb = new System.Windows.Forms.CheckBox();
+            this.Advanced_Database_Systemscb = new System.Windows.Forms.CheckBox();
+            this.Networkscb = new System.Windows.Forms.CheckBox();
+            this.High_Performance_Computingcb = new System.Windows.Forms.CheckBox();
+            this.Cpp_Programmingcb = new System.Windows.Forms.CheckBox();
+            this.Introduction_to_Java_Programmingcb = new System.Windows.Forms.CheckBox();
+            this.Introduction_to_BASIC_Programmingcb = new System.Windows.Forms.CheckBox();
+            this.Comp_App_For_Bus_Majorscb = new System.Windows.Forms.CheckBox();
+            this.Machine_Learningcb = new System.Windows.Forms.CheckBox();
+            this.Comparative_Languagescb = new System.Windows.Forms.CheckBox();
+            this.Introduction_to_Operating_Systemcb = new System.Windows.Forms.CheckBox();
+            this.Wireless_and_Mobile_Systemscb = new System.Windows.Forms.CheckBox();
+            this.E2Panel = new System.Windows.Forms.Panel();
+            this.Software_Security_and_Secure_Codingcb = new System.Windows.Forms.CheckBox();
+            this.Data_Management_for_Math_and_the_Sciencescb = new System.Windows.Forms.CheckBox();
+            this.Directed_Study_in_Computer_Sciencecb = new System.Windows.Forms.CheckBox();
+            this.button30 = new System.Windows.Forms.Button();
+            this.button31 = new System.Windows.Forms.Button();
+            this.Special_Problems_CO_OPcb = new System.Windows.Forms.CheckBox();
+            this.Data_Miningcb = new System.Windows.Forms.CheckBox();
+            this.Numerical_Analysiscb = new System.Windows.Forms.CheckBox();
+            this.Handheld_Ubiquitous_Computingcb = new System.Windows.Forms.CheckBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.Computing_for_Engineerscb = new System.Windows.Forms.CheckBox();
+            this.Elementary_Statisticscb = new System.Windows.Forms.CheckBox();
+            this.Survey_of_Calculuscb = new System.Windows.Forms.CheckBox();
+            this.Introduction_To_Mathematical_Modelingcb = new System.Windows.Forms.CheckBox();
+            this.Quantitative_Reasoningcb = new System.Windows.Forms.CheckBox();
+            this.Principles_Of_Biology_1_With_Labcb = new System.Windows.Forms.CheckBox();
+            this.Linear_Algebracb = new System.Windows.Forms.CheckBox();
+            this.CreateCoursePanel = new System.Windows.Forms.Panel();
+            this.label16 = new System.Windows.Forms.Label();
+            this.button32 = new System.Windows.Forms.Button();
+            this.Advanced_Software_Engineeringcb = new System.Windows.Forms.CheckBox();
+            this.CustomClassesPanel = new System.Windows.Forms.Panel();
+            this.button33 = new System.Windows.Forms.Button();
+            this.button34 = new System.Windows.Forms.Button();
+            this.label17 = new System.Windows.Forms.Label();
+            this.customClassesBox = new System.Windows.Forms.CheckedListBox();
+            this.button35 = new System.Windows.Forms.Button();
+            this.button36 = new System.Windows.Forms.Button();
+            this.HomePanel.SuspendLayout();
+            this.AreaAPanel.SuspendLayout();
+            this.AreaBPanel.SuspendLayout();
+            this.AreaCPanel.SuspendLayout();
+            this.AreaDPanel.SuspendLayout();
+            this.AreaEPanel.SuspendLayout();
+            this.URPanel.SuspendLayout();
+            this.AreaFPanel.SuspendLayout();
+            this.SIRPanel.SuspendLayout();
+            this.SLSsRPanel.SuspendLayout();
+            this.MRC1Panel.SuspendLayout();
+            this.ChainingPanel.SuspendLayout();
+            this.EligibleCoursesPanel.SuspendLayout();
+            this.SeasonPanel.SuspendLayout();
+            this.MRC2Panel.SuspendLayout();
+            this.E1Panel.SuspendLayout();
+            this.E2Panel.SuspendLayout();
+            this.CreateCoursePanel.SuspendLayout();
+            this.CustomClassesPanel.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // HomePanel
             // 
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.startBtn);
-            this.panel1.Controls.Add(this.welcomeText);
-            this.panel1.Location = new System.Drawing.Point(12, 12);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(760, 437);
-            this.panel1.TabIndex = 0;
+            this.HomePanel.Controls.Add(this.button32);
+            this.HomePanel.Controls.Add(this.label1);
+            this.HomePanel.Controls.Add(this.startBtn);
+            this.HomePanel.Controls.Add(this.welcomeText);
+            this.HomePanel.Location = new System.Drawing.Point(12, 12);
+            this.HomePanel.Name = "HomePanel";
+            this.HomePanel.Size = new System.Drawing.Size(760, 437);
+            this.HomePanel.TabIndex = 0;
             // 
             // label1
             // 
@@ -177,7 +245,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(760, 71);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Please enter your courses";
+            this.label1.Text = "Please enter the courses you have taken";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // startBtn
@@ -202,21 +270,21 @@
             this.welcomeText.Text = "Welcome!";
             this.welcomeText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel2
+            // AreaAPanel
             // 
-            this.panel2.Controls.Add(this.button8);
-            this.panel2.Controls.Add(this.nextBtn);
-            this.panel2.Controls.Add(this.Calculus_1cb);
-            this.panel2.Controls.Add(this.Pre_Calculuscb);
-            this.panel2.Controls.Add(this.Trigonometrycb);
-            this.panel2.Controls.Add(this.College_Algebracb);
-            this.panel2.Controls.Add(this.Composition_2cb);
-            this.panel2.Controls.Add(this.Composition_1cb);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(12, 12);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(760, 437);
-            this.panel2.TabIndex = 1;
+            this.AreaAPanel.Controls.Add(this.button8);
+            this.AreaAPanel.Controls.Add(this.nextBtn);
+            this.AreaAPanel.Controls.Add(this.Calculus_1cb);
+            this.AreaAPanel.Controls.Add(this.Pre_Calculuscb);
+            this.AreaAPanel.Controls.Add(this.Trigonometrycb);
+            this.AreaAPanel.Controls.Add(this.College_Algebracb);
+            this.AreaAPanel.Controls.Add(this.Composition_2cb);
+            this.AreaAPanel.Controls.Add(this.Composition_1cb);
+            this.AreaAPanel.Controls.Add(this.label2);
+            this.AreaAPanel.Location = new System.Drawing.Point(12, 12);
+            this.AreaAPanel.Name = "AreaAPanel";
+            this.AreaAPanel.Size = new System.Drawing.Size(760, 437);
+            this.AreaAPanel.TabIndex = 1;
             // 
             // button8
             // 
@@ -317,17 +385,17 @@
             this.label2.Text = "Area A";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel3
+            // AreaBPanel
             // 
-            this.panel3.Controls.Add(this.button7);
-            this.panel3.Controls.Add(this.button1);
-            this.panel3.Controls.Add(this.Global_Citizenscb);
-            this.panel3.Controls.Add(this.World_History_2cb);
-            this.panel3.Controls.Add(this.label3);
-            this.panel3.Location = new System.Drawing.Point(12, 12);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(760, 437);
-            this.panel3.TabIndex = 2;
+            this.AreaBPanel.Controls.Add(this.button7);
+            this.AreaBPanel.Controls.Add(this.button1);
+            this.AreaBPanel.Controls.Add(this.Global_Citizenscb);
+            this.AreaBPanel.Controls.Add(this.World_History_2cb);
+            this.AreaBPanel.Controls.Add(this.label3);
+            this.AreaBPanel.Location = new System.Drawing.Point(12, 12);
+            this.AreaBPanel.Name = "AreaBPanel";
+            this.AreaBPanel.Size = new System.Drawing.Size(760, 437);
+            this.AreaBPanel.TabIndex = 2;
             // 
             // button7
             // 
@@ -386,17 +454,17 @@
             this.label3.Text = "Area B";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel4
+            // AreaCPanel
             // 
-            this.panel4.Controls.Add(this.button6);
-            this.panel4.Controls.Add(this.button2);
-            this.panel4.Controls.Add(this.Public_Speakingcb);
-            this.panel4.Controls.Add(this.World_Literature_1_or_2cb);
-            this.panel4.Controls.Add(this.label4);
-            this.panel4.Location = new System.Drawing.Point(12, 12);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(760, 437);
-            this.panel4.TabIndex = 8;
+            this.AreaCPanel.Controls.Add(this.button6);
+            this.AreaCPanel.Controls.Add(this.button2);
+            this.AreaCPanel.Controls.Add(this.Public_Speakingcb);
+            this.AreaCPanel.Controls.Add(this.World_Literature_1_or_2cb);
+            this.AreaCPanel.Controls.Add(this.label4);
+            this.AreaCPanel.Location = new System.Drawing.Point(12, 12);
+            this.AreaCPanel.Name = "AreaCPanel";
+            this.AreaCPanel.Size = new System.Drawing.Size(760, 437);
+            this.AreaCPanel.TabIndex = 8;
             // 
             // button6
             // 
@@ -455,23 +523,23 @@
             this.label4.Text = "Area C";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel5
+            // AreaDPanel
             // 
-            this.panel5.Controls.Add(this.button9);
-            this.panel5.Controls.Add(this.button3);
-            this.panel5.Controls.Add(this.Environment_Physics_with_labcb);
-            this.panel5.Controls.Add(this.Chemistry_and_the_Environment_with_labcb);
-            this.panel5.Controls.Add(this.Environment_Geology_with_labcb);
-            this.panel5.Controls.Add(this.Environmental_Biology_with_labcb);
-            this.panel5.Controls.Add(this.Principles_of_Physics_1cb);
-            this.panel5.Controls.Add(this.Introduction_to_Physics_1cb);
-            this.panel5.Controls.Add(this.Introduction_to_the_Earthcb);
-            this.panel5.Controls.Add(this.Principles_of_Chemistry_1_with_labcb);
-            this.panel5.Controls.Add(this.label5);
-            this.panel5.Location = new System.Drawing.Point(12, 12);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(760, 437);
-            this.panel5.TabIndex = 9;
+            this.AreaDPanel.Controls.Add(this.button9);
+            this.AreaDPanel.Controls.Add(this.button3);
+            this.AreaDPanel.Controls.Add(this.Environment_Physics_with_labcb);
+            this.AreaDPanel.Controls.Add(this.Chemistry_and_the_Environment_with_labcb);
+            this.AreaDPanel.Controls.Add(this.Environment_Geology_with_labcb);
+            this.AreaDPanel.Controls.Add(this.Environmental_Biology_with_labcb);
+            this.AreaDPanel.Controls.Add(this.Principles_of_Physics_1cb);
+            this.AreaDPanel.Controls.Add(this.Introduction_to_Physics_1cb);
+            this.AreaDPanel.Controls.Add(this.Introduction_to_the_Earthcb);
+            this.AreaDPanel.Controls.Add(this.Principles_of_Chemistry_1_with_labcb);
+            this.AreaDPanel.Controls.Add(this.label5);
+            this.AreaDPanel.Location = new System.Drawing.Point(12, 12);
+            this.AreaDPanel.Name = "AreaDPanel";
+            this.AreaDPanel.Size = new System.Drawing.Size(760, 437);
+            this.AreaDPanel.TabIndex = 9;
             // 
             // button9
             // 
@@ -602,22 +670,22 @@
             this.label5.Text = "Area D";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel6
+            // AreaEPanel
             // 
-            this.panel6.Controls.Add(this.Introduction_to_Sociologycb);
-            this.panel6.Controls.Add(this.button10);
-            this.panel6.Controls.Add(this.button4);
-            this.panel6.Controls.Add(this.Introduction_to_Phychologycb);
-            this.panel6.Controls.Add(this.World_Regional_Geographycb);
-            this.panel6.Controls.Add(this.Introduction_to_Anthropologycb);
-            this.panel6.Controls.Add(this.American_Governmentcb);
-            this.panel6.Controls.Add(this.US_A_Comprehensive_Surveycb);
-            this.panel6.Controls.Add(this.Economics_in_a_Global_Societycb);
-            this.panel6.Controls.Add(this.label6);
-            this.panel6.Location = new System.Drawing.Point(12, 12);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(760, 437);
-            this.panel6.TabIndex = 8;
+            this.AreaEPanel.Controls.Add(this.Introduction_to_Sociologycb);
+            this.AreaEPanel.Controls.Add(this.button10);
+            this.AreaEPanel.Controls.Add(this.button4);
+            this.AreaEPanel.Controls.Add(this.Introduction_to_Phychologycb);
+            this.AreaEPanel.Controls.Add(this.World_Regional_Geographycb);
+            this.AreaEPanel.Controls.Add(this.Introduction_to_Anthropologycb);
+            this.AreaEPanel.Controls.Add(this.American_Governmentcb);
+            this.AreaEPanel.Controls.Add(this.US_A_Comprehensive_Surveycb);
+            this.AreaEPanel.Controls.Add(this.Economics_in_a_Global_Societycb);
+            this.AreaEPanel.Controls.Add(this.label6);
+            this.AreaEPanel.Location = new System.Drawing.Point(12, 12);
+            this.AreaEPanel.Name = "AreaEPanel";
+            this.AreaEPanel.Size = new System.Drawing.Size(760, 437);
+            this.AreaEPanel.TabIndex = 8;
             // 
             // Introduction_to_Sociologycb
             // 
@@ -729,19 +797,19 @@
             this.label6.Text = "Area E";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel7
+            // URPanel
             // 
-            this.panel7.Controls.Add(this.button11);
-            this.panel7.Controls.Add(this.button5);
-            this.panel7.Controls.Add(this.First_Year_Experiencecb);
-            this.panel7.Controls.Add(this.Physical_Activity_2cb);
-            this.panel7.Controls.Add(this.Physical_Activity_1cb);
-            this.panel7.Controls.Add(this.Healthful_Livingcb);
-            this.panel7.Controls.Add(this.label7);
-            this.panel7.Location = new System.Drawing.Point(12, 12);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(760, 437);
-            this.panel7.TabIndex = 8;
+            this.URPanel.Controls.Add(this.button11);
+            this.URPanel.Controls.Add(this.button5);
+            this.URPanel.Controls.Add(this.First_Year_Experiencecb);
+            this.URPanel.Controls.Add(this.Physical_Activity_2cb);
+            this.URPanel.Controls.Add(this.Physical_Activity_1cb);
+            this.URPanel.Controls.Add(this.Healthful_Livingcb);
+            this.URPanel.Controls.Add(this.label7);
+            this.URPanel.Location = new System.Drawing.Point(12, 12);
+            this.URPanel.Name = "URPanel";
+            this.URPanel.Size = new System.Drawing.Size(760, 437);
+            this.URPanel.TabIndex = 8;
             // 
             // button11
             // 
@@ -824,21 +892,21 @@
             this.label7.Text = "University Requirements";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel8
+            // AreaFPanel
             // 
-            this.panel8.Controls.Add(this.Statistics_1cb);
-            this.panel8.Controls.Add(this.Calculus_2cb);
-            this.panel8.Controls.Add(this.button12);
-            this.panel8.Controls.Add(this.button13);
-            this.panel8.Controls.Add(this.Discrete_Mathcb);
-            this.panel8.Controls.Add(this.Computers_Ethics_and_Societycb);
-            this.panel8.Controls.Add(this.Programming_Principles_2cb);
-            this.panel8.Controls.Add(this.Programming_Principles_1cb);
-            this.panel8.Controls.Add(this.label8);
-            this.panel8.Location = new System.Drawing.Point(12, 12);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(760, 437);
-            this.panel8.TabIndex = 11;
+            this.AreaFPanel.Controls.Add(this.Statistics_1cb);
+            this.AreaFPanel.Controls.Add(this.Calculus_2cb);
+            this.AreaFPanel.Controls.Add(this.button12);
+            this.AreaFPanel.Controls.Add(this.button13);
+            this.AreaFPanel.Controls.Add(this.Discrete_Mathcb);
+            this.AreaFPanel.Controls.Add(this.Computers_Ethics_and_Societycb);
+            this.AreaFPanel.Controls.Add(this.Programming_Principles_2cb);
+            this.AreaFPanel.Controls.Add(this.Programming_Principles_1cb);
+            this.AreaFPanel.Controls.Add(this.label8);
+            this.AreaFPanel.Location = new System.Drawing.Point(12, 12);
+            this.AreaFPanel.Name = "AreaFPanel";
+            this.AreaFPanel.Size = new System.Drawing.Size(760, 437);
+            this.AreaFPanel.TabIndex = 11;
             // 
             // Statistics_1cb
             // 
@@ -945,16 +1013,16 @@
             this.label8.Text = "Area F";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel9
+            // SIRPanel
             // 
-            this.panel9.Controls.Add(this.button14);
-            this.panel9.Controls.Add(this.button15);
-            this.panel9.Controls.Add(this.Introduction_to_International_Studiescb);
-            this.panel9.Controls.Add(this.label9);
-            this.panel9.Location = new System.Drawing.Point(12, 12);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(760, 437);
-            this.panel9.TabIndex = 13;
+            this.SIRPanel.Controls.Add(this.button14);
+            this.SIRPanel.Controls.Add(this.button15);
+            this.SIRPanel.Controls.Add(this.Introduction_to_International_Studiescb);
+            this.SIRPanel.Controls.Add(this.label9);
+            this.SIRPanel.Location = new System.Drawing.Point(12, 12);
+            this.SIRPanel.Name = "SIRPanel";
+            this.SIRPanel.Size = new System.Drawing.Size(760, 437);
+            this.SIRPanel.TabIndex = 13;
             // 
             // button14
             // 
@@ -1002,20 +1070,20 @@
             this.label9.Text = "Specific International Requirement";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel10
+            // SLSsRPanel
             // 
-            this.panel10.Controls.Add(this.Principles_of_Physics_2cb);
-            this.panel10.Controls.Add(this.button16);
-            this.panel10.Controls.Add(this.button17);
-            this.panel10.Controls.Add(this.Introduction_to_Physics_2_with_labcb);
-            this.panel10.Controls.Add(this.General_Historal_Geology_with_labcb);
-            this.panel10.Controls.Add(this.Principles_of_Chemistry_2_with_labcb);
-            this.panel10.Controls.Add(this.Principles_of_Biology_2_with_labcb);
-            this.panel10.Controls.Add(this.label10);
-            this.panel10.Location = new System.Drawing.Point(12, 12);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(760, 437);
-            this.panel10.TabIndex = 14;
+            this.SLSsRPanel.Controls.Add(this.Principles_of_Physics_2cb);
+            this.SLSsRPanel.Controls.Add(this.button16);
+            this.SLSsRPanel.Controls.Add(this.button17);
+            this.SLSsRPanel.Controls.Add(this.Introduction_to_Physics_2_with_labcb);
+            this.SLSsRPanel.Controls.Add(this.General_Historal_Geology_with_labcb);
+            this.SLSsRPanel.Controls.Add(this.Principles_of_Chemistry_2_with_labcb);
+            this.SLSsRPanel.Controls.Add(this.Principles_of_Biology_2_with_labcb);
+            this.SLSsRPanel.Controls.Add(this.label10);
+            this.SLSsRPanel.Location = new System.Drawing.Point(12, 12);
+            this.SLSsRPanel.Name = "SLSsRPanel";
+            this.SLSsRPanel.Size = new System.Drawing.Size(760, 437);
+            this.SLSsRPanel.TabIndex = 14;
             // 
             // Principles_of_Physics_2cb
             // 
@@ -1110,20 +1178,20 @@
             this.label10.Text = "Specific Lab Science Sequence Requirement";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel11
+            // MRC1Panel
             // 
-            this.panel11.Controls.Add(this.Algorithm_Design_and_Analysiscb);
-            this.panel11.Controls.Add(this.button18);
-            this.panel11.Controls.Add(this.button19);
-            this.panel11.Controls.Add(this.Database_Systemscb);
-            this.panel11.Controls.Add(this.Theoretical_Foundationscb);
-            this.panel11.Controls.Add(this.Systems_Softwarecb);
-            this.panel11.Controls.Add(this.Data_Structurescb);
-            this.panel11.Controls.Add(this.label11);
-            this.panel11.Location = new System.Drawing.Point(12, 12);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(760, 437);
-            this.panel11.TabIndex = 15;
+            this.MRC1Panel.Controls.Add(this.Algorithm_Design_and_Analysiscb);
+            this.MRC1Panel.Controls.Add(this.button18);
+            this.MRC1Panel.Controls.Add(this.button19);
+            this.MRC1Panel.Controls.Add(this.Database_Systemscb);
+            this.MRC1Panel.Controls.Add(this.Theoretical_Foundationscb);
+            this.MRC1Panel.Controls.Add(this.Systems_Softwarecb);
+            this.MRC1Panel.Controls.Add(this.Data_Structurescb);
+            this.MRC1Panel.Controls.Add(this.label11);
+            this.MRC1Panel.Location = new System.Drawing.Point(12, 12);
+            this.MRC1Panel.Name = "MRC1Panel";
+            this.MRC1Panel.Size = new System.Drawing.Size(760, 437);
+            this.MRC1Panel.TabIndex = 15;
             // 
             // Algorithm_Design_and_Analysiscb
             // 
@@ -1218,15 +1286,15 @@
             this.label11.Text = "Major Required Courses (Part 1/2)";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel13
+            // ChainingPanel
             // 
-            this.panel13.Controls.Add(this.button22);
-            this.panel13.Controls.Add(this.button21);
-            this.panel13.Controls.Add(this.button20);
-            this.panel13.Location = new System.Drawing.Point(12, 12);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(760, 437);
-            this.panel13.TabIndex = 16;
+            this.ChainingPanel.Controls.Add(this.button22);
+            this.ChainingPanel.Controls.Add(this.button21);
+            this.ChainingPanel.Controls.Add(this.button20);
+            this.ChainingPanel.Location = new System.Drawing.Point(12, 12);
+            this.ChainingPanel.Name = "ChainingPanel";
+            this.ChainingPanel.Size = new System.Drawing.Size(760, 437);
+            this.ChainingPanel.TabIndex = 16;
             // 
             // button22
             // 
@@ -1260,14 +1328,14 @@
             this.button20.UseVisualStyleBackColor = true;
             this.button20.Click += new System.EventHandler(this.back_Click);
             // 
-            // panel14
+            // EligibleCoursesPanel
             // 
-            this.panel14.Controls.Add(this.Eligible_CoursesTxt);
-            this.panel14.Controls.Add(this.button25);
-            this.panel14.Location = new System.Drawing.Point(12, 12);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(760, 437);
-            this.panel14.TabIndex = 17;
+            this.EligibleCoursesPanel.Controls.Add(this.Eligible_CoursesTxt);
+            this.EligibleCoursesPanel.Controls.Add(this.button25);
+            this.EligibleCoursesPanel.Location = new System.Drawing.Point(12, 12);
+            this.EligibleCoursesPanel.Name = "EligibleCoursesPanel";
+            this.EligibleCoursesPanel.Size = new System.Drawing.Size(760, 437);
+            this.EligibleCoursesPanel.TabIndex = 17;
             // 
             // Eligible_CoursesTxt
             // 
@@ -1290,18 +1358,18 @@
             this.button25.UseVisualStyleBackColor = true;
             this.button25.Click += new System.EventHandler(this.back_Click);
             // 
-            // panel12
+            // SeasonPanel
             // 
-            this.panel12.Controls.Add(this.button23);
-            this.panel12.Controls.Add(this.label12);
-            this.panel12.Controls.Add(this.fallbtn);
-            this.panel12.Controls.Add(this.summerbtn);
-            this.panel12.Controls.Add(this.springbtn);
-            this.panel12.Controls.Add(this.button26);
-            this.panel12.Location = new System.Drawing.Point(12, 12);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(760, 437);
-            this.panel12.TabIndex = 18;
+            this.SeasonPanel.Controls.Add(this.button23);
+            this.SeasonPanel.Controls.Add(this.label12);
+            this.SeasonPanel.Controls.Add(this.fallbtn);
+            this.SeasonPanel.Controls.Add(this.summerbtn);
+            this.SeasonPanel.Controls.Add(this.springbtn);
+            this.SeasonPanel.Controls.Add(this.button26);
+            this.SeasonPanel.Location = new System.Drawing.Point(12, 12);
+            this.SeasonPanel.Name = "SeasonPanel";
+            this.SeasonPanel.Size = new System.Drawing.Size(760, 437);
+            this.SeasonPanel.TabIndex = 18;
             // 
             // button26
             // 
@@ -1367,21 +1435,21 @@
             this.button23.UseVisualStyleBackColor = true;
             this.button23.Click += new System.EventHandler(this.forward_Click);
             // 
-            // panel15
+            // MRC2Panel
             // 
-            this.panel15.Controls.Add(this.Software_Engineeringcb);
-            this.panel15.Controls.Add(this.Distributed_Web_Systems_Designcb);
-            this.panel15.Controls.Add(this.button24);
-            this.panel15.Controls.Add(this.button27);
-            this.panel15.Controls.Add(this.Computer_Securitycb);
-            this.panel15.Controls.Add(this.Object_Oriented_Designcb);
-            this.panel15.Controls.Add(this.Data_Comm_and_Networkingcb);
-            this.panel15.Controls.Add(this.Computer_Architecturecb);
-            this.panel15.Controls.Add(this.label13);
-            this.panel15.Location = new System.Drawing.Point(12, 12);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(760, 437);
-            this.panel15.TabIndex = 19;
+            this.MRC2Panel.Controls.Add(this.Software_Engineeringcb);
+            this.MRC2Panel.Controls.Add(this.Distributed_Web_Systems_Designcb);
+            this.MRC2Panel.Controls.Add(this.button24);
+            this.MRC2Panel.Controls.Add(this.button27);
+            this.MRC2Panel.Controls.Add(this.Computer_Securitycb);
+            this.MRC2Panel.Controls.Add(this.Object_Oriented_Designcb);
+            this.MRC2Panel.Controls.Add(this.Data_Comm_and_Networkingcb);
+            this.MRC2Panel.Controls.Add(this.Computer_Architecturecb);
+            this.MRC2Panel.Controls.Add(this.label13);
+            this.MRC2Panel.Location = new System.Drawing.Point(12, 12);
+            this.MRC2Panel.Name = "MRC2Panel";
+            this.MRC2Panel.Size = new System.Drawing.Size(760, 437);
+            this.MRC2Panel.TabIndex = 19;
             // 
             // Distributed_Web_Systems_Designcb
             // 
@@ -1488,67 +1556,849 @@
             this.Software_Engineeringcb.Text = "CSCI 5530 - Software Engineering";
             this.Software_Engineeringcb.UseVisualStyleBackColor = true;
             // 
+            // E1Panel
+            // 
+            this.E1Panel.Controls.Add(this.Embedded_Systems_Programmingcb);
+            this.E1Panel.Controls.Add(this.Compiler_Theorycb);
+            this.E1Panel.Controls.Add(this.System_Prog_Under_Unixcb);
+            this.E1Panel.Controls.Add(this.Advanced_Operating_Systemscb);
+            this.E1Panel.Controls.Add(this.Advanced_Database_Systemscb);
+            this.E1Panel.Controls.Add(this.Networkscb);
+            this.E1Panel.Controls.Add(this.High_Performance_Computingcb);
+            this.E1Panel.Controls.Add(this.Cpp_Programmingcb);
+            this.E1Panel.Controls.Add(this.Introduction_to_Java_Programmingcb);
+            this.E1Panel.Controls.Add(this.Introduction_to_BASIC_Programmingcb);
+            this.E1Panel.Controls.Add(this.Comp_App_For_Bus_Majorscb);
+            this.E1Panel.Controls.Add(this.Machine_Learningcb);
+            this.E1Panel.Controls.Add(this.Comparative_Languagescb);
+            this.E1Panel.Controls.Add(this.Introduction_to_Operating_Systemcb);
+            this.E1Panel.Controls.Add(this.Wireless_and_Mobile_Systemscb);
+            this.E1Panel.Controls.Add(this.Network_Management_Systemscb);
+            this.E1Panel.Controls.Add(this.Systems_and_Software_Assurancecb);
+            this.E1Panel.Controls.Add(this.Animationcb);
+            this.E1Panel.Controls.Add(this.Computer_Graphicscb);
+            this.E1Panel.Controls.Add(this.Artificial_Intelligencecb);
+            this.E1Panel.Controls.Add(this.Discrete_Simulationcb);
+            this.E1Panel.Controls.Add(this.Selected_Topicscb);
+            this.E1Panel.Controls.Add(this.Optical_Networkscb);
+            this.E1Panel.Controls.Add(this.Broadband_Networkscb);
+            this.E1Panel.Controls.Add(this.Software_Testing_and_Quality_Assurancecb);
+            this.E1Panel.Controls.Add(this.Game_Programmingcb);
+            this.E1Panel.Controls.Add(this.button28);
+            this.E1Panel.Controls.Add(this.button29);
+            this.E1Panel.Controls.Add(this.Human_Computer_Interactioncb);
+            this.E1Panel.Controls.Add(this.Data_Warehouse_Designcb);
+            this.E1Panel.Controls.Add(this.Logic_Circuits_and_Microprocessorscb);
+            this.E1Panel.Controls.Add(this.Introduction_to_Computer_Engineeringcb);
+            this.E1Panel.Controls.Add(this.label14);
+            this.E1Panel.Location = new System.Drawing.Point(12, 12);
+            this.E1Panel.Name = "E1Panel";
+            this.E1Panel.Size = new System.Drawing.Size(760, 437);
+            this.E1Panel.TabIndex = 20;
+            // 
+            // Software_Testing_and_Quality_Assurancecb
+            // 
+            this.Software_Testing_and_Quality_Assurancecb.AutoSize = true;
+            this.Software_Testing_and_Quality_Assurancecb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Software_Testing_and_Quality_Assurancecb.Location = new System.Drawing.Point(36, 160);
+            this.Software_Testing_and_Quality_Assurancecb.Name = "Software_Testing_and_Quality_Assurancecb";
+            this.Software_Testing_and_Quality_Assurancecb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Software_Testing_and_Quality_Assurancecb.Size = new System.Drawing.Size(272, 20);
+            this.Software_Testing_and_Quality_Assurancecb.TabIndex = 12;
+            this.Software_Testing_and_Quality_Assurancecb.Text = "CSCI 4534 - Software Testing and Testing";
+            this.Software_Testing_and_Quality_Assurancecb.UseVisualStyleBackColor = true;
+            // 
+            // Game_Programmingcb
+            // 
+            this.Game_Programmingcb.AutoSize = true;
+            this.Game_Programmingcb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Game_Programmingcb.Location = new System.Drawing.Point(36, 139);
+            this.Game_Programmingcb.Name = "Game_Programmingcb";
+            this.Game_Programmingcb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Game_Programmingcb.Size = new System.Drawing.Size(219, 20);
+            this.Game_Programmingcb.TabIndex = 11;
+            this.Game_Programmingcb.Text = "CSCI 4439 - Game Programming";
+            this.Game_Programmingcb.UseVisualStyleBackColor = true;
+            // 
+            // button28
+            // 
+            this.button28.Location = new System.Drawing.Point(60, 380);
+            this.button28.Name = "button28";
+            this.button28.Size = new System.Drawing.Size(75, 23);
+            this.button28.TabIndex = 10;
+            this.button28.Text = "Back";
+            this.button28.UseVisualStyleBackColor = true;
+            this.button28.Click += new System.EventHandler(this.back_Click);
+            // 
+            // button29
+            // 
+            this.button29.Location = new System.Drawing.Point(610, 380);
+            this.button29.Name = "button29";
+            this.button29.Size = new System.Drawing.Size(75, 23);
+            this.button29.TabIndex = 7;
+            this.button29.Text = "Next";
+            this.button29.UseVisualStyleBackColor = true;
+            this.button29.Click += new System.EventHandler(this.forward_Click);
+            // 
+            // Human_Computer_Interactioncb
+            // 
+            this.Human_Computer_Interactioncb.AutoSize = true;
+            this.Human_Computer_Interactioncb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Human_Computer_Interactioncb.Location = new System.Drawing.Point(36, 119);
+            this.Human_Computer_Interactioncb.Name = "Human_Computer_Interactioncb";
+            this.Human_Computer_Interactioncb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Human_Computer_Interactioncb.Size = new System.Drawing.Size(266, 20);
+            this.Human_Computer_Interactioncb.TabIndex = 4;
+            this.Human_Computer_Interactioncb.Text = "CSCI 4235 - Human Computer Interaction";
+            this.Human_Computer_Interactioncb.UseVisualStyleBackColor = true;
+            // 
+            // Data_Warehouse_Designcb
+            // 
+            this.Data_Warehouse_Designcb.AutoSize = true;
+            this.Data_Warehouse_Designcb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Data_Warehouse_Designcb.Location = new System.Drawing.Point(36, 101);
+            this.Data_Warehouse_Designcb.Name = "Data_Warehouse_Designcb";
+            this.Data_Warehouse_Designcb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Data_Warehouse_Designcb.Size = new System.Drawing.Size(246, 20);
+            this.Data_Warehouse_Designcb.TabIndex = 3;
+            this.Data_Warehouse_Designcb.Text = "CSCI 4132 - Data Warehouse Design";
+            this.Data_Warehouse_Designcb.UseVisualStyleBackColor = true;
+            // 
+            // Logic_Circuits_and_Microprocessorscb
+            // 
+            this.Logic_Circuits_and_Microprocessorscb.AutoSize = true;
+            this.Logic_Circuits_and_Microprocessorscb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Logic_Circuits_and_Microprocessorscb.Location = new System.Drawing.Point(36, 82);
+            this.Logic_Circuits_and_Microprocessorscb.Name = "Logic_Circuits_and_Microprocessorscb";
+            this.Logic_Circuits_and_Microprocessorscb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Logic_Circuits_and_Microprocessorscb.Size = new System.Drawing.Size(307, 20);
+            this.Logic_Circuits_and_Microprocessorscb.TabIndex = 2;
+            this.Logic_Circuits_and_Microprocessorscb.Text = "CSCI 3231 - Logic CIrcuits and Microprocessors";
+            this.Logic_Circuits_and_Microprocessorscb.UseVisualStyleBackColor = true;
+            // 
+            // Introduction_to_Computer_Engineeringcb
+            // 
+            this.Introduction_to_Computer_Engineeringcb.AutoSize = true;
+            this.Introduction_to_Computer_Engineeringcb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Introduction_to_Computer_Engineeringcb.Location = new System.Drawing.Point(36, 63);
+            this.Introduction_to_Computer_Engineeringcb.Name = "Introduction_to_Computer_Engineeringcb";
+            this.Introduction_to_Computer_Engineeringcb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Introduction_to_Computer_Engineeringcb.Size = new System.Drawing.Size(325, 20);
+            this.Introduction_to_Computer_Engineeringcb.TabIndex = 1;
+            this.Introduction_to_Computer_Engineeringcb.Text = "ENGR 2332 - Introduction to Computer Engineering";
+            this.Introduction_to_Computer_Engineeringcb.UseVisualStyleBackColor = true;
+            // 
+            // label14
+            // 
+            this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(0, 0);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(760, 45);
+            this.label14.TabIndex = 0;
+            this.label14.Text = "CSCI Electives and Others (Part 1)";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Computer_Graphicscb
+            // 
+            this.Computer_Graphicscb.AutoSize = true;
+            this.Computer_Graphicscb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Computer_Graphicscb.Location = new System.Drawing.Point(36, 277);
+            this.Computer_Graphicscb.Name = "Computer_Graphicscb";
+            this.Computer_Graphicscb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Computer_Graphicscb.Size = new System.Drawing.Size(213, 20);
+            this.Computer_Graphicscb.TabIndex = 18;
+            this.Computer_Graphicscb.Text = "CSCI 5437 - Computer Graphics";
+            this.Computer_Graphicscb.UseVisualStyleBackColor = true;
+            // 
+            // Artificial_Intelligencecb
+            // 
+            this.Artificial_Intelligencecb.AutoSize = true;
+            this.Artificial_Intelligencecb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Artificial_Intelligencecb.Location = new System.Drawing.Point(36, 256);
+            this.Artificial_Intelligencecb.Name = "Artificial_Intelligencecb";
+            this.Artificial_Intelligencecb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Artificial_Intelligencecb.Size = new System.Drawing.Size(215, 20);
+            this.Artificial_Intelligencecb.TabIndex = 17;
+            this.Artificial_Intelligencecb.Text = "CSCI 5430 - Artificial Intelligence";
+            this.Artificial_Intelligencecb.UseVisualStyleBackColor = true;
+            // 
+            // Discrete_Simulationcb
+            // 
+            this.Discrete_Simulationcb.AutoSize = true;
+            this.Discrete_Simulationcb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Discrete_Simulationcb.Location = new System.Drawing.Point(36, 236);
+            this.Discrete_Simulationcb.Name = "Discrete_Simulationcb";
+            this.Discrete_Simulationcb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Discrete_Simulationcb.Size = new System.Drawing.Size(213, 20);
+            this.Discrete_Simulationcb.TabIndex = 16;
+            this.Discrete_Simulationcb.Text = "CSCI 5230 - Discrete Simulation";
+            this.Discrete_Simulationcb.UseVisualStyleBackColor = true;
+            // 
+            // Selected_Topicscb
+            // 
+            this.Selected_Topicscb.AutoSize = true;
+            this.Selected_Topicscb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Selected_Topicscb.Location = new System.Drawing.Point(36, 218);
+            this.Selected_Topicscb.Name = "Selected_Topicscb";
+            this.Selected_Topicscb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Selected_Topicscb.Size = new System.Drawing.Size(197, 20);
+            this.Selected_Topicscb.TabIndex = 15;
+            this.Selected_Topicscb.Text = "CSCI 5090 - Selected Topics";
+            this.Selected_Topicscb.UseVisualStyleBackColor = true;
+            // 
+            // Optical_Networkscb
+            // 
+            this.Optical_Networkscb.AutoSize = true;
+            this.Optical_Networkscb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Optical_Networkscb.Location = new System.Drawing.Point(36, 199);
+            this.Optical_Networkscb.Name = "Optical_Networkscb";
+            this.Optical_Networkscb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Optical_Networkscb.Size = new System.Drawing.Size(199, 20);
+            this.Optical_Networkscb.TabIndex = 14;
+            this.Optical_Networkscb.Text = "CSCI 4539 - Optical Networks";
+            this.Optical_Networkscb.UseVisualStyleBackColor = true;
+            // 
+            // Broadband_Networkscb
+            // 
+            this.Broadband_Networkscb.AutoSize = true;
+            this.Broadband_Networkscb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Broadband_Networkscb.Location = new System.Drawing.Point(36, 179);
+            this.Broadband_Networkscb.Name = "Broadband_Networkscb";
+            this.Broadband_Networkscb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Broadband_Networkscb.Size = new System.Drawing.Size(225, 20);
+            this.Broadband_Networkscb.TabIndex = 13;
+            this.Broadband_Networkscb.Text = "CSCI 4537 - Broadband Networks";
+            this.Broadband_Networkscb.UseVisualStyleBackColor = true;
+            // 
+            // Network_Management_Systemscb
+            // 
+            this.Network_Management_Systemscb.AutoSize = true;
+            this.Network_Management_Systemscb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Network_Management_Systemscb.Location = new System.Drawing.Point(36, 335);
+            this.Network_Management_Systemscb.Name = "Network_Management_Systemscb";
+            this.Network_Management_Systemscb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Network_Management_Systemscb.Size = new System.Drawing.Size(284, 20);
+            this.Network_Management_Systemscb.TabIndex = 21;
+            this.Network_Management_Systemscb.Text = "CSCI 5532 - Network Management Systems";
+            this.Network_Management_Systemscb.UseVisualStyleBackColor = true;
+            // 
+            // Systems_and_Software_Assurancecb
+            // 
+            this.Systems_and_Software_Assurancecb.AutoSize = true;
+            this.Systems_and_Software_Assurancecb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Systems_and_Software_Assurancecb.Location = new System.Drawing.Point(36, 314);
+            this.Systems_and_Software_Assurancecb.Name = "Systems_and_Software_Assurancecb";
+            this.Systems_and_Software_Assurancecb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Systems_and_Software_Assurancecb.Size = new System.Drawing.Size(298, 20);
+            this.Systems_and_Software_Assurancecb.TabIndex = 20;
+            this.Systems_and_Software_Assurancecb.Text = "CSCI 5531 - Systems and Software Assurance";
+            this.Systems_and_Software_Assurancecb.UseVisualStyleBackColor = true;
+            // 
+            // Animationcb
+            // 
+            this.Animationcb.AutoSize = true;
+            this.Animationcb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Animationcb.Location = new System.Drawing.Point(36, 295);
+            this.Animationcb.Name = "Animationcb";
+            this.Animationcb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Animationcb.Size = new System.Drawing.Size(157, 20);
+            this.Animationcb.TabIndex = 19;
+            this.Animationcb.Text = "CSCI 5438 - Animation";
+            this.Animationcb.UseVisualStyleBackColor = true;
+            // 
+            // Embedded_Systems_Programmingcb
+            // 
+            this.Embedded_Systems_Programmingcb.AutoSize = true;
+            this.Embedded_Systems_Programmingcb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Embedded_Systems_Programmingcb.Location = new System.Drawing.Point(398, 338);
+            this.Embedded_Systems_Programmingcb.Name = "Embedded_Systems_Programmingcb";
+            this.Embedded_Systems_Programmingcb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Embedded_Systems_Programmingcb.Size = new System.Drawing.Size(305, 20);
+            this.Embedded_Systems_Programmingcb.TabIndex = 36;
+            this.Embedded_Systems_Programmingcb.Text = "CSCI 4360 - Embedded Systems Programming";
+            this.Embedded_Systems_Programmingcb.UseVisualStyleBackColor = true;
+            // 
+            // Compiler_Theorycb
+            // 
+            this.Compiler_Theorycb.AutoSize = true;
+            this.Compiler_Theorycb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Compiler_Theorycb.Location = new System.Drawing.Point(398, 317);
+            this.Compiler_Theorycb.Name = "Compiler_Theorycb";
+            this.Compiler_Theorycb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Compiler_Theorycb.Size = new System.Drawing.Size(198, 20);
+            this.Compiler_Theorycb.TabIndex = 35;
+            this.Compiler_Theorycb.Text = "CSCI 4342 - Compiler Theory";
+            this.Compiler_Theorycb.UseVisualStyleBackColor = true;
+            // 
+            // System_Prog_Under_Unixcb
+            // 
+            this.System_Prog_Under_Unixcb.AutoSize = true;
+            this.System_Prog_Under_Unixcb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.System_Prog_Under_Unixcb.Location = new System.Drawing.Point(398, 299);
+            this.System_Prog_Under_Unixcb.Name = "System_Prog_Under_Unixcb";
+            this.System_Prog_Under_Unixcb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.System_Prog_Under_Unixcb.Size = new System.Drawing.Size(244, 20);
+            this.System_Prog_Under_Unixcb.TabIndex = 34;
+            this.System_Prog_Under_Unixcb.Text = "CSCI 4343 - System Prog Under Unix";
+            this.System_Prog_Under_Unixcb.UseVisualStyleBackColor = true;
+            // 
+            // Advanced_Operating_Systemscb
+            // 
+            this.Advanced_Operating_Systemscb.AutoSize = true;
+            this.Advanced_Operating_Systemscb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Advanced_Operating_Systemscb.Location = new System.Drawing.Point(398, 280);
+            this.Advanced_Operating_Systemscb.Name = "Advanced_Operating_Systemscb";
+            this.Advanced_Operating_Systemscb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Advanced_Operating_Systemscb.Size = new System.Drawing.Size(277, 20);
+            this.Advanced_Operating_Systemscb.TabIndex = 33;
+            this.Advanced_Operating_Systemscb.Text = "CSCI 4342 - Advanced Operating Systems";
+            this.Advanced_Operating_Systemscb.UseVisualStyleBackColor = true;
+            // 
+            // Advanced_Database_Systemscb
+            // 
+            this.Advanced_Database_Systemscb.AutoSize = true;
+            this.Advanced_Database_Systemscb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Advanced_Database_Systemscb.Location = new System.Drawing.Point(398, 259);
+            this.Advanced_Database_Systemscb.Name = "Advanced_Database_Systemscb";
+            this.Advanced_Database_Systemscb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Advanced_Database_Systemscb.Size = new System.Drawing.Size(278, 20);
+            this.Advanced_Database_Systemscb.TabIndex = 32;
+            this.Advanced_Database_Systemscb.Text = "CSCI 4320 - Advanced Database Systems";
+            this.Advanced_Database_Systemscb.UseVisualStyleBackColor = true;
+            // 
+            // Networkscb
+            // 
+            this.Networkscb.AutoSize = true;
+            this.Networkscb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Networkscb.Location = new System.Drawing.Point(398, 239);
+            this.Networkscb.Name = "Networkscb";
+            this.Networkscb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Networkscb.Size = new System.Drawing.Size(154, 20);
+            this.Networkscb.TabIndex = 31;
+            this.Networkscb.Text = "CSCI 4220 - Networks";
+            this.Networkscb.UseVisualStyleBackColor = true;
+            // 
+            // High_Performance_Computingcb
+            // 
+            this.High_Performance_Computingcb.AutoSize = true;
+            this.High_Performance_Computingcb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.High_Performance_Computingcb.Location = new System.Drawing.Point(398, 221);
+            this.High_Performance_Computingcb.Name = "High_Performance_Computingcb";
+            this.High_Performance_Computingcb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.High_Performance_Computingcb.Size = new System.Drawing.Size(273, 20);
+            this.High_Performance_Computingcb.TabIndex = 30;
+            this.High_Performance_Computingcb.Text = "CSCI 4210 - High Performance Computing";
+            this.High_Performance_Computingcb.UseVisualStyleBackColor = true;
+            // 
+            // Cpp_Programmingcb
+            // 
+            this.Cpp_Programmingcb.AutoSize = true;
+            this.Cpp_Programmingcb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Cpp_Programmingcb.Location = new System.Drawing.Point(398, 202);
+            this.Cpp_Programmingcb.Name = "Cpp_Programmingcb";
+            this.Cpp_Programmingcb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Cpp_Programmingcb.Size = new System.Drawing.Size(205, 20);
+            this.Cpp_Programmingcb.TabIndex = 29;
+            this.Cpp_Programmingcb.Text = "CSCI 2490 - C++ Programming";
+            this.Cpp_Programmingcb.UseVisualStyleBackColor = true;
+            // 
+            // Introduction_to_Java_Programmingcb
+            // 
+            this.Introduction_to_Java_Programmingcb.AutoSize = true;
+            this.Introduction_to_Java_Programmingcb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Introduction_to_Java_Programmingcb.Location = new System.Drawing.Point(398, 180);
+            this.Introduction_to_Java_Programmingcb.Name = "Introduction_to_Java_Programmingcb";
+            this.Introduction_to_Java_Programmingcb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Introduction_to_Java_Programmingcb.Size = new System.Drawing.Size(297, 20);
+            this.Introduction_to_Java_Programmingcb.TabIndex = 28;
+            this.Introduction_to_Java_Programmingcb.Text = "CSCI 1236 - Introduction to Java Programming";
+            this.Introduction_to_Java_Programmingcb.UseVisualStyleBackColor = true;
+            // 
+            // Introduction_to_BASIC_Programmingcb
+            // 
+            this.Introduction_to_BASIC_Programmingcb.AutoSize = true;
+            this.Introduction_to_BASIC_Programmingcb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Introduction_to_BASIC_Programmingcb.Location = new System.Drawing.Point(398, 160);
+            this.Introduction_to_BASIC_Programmingcb.Name = "Introduction_to_BASIC_Programmingcb";
+            this.Introduction_to_BASIC_Programmingcb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Introduction_to_BASIC_Programmingcb.Size = new System.Drawing.Size(306, 20);
+            this.Introduction_to_BASIC_Programmingcb.TabIndex = 27;
+            this.Introduction_to_BASIC_Programmingcb.Text = "CSCI 1230 - Introduction to BASIC Programming";
+            this.Introduction_to_BASIC_Programmingcb.UseVisualStyleBackColor = true;
+            // 
+            // Comp_App_For_Bus_Majorscb
+            // 
+            this.Comp_App_For_Bus_Majorscb.AutoSize = true;
+            this.Comp_App_For_Bus_Majorscb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Comp_App_For_Bus_Majorscb.Location = new System.Drawing.Point(398, 139);
+            this.Comp_App_For_Bus_Majorscb.Name = "Comp_App_For_Bus_Majorscb";
+            this.Comp_App_For_Bus_Majorscb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Comp_App_For_Bus_Majorscb.Size = new System.Drawing.Size(261, 20);
+            this.Comp_App_For_Bus_Majorscb.TabIndex = 26;
+            this.Comp_App_For_Bus_Majorscb.Text = "CSCI 1130M - Comp App for Bus Majors";
+            this.Comp_App_For_Bus_Majorscb.UseVisualStyleBackColor = true;
+            // 
+            // Machine_Learningcb
+            // 
+            this.Machine_Learningcb.AutoSize = true;
+            this.Machine_Learningcb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Machine_Learningcb.Location = new System.Drawing.Point(398, 119);
+            this.Machine_Learningcb.Name = "Machine_Learningcb";
+            this.Machine_Learningcb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Machine_Learningcb.Size = new System.Drawing.Size(204, 20);
+            this.Machine_Learningcb.TabIndex = 25;
+            this.Machine_Learningcb.Text = "CSCI 4520 - Machine Learning";
+            this.Machine_Learningcb.UseVisualStyleBackColor = true;
+            // 
+            // Comparative_Languagescb
+            // 
+            this.Comparative_Languagescb.AutoSize = true;
+            this.Comparative_Languagescb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Comparative_Languagescb.Location = new System.Drawing.Point(398, 101);
+            this.Comparative_Languagescb.Name = "Comparative_Languagescb";
+            this.Comparative_Languagescb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Comparative_Languagescb.Size = new System.Drawing.Size(246, 20);
+            this.Comparative_Languagescb.TabIndex = 24;
+            this.Comparative_Languagescb.Text = "CSCI 3330 - Comparative Languages";
+            this.Comparative_Languagescb.UseVisualStyleBackColor = true;
+            // 
+            // Introduction_to_Operating_Systemcb
+            // 
+            this.Introduction_to_Operating_Systemcb.AutoSize = true;
+            this.Introduction_to_Operating_Systemcb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Introduction_to_Operating_Systemcb.Location = new System.Drawing.Point(398, 82);
+            this.Introduction_to_Operating_Systemcb.Name = "Introduction_to_Operating_Systemcb";
+            this.Introduction_to_Operating_Systemcb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Introduction_to_Operating_Systemcb.Size = new System.Drawing.Size(290, 20);
+            this.Introduction_to_Operating_Systemcb.TabIndex = 23;
+            this.Introduction_to_Operating_Systemcb.Text = "CSCI 3341 - Introduction to Operating System";
+            this.Introduction_to_Operating_Systemcb.UseVisualStyleBackColor = true;
+            // 
+            // Wireless_and_Mobile_Systemscb
+            // 
+            this.Wireless_and_Mobile_Systemscb.AutoSize = true;
+            this.Wireless_and_Mobile_Systemscb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Wireless_and_Mobile_Systemscb.Location = new System.Drawing.Point(398, 63);
+            this.Wireless_and_Mobile_Systemscb.Name = "Wireless_and_Mobile_Systemscb";
+            this.Wireless_and_Mobile_Systemscb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Wireless_and_Mobile_Systemscb.Size = new System.Drawing.Size(276, 20);
+            this.Wireless_and_Mobile_Systemscb.TabIndex = 22;
+            this.Wireless_and_Mobile_Systemscb.Text = "CSCI 5538 - Wireless and Mobile Systems";
+            this.Wireless_and_Mobile_Systemscb.UseVisualStyleBackColor = true;
+            // 
+            // E2Panel
+            // 
+            this.E2Panel.Controls.Add(this.Advanced_Software_Engineeringcb);
+            this.E2Panel.Controls.Add(this.Computing_for_Engineerscb);
+            this.E2Panel.Controls.Add(this.Elementary_Statisticscb);
+            this.E2Panel.Controls.Add(this.Survey_of_Calculuscb);
+            this.E2Panel.Controls.Add(this.Introduction_To_Mathematical_Modelingcb);
+            this.E2Panel.Controls.Add(this.Quantitative_Reasoningcb);
+            this.E2Panel.Controls.Add(this.Principles_Of_Biology_1_With_Labcb);
+            this.E2Panel.Controls.Add(this.Linear_Algebracb);
+            this.E2Panel.Controls.Add(this.Software_Security_and_Secure_Codingcb);
+            this.E2Panel.Controls.Add(this.Data_Management_for_Math_and_the_Sciencescb);
+            this.E2Panel.Controls.Add(this.Directed_Study_in_Computer_Sciencecb);
+            this.E2Panel.Controls.Add(this.button30);
+            this.E2Panel.Controls.Add(this.button31);
+            this.E2Panel.Controls.Add(this.Special_Problems_CO_OPcb);
+            this.E2Panel.Controls.Add(this.Data_Miningcb);
+            this.E2Panel.Controls.Add(this.Numerical_Analysiscb);
+            this.E2Panel.Controls.Add(this.Handheld_Ubiquitous_Computingcb);
+            this.E2Panel.Controls.Add(this.label15);
+            this.E2Panel.Location = new System.Drawing.Point(12, 12);
+            this.E2Panel.Name = "E2Panel";
+            this.E2Panel.Size = new System.Drawing.Size(760, 437);
+            this.E2Panel.TabIndex = 21;
+            // 
+            // Software_Security_and_Secure_Codingcb
+            // 
+            this.Software_Security_and_Secure_Codingcb.AutoSize = true;
+            this.Software_Security_and_Secure_Codingcb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Software_Security_and_Secure_Codingcb.Location = new System.Drawing.Point(211, 179);
+            this.Software_Security_and_Secure_Codingcb.Name = "Software_Security_and_Secure_Codingcb";
+            this.Software_Security_and_Secure_Codingcb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Software_Security_and_Secure_Codingcb.Size = new System.Drawing.Size(319, 20);
+            this.Software_Security_and_Secure_Codingcb.TabIndex = 14;
+            this.Software_Security_and_Secure_Codingcb.Text = "CSCI 5380 - Software Security and Secure Coding";
+            this.Software_Security_and_Secure_Codingcb.UseVisualStyleBackColor = true;
+            // 
+            // Data_Management_for_Math_and_the_Sciencescb
+            // 
+            this.Data_Management_for_Math_and_the_Sciencescb.AutoSize = true;
+            this.Data_Management_for_Math_and_the_Sciencescb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Data_Management_for_Math_and_the_Sciencescb.Location = new System.Drawing.Point(211, 157);
+            this.Data_Management_for_Math_and_the_Sciencescb.Name = "Data_Management_for_Math_and_the_Sciencescb";
+            this.Data_Management_for_Math_and_the_Sciencescb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Data_Management_for_Math_and_the_Sciencescb.Size = new System.Drawing.Size(365, 20);
+            this.Data_Management_for_Math_and_the_Sciencescb.TabIndex = 12;
+            this.Data_Management_for_Math_and_the_Sciencescb.Text = "CSCI 5130 - Data Management for Math and the Sciences";
+            this.Data_Management_for_Math_and_the_Sciencescb.UseVisualStyleBackColor = true;
+            // 
+            // Directed_Study_in_Computer_Sciencecb
+            // 
+            this.Directed_Study_in_Computer_Sciencecb.AutoSize = true;
+            this.Directed_Study_in_Computer_Sciencecb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Directed_Study_in_Computer_Sciencecb.Location = new System.Drawing.Point(211, 136);
+            this.Directed_Study_in_Computer_Sciencecb.Name = "Directed_Study_in_Computer_Sciencecb";
+            this.Directed_Study_in_Computer_Sciencecb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Directed_Study_in_Computer_Sciencecb.Size = new System.Drawing.Size(312, 20);
+            this.Directed_Study_in_Computer_Sciencecb.TabIndex = 11;
+            this.Directed_Study_in_Computer_Sciencecb.Text = "CSCI 4890 - Directed Study in Computer Science";
+            this.Directed_Study_in_Computer_Sciencecb.UseVisualStyleBackColor = true;
+            // 
+            // button30
+            // 
+            this.button30.Location = new System.Drawing.Point(60, 380);
+            this.button30.Name = "button30";
+            this.button30.Size = new System.Drawing.Size(75, 23);
+            this.button30.TabIndex = 10;
+            this.button30.Text = "Back";
+            this.button30.UseVisualStyleBackColor = true;
+            this.button30.Click += new System.EventHandler(this.back_Click);
+            // 
+            // button31
+            // 
+            this.button31.Location = new System.Drawing.Point(610, 380);
+            this.button31.Name = "button31";
+            this.button31.Size = new System.Drawing.Size(75, 23);
+            this.button31.TabIndex = 7;
+            this.button31.Text = "Next";
+            this.button31.UseVisualStyleBackColor = true;
+            this.button31.Click += new System.EventHandler(this.forward_Click);
+            // 
+            // Special_Problems_CO_OPcb
+            // 
+            this.Special_Problems_CO_OPcb.AutoSize = true;
+            this.Special_Problems_CO_OPcb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Special_Problems_CO_OPcb.Location = new System.Drawing.Point(211, 116);
+            this.Special_Problems_CO_OPcb.Name = "Special_Problems_CO_OPcb";
+            this.Special_Problems_CO_OPcb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Special_Problems_CO_OPcb.Size = new System.Drawing.Size(250, 20);
+            this.Special_Problems_CO_OPcb.TabIndex = 4;
+            this.Special_Problems_CO_OPcb.Text = "CSCI 4790 - Special Problems CO-OP";
+            this.Special_Problems_CO_OPcb.UseVisualStyleBackColor = true;
+            // 
+            // Data_Miningcb
+            // 
+            this.Data_Miningcb.AutoSize = true;
+            this.Data_Miningcb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Data_Miningcb.Location = new System.Drawing.Point(211, 98);
+            this.Data_Miningcb.Name = "Data_Miningcb";
+            this.Data_Miningcb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Data_Miningcb.Size = new System.Drawing.Size(169, 20);
+            this.Data_Miningcb.TabIndex = 3;
+            this.Data_Miningcb.Text = "CSCI 4535 - Data Mining";
+            this.Data_Miningcb.UseVisualStyleBackColor = true;
+            // 
+            // Numerical_Analysiscb
+            // 
+            this.Numerical_Analysiscb.AutoSize = true;
+            this.Numerical_Analysiscb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Numerical_Analysiscb.Location = new System.Drawing.Point(211, 79);
+            this.Numerical_Analysiscb.Name = "Numerical_Analysiscb";
+            this.Numerical_Analysiscb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Numerical_Analysiscb.Size = new System.Drawing.Size(213, 20);
+            this.Numerical_Analysiscb.TabIndex = 2;
+            this.Numerical_Analysiscb.Text = "CSCI 4610 - Numerical Analysis";
+            this.Numerical_Analysiscb.UseVisualStyleBackColor = true;
+            // 
+            // Handheld_Ubiquitous_Computingcb
+            // 
+            this.Handheld_Ubiquitous_Computingcb.AutoSize = true;
+            this.Handheld_Ubiquitous_Computingcb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Handheld_Ubiquitous_Computingcb.Location = new System.Drawing.Point(211, 60);
+            this.Handheld_Ubiquitous_Computingcb.Name = "Handheld_Ubiquitous_Computingcb";
+            this.Handheld_Ubiquitous_Computingcb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Handheld_Ubiquitous_Computingcb.Size = new System.Drawing.Size(291, 20);
+            this.Handheld_Ubiquitous_Computingcb.TabIndex = 1;
+            this.Handheld_Ubiquitous_Computingcb.Text = "CSCI 4370 - Handheld Ubiquitous Computing";
+            this.Handheld_Ubiquitous_Computingcb.UseVisualStyleBackColor = true;
+            // 
+            // label15
+            // 
+            this.label15.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(0, 0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(760, 45);
+            this.label15.TabIndex = 0;
+            this.label15.Text = "CSCI Electives and Others (Part 2)";
+            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Computing_for_Engineerscb
+            // 
+            this.Computing_for_Engineerscb.AutoSize = true;
+            this.Computing_for_Engineerscb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Computing_for_Engineerscb.Location = new System.Drawing.Point(211, 317);
+            this.Computing_for_Engineerscb.Name = "Computing_for_Engineerscb";
+            this.Computing_for_Engineerscb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Computing_for_Engineerscb.Size = new System.Drawing.Size(253, 20);
+            this.Computing_for_Engineerscb.TabIndex = 21;
+            this.Computing_for_Engineerscb.Text = "ENGR 1731 - Computing for Engineers";
+            this.Computing_for_Engineerscb.UseVisualStyleBackColor = true;
+            // 
+            // Elementary_Statisticscb
+            // 
+            this.Elementary_Statisticscb.AutoSize = true;
+            this.Elementary_Statisticscb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Elementary_Statisticscb.Location = new System.Drawing.Point(211, 295);
+            this.Elementary_Statisticscb.Name = "Elementary_Statisticscb";
+            this.Elementary_Statisticscb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Elementary_Statisticscb.Size = new System.Drawing.Size(228, 20);
+            this.Elementary_Statisticscb.TabIndex = 20;
+            this.Elementary_Statisticscb.Text = "STAT 1401 - Elementary Statistics";
+            this.Elementary_Statisticscb.UseVisualStyleBackColor = true;
+            // 
+            // Survey_of_Calculuscb
+            // 
+            this.Survey_of_Calculuscb.AutoSize = true;
+            this.Survey_of_Calculuscb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Survey_of_Calculuscb.Location = new System.Drawing.Point(211, 274);
+            this.Survey_of_Calculuscb.Name = "Survey_of_Calculuscb";
+            this.Survey_of_Calculuscb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Survey_of_Calculuscb.Size = new System.Drawing.Size(217, 20);
+            this.Survey_of_Calculuscb.TabIndex = 19;
+            this.Survey_of_Calculuscb.Text = "MATH 1232 - Survey of Calculus";
+            this.Survey_of_Calculuscb.UseVisualStyleBackColor = true;
+            // 
+            // Introduction_To_Mathematical_Modelingcb
+            // 
+            this.Introduction_To_Mathematical_Modelingcb.AutoSize = true;
+            this.Introduction_To_Mathematical_Modelingcb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Introduction_To_Mathematical_Modelingcb.Location = new System.Drawing.Point(211, 254);
+            this.Introduction_To_Mathematical_Modelingcb.Name = "Introduction_To_Mathematical_Modelingcb";
+            this.Introduction_To_Mathematical_Modelingcb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Introduction_To_Mathematical_Modelingcb.Size = new System.Drawing.Size(331, 20);
+            this.Introduction_To_Mathematical_Modelingcb.TabIndex = 18;
+            this.Introduction_To_Mathematical_Modelingcb.Text = "MATH 1101 - Introduction to Mathematical Modeling";
+            this.Introduction_To_Mathematical_Modelingcb.UseVisualStyleBackColor = true;
+            // 
+            // Quantitative_Reasoningcb
+            // 
+            this.Quantitative_Reasoningcb.AutoSize = true;
+            this.Quantitative_Reasoningcb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Quantitative_Reasoningcb.Location = new System.Drawing.Point(211, 236);
+            this.Quantitative_Reasoningcb.Name = "Quantitative_Reasoningcb";
+            this.Quantitative_Reasoningcb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Quantitative_Reasoningcb.Size = new System.Drawing.Size(246, 20);
+            this.Quantitative_Reasoningcb.TabIndex = 17;
+            this.Quantitative_Reasoningcb.Text = "MATH 1001 - Quantitative Reasoning";
+            this.Quantitative_Reasoningcb.UseVisualStyleBackColor = true;
+            // 
+            // Principles_Of_Biology_1_With_Labcb
+            // 
+            this.Principles_Of_Biology_1_With_Labcb.AutoSize = true;
+            this.Principles_Of_Biology_1_With_Labcb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Principles_Of_Biology_1_With_Labcb.Location = new System.Drawing.Point(211, 217);
+            this.Principles_Of_Biology_1_With_Labcb.Name = "Principles_Of_Biology_1_With_Labcb";
+            this.Principles_Of_Biology_1_With_Labcb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Principles_Of_Biology_1_With_Labcb.Size = new System.Drawing.Size(151, 20);
+            this.Principles_Of_Biology_1_With_Labcb.TabIndex = 16;
+            this.Principles_Of_Biology_1_With_Labcb.Text = "BIOL 1107 and 1107L";
+            this.Principles_Of_Biology_1_With_Labcb.UseVisualStyleBackColor = true;
+            // 
+            // Linear_Algebracb
+            // 
+            this.Linear_Algebracb.AutoSize = true;
+            this.Linear_Algebracb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Linear_Algebracb.Location = new System.Drawing.Point(211, 198);
+            this.Linear_Algebracb.Name = "Linear_Algebracb";
+            this.Linear_Algebracb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Linear_Algebracb.Size = new System.Drawing.Size(195, 20);
+            this.Linear_Algebracb.TabIndex = 15;
+            this.Linear_Algebracb.Text = "MATH 2160 - Linear Algebra";
+            this.Linear_Algebracb.UseVisualStyleBackColor = true;
+            // 
+            // CreateCoursePanel
+            // 
+            this.CreateCoursePanel.Controls.Add(this.button36);
+            this.CreateCoursePanel.Controls.Add(this.button35);
+            this.CreateCoursePanel.Controls.Add(this.label16);
+            this.CreateCoursePanel.Location = new System.Drawing.Point(12, 12);
+            this.CreateCoursePanel.Name = "CreateCoursePanel";
+            this.CreateCoursePanel.Size = new System.Drawing.Size(760, 437);
+            this.CreateCoursePanel.TabIndex = 22;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(175, 112);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(41, 13);
+            this.label16.TabIndex = 0;
+            this.label16.Text = "label16";
+            // 
+            // button32
+            // 
+            this.button32.Location = new System.Drawing.Point(591, 22);
+            this.button32.Name = "button32";
+            this.button32.Size = new System.Drawing.Size(113, 23);
+            this.button32.TabIndex = 3;
+            this.button32.Text = "Create New Course";
+            this.button32.UseVisualStyleBackColor = true;
+            // 
+            // Advanced_Software_Engineeringcb
+            // 
+            this.Advanced_Software_Engineeringcb.AutoSize = true;
+            this.Advanced_Software_Engineeringcb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Advanced_Software_Engineeringcb.Location = new System.Drawing.Point(211, 340);
+            this.Advanced_Software_Engineeringcb.Name = "Advanced_Software_Engineeringcb";
+            this.Advanced_Software_Engineeringcb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Advanced_Software_Engineeringcb.Size = new System.Drawing.Size(290, 20);
+            this.Advanced_Software_Engineeringcb.TabIndex = 22;
+            this.Advanced_Software_Engineeringcb.Text = "CSCI 4322 - Advanced Software Engineering";
+            this.Advanced_Software_Engineeringcb.UseVisualStyleBackColor = true;
+            // 
+            // CustomClassesPanel
+            // 
+            this.CustomClassesPanel.Controls.Add(this.customClassesBox);
+            this.CustomClassesPanel.Controls.Add(this.button33);
+            this.CustomClassesPanel.Controls.Add(this.button34);
+            this.CustomClassesPanel.Controls.Add(this.label17);
+            this.CustomClassesPanel.Location = new System.Drawing.Point(12, 12);
+            this.CustomClassesPanel.Name = "CustomClassesPanel";
+            this.CustomClassesPanel.Size = new System.Drawing.Size(760, 437);
+            this.CustomClassesPanel.TabIndex = 23;
+            // 
+            // button33
+            // 
+            this.button33.Location = new System.Drawing.Point(60, 380);
+            this.button33.Name = "button33";
+            this.button33.Size = new System.Drawing.Size(75, 23);
+            this.button33.TabIndex = 10;
+            this.button33.Text = "Back";
+            this.button33.UseVisualStyleBackColor = true;
+            this.button33.Click += new System.EventHandler(this.back_Click);
+            // 
+            // button34
+            // 
+            this.button34.Location = new System.Drawing.Point(610, 380);
+            this.button34.Name = "button34";
+            this.button34.Size = new System.Drawing.Size(75, 23);
+            this.button34.TabIndex = 7;
+            this.button34.Text = "Next";
+            this.button34.UseVisualStyleBackColor = true;
+            this.button34.Click += new System.EventHandler(this.forward_Click);
+            // 
+            // label17
+            // 
+            this.label17.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(0, 0);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(760, 45);
+            this.label17.TabIndex = 0;
+            this.label17.Text = "Custom Classes";
+            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // customClassesBox
+            // 
+            this.customClassesBox.FormattingEnabled = true;
+            this.customClassesBox.Location = new System.Drawing.Point(0, 45);
+            this.customClassesBox.MultiColumn = true;
+            this.customClassesBox.Name = "customClassesBox";
+            this.customClassesBox.Size = new System.Drawing.Size(760, 319);
+            this.customClassesBox.TabIndex = 11;
+            // 
+            // button35
+            // 
+            this.button35.Location = new System.Drawing.Point(610, 380);
+            this.button35.Name = "button35";
+            this.button35.Size = new System.Drawing.Size(75, 23);
+            this.button35.TabIndex = 8;
+            this.button35.Text = "Save";
+            this.button35.UseVisualStyleBackColor = true;
+            // 
+            // button36
+            // 
+            this.button36.Location = new System.Drawing.Point(71, 380);
+            this.button36.Name = "button36";
+            this.button36.Size = new System.Drawing.Size(75, 23);
+            this.button36.TabIndex = 11;
+            this.button36.Text = "Back";
+            this.button36.UseVisualStyleBackColor = true;
+            this.button36.Click += new System.EventHandler(this.button36_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 461);
-            this.Controls.Add(this.panel15);
-            this.Controls.Add(this.panel11);
-            this.Controls.Add(this.panel10);
-            this.Controls.Add(this.panel12);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panel14);
-            this.Controls.Add(this.panel13);
-            this.Controls.Add(this.panel6);
-            this.Controls.Add(this.panel5);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel9);
-            this.Controls.Add(this.panel8);
-            this.Controls.Add(this.panel7);
+            this.Controls.Add(this.CreateCoursePanel);
+            this.Controls.Add(this.CustomClassesPanel);
+            this.Controls.Add(this.HomePanel);
+            this.Controls.Add(this.E1Panel);
+            this.Controls.Add(this.E2Panel);
+            this.Controls.Add(this.ChainingPanel);
+            this.Controls.Add(this.EligibleCoursesPanel);
+            this.Controls.Add(this.SeasonPanel);
+            this.Controls.Add(this.MRC1Panel);
+            this.Controls.Add(this.MRC2Panel);
+            this.Controls.Add(this.SLSsRPanel);
+            this.Controls.Add(this.AreaEPanel);
+            this.Controls.Add(this.AreaDPanel);
+            this.Controls.Add(this.AreaCPanel);
+            this.Controls.Add(this.AreaBPanel);
+            this.Controls.Add(this.AreaAPanel);
+            this.Controls.Add(this.SIRPanel);
+            this.Controls.Add(this.AreaFPanel);
+            this.Controls.Add(this.URPanel);
             this.Name = "Form1";
             this.Text = "id";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
-            this.panel9.ResumeLayout(false);
-            this.panel9.PerformLayout();
-            this.panel10.ResumeLayout(false);
-            this.panel10.PerformLayout();
-            this.panel11.ResumeLayout(false);
-            this.panel11.PerformLayout();
-            this.panel13.ResumeLayout(false);
-            this.panel14.ResumeLayout(false);
-            this.panel14.PerformLayout();
-            this.panel12.ResumeLayout(false);
-            this.panel12.PerformLayout();
-            this.panel15.ResumeLayout(false);
-            this.panel15.PerformLayout();
+            this.HomePanel.ResumeLayout(false);
+            this.AreaAPanel.ResumeLayout(false);
+            this.AreaAPanel.PerformLayout();
+            this.AreaBPanel.ResumeLayout(false);
+            this.AreaBPanel.PerformLayout();
+            this.AreaCPanel.ResumeLayout(false);
+            this.AreaCPanel.PerformLayout();
+            this.AreaDPanel.ResumeLayout(false);
+            this.AreaDPanel.PerformLayout();
+            this.AreaEPanel.ResumeLayout(false);
+            this.AreaEPanel.PerformLayout();
+            this.URPanel.ResumeLayout(false);
+            this.URPanel.PerformLayout();
+            this.AreaFPanel.ResumeLayout(false);
+            this.AreaFPanel.PerformLayout();
+            this.SIRPanel.ResumeLayout(false);
+            this.SIRPanel.PerformLayout();
+            this.SLSsRPanel.ResumeLayout(false);
+            this.SLSsRPanel.PerformLayout();
+            this.MRC1Panel.ResumeLayout(false);
+            this.MRC1Panel.PerformLayout();
+            this.ChainingPanel.ResumeLayout(false);
+            this.EligibleCoursesPanel.ResumeLayout(false);
+            this.EligibleCoursesPanel.PerformLayout();
+            this.SeasonPanel.ResumeLayout(false);
+            this.SeasonPanel.PerformLayout();
+            this.MRC2Panel.ResumeLayout(false);
+            this.MRC2Panel.PerformLayout();
+            this.E1Panel.ResumeLayout(false);
+            this.E1Panel.PerformLayout();
+            this.E2Panel.ResumeLayout(false);
+            this.E2Panel.PerformLayout();
+            this.CreateCoursePanel.ResumeLayout(false);
+            this.CreateCoursePanel.PerformLayout();
+            this.CustomClassesPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel HomePanel;
         private System.Windows.Forms.Label welcomeText;
         private System.Windows.Forms.Button startBtn;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel AreaAPanel;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.CheckBox Calculus_1cb;
@@ -1558,17 +2408,17 @@
         private System.Windows.Forms.CheckBox Composition_2cb;
         private System.Windows.Forms.CheckBox Composition_1cb;
         private System.Windows.Forms.Button nextBtn;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel AreaBPanel;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.CheckBox Global_Citizenscb;
         private System.Windows.Forms.CheckBox World_History_2cb;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel AreaCPanel;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.CheckBox Public_Speakingcb;
         private System.Windows.Forms.CheckBox World_Literature_1_or_2cb;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel AreaDPanel;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.CheckBox Environment_Geology_with_labcb;
         private System.Windows.Forms.CheckBox Environmental_Biology_with_labcb;
@@ -1577,7 +2427,7 @@
         private System.Windows.Forms.CheckBox Introduction_to_the_Earthcb;
         private System.Windows.Forms.CheckBox Principles_of_Chemistry_1_with_labcb;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel AreaEPanel;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.CheckBox Introduction_to_Phychologycb;
         private System.Windows.Forms.CheckBox World_Regional_Geographycb;
@@ -1586,7 +2436,7 @@
         private System.Windows.Forms.CheckBox US_A_Comprehensive_Surveycb;
         private System.Windows.Forms.CheckBox Economics_in_a_Global_Societycb;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel URPanel;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.CheckBox First_Year_Experiencecb;
         private System.Windows.Forms.CheckBox Physical_Activity_2cb;
@@ -1602,7 +2452,7 @@
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.CheckBox Introduction_to_Sociologycb;
         private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel AreaFPanel;
         private System.Windows.Forms.CheckBox Statistics_1cb;
         private System.Windows.Forms.CheckBox Calculus_2cb;
         private System.Windows.Forms.Button button12;
@@ -1612,12 +2462,12 @@
         private System.Windows.Forms.CheckBox Programming_Principles_2cb;
         private System.Windows.Forms.CheckBox Programming_Principles_1cb;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Panel SIRPanel;
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.Button button15;
         private System.Windows.Forms.CheckBox Introduction_to_International_Studiescb;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Panel SLSsRPanel;
         private System.Windows.Forms.CheckBox Principles_of_Physics_2cb;
         private System.Windows.Forms.Button button16;
         private System.Windows.Forms.Button button17;
@@ -1626,7 +2476,7 @@
         private System.Windows.Forms.CheckBox Principles_of_Chemistry_2_with_labcb;
         private System.Windows.Forms.CheckBox Principles_of_Biology_2_with_labcb;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.Panel MRC1Panel;
         private System.Windows.Forms.CheckBox Algorithm_Design_and_Analysiscb;
         private System.Windows.Forms.Button button18;
         private System.Windows.Forms.Button button19;
@@ -1635,21 +2485,21 @@
         private System.Windows.Forms.CheckBox Systems_Softwarecb;
         private System.Windows.Forms.CheckBox Data_Structurescb;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Panel panel13;
+        private System.Windows.Forms.Panel ChainingPanel;
         private System.Windows.Forms.Button button22;
         private System.Windows.Forms.Button button21;
         private System.Windows.Forms.Button button20;
-        private System.Windows.Forms.Panel panel14;
+        private System.Windows.Forms.Panel EligibleCoursesPanel;
         private System.Windows.Forms.TextBox Eligible_CoursesTxt;
         private System.Windows.Forms.Button button25;
-        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.Panel SeasonPanel;
         private System.Windows.Forms.Button button26;
         private System.Windows.Forms.Button button23;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.RadioButton fallbtn;
         private System.Windows.Forms.RadioButton summerbtn;
         private System.Windows.Forms.RadioButton springbtn;
-        private System.Windows.Forms.Panel panel15;
+        private System.Windows.Forms.Panel MRC2Panel;
         private System.Windows.Forms.CheckBox Distributed_Web_Systems_Designcb;
         private System.Windows.Forms.Button button24;
         private System.Windows.Forms.Button button27;
@@ -1659,6 +2509,69 @@
         private System.Windows.Forms.CheckBox Computer_Architecturecb;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.CheckBox Software_Engineeringcb;
+        private System.Windows.Forms.Panel E1Panel;
+        private System.Windows.Forms.CheckBox Software_Testing_and_Quality_Assurancecb;
+        private System.Windows.Forms.CheckBox Game_Programmingcb;
+        private System.Windows.Forms.Button button28;
+        private System.Windows.Forms.Button button29;
+        private System.Windows.Forms.CheckBox Human_Computer_Interactioncb;
+        private System.Windows.Forms.CheckBox Data_Warehouse_Designcb;
+        private System.Windows.Forms.CheckBox Logic_Circuits_and_Microprocessorscb;
+        private System.Windows.Forms.CheckBox Introduction_to_Computer_Engineeringcb;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.CheckBox Embedded_Systems_Programmingcb;
+        private System.Windows.Forms.CheckBox Compiler_Theorycb;
+        private System.Windows.Forms.CheckBox System_Prog_Under_Unixcb;
+        private System.Windows.Forms.CheckBox Advanced_Operating_Systemscb;
+        private System.Windows.Forms.CheckBox Advanced_Database_Systemscb;
+        private System.Windows.Forms.CheckBox Networkscb;
+        private System.Windows.Forms.CheckBox High_Performance_Computingcb;
+        private System.Windows.Forms.CheckBox Cpp_Programmingcb;
+        private System.Windows.Forms.CheckBox Introduction_to_Java_Programmingcb;
+        private System.Windows.Forms.CheckBox Introduction_to_BASIC_Programmingcb;
+        private System.Windows.Forms.CheckBox Comp_App_For_Bus_Majorscb;
+        private System.Windows.Forms.CheckBox Machine_Learningcb;
+        private System.Windows.Forms.CheckBox Comparative_Languagescb;
+        private System.Windows.Forms.CheckBox Introduction_to_Operating_Systemcb;
+        private System.Windows.Forms.CheckBox Wireless_and_Mobile_Systemscb;
+        private System.Windows.Forms.CheckBox Network_Management_Systemscb;
+        private System.Windows.Forms.CheckBox Systems_and_Software_Assurancecb;
+        private System.Windows.Forms.CheckBox Animationcb;
+        private System.Windows.Forms.CheckBox Computer_Graphicscb;
+        private System.Windows.Forms.CheckBox Artificial_Intelligencecb;
+        private System.Windows.Forms.CheckBox Discrete_Simulationcb;
+        private System.Windows.Forms.CheckBox Selected_Topicscb;
+        private System.Windows.Forms.CheckBox Optical_Networkscb;
+        private System.Windows.Forms.CheckBox Broadband_Networkscb;
+        private System.Windows.Forms.Panel E2Panel;
+        private System.Windows.Forms.CheckBox Software_Security_and_Secure_Codingcb;
+        private System.Windows.Forms.CheckBox Data_Management_for_Math_and_the_Sciencescb;
+        private System.Windows.Forms.CheckBox Directed_Study_in_Computer_Sciencecb;
+        private System.Windows.Forms.Button button30;
+        private System.Windows.Forms.Button button31;
+        private System.Windows.Forms.CheckBox Special_Problems_CO_OPcb;
+        private System.Windows.Forms.CheckBox Data_Miningcb;
+        private System.Windows.Forms.CheckBox Numerical_Analysiscb;
+        private System.Windows.Forms.CheckBox Handheld_Ubiquitous_Computingcb;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.CheckBox Computing_for_Engineerscb;
+        private System.Windows.Forms.CheckBox Elementary_Statisticscb;
+        private System.Windows.Forms.CheckBox Survey_of_Calculuscb;
+        private System.Windows.Forms.CheckBox Introduction_To_Mathematical_Modelingcb;
+        private System.Windows.Forms.CheckBox Quantitative_Reasoningcb;
+        private System.Windows.Forms.CheckBox Principles_Of_Biology_1_With_Labcb;
+        private System.Windows.Forms.CheckBox Linear_Algebracb;
+        private System.Windows.Forms.Panel CreateCoursePanel;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Button button32;
+        private System.Windows.Forms.CheckBox Advanced_Software_Engineeringcb;
+        private System.Windows.Forms.Panel CustomClassesPanel;
+        private System.Windows.Forms.CheckedListBox customClassesBox;
+        private System.Windows.Forms.Button button33;
+        private System.Windows.Forms.Button button34;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Button button36;
+        private System.Windows.Forms.Button button35;
     }
 }
 
