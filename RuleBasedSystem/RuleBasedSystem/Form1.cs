@@ -1161,25 +1161,17 @@ namespace RuleBasedSystem
                 {
                     if (course.Spring == true)
                     {
-                        //Console.WriteLine("Course: " + course.Prefix + " is available in the spring!");
                         if (!course.IsCompleted)
                         {
-                            //Console.WriteLine("Course: " + course.Prefix + " is not taken yet!");
-                            //bool FINALELIGIBLE = false;
                             if (course.Prereqs.Length != 0)
                             {
-                                //Console.WriteLine("Course: " + course.Prefix + " has the follow prereqs: ");
-
                                 //CHECK ALL PREREQS
                                 bool ANDeligible = true;
                                 for (int i = 0; i < course.Prereqs.Length; i++)
                                 {
-                                    //bool OReligible = true;
-                                    // OR OR OR OR OR OR OR 
                                     if (course.Prereqs[i].Length > 1)
                                     {
                                         bool OReligible = false;
-                                        //Console.WriteLine("Course requires one of these to be taken: ");
                                         //CHECK THE ORS
                                         for (int j = 0; j < course.Prereqs[i].Length; j++)
                                         {
@@ -1188,26 +1180,22 @@ namespace RuleBasedSystem
                                         }
                                         if (OReligible)
                                         {
-                                            // Console.WriteLine("Condition satisfied! (One of those courses is taken!)");
+
                                         }
                                         else
                                         {
                                             ANDeligible = false;
-                                            // Console.WriteLine("Oh no! (One of those courses is not taken)");
                                         }
                                     }
                                     //AND AND AND AND
                                     else
                                     {
-                                        // Console.WriteLine("Must take: " + course.Prereqs[i][0].Prefix);
                                         if (course.Prereqs[i][0].IsCompleted)
                                         {
-                                            //Console.WriteLine("Condition satisfied! (That course is taken)");
                                         }
                                         else
                                         {
                                             ANDeligible = false;
-                                            //Console.WriteLine("Oh no! (That course is not taken)");
                                         }
                                     }
                                 }
@@ -1215,7 +1203,6 @@ namespace RuleBasedSystem
                             }
                             else
                             {
-                                //Console.WriteLine("You are eligible to take: " + course.Prefix + "!");
                                 eligible_to_take.Add(course);
                             }
 
@@ -1223,7 +1210,6 @@ namespace RuleBasedSystem
                     }
                     else
                     {
-                        //Console.WriteLine("Course: " + course.Prefix + " is not available in the spring!");
                     }
 
                 });
@@ -1234,25 +1220,18 @@ namespace RuleBasedSystem
                 {
                     if (course.Summer == true)
                     {
-                        //Console.WriteLine("Course: " + course.Prefix + " is available in the spring!");
                         if (!course.IsCompleted)
                         {
-                            //Console.WriteLine("Course: " + course.Prefix + " is not taken yet!");
-                            //bool FINALELIGIBLE = false;
                             if (course.Prereqs.Length != 0)
                             {
-                                //Console.WriteLine("Course: " + course.Prefix + " has the follow prereqs: ");
-
                                 //CHECK ALL PREREQS
                                 bool ANDeligible = true;
                                 for (int i = 0; i < course.Prereqs.Length; i++)
                                 {
-                                    //bool OReligible = true;
                                     // OR OR OR OR OR OR OR 
                                     if (course.Prereqs[i].Length > 1)
                                     {
                                         bool OReligible = false;
-                                        //Console.WriteLine("Course requires one of these to be taken: ");
                                         //CHECK THE ORS
                                         for (int j = 0; j < course.Prereqs[i].Length; j++)
                                         {
@@ -1261,26 +1240,21 @@ namespace RuleBasedSystem
                                         }
                                         if (OReligible)
                                         {
-                                            // Console.WriteLine("Condition satisfied! (One of those courses is taken!)");
                                         }
                                         else
                                         {
                                             ANDeligible = false;
-                                            // Console.WriteLine("Oh no! (One of those courses is not taken)");
                                         }
                                     }
                                     //AND AND AND AND
                                     else
                                     {
-                                        // Console.WriteLine("Must take: " + course.Prereqs[i][0].Prefix);
                                         if (course.Prereqs[i][0].IsCompleted)
                                         {
-                                            //Console.WriteLine("Condition satisfied! (That course is taken)");
                                         }
                                         else
                                         {
                                             ANDeligible = false;
-                                            //Console.WriteLine("Oh no! (That course is not taken)");
                                         }
                                     }
                                 }
@@ -1288,7 +1262,6 @@ namespace RuleBasedSystem
                             }
                             else
                             {
-                                //Console.WriteLine("You are eligible to take: " + course.Prefix + "!");
                                 eligible_to_take.Add(course);
                             }
 
@@ -1296,12 +1269,10 @@ namespace RuleBasedSystem
                     }
                     else
                     {
-                        //Console.WriteLine("Course: " + course.Prefix + " is not available in the spring!");
                     }
 
                 });
             }
-
             //Normally would just be "else" instead of "else if" but we need to make sure the condition doesn't equal 0
             else if (nextSemester == 3)
             {
@@ -1309,25 +1280,18 @@ namespace RuleBasedSystem
                 {
                     if (course.Fall == true)
                     {
-                        //Console.WriteLine("Course: " + course.Prefix + " is available in the spring!");
                         if (!course.IsCompleted)
                         {
-                            //Console.WriteLine("Course: " + course.Prefix + " is not taken yet!");
-                            //bool FINALELIGIBLE = false;
                             if (course.Prereqs.Length != 0)
                             {
-                                //Console.WriteLine("Course: " + course.Prefix + " has the follow prereqs: ");
-
                                 //CHECK ALL PREREQS
                                 bool ANDeligible = true;
                                 for (int i = 0; i < course.Prereqs.Length; i++)
                                 {
-                                    //bool OReligible = true;
                                     // OR OR OR OR OR OR OR 
                                     if (course.Prereqs[i].Length > 1)
                                     {
                                         bool OReligible = false;
-                                        //Console.WriteLine("Course requires one of these to be taken: ");
                                         //CHECK THE ORS
                                         for (int j = 0; j < course.Prereqs[i].Length; j++)
                                         {
@@ -1336,26 +1300,21 @@ namespace RuleBasedSystem
                                         }
                                         if (OReligible)
                                         {
-                                            // Console.WriteLine("Condition satisfied! (One of those courses is taken!)");
                                         }
                                         else
                                         {
                                             ANDeligible = false;
-                                            // Console.WriteLine("Oh no! (One of those courses is not taken)");
                                         }
                                     }
                                     //AND AND AND AND
                                     else
                                     {
-                                        // Console.WriteLine("Must take: " + course.Prereqs[i][0].Prefix);
                                         if (course.Prereqs[i][0].IsCompleted)
                                         {
-                                            //Console.WriteLine("Condition satisfied! (That course is taken)");
                                         }
                                         else
                                         {
                                             ANDeligible = false;
-                                            //Console.WriteLine("Oh no! (That course is not taken)");
                                         }
                                     }
                                 }
@@ -1363,7 +1322,6 @@ namespace RuleBasedSystem
                             }
                             else
                             {
-                                //Console.WriteLine("You are eligible to take: " + course.Prefix + "!");
                                 eligible_to_take.Add(course);
                             }
 
@@ -1371,7 +1329,6 @@ namespace RuleBasedSystem
                     }
                     else
                     {
-                        //Console.WriteLine("Course: " + course.Prefix + " is not available in the spring!");
                     }
 
                 });
@@ -1512,9 +1469,9 @@ namespace RuleBasedSystem
         {
             compileCourses();
             Course course_to_check = new Course();
-            List<Course> reasoningList = startBackwardChaining(course_to_check);
+     //       List<Course> reasoningList = startBackwardChaining(course_to_check);
         }
-
+        
         private void forward_Click(object sender, EventArgs e)
         {
             if (pageIndex < listpanel.Count - 1)
