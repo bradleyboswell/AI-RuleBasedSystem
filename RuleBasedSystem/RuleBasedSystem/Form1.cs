@@ -1351,19 +1351,76 @@ namespace RuleBasedSystem
             {
                 if (course_to_check.Prereqs.Length != 0)
                 {
-
+                    for (int i = 0; i < course_to_check.Prereqs.Length; i++)
+                    {
+                        // Gather ORS
+                        if (course_to_check.Prereqs[i].Length > 1)
+                        {
+                            List<Course> orTemp = new List<Course>();
+                            //CHECK THE ORS
+                            for (int j = 0; j < course_to_check.Prereqs[i].Length; j++)
+                            {
+                                //Console.WriteLine("Option: " + course.Prereqs[i][j].Prefix);
+                                orTemp.Add(course_to_check.Prereqs[i][j]);
+                            }
+                            courses_related_to_target.Add(orTemp);
+                        }
+                        //AND AND AND AND
+                        else
+                        {
+                            courses_related_to_target.Add(new List<Course>() { course_to_check.Prereqs[i][0] });
+                        }
+                    }
                 }
             }
             else if (course_to_check.Spring && nextSemester == 3)
             {
                 if (course_to_check.Prereqs.Length != 0)
                 {
-
+                    for (int i = 0; i < course_to_check.Prereqs.Length; i++)
+                    {
+                        // Gather ORS
+                        if (course_to_check.Prereqs[i].Length > 1)
+                        {
+                            List<Course> orTemp = new List<Course>();
+                            //CHECK THE ORS
+                            for (int j = 0; j < course_to_check.Prereqs[i].Length; j++)
+                            {
+                                //Console.WriteLine("Option: " + course.Prereqs[i][j].Prefix);
+                                orTemp.Add(course_to_check.Prereqs[i][j]);
+                            }
+                            courses_related_to_target.Add(orTemp);
+                        }
+                        //AND AND AND AND
+                        else
+                        {
+                            courses_related_to_target.Add(new List<Course>() { course_to_check.Prereqs[i][0] });
+                        }
+                    }
                 }
             }
             else if (course_to_check.OnDemand)
             {
-
+                for (int i = 0; i < course_to_check.Prereqs.Length; i++)
+                {
+                    // Gather ORS
+                    if (course_to_check.Prereqs[i].Length > 1)
+                    {
+                        List<Course> orTemp = new List<Course>();
+                        //CHECK THE ORS
+                        for (int j = 0; j < course_to_check.Prereqs[i].Length; j++)
+                        {
+                            //Console.WriteLine("Option: " + course.Prereqs[i][j].Prefix);
+                            orTemp.Add(course_to_check.Prereqs[i][j]);
+                        }
+                        courses_related_to_target.Add(orTemp);
+                    }
+                    //AND AND AND AND
+                    else
+                    {
+                        courses_related_to_target.Add(new List<Course>() { course_to_check.Prereqs[i][0] });
+                    }
+                }
             }
 
 
@@ -1707,35 +1764,40 @@ namespace RuleBasedSystem
                 Course course_to_check = courses.Find(x => x.Prefix == ((string)backwardcbb.SelectedItem));      //Get course from UI here
                 List<List<Course>> reasoningList = startBackwardChaining(course_to_check);
                 bool isEligible = true;
-                for (int i = 0; i < reasoningList.Count; i++)
+                if (reasoningList.Count != 0)
                 {
-                    //Check OR Conditions
-                    if (reasoningList[i].Count > 1)
+                    for (int i = 0; i < reasoningList.Count; i++)
                     {
-                        bool OReligible = false;
-                        //CHECK THE ORS
-                        for (int j = 0; j < reasoningList[i].Count; j++)
+                        //Check OR Conditions
+                        if (reasoningList[i].Count > 1)
                         {
-                            //Console.WriteLine("Option: " + course.Prereqs[i][j].Prefix);
-                            if (reasoningList[i][j].IsCompleted) OReligible = true;
+                            bool OReligible = false;
+                            //CHECK THE ORS
+                            for (int j = 0; j < reasoningList[i].Count; j++)
+                            {
+                                //Console.WriteLine("Option: " + course.Prereqs[i][j].Prefix);
+                                if (reasoningList[i][j].IsCompleted) OReligible = true;
+                            }
+                            if (!OReligible)
+                            {
+                                isEligible = false;
+                            }
                         }
-                        if (!OReligible)
+                        //Check And conditions
+                        else
                         {
-                            isEligible = false;
-                        }
-                    }
-                    //Check And conditions
-                    else
-                    {
-                        if (reasoningList[i][0].IsCompleted)
-                        {
-                            isEligible = false;
+                            if (!reasoningList[i][0].IsCompleted)
+                            {
+                                isEligible = false;
+                            }
                         }
                     }
                 }
+                
                 if (isEligible)
-                    resulttxt.Text = "You are NOT eligible to take: " + course_to_check.Prefix;
-                else resulttxt.Text = "You are eligible to take: " + course_to_check.Prefix;
+                    resulttxt.Text = "You are eligible to take: " + course_to_check.Prefix;
+                else resulttxt.Text = "You are NOT eligible to take: " + course_to_check.Prefix;
+                
 
             }
 
