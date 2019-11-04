@@ -1704,9 +1704,9 @@ namespace RuleBasedSystem
             {
                 Prefix = customPrefixtxt.Text,
                 IsCompleted = Software_Security_and_Secure_Codingcb.Checked,
-                Fall = checkBox1.Checked,
+                Fall = checkBox3.Checked,
                 Summer = checkBox2.Checked,
-                Spring = checkBox3.Checked,
+                Spring = checkBox1.Checked,
                 OnDemand = checkBox4.Checked,
                 Prereqs = temp
             };
