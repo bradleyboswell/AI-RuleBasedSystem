@@ -133,15 +133,15 @@
             this.label12 = new System.Windows.Forms.Label();
             this.button23 = new System.Windows.Forms.Button();
             this.panel15 = new System.Windows.Forms.Panel();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
+            this.Distributed_Web_Systems_Designcb = new System.Windows.Forms.CheckBox();
             this.button24 = new System.Windows.Forms.Button();
             this.button27 = new System.Windows.Forms.Button();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
-            this.checkBox8 = new System.Windows.Forms.CheckBox();
-            this.checkBox9 = new System.Windows.Forms.CheckBox();
-            this.checkBox10 = new System.Windows.Forms.CheckBox();
+            this.Computer_Securitycb = new System.Windows.Forms.CheckBox();
+            this.Object_Oriented_Designcb = new System.Windows.Forms.CheckBox();
+            this.Data_Comm_and_Networkingcb = new System.Windows.Forms.CheckBox();
+            this.Computer_Architecturecb = new System.Windows.Forms.CheckBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.checkBox11 = new System.Windows.Forms.CheckBox();
+            this.Software_Engineeringcb = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -1369,31 +1369,31 @@
             // 
             // panel15
             // 
-            this.panel15.Controls.Add(this.checkBox11);
-            this.panel15.Controls.Add(this.checkBox6);
+            this.panel15.Controls.Add(this.Software_Engineeringcb);
+            this.panel15.Controls.Add(this.Distributed_Web_Systems_Designcb);
             this.panel15.Controls.Add(this.button24);
             this.panel15.Controls.Add(this.button27);
-            this.panel15.Controls.Add(this.checkBox7);
-            this.panel15.Controls.Add(this.checkBox8);
-            this.panel15.Controls.Add(this.checkBox9);
-            this.panel15.Controls.Add(this.checkBox10);
+            this.panel15.Controls.Add(this.Computer_Securitycb);
+            this.panel15.Controls.Add(this.Object_Oriented_Designcb);
+            this.panel15.Controls.Add(this.Data_Comm_and_Networkingcb);
+            this.panel15.Controls.Add(this.Computer_Architecturecb);
             this.panel15.Controls.Add(this.label13);
             this.panel15.Location = new System.Drawing.Point(12, 12);
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(760, 437);
             this.panel15.TabIndex = 19;
             // 
-            // checkBox6
+            // Distributed_Web_Systems_Designcb
             // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox6.Location = new System.Drawing.Point(181, 268);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.checkBox6.Size = new System.Drawing.Size(404, 28);
-            this.checkBox6.TabIndex = 11;
-            this.checkBox6.Text = "CSCI 5436 - Distributed Web Systems Design";
-            this.checkBox6.UseVisualStyleBackColor = true;
+            this.Distributed_Web_Systems_Designcb.AutoSize = true;
+            this.Distributed_Web_Systems_Designcb.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Distributed_Web_Systems_Designcb.Location = new System.Drawing.Point(181, 268);
+            this.Distributed_Web_Systems_Designcb.Name = "Distributed_Web_Systems_Designcb";
+            this.Distributed_Web_Systems_Designcb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Distributed_Web_Systems_Designcb.Size = new System.Drawing.Size(404, 28);
+            this.Distributed_Web_Systems_Designcb.TabIndex = 11;
+            this.Distributed_Web_Systems_Designcb.Text = "CSCI 5436 - Distributed Web Systems Design";
+            this.Distributed_Web_Systems_Designcb.UseVisualStyleBackColor = true;
             // 
             // button24
             // 
@@ -1415,53 +1415,53 @@
             this.button27.UseVisualStyleBackColor = true;
             this.button27.Click += new System.EventHandler(this.forward_Click);
             // 
-            // checkBox7
+            // Computer_Securitycb
             // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox7.Location = new System.Drawing.Point(181, 226);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.checkBox7.Size = new System.Drawing.Size(287, 28);
-            this.checkBox7.TabIndex = 4;
-            this.checkBox7.Text = "CSCI 5431 - Computer Security";
-            this.checkBox7.UseVisualStyleBackColor = true;
+            this.Computer_Securitycb.AutoSize = true;
+            this.Computer_Securitycb.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Computer_Securitycb.Location = new System.Drawing.Point(181, 226);
+            this.Computer_Securitycb.Name = "Computer_Securitycb";
+            this.Computer_Securitycb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Computer_Securitycb.Size = new System.Drawing.Size(287, 28);
+            this.Computer_Securitycb.TabIndex = 4;
+            this.Computer_Securitycb.Text = "CSCI 5431 - Computer Security";
+            this.Computer_Securitycb.UseVisualStyleBackColor = true;
             // 
-            // checkBox8
+            // Object_Oriented_Designcb
             // 
-            this.checkBox8.AutoSize = true;
-            this.checkBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox8.Location = new System.Drawing.Point(181, 184);
-            this.checkBox8.Name = "checkBox8";
-            this.checkBox8.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.checkBox8.Size = new System.Drawing.Size(329, 28);
-            this.checkBox8.TabIndex = 3;
-            this.checkBox8.Text = "CSCI 5335 - Object Oriented Design";
-            this.checkBox8.UseVisualStyleBackColor = true;
+            this.Object_Oriented_Designcb.AutoSize = true;
+            this.Object_Oriented_Designcb.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Object_Oriented_Designcb.Location = new System.Drawing.Point(181, 184);
+            this.Object_Oriented_Designcb.Name = "Object_Oriented_Designcb";
+            this.Object_Oriented_Designcb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Object_Oriented_Designcb.Size = new System.Drawing.Size(329, 28);
+            this.Object_Oriented_Designcb.TabIndex = 3;
+            this.Object_Oriented_Designcb.Text = "CSCI 5335 - Object Oriented Design";
+            this.Object_Oriented_Designcb.UseVisualStyleBackColor = true;
             // 
-            // checkBox9
+            // Data_Comm_and_Networkingcb
             // 
-            this.checkBox9.AutoSize = true;
-            this.checkBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox9.Location = new System.Drawing.Point(181, 140);
-            this.checkBox9.Name = "checkBox9";
-            this.checkBox9.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.checkBox9.Size = new System.Drawing.Size(367, 28);
-            this.checkBox9.TabIndex = 2;
-            this.checkBox9.Text = "CSCI 5332 - Data Comm and Networking";
-            this.checkBox9.UseVisualStyleBackColor = true;
+            this.Data_Comm_and_Networkingcb.AutoSize = true;
+            this.Data_Comm_and_Networkingcb.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Data_Comm_and_Networkingcb.Location = new System.Drawing.Point(181, 140);
+            this.Data_Comm_and_Networkingcb.Name = "Data_Comm_and_Networkingcb";
+            this.Data_Comm_and_Networkingcb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Data_Comm_and_Networkingcb.Size = new System.Drawing.Size(367, 28);
+            this.Data_Comm_and_Networkingcb.TabIndex = 2;
+            this.Data_Comm_and_Networkingcb.Text = "CSCI 5332 - Data Comm and Networking";
+            this.Data_Comm_and_Networkingcb.UseVisualStyleBackColor = true;
             // 
-            // checkBox10
+            // Computer_Architecturecb
             // 
-            this.checkBox10.AutoSize = true;
-            this.checkBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox10.Location = new System.Drawing.Point(181, 94);
-            this.checkBox10.Name = "checkBox10";
-            this.checkBox10.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.checkBox10.Size = new System.Drawing.Size(321, 28);
-            this.checkBox10.TabIndex = 1;
-            this.checkBox10.Text = "CSCI 5331 - Computer Architecture";
-            this.checkBox10.UseVisualStyleBackColor = true;
+            this.Computer_Architecturecb.AutoSize = true;
+            this.Computer_Architecturecb.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Computer_Architecturecb.Location = new System.Drawing.Point(181, 94);
+            this.Computer_Architecturecb.Name = "Computer_Architecturecb";
+            this.Computer_Architecturecb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Computer_Architecturecb.Size = new System.Drawing.Size(321, 28);
+            this.Computer_Architecturecb.TabIndex = 1;
+            this.Computer_Architecturecb.Text = "CSCI 5331 - Computer Architecture";
+            this.Computer_Architecturecb.UseVisualStyleBackColor = true;
             // 
             // label13
             // 
@@ -1476,17 +1476,17 @@
             this.label13.Text = "Major Required Courses (Part 2/2)";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // checkBox11
+            // Software_Engineeringcb
             // 
-            this.checkBox11.AutoSize = true;
-            this.checkBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox11.Location = new System.Drawing.Point(181, 309);
-            this.checkBox11.Name = "checkBox11";
-            this.checkBox11.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.checkBox11.Size = new System.Drawing.Size(313, 28);
-            this.checkBox11.TabIndex = 12;
-            this.checkBox11.Text = "CSCI 5530 - Software Engineering";
-            this.checkBox11.UseVisualStyleBackColor = true;
+            this.Software_Engineeringcb.AutoSize = true;
+            this.Software_Engineeringcb.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Software_Engineeringcb.Location = new System.Drawing.Point(181, 309);
+            this.Software_Engineeringcb.Name = "Software_Engineeringcb";
+            this.Software_Engineeringcb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Software_Engineeringcb.Size = new System.Drawing.Size(313, 28);
+            this.Software_Engineeringcb.TabIndex = 12;
+            this.Software_Engineeringcb.Text = "CSCI 5530 - Software Engineering";
+            this.Software_Engineeringcb.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -1650,15 +1650,15 @@
         private System.Windows.Forms.RadioButton summerbtn;
         private System.Windows.Forms.RadioButton springbtn;
         private System.Windows.Forms.Panel panel15;
-        private System.Windows.Forms.CheckBox checkBox6;
+        private System.Windows.Forms.CheckBox Distributed_Web_Systems_Designcb;
         private System.Windows.Forms.Button button24;
         private System.Windows.Forms.Button button27;
-        private System.Windows.Forms.CheckBox checkBox7;
-        private System.Windows.Forms.CheckBox checkBox8;
-        private System.Windows.Forms.CheckBox checkBox9;
-        private System.Windows.Forms.CheckBox checkBox10;
+        private System.Windows.Forms.CheckBox Computer_Securitycb;
+        private System.Windows.Forms.CheckBox Object_Oriented_Designcb;
+        private System.Windows.Forms.CheckBox Data_Comm_and_Networkingcb;
+        private System.Windows.Forms.CheckBox Computer_Architecturecb;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.CheckBox checkBox11;
+        private System.Windows.Forms.CheckBox Software_Engineeringcb;
     }
 }
 
