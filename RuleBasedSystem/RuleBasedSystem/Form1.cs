@@ -465,7 +465,7 @@ namespace RuleBasedSystem
             Course Principles_Of_Biology_1_With_Lab = new Course
             {
                 Prefix = "BIOL 1107 & 1107L",
-                IsCompleted = Principles_of_Biology_1_with_labcb.Checked,
+                IsCompleted = Principles_Of_Biology_1_With_Labcb.Checked,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -548,7 +548,7 @@ namespace RuleBasedSystem
             Course Cpp_Programming = new Course
             {
                 Prefix = "CSCI 2490",
-                IsCompleted = Cpp_Programming.Checked,
+                IsCompleted = Cpp_Programmingcb.Checked,
                 Fall = false,
                 Summer = false,
                 Spring = false,
@@ -558,7 +558,7 @@ namespace RuleBasedSystem
             Course Introduction_To_Operating_Systems = new Course
             {
                 Prefix = "CSCI 3341",
-                IsCompleted = Introduction_To_Operating_Systemscb.Checked,
+                IsCompleted = Introduction_to_Operating_Systemcb.Checked,
                 Fall = true,
                 Summer = false,
                 Spring = false,
@@ -608,7 +608,7 @@ namespace RuleBasedSystem
             Course Data_Communications_And_Networking = new Course
             {
                 Prefix = "CSCI 5332",
-                IsCompleted = Data_Communications_And_Networkingcb.Checked,
+                IsCompleted = Data_Comm_and_Networkingcb.Checked,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -668,7 +668,7 @@ namespace RuleBasedSystem
             Course Logic_Circuit_Design = new Course
             {
                 Prefix = "ENGR 2332",
-                IsCompleted = Logic_Circuit_Designcb.Checked,
+                IsCompleted = Introduction_to_Computer_Engineeringcb.Checked,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -881,7 +881,7 @@ namespace RuleBasedSystem
             Course Introduction_To_BASIC_Programming = new Course
             {
                 Prefix = "CSCI 1230",
-                IsCompleted = Introduction_To_BASIC_Programmingcb.Checked,
+                IsCompleted = Introduction_to_BASIC_Programmingcb.Checked,
                 Fall = false,
                 Summer = false,
                 Spring = false,
@@ -891,7 +891,7 @@ namespace RuleBasedSystem
             Course Introduction_To_Java_Programming = new Course
             {
                 Prefix = "CSCI 1236",
-                IsCompleted = Introduction_To_Java_Programmingcb.Checked,
+                IsCompleted = Introduction_to_Java_Programmingcb.Checked,
                 Fall = false,
                 Summer = false,
                 Spring = false,
@@ -1001,7 +1001,7 @@ namespace RuleBasedSystem
             Course Directed_Study_In_Computer_Science = new Course
             {
                 Prefix = "CSCI 4890",
-                IsCompleted = Directed_Study_In_Computer_Sciencecb.Checked,
+                IsCompleted = Directed_Study_in_Computer_Sciencecb.Checked,
                 Fall = false,
                 Summer = false,
                 Spring = false,
@@ -1011,7 +1011,7 @@ namespace RuleBasedSystem
             Course Data_Management_For_Math_And_The_Sciences = new Course
             {
                 Prefix = "CSCI 5130",
-                IsCompleted = Data_Management_For_Math_And_The_Sciencescb.Checked,
+                IsCompleted = Data_Management_for_Math_and_the_Sciencescb.Checked,
                 Fall = false,
                 Summer = false,
                 Spring = false,
@@ -1021,7 +1021,7 @@ namespace RuleBasedSystem
             Course Software_Security_And_Secure_Coding = new Course
             {
                 Prefix = "CSCI 5380",
-                IsCompleted = Software_Security_And_Secure_Codingcb.Checked,
+                IsCompleted = Software_Security_and_Secure_Codingcb.Checked,
                 Fall = false,
                 Summer = false,
                 Spring = false,
@@ -1105,7 +1105,6 @@ namespace RuleBasedSystem
                 Broadband_Networks,
                 Optical_Networks,
                 Selected_Topics,
-                Discrete_Simulation,
                 Artificial_Intelligence,
                 Computer_Graphics,
                 Animation,
@@ -1475,20 +1474,24 @@ namespace RuleBasedSystem
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            listpanel.Add(panel1);
-            listpanel.Add(panel2);
-            listpanel.Add(panel3);
-            listpanel.Add(panel4);
-            listpanel.Add(panel5);
-            listpanel.Add(panel6);
-            listpanel.Add(panel7);
-            listpanel.Add(panel8);
-            listpanel.Add(panel9);
-            listpanel.Add(panel10);
-            listpanel.Add(panel11);
-            listpanel.Add(panel12);
-            listpanel.Add(panel13);
-            listpanel.Add(panel14);
+            listpanel.Add(HomePanel);
+            listpanel.Add(AreaAPanel);
+            listpanel.Add(AreaBPanel);
+            listpanel.Add(AreaCPanel);
+            listpanel.Add(AreaDPanel);
+            listpanel.Add(AreaEPanel);
+            listpanel.Add(URPanel);
+            listpanel.Add(AreaFPanel);
+            listpanel.Add(SIRPanel);
+            listpanel.Add(SLSsRPanel);
+            listpanel.Add(MRC1Panel);
+            listpanel.Add(MRC2Panel);
+            listpanel.Add(E1Panel);
+            listpanel.Add(E2Panel);
+            listpanel.Add(CustomClassesPanel);
+            listpanel.Add(SeasonPanel);
+            listpanel.Add(ChainingPanel);
+            listpanel.Add(EligibleCoursesPanel);
         }
 
         private void button21_Click(object sender, EventArgs e)
@@ -1529,5 +1532,10 @@ namespace RuleBasedSystem
             
         }
 
+        private void button36_Click(object sender, EventArgs e)
+        {
+            pageIndex = 0;
+            listpanel[0].BringToFront();
+        }
     }
 }
