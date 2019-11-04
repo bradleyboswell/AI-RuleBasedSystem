@@ -1159,7 +1159,7 @@ namespace RuleBasedSystem
             {
                 courses.ForEach(course =>
                 {
-                    if (course.Spring == true)
+                    if (course.Spring == true || course.OnDemand == true)
                     {
                         if (!course.IsCompleted)
                         {
@@ -1178,11 +1178,7 @@ namespace RuleBasedSystem
                                             //Console.WriteLine("Option: " + course.Prereqs[i][j].Prefix);
                                             if (course.Prereqs[i][j].IsCompleted) OReligible = true;
                                         }
-                                        if (OReligible)
-                                        {
-
-                                        }
-                                        else
+                                        if (!OReligible)
                                         {
                                             ANDeligible = false;
                                         }
@@ -1190,10 +1186,7 @@ namespace RuleBasedSystem
                                     //AND AND AND AND
                                     else
                                     {
-                                        if (course.Prereqs[i][0].IsCompleted)
-                                        {
-                                        }
-                                        else
+                                        if (!course.Prereqs[i][0].IsCompleted)
                                         {
                                             ANDeligible = false;
                                         }
@@ -1205,20 +1198,15 @@ namespace RuleBasedSystem
                             {
                                 eligible_to_take.Add(course);
                             }
-
                         }
                     }
-                    else
-                    {
-                    }
-
                 });
             }
             else if (nextSemester == 2)
             {
                 courses.ForEach(course =>
                 {
-                    if (course.Summer == true)
+                    if (course.Summer == true || course.OnDemand == true)
                     {
                         if (!course.IsCompleted)
                         {
@@ -1238,10 +1226,7 @@ namespace RuleBasedSystem
                                             //Console.WriteLine("Option: " + course.Prereqs[i][j].Prefix);
                                             if (course.Prereqs[i][j].IsCompleted) OReligible = true;
                                         }
-                                        if (OReligible)
-                                        {
-                                        }
-                                        else
+                                        if (!OReligible)
                                         {
                                             ANDeligible = false;
                                         }
@@ -1249,10 +1234,7 @@ namespace RuleBasedSystem
                                     //AND AND AND AND
                                     else
                                     {
-                                        if (course.Prereqs[i][0].IsCompleted)
-                                        {
-                                        }
-                                        else
+                                        if (!course.Prereqs[i][0].IsCompleted)
                                         {
                                             ANDeligible = false;
                                         }
@@ -1264,13 +1246,8 @@ namespace RuleBasedSystem
                             {
                                 eligible_to_take.Add(course);
                             }
-
                         }
                     }
-                    else
-                    {
-                    }
-
                 });
             }
             //Normally would just be "else" instead of "else if" but we need to make sure the condition doesn't equal 0
@@ -1278,7 +1255,7 @@ namespace RuleBasedSystem
             {
                 courses.ForEach(course =>
                 {
-                    if (course.Fall == true)
+                    if (course.Fall == true || course.OnDemand == true )
                     {
                         if (!course.IsCompleted)
                         {
@@ -1298,10 +1275,7 @@ namespace RuleBasedSystem
                                             //Console.WriteLine("Option: " + course.Prereqs[i][j].Prefix);
                                             if (course.Prereqs[i][j].IsCompleted) OReligible = true;
                                         }
-                                        if (OReligible)
-                                        {
-                                        }
-                                        else
+                                        if (!OReligible)
                                         {
                                             ANDeligible = false;
                                         }
@@ -1310,9 +1284,6 @@ namespace RuleBasedSystem
                                     else
                                     {
                                         if (course.Prereqs[i][0].IsCompleted)
-                                        {
-                                        }
-                                        else
                                         {
                                             ANDeligible = false;
                                         }
@@ -1324,15 +1295,11 @@ namespace RuleBasedSystem
                             {
                                 eligible_to_take.Add(course);
                             }
-
                         }
                     }
-                    else
-                    {
-                    }
-
                 });
             }
+
             return eligible_to_take;
         }
 
@@ -1455,11 +1422,29 @@ namespace RuleBasedSystem
         {
             compileCourses();
             List<Course> eligible_courses = startForwardChaining();
-            string result = "";
+            List<Course> confirmed_courses = new List<Course>();
+            List<Course> on_demand_courses = new List<Course>();
+
             foreach (Course c in eligible_courses)
             {
-                result += "Eligible to take next semester: " + c.Prefix;
+                if (c.OnDemand) on_demand_courses.Add(c);
+                else confirmed_courses.Add(c);
+            }
+
+            string result = "Eligible to take next semester: ";
+            foreach (Course c in eligible_courses)
+            {
                 result += Environment.NewLine;
+                result += c.Prefix;
+            }
+            result += Environment.NewLine;
+            result += Environment.NewLine;
+
+            result += "These Courses may be available on demand: ";
+            foreach (Course c in on_demand_courses)
+            {
+                result += Environment.NewLine;
+                result += c.Prefix;
             }
             Eligible_CoursesTxt.Text = result;
             forward_Click(sender, e);
