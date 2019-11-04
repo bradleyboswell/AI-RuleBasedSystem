@@ -16,6 +16,7 @@ namespace RuleBasedSystem
     public partial class Form1 : Form
     {
         List<Course> courses = null;
+        List<Course> customCourses = null;
         List<Panel> listpanel = new List<Panel>();
         int pageIndex = 0;
         //1 = Spring, 2 = Summer, 3 = Fall
@@ -1147,8 +1148,21 @@ namespace RuleBasedSystem
                 Survey_of_Calculus,
                 Elementary_Statistics,
                 Computing_for_Engineers
-
             };
+            if (customCourses != null)
+            {
+                foreach (Course c in customCourses)
+                {
+                    ReestablishReferences(c);
+                }
+                foreach (Course c in customCourses)
+                {
+                    courses.Add(c);
+                }
+            }
+
+
+
         }
 
         public List<Course> startForwardChaining()
@@ -1340,7 +1354,7 @@ namespace RuleBasedSystem
 
                 }
             }
-            else if(course_to_check.Spring && nextSemester == 3)
+            else if (course_to_check.Spring && nextSemester == 3)
             {
                 if (course_to_check.Prereqs.Length != 0)
                 {
@@ -1416,6 +1430,30 @@ namespace RuleBasedSystem
                     return Prefix + " has been passed with a C or better";
                 }
             }
+        }
+
+        //Fixing custom class references
+        public void ReestablishReferences(Course c)
+        {
+            if (c.Prereqs.Length > 0)
+            {
+                for (int i = 0; i < c.Prereqs.Length; i++)
+                {
+                    if (c.Prereqs[i].Length > 0)
+                    {
+                        for (int k = 0; k < c.Prereqs[i].Length; k++)
+                        {
+                            for (int j = 0; j < courses.Count; j++)
+                            {
+                                if (courses[j].Prefix == c.Prereqs[i][k].Prefix)
+                                    c.Prereqs[i][k] = courses[j];
+                            }
+                        }
+                    }
+
+                }
+            }
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -1523,13 +1561,27 @@ namespace RuleBasedSystem
             {
                 listpanel[--pageIndex].BringToFront();
             }
-            
+
         }
 
         private void button36_Click(object sender, EventArgs e)
         {
+            clearCustom();
             pageIndex = 0;
             listpanel[0].BringToFront();
+        }
+
+        private void clearCustom()
+        {
+            prereqscbb.Text = "";
+            customPrefixtxt.Text = "";
+            customPrereqstxt.Text = "";
+            ORtxt.Text = "";
+            customNametxt.Text = "";
+            checkBox1.Checked = false;
+            checkBox2.Checked = false;
+            checkBox3.Checked = false;
+            checkBox4.Checked = false;
         }
 
         private void button38_Click(object sender, EventArgs e)
@@ -1539,12 +1591,129 @@ namespace RuleBasedSystem
 
         private void button32_Click(object sender, EventArgs e)
         {
-            foreach(Course c in courses)
+            compileCourses();
+            foreach (Course c in courses)
             {
-                prereqscbb.Text += c.Prefix;
-                prereqscbb.Text += Environment.NewLine;
+                prereqscbb.Items.Add(c.Prefix);
             }
             CreateCoursePanel.BringToFront();
+        }
+
+        private void button39_Click(object sender, EventArgs e)
+        {
+            ORtxt.Text = "";
+        }
+
+        private void button40_Click(object sender, EventArgs e)
+        {
+            string result = "[";
+            result += ORtxt.Text;
+            result = result.Replace("\r\n", ",");
+            result = result.Remove(result.Length - 1);
+            result += "]\r\n";
+            Console.WriteLine(result);
+            customPrereqstxt.AppendText(result);
+            ORtxt.Text = "";
+        }
+
+        private void button37_Click(object sender, EventArgs e)
+        {
+            customPrereqstxt.Text += prereqscbb.Text;
+            customPrereqstxt.Text += Environment.NewLine;
+        }
+
+        private void button41_Click(object sender, EventArgs e)
+        {
+            ORtxt.Text += prereqscbb.Text;
+            ORtxt.Text += Environment.NewLine;
+        }
+
+        private void checkBox4_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox4.Checked)
+            {
+                checkBox1.Checked = false;
+                checkBox2.Checked = false;
+                checkBox3.Checked = false;
+            }
+        }
+
+        private void seasonbox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked || checkBox2.Checked || checkBox3.Checked)
+            {
+                checkBox4.Checked = false;
+            }
+        }
+
+        private void clearBtn_Click(object sender, EventArgs e)
+        {
+            clearCustom();
+        }
+
+
+        //Create Custom Class
+        private void button35_Click(object sender, EventArgs e)
+        {
+            if (customCourses == null)
+            {
+                customCourses = new List<Course>();
+            }
+
+            string strtext = customPrereqstxt.Text;
+            customClassesBox.Items.Add(customNametxt.Text);
+            var textArr = strtext.Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries);
+
+            Course[][] temp = new Course[textArr.Length][];
+            for (int i = 0; i < textArr.Length; i++)
+            {
+                if (textArr[i].StartsWith("["))
+                {
+                    textArr[i] = textArr[i].Remove(0, 1);
+                    textArr[i] = textArr[i].Remove(textArr[i].Length - 1);
+                    var sepCommas = textArr[i].Split(new string[] { "," }, StringSplitOptions.RemoveEmptyEntries);
+                    Course[] or = new Course[sepCommas.Length];
+                    for (int p = 0; p < sepCommas.Length; p++)
+                    {
+
+
+                        for (int c = 0; c < courses.Count; c++)
+                        {
+                            if (courses[c].Prefix == sepCommas[p])
+                            {
+                                or[p] = courses[c];
+                            }
+                        }
+                    }
+                    temp[i] = or;
+                }
+                else
+                {
+                    for (int c = 0; c < courses.Count; c++)
+                    {
+
+                        if (courses[c].Prefix == textArr[i])
+                        {
+                            temp[i] = new Course[] { courses[c] };
+                        }
+                    }
+                }
+            }
+
+            Course custom = new Course
+            {
+                Prefix = customPrefixtxt.Text,
+                IsCompleted = Software_Security_and_Secure_Codingcb.Checked,
+                Fall = checkBox1.Checked,
+                Summer = checkBox2.Checked,
+                Spring = checkBox3.Checked,
+                OnDemand = checkBox4.Checked,
+                Prereqs = temp
+            };
+
+
+            customCourses.Add(custom);
+            clearCustom();
         }
     }
 }
