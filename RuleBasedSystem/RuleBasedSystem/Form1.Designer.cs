@@ -197,6 +197,7 @@
             this.Handheld_Ubiquitous_Computingcb = new System.Windows.Forms.CheckBox();
             this.label15 = new System.Windows.Forms.Label();
             this.CreateCoursePanel = new System.Windows.Forms.Panel();
+            this.label21 = new System.Windows.Forms.Label();
             this.clearBtn = new System.Windows.Forms.Button();
             this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.button41 = new System.Windows.Forms.Button();
@@ -223,12 +224,11 @@
             this.button33 = new System.Windows.Forms.Button();
             this.button34 = new System.Windows.Forms.Button();
             this.label17 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
             this.CanTakePanel = new System.Windows.Forms.Panel();
-            this.button44 = new System.Windows.Forms.Button();
-            this.backwardcbb = new System.Windows.Forms.ComboBox();
-            this.resulttxt = new System.Windows.Forms.Label();
+            this.resulttxt = new System.Windows.Forms.TextBox();
             this.checkEliBtn = new System.Windows.Forms.Button();
+            this.backwardcbb = new System.Windows.Forms.ComboBox();
+            this.button44 = new System.Windows.Forms.Button();
             this.HomePanel.SuspendLayout();
             this.AreaAPanel.SuspendLayout();
             this.AreaBPanel.SuspendLayout();
@@ -2286,6 +2286,15 @@
             this.CreateCoursePanel.Size = new System.Drawing.Size(760, 437);
             this.CreateCoursePanel.TabIndex = 22;
             // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(68, 239);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(62, 13);
+            this.label21.TabIndex = 30;
+            this.label21.Text = "Course List:";
+            // 
             // clearBtn
             // 
             this.clearBtn.Location = new System.Drawing.Point(610, 337);
@@ -2547,19 +2556,10 @@
             this.label17.Text = "Custom Classes";
             this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(68, 239);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(62, 13);
-            this.label21.TabIndex = 30;
-            this.label21.Text = "Course List:";
-            // 
             // CanTakePanel
             // 
-            this.CanTakePanel.Controls.Add(this.checkEliBtn);
             this.CanTakePanel.Controls.Add(this.resulttxt);
+            this.CanTakePanel.Controls.Add(this.checkEliBtn);
             this.CanTakePanel.Controls.Add(this.backwardcbb);
             this.CanTakePanel.Controls.Add(this.button44);
             this.CanTakePanel.Location = new System.Drawing.Point(12, 12);
@@ -2567,34 +2567,16 @@
             this.CanTakePanel.Size = new System.Drawing.Size(760, 437);
             this.CanTakePanel.TabIndex = 24;
             // 
-            // button44
-            // 
-            this.button44.Location = new System.Drawing.Point(60, 380);
-            this.button44.Name = "button44";
-            this.button44.Size = new System.Drawing.Size(75, 23);
-            this.button44.TabIndex = 10;
-            this.button44.Text = "Back";
-            this.button44.UseVisualStyleBackColor = true;
-            this.button44.Click += new System.EventHandler(this.button44_Click);
-            // 
-            // backwardcbb
-            // 
-            this.backwardcbb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.backwardcbb.FormattingEnabled = true;
-            this.backwardcbb.Location = new System.Drawing.Point(148, 147);
-            this.backwardcbb.Name = "backwardcbb";
-            this.backwardcbb.Size = new System.Drawing.Size(206, 21);
-            this.backwardcbb.TabIndex = 11;
-            // 
             // resulttxt
             // 
-            this.resulttxt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.resulttxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.resulttxt.Location = new System.Drawing.Point(0, 235);
+            this.resulttxt.BackColor = System.Drawing.SystemColors.Window;
+            this.resulttxt.Location = new System.Drawing.Point(49, 183);
+            this.resulttxt.Multiline = true;
             this.resulttxt.Name = "resulttxt";
-            this.resulttxt.Size = new System.Drawing.Size(760, 55);
-            this.resulttxt.TabIndex = 12;
-            this.resulttxt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.resulttxt.ReadOnly = true;
+            this.resulttxt.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.resulttxt.Size = new System.Drawing.Size(674, 177);
+            this.resulttxt.TabIndex = 14;
             // 
             // checkEliBtn
             // 
@@ -2606,14 +2588,33 @@
             this.checkEliBtn.UseVisualStyleBackColor = true;
             this.checkEliBtn.Click += new System.EventHandler(this.checkEliBtn_Click);
             // 
+            // backwardcbb
+            // 
+            this.backwardcbb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.backwardcbb.FormattingEnabled = true;
+            this.backwardcbb.Location = new System.Drawing.Point(148, 147);
+            this.backwardcbb.Name = "backwardcbb";
+            this.backwardcbb.Size = new System.Drawing.Size(206, 21);
+            this.backwardcbb.TabIndex = 11;
+            // 
+            // button44
+            // 
+            this.button44.Location = new System.Drawing.Point(60, 380);
+            this.button44.Name = "button44";
+            this.button44.Size = new System.Drawing.Size(75, 23);
+            this.button44.TabIndex = 10;
+            this.button44.Text = "Back";
+            this.button44.UseVisualStyleBackColor = true;
+            this.button44.Click += new System.EventHandler(this.button44_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 461);
             this.Controls.Add(this.HomePanel);
-            this.Controls.Add(this.ChainingPanel);
             this.Controls.Add(this.CanTakePanel);
+            this.Controls.Add(this.ChainingPanel);
             this.Controls.Add(this.AreaDPanel);
             this.Controls.Add(this.CreateCoursePanel);
             this.Controls.Add(this.CustomClassesPanel);
@@ -2670,6 +2671,7 @@
             this.CreateCoursePanel.PerformLayout();
             this.CustomClassesPanel.ResumeLayout(false);
             this.CanTakePanel.ResumeLayout(false);
+            this.CanTakePanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -2875,8 +2877,8 @@
         private System.Windows.Forms.Panel CanTakePanel;
         private System.Windows.Forms.Button button44;
         private System.Windows.Forms.Button checkEliBtn;
-        private System.Windows.Forms.Label resulttxt;
         private System.Windows.Forms.ComboBox backwardcbb;
+        private System.Windows.Forms.TextBox resulttxt;
     }
 }
 
