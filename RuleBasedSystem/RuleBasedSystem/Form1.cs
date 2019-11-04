@@ -15,14 +15,20 @@ namespace RuleBasedSystem
 {
     public partial class Form1 : Form
     {
-
+        List<Course> courses = null;
+        List<Panel> listpanel = new List<Panel>();
+        int pageIndex = 0;
         public Form1()
         {
             InitializeComponent();
-           
+
             //Maybe have radio button for which term the student is looking to take classes for
             //For now we will look for Spring
 
+        }
+
+        public void compileCourses()
+        {
             //1 = Spring, 2 = Summer, 3 = Fall
             int nextSemester = 1;
 
@@ -72,7 +78,7 @@ namespace RuleBasedSystem
             Course Composition_1 = new Course
             {
                 Prefix = "ENGL 1101",
-                IsCompleted = true,
+                IsCompleted = Composition_1cb.Checked,
                 Fall = true,
                 Summer = true,
                 Spring = true,
@@ -888,7 +894,7 @@ namespace RuleBasedSystem
                 Summer = false,
                 Spring = false,
                 OnDemand = true,
-                Prereqs = new Course[][] { new Course[] { College_Algebra, Pre_Calculus, Survey_of_Calculus, Calculus_1} }
+                Prereqs = new Course[][] { new Course[] { College_Algebra, Pre_Calculus, Survey_of_Calculus, Calculus_1 } }
             };
             Course Networks = new Course
             {
@@ -988,7 +994,7 @@ namespace RuleBasedSystem
                 Summer = false,
                 Spring = false,
                 OnDemand = true,
-                Prereqs = new Course[][] {}
+                Prereqs = new Course[][] { }
             };
             Course Directed_Study_In_Computer_Science = new Course
             {
@@ -1022,13 +1028,7 @@ namespace RuleBasedSystem
             };
 
 
-
-
-
-
-
-
-            List<Course> courses = new List<Course>
+            courses = new List<Course>
             {
                 Composition_1,
                 Composition_2,
@@ -1138,8 +1138,15 @@ namespace RuleBasedSystem
                 Software_Security_And_Secure_Coding
             };
 
+
             List<Course> eligible_courses = startForwardChaining(nextSemester, courses);
-            foreach (Course c in eligible_courses) Console.WriteLine("Eligible to take next semester: " + c.Prefix);
+            string result = "";
+            foreach (Course c in eligible_courses)
+            {
+                result += "Eligible to take next semester: " + c.Prefix;
+                result += Environment.NewLine;
+            }
+            Eligible_CoursesTxt.Text = result;
         }
 
         public List<Course> startForwardChaining(int nextSemester, List<Course> courses)
@@ -1491,7 +1498,47 @@ namespace RuleBasedSystem
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            listpanel.Add(panel1);
+            listpanel.Add(panel2);
+            listpanel.Add(panel3);
+            listpanel.Add(panel4);
+            listpanel.Add(panel5);
+            listpanel.Add(panel6);
+            listpanel.Add(panel7);
+            listpanel.Add(panel8);
+            listpanel.Add(panel9);
+            listpanel.Add(panel10);
+            listpanel.Add(panel11);
+            listpanel.Add(panel12);
+            listpanel.Add(panel13);
+        }
 
+        private void button21_Click(object sender, EventArgs e)
+        {
+            compileCourses();
+            forward_Click(sender, e);
+        }
+
+        private void button22_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void forward_Click(object sender, EventArgs e)
+        {
+            if (pageIndex < listpanel.Count - 1)
+            {
+                listpanel[++pageIndex].BringToFront();
+            }
+        }
+
+        private void back_Click(object sender, EventArgs e)
+        {
+            if (pageIndex > 0)
+            {
+                listpanel[--pageIndex].BringToFront();
+            }
+            
         }
 
     }
