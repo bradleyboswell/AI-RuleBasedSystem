@@ -1286,7 +1286,6 @@ namespace RuleBasedSystem
                                         //CHECK THE ORS
                                         for (int j = 0; j < course.Prereqs[i].Length; j++)
                                         {
-                                            //Console.WriteLine("Option: " + course.Prereqs[i][j].Prefix);
                                             if (course.Prereqs[i][j].IsCompleted) OReligible = true;
                                         }
                                         if (!OReligible)
@@ -1774,8 +1773,7 @@ namespace RuleBasedSystem
                             bool OReligible = false;
                             //CHECK THE ORS
                             for (int j = 0; j < reasoningList[i].Count; j++)
-                            {
-                                    
+                            {                                    
                                 if (reasoningList[i][j].IsCompleted) OReligible = true;
                             }
                             if (!OReligible)
@@ -1797,12 +1795,16 @@ namespace RuleBasedSystem
                 string s = "";
                 if (isEligible)
                 {
-                    resulttxt.Text = "You are eligible to take: " + course_to_check.Prefix;
-                    s += "You satisfy the pre-requisite requirements for: ";
+                    s += "You are eligible to take: " + course_to_check.Prefix;
+                    s += Environment.NewLine;
+                    s += Environment.NewLine;
+                    s += "You satisfy these pre-requisite requirements: ";
                 }
                 else
                 {
-                    resulttxt.Text = "You are NOT eligible to take: " + course_to_check.Prefix;
+                    s += "You are NOT eligible to take: " + course_to_check.Prefix;
+                    s += Environment.NewLine;
+                    s += Environment.NewLine;
                     s += "To be eligible for this course you must satisfy these pre-requisite requirements: ";
                 }
 
@@ -1826,7 +1828,7 @@ namespace RuleBasedSystem
                         s += Environment.NewLine;
                     }
                 }
-                Console.WriteLine(s);
+                resulttxt.Text = s;
                 
 
             }
