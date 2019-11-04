@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.HomePanel = new System.Windows.Forms.Panel();
             this.button32 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -198,6 +197,17 @@
             this.Handheld_Ubiquitous_Computingcb = new System.Windows.Forms.CheckBox();
             this.label15 = new System.Windows.Forms.Label();
             this.CreateCoursePanel = new System.Windows.Forms.Panel();
+            this.button38 = new System.Windows.Forms.Button();
+            this.button37 = new System.Windows.Forms.Button();
+            this.prereqscbb = new System.Windows.Forms.ComboBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.customPrereqstxt = new System.Windows.Forms.TextBox();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.customNametxt = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.customPrefixtxt = new System.Windows.Forms.TextBox();
             this.button36 = new System.Windows.Forms.Button();
             this.button35 = new System.Windows.Forms.Button();
             this.label16 = new System.Windows.Forms.Label();
@@ -206,21 +216,13 @@
             this.button33 = new System.Windows.Forms.Button();
             this.button34 = new System.Windows.Forms.Button();
             this.label17 = new System.Windows.Forms.Label();
-            this.customClassesBox = new System.Windows.Forms.CheckedListBox();
-            this.button35 = new System.Windows.Forms.Button();
-            this.button36 = new System.Windows.Forms.Button();
-            this.customPrefixtxt = new System.Windows.Forms.TextBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.customNametxt = new System.Windows.Forms.TextBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.customPrereqstxt = new System.Windows.Forms.TextBox();
-            this.label19 = new System.Windows.Forms.Label();
-            this.prereqscbb = new System.Windows.Forms.ComboBox();
-            this.button37 = new System.Windows.Forms.Button();
-            this.button38 = new System.Windows.Forms.Button();
-            this.courseBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.ORtxt = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.button39 = new System.Windows.Forms.Button();
+            this.button40 = new System.Windows.Forms.Button();
+            this.button41 = new System.Windows.Forms.Button();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.clearBtn = new System.Windows.Forms.Button();
             this.HomePanel.SuspendLayout();
             this.AreaAPanel.SuspendLayout();
             this.AreaBPanel.SuspendLayout();
@@ -240,7 +242,6 @@
             this.E2Panel.SuspendLayout();
             this.CreateCoursePanel.SuspendLayout();
             this.CustomClassesPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.courseBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // HomePanel
@@ -262,6 +263,7 @@
             this.button32.TabIndex = 3;
             this.button32.Text = "Create New Course";
             this.button32.UseVisualStyleBackColor = true;
+            this.button32.Click += new System.EventHandler(this.button32_Click);
             // 
             // label1
             // 
@@ -1409,13 +1411,10 @@
             // 
             // label12
             // 
-            this.button26.Location = new System.Drawing.Point(60, 380);
-            this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(75, 23);
-            this.button26.TabIndex = 10;
-            this.button26.Text = "Back";
-            this.button26.UseVisualStyleBackColor = true;
-            this.button26.Click += new System.EventHandler(this.back_Click);
+            this.label12.Location = new System.Drawing.Point(0, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(100, 23);
+            this.label12.TabIndex = 15;
             // 
             // fallbtn
             // 
@@ -1457,6 +1456,7 @@
             this.button26.TabIndex = 10;
             this.button26.Text = "Back";
             this.button26.UseVisualStyleBackColor = true;
+            this.button26.Click += new System.EventHandler(this.back_Click);
             // 
             // MRC2Panel
             // 
@@ -2252,6 +2252,13 @@
             // 
             // CreateCoursePanel
             // 
+            this.CreateCoursePanel.Controls.Add(this.clearBtn);
+            this.CreateCoursePanel.Controls.Add(this.checkBox4);
+            this.CreateCoursePanel.Controls.Add(this.button41);
+            this.CreateCoursePanel.Controls.Add(this.button40);
+            this.CreateCoursePanel.Controls.Add(this.button39);
+            this.CreateCoursePanel.Controls.Add(this.label20);
+            this.CreateCoursePanel.Controls.Add(this.ORtxt);
             this.CreateCoursePanel.Controls.Add(this.button38);
             this.CreateCoursePanel.Controls.Add(this.button37);
             this.CreateCoursePanel.Controls.Add(this.prereqscbb);
@@ -2271,6 +2278,112 @@
             this.CreateCoursePanel.Size = new System.Drawing.Size(760, 437);
             this.CreateCoursePanel.TabIndex = 22;
             // 
+            // button38
+            // 
+            this.button38.Location = new System.Drawing.Point(36, 332);
+            this.button38.Name = "button38";
+            this.button38.Size = new System.Drawing.Size(121, 23);
+            this.button38.TabIndex = 22;
+            this.button38.Text = "Clear PreReqs";
+            this.button38.UseVisualStyleBackColor = true;
+            this.button38.Click += new System.EventHandler(this.button38_Click);
+            // 
+            // button37
+            // 
+            this.button37.Location = new System.Drawing.Point(36, 282);
+            this.button37.Name = "button37";
+            this.button37.Size = new System.Drawing.Size(121, 23);
+            this.button37.TabIndex = 21;
+            this.button37.Text = "Add PreReq";
+            this.button37.UseVisualStyleBackColor = true;
+            this.button37.Click += new System.EventHandler(this.button37_Click);
+            // 
+            // prereqscbb
+            // 
+            this.prereqscbb.FormattingEnabled = true;
+            this.prereqscbb.Location = new System.Drawing.Point(36, 259);
+            this.prereqscbb.Name = "prereqscbb";
+            this.prereqscbb.Size = new System.Drawing.Size(121, 21);
+            this.prereqscbb.TabIndex = 20;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(405, 166);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(97, 13);
+            this.label19.TabIndex = 19;
+            this.label19.Text = "Required PreReqs:";
+            // 
+            // customPrereqstxt
+            // 
+            this.customPrereqstxt.BackColor = System.Drawing.SystemColors.Window;
+            this.customPrereqstxt.Location = new System.Drawing.Point(340, 183);
+            this.customPrereqstxt.Multiline = true;
+            this.customPrereqstxt.Name = "customPrereqstxt";
+            this.customPrereqstxt.ReadOnly = true;
+            this.customPrereqstxt.Size = new System.Drawing.Size(233, 220);
+            this.customPrereqstxt.TabIndex = 18;
+            // 
+            // checkBox3
+            // 
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Location = new System.Drawing.Point(252, 134);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.checkBox3.Size = new System.Drawing.Size(102, 17);
+            this.checkBox3.TabIndex = 17;
+            this.checkBox3.Text = ":Available in Fall";
+            this.checkBox3.UseVisualStyleBackColor = true;
+            this.checkBox3.Click += new System.EventHandler(this.seasonbox_CheckedChanged);
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(230, 115);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.checkBox2.Size = new System.Drawing.Size(124, 17);
+            this.checkBox2.TabIndex = 16;
+            this.checkBox2.Text = ":Available in Summer";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBox2.Click += new System.EventHandler(this.seasonbox_CheckedChanged);
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(238, 96);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.checkBox1.Size = new System.Drawing.Size(116, 17);
+            this.checkBox1.TabIndex = 15;
+            this.checkBox1.Text = ":Available in Spring";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.Click += new System.EventHandler(this.seasonbox_CheckedChanged);
+            // 
+            // customNametxt
+            // 
+            this.customNametxt.Location = new System.Drawing.Point(340, 56);
+            this.customNametxt.Name = "customNametxt";
+            this.customNametxt.Size = new System.Drawing.Size(228, 20);
+            this.customNametxt.TabIndex = 14;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(152, 60);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(172, 13);
+            this.label18.TabIndex = 13;
+            this.label18.Text = "Class Name (e.g. \"Composition 1\"):";
+            // 
+            // customPrefixtxt
+            // 
+            this.customPrefixtxt.Location = new System.Drawing.Point(340, 25);
+            this.customPrefixtxt.Name = "customPrefixtxt";
+            this.customPrefixtxt.Size = new System.Drawing.Size(228, 20);
+            this.customPrefixtxt.TabIndex = 12;
+            // 
             // button36
             // 
             this.button36.Location = new System.Drawing.Point(71, 380);
@@ -2289,6 +2402,7 @@
             this.button35.TabIndex = 8;
             this.button35.Text = "Save";
             this.button35.UseVisualStyleBackColor = true;
+            this.button35.Click += new System.EventHandler(this.button35_Click);
             // 
             // label16
             // 
@@ -2298,28 +2412,6 @@
             this.label16.Size = new System.Drawing.Size(132, 13);
             this.label16.TabIndex = 0;
             this.label16.Text = "Prefix (e.g. \"ENGL 1101\"):";
-            // 
-            // button32
-            // 
-            this.button32.Location = new System.Drawing.Point(591, 22);
-            this.button32.Name = "button32";
-            this.button32.Size = new System.Drawing.Size(113, 23);
-            this.button32.TabIndex = 3;
-            this.button32.Text = "Create New Course";
-            this.button32.UseVisualStyleBackColor = true;
-            this.button32.Click += new System.EventHandler(this.button32_Click);
-            // 
-            // Advanced_Software_Engineeringcb
-            // 
-            this.Advanced_Software_Engineeringcb.AutoSize = true;
-            this.Advanced_Software_Engineeringcb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Advanced_Software_Engineeringcb.Location = new System.Drawing.Point(211, 340);
-            this.Advanced_Software_Engineeringcb.Name = "Advanced_Software_Engineeringcb";
-            this.Advanced_Software_Engineeringcb.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Advanced_Software_Engineeringcb.Size = new System.Drawing.Size(290, 20);
-            this.Advanced_Software_Engineeringcb.TabIndex = 22;
-            this.Advanced_Software_Engineeringcb.Text = "CSCI 4322 - Advanced Software Engineering";
-            this.Advanced_Software_Engineeringcb.UseVisualStyleBackColor = true;
             // 
             // CustomClassesPanel
             // 
@@ -2374,151 +2466,89 @@
             this.label17.Text = "Custom Classes";
             this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // customClassesBox
+            // ORtxt
             // 
-            this.customClassesBox.FormattingEnabled = true;
-            this.customClassesBox.Location = new System.Drawing.Point(0, 45);
-            this.customClassesBox.MultiColumn = true;
-            this.customClassesBox.Name = "customClassesBox";
-            this.customClassesBox.Size = new System.Drawing.Size(760, 319);
-            this.customClassesBox.TabIndex = 11;
+            this.ORtxt.BackColor = System.Drawing.SystemColors.Window;
+            this.ORtxt.Location = new System.Drawing.Point(204, 246);
+            this.ORtxt.Multiline = true;
+            this.ORtxt.Name = "ORtxt";
+            this.ORtxt.ReadOnly = true;
+            this.ORtxt.Size = new System.Drawing.Size(109, 109);
+            this.ORtxt.TabIndex = 23;
             // 
-            // button35
+            // label20
             // 
-            this.button35.Location = new System.Drawing.Point(610, 380);
-            this.button35.Name = "button35";
-            this.button35.Size = new System.Drawing.Size(75, 23);
-            this.button35.TabIndex = 8;
-            this.button35.Text = "Save";
-            this.button35.UseVisualStyleBackColor = true;
+            this.label20.Location = new System.Drawing.Point(204, 170);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(109, 73);
+            this.label20.TabIndex = 24;
+            this.label20.Text = "Courses \"OR\"\'d Together \r\n(e.g. Take either MATH 1112 OR MATH 1113):\r\n";
+            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button36
+            // button39
             // 
-            this.button36.Location = new System.Drawing.Point(71, 380);
-            this.button36.Name = "button36";
-            this.button36.Size = new System.Drawing.Size(75, 23);
-            this.button36.TabIndex = 11;
-            this.button36.Text = "Back";
-            this.button36.UseVisualStyleBackColor = true;
-            this.button36.Click += new System.EventHandler(this.button36_Click);
+            this.button39.Location = new System.Drawing.Point(204, 391);
+            this.button39.Name = "button39";
+            this.button39.Size = new System.Drawing.Size(109, 23);
+            this.button39.TabIndex = 25;
+            this.button39.Text = "Clear OR";
+            this.button39.UseVisualStyleBackColor = true;
+            this.button39.Click += new System.EventHandler(this.button39_Click);
             // 
-            // customPrefixtxt
+            // button40
             // 
-            this.customPrefixtxt.Location = new System.Drawing.Point(340, 25);
-            this.customPrefixtxt.Name = "customPrefixtxt";
-            this.customPrefixtxt.Size = new System.Drawing.Size(228, 20);
-            this.customPrefixtxt.TabIndex = 12;
+            this.button40.Location = new System.Drawing.Point(204, 362);
+            this.button40.Name = "button40";
+            this.button40.Size = new System.Drawing.Size(109, 23);
+            this.button40.TabIndex = 26;
+            this.button40.Text = "Add OR to PreReqs";
+            this.button40.UseVisualStyleBackColor = true;
+            this.button40.Click += new System.EventHandler(this.button40_Click);
             // 
-            // label18
+            // button41
             // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(152, 60);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(172, 13);
-            this.label18.TabIndex = 13;
-            this.label18.Text = "Class Name (e.g. \"Composition 1\"):";
+            this.button41.Location = new System.Drawing.Point(36, 306);
+            this.button41.Name = "button41";
+            this.button41.Size = new System.Drawing.Size(121, 23);
+            this.button41.TabIndex = 27;
+            this.button41.Text = "Add PreReq to OR";
+            this.button41.UseVisualStyleBackColor = true;
+            this.button41.Click += new System.EventHandler(this.button41_Click);
             // 
-            // customNametxt
+            // checkBox4
             // 
-            this.customNametxt.Location = new System.Drawing.Point(340, 56);
-            this.customNametxt.Name = "customNametxt";
-            this.customNametxt.Size = new System.Drawing.Size(228, 20);
-            this.customNametxt.TabIndex = 14;
+            this.checkBox4.AutoSize = true;
+            this.checkBox4.Location = new System.Drawing.Point(467, 116);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.checkBox4.Size = new System.Drawing.Size(152, 17);
+            this.checkBox4.TabIndex = 28;
+            this.checkBox4.Text = ":Available only on Demand";
+            this.checkBox4.UseVisualStyleBackColor = true;
+            this.checkBox4.Click += new System.EventHandler(this.checkBox4_CheckedChanged);
             // 
-            // checkBox1
+            // clearBtn
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(238, 96);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.checkBox1.Size = new System.Drawing.Size(116, 17);
-            this.checkBox1.TabIndex = 15;
-            this.checkBox1.Text = ":Available in Spring";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // checkBox2
-            // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(230, 115);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.checkBox2.Size = new System.Drawing.Size(124, 17);
-            this.checkBox2.TabIndex = 16;
-            this.checkBox2.Text = ":Available in Summer";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            // 
-            // checkBox3
-            // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(252, 134);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.checkBox3.Size = new System.Drawing.Size(102, 17);
-            this.checkBox3.TabIndex = 17;
-            this.checkBox3.Text = ":Available in Fall";
-            this.checkBox3.UseVisualStyleBackColor = true;
-            // 
-            // customPrereqstxt
-            // 
-            this.customPrereqstxt.Location = new System.Drawing.Point(340, 183);
-            this.customPrereqstxt.Multiline = true;
-            this.customPrereqstxt.Name = "customPrereqstxt";
-            this.customPrereqstxt.Size = new System.Drawing.Size(233, 220);
-            this.customPrereqstxt.TabIndex = 18;
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(434, 166);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(51, 13);
-            this.label19.TabIndex = 19;
-            this.label19.Text = "PreReqs:";
-            // 
-            // prereqscbb
-            // 
-            this.prereqscbb.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.courseBindingSource, "Prefix", true));
-            this.prereqscbb.FormattingEnabled = true;
-            this.prereqscbb.Location = new System.Drawing.Point(199, 288);
-            this.prereqscbb.Name = "prereqscbb";
-            this.prereqscbb.Size = new System.Drawing.Size(121, 21);
-            this.prereqscbb.TabIndex = 20;
-            // 
-            // button37
-            // 
-            this.button37.Location = new System.Drawing.Point(199, 323);
-            this.button37.Name = "button37";
-            this.button37.Size = new System.Drawing.Size(121, 23);
-            this.button37.TabIndex = 21;
-            this.button37.Text = "Add PreReq";
-            this.button37.UseVisualStyleBackColor = true;
-            // 
-            // button38
-            // 
-            this.button38.Location = new System.Drawing.Point(199, 361);
-            this.button38.Name = "button38";
-            this.button38.Size = new System.Drawing.Size(121, 23);
-            this.button38.TabIndex = 22;
-            this.button38.Text = "Clear all PreReqs";
-            this.button38.UseVisualStyleBackColor = true;
-            this.button38.Click += new System.EventHandler(this.button38_Click);
-            // 
-            // courseBindingSource
-            // 
-            this.courseBindingSource.DataSource = typeof(RuleBasedSystem.Form1.Course);
+            this.clearBtn.Location = new System.Drawing.Point(610, 337);
+            this.clearBtn.Name = "clearBtn";
+            this.clearBtn.Size = new System.Drawing.Size(75, 23);
+            this.clearBtn.TabIndex = 29;
+            this.clearBtn.Text = "Clear All";
+            this.clearBtn.UseVisualStyleBackColor = true;
+            this.clearBtn.Click += new System.EventHandler(this.clearBtn_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 461);
-            this.Controls.Add(this.HomePanel);
             this.Controls.Add(this.CreateCoursePanel);
-            this.Controls.Add(this.SeasonPanel);
             this.Controls.Add(this.CustomClassesPanel);
+            this.Controls.Add(this.HomePanel);
+            this.Controls.Add(this.ChainingPanel);
+            this.Controls.Add(this.SeasonPanel);
             this.Controls.Add(this.E1Panel);
             this.Controls.Add(this.E2Panel);
-            this.Controls.Add(this.ChainingPanel);
             this.Controls.Add(this.EligibleCoursesPanel);
             this.Controls.Add(this.MRC1Panel);
             this.Controls.Add(this.MRC2Panel);
@@ -2569,7 +2599,6 @@
             this.CreateCoursePanel.ResumeLayout(false);
             this.CreateCoursePanel.PerformLayout();
             this.CustomClassesPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.courseBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2764,7 +2793,13 @@
         private System.Windows.Forms.Button button37;
         private System.Windows.Forms.ComboBox prereqscbb;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.BindingSource courseBindingSource;
+        private System.Windows.Forms.Button button41;
+        private System.Windows.Forms.Button button40;
+        private System.Windows.Forms.Button button39;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.TextBox ORtxt;
+        private System.Windows.Forms.CheckBox checkBox4;
+        private System.Windows.Forms.Button clearBtn;
     }
 }
 
