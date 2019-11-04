@@ -1269,7 +1269,7 @@ namespace RuleBasedSystem
             {
                 courses.ForEach(course =>
                 {
-                    if (course.Fall == true || course.OnDemand == true )
+                    if (course.Fall == true || course.OnDemand == true)
                     {
                         if (!course.IsCompleted)
                         {
@@ -1321,10 +1321,10 @@ namespace RuleBasedSystem
         {
             List<List<Course>> courses_related_to_target = new List<List<Course>>();
 
-            if(course_to_check.Spring && nextSemester == 1)
+            if (course_to_check.Spring && nextSemester == 1)
             {
                 if (course_to_check.Prereqs.Length != 0)
-                { 
+                {
                     for (int i = 0; i < course_to_check.Prereqs.Length; i++)
                     {
                         // Gather ORS
@@ -1335,7 +1335,7 @@ namespace RuleBasedSystem
                             for (int j = 0; j < course_to_check.Prereqs[i].Length; j++)
                             {
                                 //Console.WriteLine("Option: " + course.Prereqs[i][j].Prefix);
-                                orTemp.Add(course_to_check.Prereqs[i][j]);                               
+                                orTemp.Add(course_to_check.Prereqs[i][j]);
                             }
                             courses_related_to_target.Add(orTemp);
                         }
@@ -1347,7 +1347,7 @@ namespace RuleBasedSystem
                     }
                 }
             }
-            else if(course_to_check.Summer && nextSemester == 2)
+            else if (course_to_check.Summer && nextSemester == 2)
             {
                 if (course_to_check.Prereqs.Length != 0)
                 {
@@ -1360,7 +1360,8 @@ namespace RuleBasedSystem
                 {
 
                 }
-            }else if (course_to_check.OnDemand)
+            }
+            else if (course_to_check.OnDemand)
             {
 
             }
@@ -1476,6 +1477,7 @@ namespace RuleBasedSystem
             listpanel.Add(SeasonPanel);
             listpanel.Add(ChainingPanel);
             listpanel.Add(EligibleCoursesPanel);
+            listpanel.Add(CanTakePanel);
         }
 
         private void button21_Click(object sender, EventArgs e)
@@ -1512,41 +1514,17 @@ namespace RuleBasedSystem
 
         private void button22_Click(object sender, EventArgs e)
         {
+            
             compileCourses();
-            Course course_to_check = courses.Find(x=>x.Prefix== "MATH 2130");      //Get course from UI here
-            List<List<Course>> reasoningList = startBackwardChaining(course_to_check);
-            bool isEligible = true;
-            for (int i = 0; i < reasoningList.Count; i++)
+            backwardcbb.Items.Clear();
+            foreach (Course c in courses)
             {
-                //Check OR Conditions
-                if (reasoningList[i].Count > 1)
-                {
-                    bool OReligible = false;
-                    //CHECK THE ORS
-                    for (int j = 0; j < reasoningList[i].Count; j++)
-                    {
-                        //Console.WriteLine("Option: " + course.Prereqs[i][j].Prefix);
-                        if (reasoningList[i][j].IsCompleted) OReligible = true;
-                    }
-                    if (!OReligible)
-                    {
-                        isEligible = false;
-                    }
-                }
-                //Check And conditions
-                else
-                {
-                    if (reasoningList[i][0].IsCompleted)
-                    {
-                        isEligible = false;
-                    }
-                }
+                backwardcbb.Items.Add(c.Prefix);
             }
-            if (isEligible) Console.WriteLine("You are eligible to take: " + course_to_check.Prefix);
-            else Console.WriteLine("You are NOT eligible to take: " + course_to_check.Prefix);
-
+            pageIndex += 2;
+            listpanel[pageIndex].BringToFront();
         }
-        
+
         private void forward_Click(object sender, EventArgs e)
         {
             if (pageIndex < listpanel.Count - 1)
@@ -1592,6 +1570,7 @@ namespace RuleBasedSystem
         private void button32_Click(object sender, EventArgs e)
         {
             compileCourses();
+            prereqscbb.Items.Clear();
             foreach (Course c in courses)
             {
                 prereqscbb.Items.Add(c.Prefix);
@@ -1611,7 +1590,6 @@ namespace RuleBasedSystem
             result = result.Replace("\r\n", ",");
             result = result.Remove(result.Length - 1);
             result += "]\r\n";
-            Console.WriteLine(result);
             customPrereqstxt.AppendText(result);
             ORtxt.Text = "";
         }
@@ -1714,6 +1692,53 @@ namespace RuleBasedSystem
 
             customCourses.Add(custom);
             clearCustom();
+        }
+
+        private void button44_Click(object sender, EventArgs e)
+        {
+            pageIndex -= 2;
+            listpanel[pageIndex].BringToFront();
+        }
+
+        private void checkEliBtn_Click(object sender, EventArgs e)
+        {
+            if (backwardcbb.SelectedItem != null)
+            {
+                Course course_to_check = courses.Find(x => x.Prefix == ((string)backwardcbb.SelectedItem));      //Get course from UI here
+                List<List<Course>> reasoningList = startBackwardChaining(course_to_check);
+                bool isEligible = true;
+                for (int i = 0; i < reasoningList.Count; i++)
+                {
+                    //Check OR Conditions
+                    if (reasoningList[i].Count > 1)
+                    {
+                        bool OReligible = false;
+                        //CHECK THE ORS
+                        for (int j = 0; j < reasoningList[i].Count; j++)
+                        {
+                            //Console.WriteLine("Option: " + course.Prereqs[i][j].Prefix);
+                            if (reasoningList[i][j].IsCompleted) OReligible = true;
+                        }
+                        if (!OReligible)
+                        {
+                            isEligible = false;
+                        }
+                    }
+                    //Check And conditions
+                    else
+                    {
+                        if (reasoningList[i][0].IsCompleted)
+                        {
+                            isEligible = false;
+                        }
+                    }
+                }
+                if (isEligible)
+                    resulttxt.Text = "You are NOT eligible to take: " + course_to_check.Prefix;
+                else resulttxt.Text = "You are eligible to take: " + course_to_check.Prefix;
+
+            }
+
         }
     }
 }

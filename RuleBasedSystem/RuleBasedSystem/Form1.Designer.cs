@@ -223,6 +223,12 @@
             this.button33 = new System.Windows.Forms.Button();
             this.button34 = new System.Windows.Forms.Button();
             this.label17 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.CanTakePanel = new System.Windows.Forms.Panel();
+            this.button44 = new System.Windows.Forms.Button();
+            this.backwardcbb = new System.Windows.Forms.ComboBox();
+            this.resulttxt = new System.Windows.Forms.Label();
+            this.checkEliBtn = new System.Windows.Forms.Button();
             this.HomePanel.SuspendLayout();
             this.AreaAPanel.SuspendLayout();
             this.AreaBPanel.SuspendLayout();
@@ -242,6 +248,7 @@
             this.E2Panel.SuspendLayout();
             this.CreateCoursePanel.SuspendLayout();
             this.CustomClassesPanel.SuspendLayout();
+            this.CanTakePanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // HomePanel
@@ -682,7 +689,7 @@
             this.Principles_of_Chemistry_1_with_labcb.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Principles_of_Chemistry_1_with_labcb.Size = new System.Drawing.Size(417, 28);
             this.Principles_of_Chemistry_1_with_labcb.TabIndex = 1;
-            this.Principles_of_Chemistry_1_with_labcb.Text = "CHEM 1211K - Principles of Cehmistry 1 w/ lab";
+            this.Principles_of_Chemistry_1_with_labcb.Text = "CHEM 1211K - Principles of Chemistry 1 w/ lab";
             this.Principles_of_Chemistry_1_with_labcb.UseVisualStyleBackColor = true;
             // 
             // label5
@@ -2252,6 +2259,7 @@
             // 
             // CreateCoursePanel
             // 
+            this.CreateCoursePanel.Controls.Add(this.label21);
             this.CreateCoursePanel.Controls.Add(this.clearBtn);
             this.CreateCoursePanel.Controls.Add(this.checkBox4);
             this.CreateCoursePanel.Controls.Add(this.button41);
@@ -2371,6 +2379,8 @@
             // 
             // prereqscbb
             // 
+            this.prereqscbb.BackColor = System.Drawing.SystemColors.Window;
+            this.prereqscbb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.prereqscbb.FormattingEnabled = true;
             this.prereqscbb.Location = new System.Drawing.Point(36, 259);
             this.prereqscbb.Name = "prereqscbb";
@@ -2537,15 +2547,76 @@
             this.label17.Text = "Custom Classes";
             this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(68, 239);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(62, 13);
+            this.label21.TabIndex = 30;
+            this.label21.Text = "Course List:";
+            // 
+            // CanTakePanel
+            // 
+            this.CanTakePanel.Controls.Add(this.checkEliBtn);
+            this.CanTakePanel.Controls.Add(this.resulttxt);
+            this.CanTakePanel.Controls.Add(this.backwardcbb);
+            this.CanTakePanel.Controls.Add(this.button44);
+            this.CanTakePanel.Location = new System.Drawing.Point(12, 12);
+            this.CanTakePanel.Name = "CanTakePanel";
+            this.CanTakePanel.Size = new System.Drawing.Size(760, 437);
+            this.CanTakePanel.TabIndex = 24;
+            // 
+            // button44
+            // 
+            this.button44.Location = new System.Drawing.Point(60, 380);
+            this.button44.Name = "button44";
+            this.button44.Size = new System.Drawing.Size(75, 23);
+            this.button44.TabIndex = 10;
+            this.button44.Text = "Back";
+            this.button44.UseVisualStyleBackColor = true;
+            this.button44.Click += new System.EventHandler(this.button44_Click);
+            // 
+            // backwardcbb
+            // 
+            this.backwardcbb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.backwardcbb.FormattingEnabled = true;
+            this.backwardcbb.Location = new System.Drawing.Point(148, 147);
+            this.backwardcbb.Name = "backwardcbb";
+            this.backwardcbb.Size = new System.Drawing.Size(206, 21);
+            this.backwardcbb.TabIndex = 11;
+            // 
+            // resulttxt
+            // 
+            this.resulttxt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.resulttxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.resulttxt.Location = new System.Drawing.Point(0, 235);
+            this.resulttxt.Name = "resulttxt";
+            this.resulttxt.Size = new System.Drawing.Size(760, 55);
+            this.resulttxt.TabIndex = 12;
+            this.resulttxt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // checkEliBtn
+            // 
+            this.checkEliBtn.Location = new System.Drawing.Point(448, 147);
+            this.checkEliBtn.Name = "checkEliBtn";
+            this.checkEliBtn.Size = new System.Drawing.Size(128, 23);
+            this.checkEliBtn.TabIndex = 13;
+            this.checkEliBtn.Text = "Check if Eligible";
+            this.checkEliBtn.UseVisualStyleBackColor = true;
+            this.checkEliBtn.Click += new System.EventHandler(this.checkEliBtn_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 461);
             this.Controls.Add(this.HomePanel);
+            this.Controls.Add(this.ChainingPanel);
+            this.Controls.Add(this.CanTakePanel);
+            this.Controls.Add(this.AreaDPanel);
             this.Controls.Add(this.CreateCoursePanel);
             this.Controls.Add(this.CustomClassesPanel);
-            this.Controls.Add(this.ChainingPanel);
             this.Controls.Add(this.SeasonPanel);
             this.Controls.Add(this.E1Panel);
             this.Controls.Add(this.E2Panel);
@@ -2554,7 +2625,6 @@
             this.Controls.Add(this.MRC2Panel);
             this.Controls.Add(this.SLSsRPanel);
             this.Controls.Add(this.AreaEPanel);
-            this.Controls.Add(this.AreaDPanel);
             this.Controls.Add(this.AreaCPanel);
             this.Controls.Add(this.AreaBPanel);
             this.Controls.Add(this.AreaAPanel);
@@ -2599,6 +2669,7 @@
             this.CreateCoursePanel.ResumeLayout(false);
             this.CreateCoursePanel.PerformLayout();
             this.CustomClassesPanel.ResumeLayout(false);
+            this.CanTakePanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -2800,6 +2871,12 @@
         private System.Windows.Forms.TextBox ORtxt;
         private System.Windows.Forms.CheckBox checkBox4;
         private System.Windows.Forms.Button clearBtn;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Panel CanTakePanel;
+        private System.Windows.Forms.Button button44;
+        private System.Windows.Forms.Button checkEliBtn;
+        private System.Windows.Forms.Label resulttxt;
+        private System.Windows.Forms.ComboBox backwardcbb;
     }
 }
 
